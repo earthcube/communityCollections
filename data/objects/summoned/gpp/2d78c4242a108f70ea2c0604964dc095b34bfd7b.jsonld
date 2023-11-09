@@ -1,0 +1,417 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://doi.org/10.1594/PANGAEA.879543",
+  "@type": "Dataset",
+  "identifier": "https://doi.org/10.1594/PANGAEA.879543",
+  "url": "https://doi.pangaea.de/10.1594/PANGAEA.879543",
+  "creator": [
+    {
+      "@id": "https://orcid.org/0000-0002-7468-2409",
+      "@type": "Person",
+      "name": "Yao Zhang",
+      "familyName": "Zhang",
+      "givenName": "Yao",
+      "identifier": "https://orcid.org/0000-0002-7468-2409",
+      "email": "yaozhang@lbl.gov"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiangming Xiao",
+      "familyName": "Xiao",
+      "givenName": "Xiangming",
+      "email": "xiangming.xiao@ou.edu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaocui Wu",
+      "familyName": "Wu",
+      "givenName": "Xiaocui",
+      "email": "xiaocui.wu@ou.edu"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7161-5959",
+      "@type": "Person",
+      "name": "Sha Zhou",
+      "familyName": "Zhou",
+      "givenName": "Sha",
+      "identifier": "https://orcid.org/0000-0001-7161-5959",
+      "email": "sz2766@columbia.edu"
+    },
+    {
+      "@type": "Person",
+      "name": "Geli Zhang",
+      "familyName": "Zhang",
+      "givenName": "Geli",
+      "email": "geli.zhang@cau.edu.cn"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5181-9986",
+      "@type": "Person",
+      "name": "Yuanwei Qin",
+      "familyName": "Qin",
+      "givenName": "Yuanwei",
+      "identifier": "https://orcid.org/0000-0002-5181-9986",
+      "email": "yuanwei.qin@ou.edu"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5687-803X",
+      "@type": "Person",
+      "name": "Jinwei Dong",
+      "familyName": "Dong",
+      "givenName": "Jinwei",
+      "identifier": "https://orcid.org/0000-0001-5687-803X",
+      "email": "dongjw@igsnrr.ac.cn"
+    }
+  ],
+  "name": "(Table 3) Continental and global total gross primary production of carbon for the years 2000-2016",
+  "publisher": {
+    "@type": "Organization",
+    "name": "PANGAEA",
+    "disambiguatingDescription": "Data Publisher for Earth & Environmental Science",
+    "url": "https://www.pangaea.de/"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "PANGAEA",
+    "disambiguatingDescription": "Data Publisher for Earth & Environmental Science",
+    "url": "https://www.pangaea.de/"
+  },
+  "datePublished": "2017-08-11",
+  "isPartOf": "https://doi.org/10.1594/PANGAEA.879560",
+  "description": "This dataset is about: (Table 3) Continental and global total gross primary production of carbon for the years 2000-2016. Please consult parent dataset @ https://doi.org/10.1594/PANGAEA.879560 for more information.",
+  "citation": {
+    "@id": "https://doi.org/10.1038/sdata.2017.165",
+    "@type": [
+      "CreativeWork",
+      "PublicationIssue"
+    ],
+    "identifier": "https://doi.org/10.1038/sdata.2017.165",
+    "url": "https://doi.org/10.1038/sdata.2017.165",
+    "creator": [
+      {
+        "@id": "https://orcid.org/0000-0002-7468-2409",
+        "@type": "Person",
+        "name": "Yao Zhang",
+        "familyName": "Zhang",
+        "givenName": "Yao",
+        "identifier": "https://orcid.org/0000-0002-7468-2409",
+        "email": "yaozhang@lbl.gov"
+      },
+      {
+        "@type": "Person",
+        "name": "Xiangming Xiao",
+        "familyName": "Xiao",
+        "givenName": "Xiangming",
+        "email": "xiangming.xiao@ou.edu"
+      },
+      {
+        "@type": "Person",
+        "name": "Xiaocui Wu",
+        "familyName": "Wu",
+        "givenName": "Xiaocui",
+        "email": "xiaocui.wu@ou.edu"
+      },
+      {
+        "@id": "https://orcid.org/0000-0001-7161-5959",
+        "@type": "Person",
+        "name": "Sha Zhou",
+        "familyName": "Zhou",
+        "givenName": "Sha",
+        "identifier": "https://orcid.org/0000-0001-7161-5959",
+        "email": "sz2766@columbia.edu"
+      },
+      {
+        "@type": "Person",
+        "name": "Geli Zhang",
+        "familyName": "Zhang",
+        "givenName": "Geli",
+        "email": "geli.zhang@cau.edu.cn"
+      },
+      {
+        "@id": "https://orcid.org/0000-0002-5181-9986",
+        "@type": "Person",
+        "name": "Yuanwei Qin",
+        "familyName": "Qin",
+        "givenName": "Yuanwei",
+        "identifier": "https://orcid.org/0000-0002-5181-9986",
+        "email": "yuanwei.qin@ou.edu"
+      },
+      {
+        "@id": "https://orcid.org/0000-0001-5687-803X",
+        "@type": "Person",
+        "name": "Jinwei Dong",
+        "familyName": "Dong",
+        "givenName": "Jinwei",
+        "identifier": "https://orcid.org/0000-0001-5687-803X",
+        "email": "dongjw@igsnrr.ac.cn"
+      }
+    ],
+    "name": "A global moderate resolution dataset of gross primary production of vegetation for 2000–2016",
+    "datePublished": "2017",
+    "issueNumber": "4(1)",
+    "pagination": "170165",
+    "isPartOf": {
+      "@type": "CreativeWorkSeries",
+      "name": "Scientific Data"
+    }
+  },
+  "temporalCoverage": "2000-01-01T00:00:00/2016-12-31T23:59:00",
+  "size": {
+    "@type": "QuantitativeValue",
+    "value": 119.0,
+    "unitText": "data points"
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "DATE/TIME",
+      "url": "http://en.wikipedia.org/wiki/ISO_8601",
+      "subjectOf": {
+        "@type": "DefinedTermSet",
+        "hasDefinedTerm": {
+          "@id": "http://qudt.org/1.1/vocab/quantity#Time",
+          "@type": "DefinedTerm",
+          "identifier": "http://qudt.org/1.1/vocab/quantity#Time",
+          "name": "Time",
+          "alternateName": "T",
+          "url": "http://dbpedia.org/resource/Time"
+        }
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Gross primary production of carbon",
+      "unitText": "Pg/a",
+      "description": "Asia",
+      "subjectOf": {
+        "@type": "DefinedTermSet",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "gross primary production",
+            "alternateName": "GPP",
+            "url": "https://en.wikipedia.org/wiki/Primary_production#Gross_primary_production_and_net_primary_production"
+          },
+          {
+            "@id": "http://purl.obolibrary.org/obo/CHEBI_27594",
+            "@type": "DefinedTerm",
+            "identifier": "http://purl.obolibrary.org/obo/CHEBI_27594",
+            "name": "carbon",
+            "alternateName": "C",
+            "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27594"
+          },
+          {
+            "@id": "http://qudt.org/1.1/vocab/quantity#MassPerTime",
+            "@type": "DefinedTerm",
+            "identifier": "http://qudt.org/1.1/vocab/quantity#MassPerTime",
+            "name": "Mass per Time"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Gross primary production of carbon",
+      "unitText": "Pg/a",
+      "description": "North America",
+      "subjectOf": {
+        "@type": "DefinedTermSet",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "gross primary production",
+            "alternateName": "GPP",
+            "url": "https://en.wikipedia.org/wiki/Primary_production#Gross_primary_production_and_net_primary_production"
+          },
+          {
+            "@id": "http://purl.obolibrary.org/obo/CHEBI_27594",
+            "@type": "DefinedTerm",
+            "identifier": "http://purl.obolibrary.org/obo/CHEBI_27594",
+            "name": "carbon",
+            "alternateName": "C",
+            "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27594"
+          },
+          {
+            "@id": "http://qudt.org/1.1/vocab/quantity#MassPerTime",
+            "@type": "DefinedTerm",
+            "identifier": "http://qudt.org/1.1/vocab/quantity#MassPerTime",
+            "name": "Mass per Time"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Gross primary production of carbon",
+      "unitText": "Pg/a",
+      "description": "Europe",
+      "subjectOf": {
+        "@type": "DefinedTermSet",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "gross primary production",
+            "alternateName": "GPP",
+            "url": "https://en.wikipedia.org/wiki/Primary_production#Gross_primary_production_and_net_primary_production"
+          },
+          {
+            "@id": "http://purl.obolibrary.org/obo/CHEBI_27594",
+            "@type": "DefinedTerm",
+            "identifier": "http://purl.obolibrary.org/obo/CHEBI_27594",
+            "name": "carbon",
+            "alternateName": "C",
+            "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27594"
+          },
+          {
+            "@id": "http://qudt.org/1.1/vocab/quantity#MassPerTime",
+            "@type": "DefinedTerm",
+            "identifier": "http://qudt.org/1.1/vocab/quantity#MassPerTime",
+            "name": "Mass per Time"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Gross primary production of carbon",
+      "unitText": "Pg/a",
+      "description": "Africa",
+      "subjectOf": {
+        "@type": "DefinedTermSet",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "gross primary production",
+            "alternateName": "GPP",
+            "url": "https://en.wikipedia.org/wiki/Primary_production#Gross_primary_production_and_net_primary_production"
+          },
+          {
+            "@id": "http://purl.obolibrary.org/obo/CHEBI_27594",
+            "@type": "DefinedTerm",
+            "identifier": "http://purl.obolibrary.org/obo/CHEBI_27594",
+            "name": "carbon",
+            "alternateName": "C",
+            "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27594"
+          },
+          {
+            "@id": "http://qudt.org/1.1/vocab/quantity#MassPerTime",
+            "@type": "DefinedTerm",
+            "identifier": "http://qudt.org/1.1/vocab/quantity#MassPerTime",
+            "name": "Mass per Time"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Gross primary production of carbon",
+      "unitText": "Pg/a",
+      "description": "South America",
+      "subjectOf": {
+        "@type": "DefinedTermSet",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "gross primary production",
+            "alternateName": "GPP",
+            "url": "https://en.wikipedia.org/wiki/Primary_production#Gross_primary_production_and_net_primary_production"
+          },
+          {
+            "@id": "http://purl.obolibrary.org/obo/CHEBI_27594",
+            "@type": "DefinedTerm",
+            "identifier": "http://purl.obolibrary.org/obo/CHEBI_27594",
+            "name": "carbon",
+            "alternateName": "C",
+            "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27594"
+          },
+          {
+            "@id": "http://qudt.org/1.1/vocab/quantity#MassPerTime",
+            "@type": "DefinedTerm",
+            "identifier": "http://qudt.org/1.1/vocab/quantity#MassPerTime",
+            "name": "Mass per Time"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Gross primary production of carbon",
+      "unitText": "Pg/a",
+      "description": "Oceania",
+      "subjectOf": {
+        "@type": "DefinedTermSet",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "gross primary production",
+            "alternateName": "GPP",
+            "url": "https://en.wikipedia.org/wiki/Primary_production#Gross_primary_production_and_net_primary_production"
+          },
+          {
+            "@id": "http://purl.obolibrary.org/obo/CHEBI_27594",
+            "@type": "DefinedTerm",
+            "identifier": "http://purl.obolibrary.org/obo/CHEBI_27594",
+            "name": "carbon",
+            "alternateName": "C",
+            "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27594"
+          },
+          {
+            "@id": "http://qudt.org/1.1/vocab/quantity#MassPerTime",
+            "@type": "DefinedTerm",
+            "identifier": "http://qudt.org/1.1/vocab/quantity#MassPerTime",
+            "name": "Mass per Time"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Gross primary production of carbon",
+      "unitText": "Pg/a",
+      "description": "Global",
+      "subjectOf": {
+        "@type": "DefinedTermSet",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "gross primary production",
+            "alternateName": "GPP",
+            "url": "https://en.wikipedia.org/wiki/Primary_production#Gross_primary_production_and_net_primary_production"
+          },
+          {
+            "@id": "http://purl.obolibrary.org/obo/CHEBI_27594",
+            "@type": "DefinedTerm",
+            "identifier": "http://purl.obolibrary.org/obo/CHEBI_27594",
+            "name": "carbon",
+            "alternateName": "C",
+            "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27594"
+          },
+          {
+            "@id": "http://qudt.org/1.1/vocab/quantity#MassPerTime",
+            "@type": "DefinedTerm",
+            "identifier": "http://qudt.org/1.1/vocab/quantity#MassPerTime",
+            "name": "Mass per Time"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://creativecommons.org/licenses/by/3.0/",
+  "conditionsOfAccess": "unrestricted",
+  "isAccessibleForFree": true,
+  "inLanguage": "en",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/html",
+      "contentUrl": "https://doi.pangaea.de/10.1594/PANGAEA.879543?format=html"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/tab-separated-values",
+      "contentUrl": "https://doi.pangaea.de/10.1594/PANGAEA.879543?format=textfile"
+    }
+  ]
+}
