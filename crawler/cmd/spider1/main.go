@@ -9,7 +9,7 @@ func main() {
 	ns := NewSpider()
 	ns.ProcessQueue()
 
-	spider.Crawl("https://fils.network")
+	spider.Crawl("https://earth-search.aws.element84.com/v1/k")
 
 	spider.CatScan()
 }
@@ -17,6 +17,6 @@ func main() {
 func NewSpider() *queue.Spider {
 	return &queue.Spider{
 		Visited: make(map[string]bool),
-		Queue:   []string{"https://example.com"}, // Seed URL
+		Queue:   []string{"https://earth-search.aws.element84.com/v1/"}, // Seed URL
 	}
 }

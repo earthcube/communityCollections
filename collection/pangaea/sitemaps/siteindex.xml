@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/site0.9">
+    <sitemap>
+        <loc>https://raw.githubusercontent.com/earthcube/communityCollections/master/collection/pangaea/sitemaps/glim.xml</loc>
+        <lastmod>2023-11-13</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://raw.githubusercontent.com/earthcube/communityCollections/master/collection/pangaea/sitemaps/gpp.xml</loc>
+        <lastmod>2023-11-13</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://github.com/earthcube/communityCollections/blob/master/collection/pangaea/sitemaps/nitrogen.xml</loc>
+        <lastmod>2023-11-13</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://raw.githubusercontent.com/earthcube/communityCollections/master/collection/pangaea/sitemaps/nitrogen2.xml</loc>
+        <lastmod>2023-11-13</lastmod>
+    </sitemap>
+</sitemapindex>
