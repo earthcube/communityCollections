@@ -19,7 +19,7 @@ You are generating a JSON-LD (JSON for Linking Data) description for a scientifi
 
 **Requirements**:
 1. Use Schema.org vocabulary (https://schema.org/)
-2. Set @context to `{"@vocab": "https://schema.org/"}`
+2. Set @context to `{{"@vocab": "https://schema.org/"}}`
 3. Set @type to "Dataset"
 4. Include @id with the dataset URL or identifier
 5. Include all available metadata fields
