@@ -8,13 +8,14 @@ JSON-LD descriptions using AI prompts.
 """
 
 import csv
+import hashlib
 import json
 import os
 import sys
 import argparse
+import threading
 from pathlib import Path
 from typing import Dict, List, Optional
-from urllib.parse import urlparse
 
 # Try to load .env file if python-dotenv is available
 try:
@@ -40,6 +41,42 @@ except ImportError:
 import requests
 from bs4 import BeautifulSoup
 
+# Constants
+API_TIMEOUT_SECONDS = 180.0  # 3 minutes
+MAX_RETRIES = 2
+CONTENT_LIMIT_DETECTION = 5000  # Characters for detection prompt
+CONTENT_LIMIT_ANTHROPIC = 10000  # Characters for Anthropic detection
+EXAMPLE_JSONLD_LIMIT = 2000  # Characters for example JSON-LD in prompt
+WEBPAGE_TIMEOUT = 30  # Seconds for webpage fetching
+FILENAME_MAX_LENGTH = 50  # Maximum length for dataset name in filename
+URL_HASH_LENGTH = 8  # Length of URL hash in filename
+HTML_FALLBACK_LIMIT = 10000  # Characters to return if HTML parsing fails
+
+# Server error codes to detect
+SERVER_ERROR_CODES = ['500', '502', '503', '504', 'internal server error']
+
+# CSV field names
+CSV_FIELDS = {
+    'HAS_JSONLD': 'hasJSONLD?',
+    'WEBPAGE_URL': 'Dataset Webpage URL',
+    'NAME': 'Dataset Name',
+    'DESCRIPTION': 'Description',
+    'GROUP': 'Group',
+    'CREATOR': 'Creator',
+    'PROVIDER': 'Provider',
+    'PUBLISHER': 'Publisher',
+    'KEYWORDS': 'Keywords',
+    'BOX_LON_MIN': 'box_lon_min',
+    'BOX_LAT_MIN': 'box_lat_min',
+    'BOX_LON_MAX': 'box_lon_max',
+    'BOX_LAT_MAX': 'box_lat_max',
+}
+
+# Project root path (parent of scripts directory)
+PROJECT_ROOT = Path(__file__).parent.parent
+PROMPTS_DIR = PROJECT_ROOT / "prompts"
+DATA_DIR = PROJECT_ROOT / "data" / "objects" / "summoned"
+
 
 class AIClient:
     """Abstract base class for AI clients."""
@@ -51,6 +88,135 @@ class AIClient:
     def generate_jsonld(self, metadata: Dict, example_jsonld: str) -> str:
         """Generate JSON-LD from metadata."""
         raise NotImplementedError
+    
+    def _retry_with_timeout(self, func, *args, **kwargs):
+        """Helper method to retry a function call with timeout handling."""
+        for attempt in range(MAX_RETRIES):
+            try:
+                return func(*args, **kwargs)
+            except TimeoutError as e:
+                if attempt < MAX_RETRIES - 1:
+                    print(f"  Timeout occurred, retrying ({attempt + 1}/{MAX_RETRIES})...")
+                    continue
+                else:
+                    raise
+    
+    def _extract_json_from_response(self, response: str) -> str:
+        """Extract and validate JSON from API response."""
+        try:
+            if '{' in response:
+                start = response.find('{')
+                end = response.rfind('}') + 1
+                json_str = response[start:end]
+                json_data = json.loads(json_str)
+                # Fix spatial coverage format if needed
+                json_data = self._fix_spatial_coverage(json_data)
+                return json.dumps(json_data, indent=2)
+            return response
+        except (json.JSONDecodeError, ValueError):
+            return response
+    
+    def _fix_spatial_coverage(self, data: Dict) -> Dict:
+        """Fix spatial coverage box format to match Schema.org standard.
+        
+        Converts "20 -40 50 10" to "20,-40 50,10" format.
+        """
+        if isinstance(data, dict) and 'spatialCoverage' in data:
+            spatial = data['spatialCoverage']
+            if isinstance(spatial, dict) and 'geo' in spatial:
+                geo = spatial['geo']
+                if isinstance(geo, dict) and 'box' in geo:
+                    box = geo['box']
+                    if isinstance(box, str):
+                        # Fix format: "20 -40 50 10" -> "20,-40 50,10"
+                        parts = box.split()
+                        if len(parts) == 4 and ',' not in box:
+                            try:
+                                # Convert to proper format: "west,south east,north"
+                                west, south, east, north = map(float, parts)
+                                geo['box'] = f"{west},{south} {east},{north}"
+                            except (ValueError, TypeError):
+                                pass  # If conversion fails, leave as is
+        return data
+    
+    def _is_server_error(self, error: Exception) -> bool:
+        """Check if an exception represents a server error."""
+        error_str = str(error).lower()
+        return any(code in error_str for code in SERVER_ERROR_CODES)
+    
+    def _call_api_with_timeout(self, api_call_func):
+        """Execute API call with threading-based timeout enforcement."""
+        result = [None]
+        exception = [None]
+        
+        def api_call():
+            try:
+                result[0] = api_call_func()
+            except Exception as e:
+                exception[0] = e
+        
+        thread = threading.Thread(target=api_call)
+        thread.daemon = True
+        thread.start()
+        thread.join(timeout=API_TIMEOUT_SECONDS)
+        
+        if thread.is_alive():
+            print(f"  Request exceeded {API_TIMEOUT_SECONDS/60:.0f} minute timeout")
+            raise TimeoutError(f"API request timed out after {API_TIMEOUT_SECONDS/60:.0f} minutes")
+        
+        if exception[0]:
+            error_msg = str(exception[0]).lower()
+            # Check for timeout errors
+            if "timeout" in error_msg or "timed out" in error_msg:
+                raise TimeoutError("API request timed out")
+            # Check for server errors
+            if self._is_server_error(exception[0]):
+                raise Exception(f"API server error: {exception[0]}")
+            # Re-raise other exceptions
+            raise exception[0]
+        
+        if result[0] is None:
+            raise TimeoutError("API request timed out")
+        
+        return result[0]
+    
+    def _load_prompt_template(self, filename: str) -> str:
+        """Load a prompt template from the prompts directory."""
+        prompt_path = PROMPTS_DIR / filename
+        with open(prompt_path, 'r', encoding='utf-8') as f:
+            return f.read()
+    
+    def _format_detection_prompt(self, url: str, content: str, context: Dict, content_limit: int) -> str:
+        """Format the dataset detection prompt."""
+        template = self._load_prompt_template("dataset-detection-prompt.txt")
+        limited_content = content[:content_limit]
+        return template.format(
+            URL=url,
+            CONTENT=limited_content,
+            DATASET_NAME=context.get(CSV_FIELDS['NAME'], ''),
+            GROUP=context.get(CSV_FIELDS['GROUP'], ''),
+            DESCRIPTION=context.get(CSV_FIELDS['DESCRIPTION'], '')
+        )
+    
+    def _format_generation_prompt(self, metadata: Dict, example_jsonld: str) -> str:
+        """Format the JSON-LD generation prompt."""
+        template = self._load_prompt_template("jsonld-generation-prompt.txt")
+        escaped_example = example_jsonld[:EXAMPLE_JSONLD_LIMIT].replace('{', '{{').replace('}', '}}')
+        escaped_metadata = json.dumps(metadata.get('extracted', {}), indent=2).replace('{', '{{').replace('}', '}}')
+        
+        return template.format(
+            DATASET_NAME=metadata.get('name', ''),
+            URL=metadata.get('url', ''),
+            DESCRIPTION=metadata.get('description', ''),
+            GROUP=metadata.get('group', ''),
+            CREATOR=metadata.get('creator', ''),
+            PROVIDER=metadata.get('provider', ''),
+            PUBLISHER=metadata.get('publisher', ''),
+            KEYWORDS=metadata.get('keywords', ''),
+            SPATIAL_COVERAGE=metadata.get('spatial_coverage', ''),
+            EXTRACTED_METADATA=escaped_metadata,
+            EXAMPLE_JSONLD=escaped_example
+        )
 
 
 class OpenAIClient(AIClient):
@@ -61,132 +227,48 @@ class OpenAIClient(AIClient):
         self.model = model
     
     def _call_api(self, prompt: str, system_prompt: str = None) -> str:
-        """Make API call to OpenAI."""
+        """Make API call to OpenAI with timeout enforcement."""
         messages = []
         if system_prompt:
             messages.append({"role": "system", "content": system_prompt})
         messages.append({"role": "user", "content": prompt})
         
         print(f"  Sending request to API (this may take 1-3 minutes)...")
-        try:
-            response = self.client.chat.completions.create(
+        
+        def api_call():
+            return self.client.chat.completions.create(
                 model=self.model,
                 messages=messages,
                 temperature=0.3,
-                timeout=180.0  # 3 minute timeout
+                timeout=API_TIMEOUT_SECONDS
             )
-            print(f"  Received response")
-        except Exception as e:
-            error_msg = str(e).lower()
-            if "timeout" in error_msg or "timed out" in error_msg:
-                raise TimeoutError("API request timed out")
-            raise
+        
+        response = self._call_api_with_timeout(api_call)
+        print(f"  Received response")
         return response.choices[0].message.content
     
     def detect_datasets(self, url: str, webpage_content: str, context: Dict) -> Dict:
         """Detect datasets using OpenAI."""
-        prompt_path = Path(__file__).parent.parent / "prompts" / "dataset-detection-prompt.txt"
-        with open(prompt_path, 'r', encoding='utf-8') as f:
-            prompt_template = f.read()
+        prompt = self._format_detection_prompt(url, webpage_content, context, CONTENT_LIMIT_DETECTION)
         
-        # Limit content to 5000 chars to speed up API calls
-        limited_content = webpage_content[:5000]
-        prompt = prompt_template.format(
-            URL=url,
-            CONTENT=limited_content,
-            DATASET_NAME=context.get('Dataset Name', ''),
-            GROUP=context.get('Group', ''),
-            DESCRIPTION=context.get('Description', '')
-        )
-        
-        # Retry logic for timeouts
-        max_retries = 2
-        for attempt in range(max_retries):
+        def call_detect():
+            response = self._call_api(prompt)
             try:
-                response = self._call_api(prompt)
-                try:
-                    return json.loads(response)
-                except json.JSONDecodeError:
-                    return {"raw_response": response, "error": "Failed to parse JSON"}
-            except TimeoutError as e:
-                if attempt < max_retries - 1:
-                    print(f"  Timeout occurred, retrying ({attempt + 1}/{max_retries})...")
-                    continue
-                else:
-                    raise
+                return json.loads(response)
+            except json.JSONDecodeError:
+                return {"raw_response": response, "error": "Failed to parse JSON"}
+        
+        return self._retry_with_timeout(call_detect)
     
     def generate_jsonld(self, metadata: Dict, example_jsonld: str) -> str:
         """Generate JSON-LD using OpenAI."""
-        prompt_path = Path(__file__).parent.parent / "prompts" / "jsonld-generation-prompt.txt"
-        with open(prompt_path, 'r', encoding='utf-8') as f:
-            prompt_template = f.read()
+        prompt = self._format_generation_prompt(metadata, example_jsonld)
         
-        # Escape curly braces in example JSON-LD to prevent format errors
-        escaped_example = example_jsonld[:2000].replace('{', '{{').replace('}', '}}')
+        def call_generate():
+            response = self._call_api(prompt)
+            return self._extract_json_from_response(response)
         
-        prompt = prompt_template.format(
-            DATASET_NAME=metadata.get('name', ''),
-            URL=metadata.get('url', ''),
-            DESCRIPTION=metadata.get('description', ''),
-            GROUP=metadata.get('group', ''),
-            CREATOR=metadata.get('creator', ''),
-            PROVIDER=metadata.get('provider', ''),
-            PUBLISHER=metadata.get('publisher', ''),
-            KEYWORDS=metadata.get('keywords', ''),
-            SPATIAL_COVERAGE=metadata.get('spatial_coverage', ''),
-            EXTRACTED_METADATA=json.dumps(metadata.get('extracted', {}), indent=2).replace('{', '{{').replace('}', '}}'),
-            EXAMPLE_JSONLD=escaped_example
-        )
-        
-        # Retry logic for timeouts
-        max_retries = 2
-        for attempt in range(max_retries):
-            try:
-                response = self._call_api(prompt)
-                # Try to extract JSON from response
-                try:
-                    # Look for JSON block in response
-                    if '{' in response:
-                        start = response.find('{')
-                        end = response.rfind('}') + 1
-                        json_str = response[start:end]
-                        # Validate it's valid JSON
-                        json_data = json.loads(json_str)
-                        # Fix spatial coverage format if needed
-                        json_data = self._fix_spatial_coverage(json_data)
-                        return json.dumps(json_data, indent=2)
-                    return response
-                except (json.JSONDecodeError, ValueError):
-                    return response
-            except TimeoutError as e:
-                if attempt < max_retries - 1:
-                    print(f"  Timeout occurred, retrying ({attempt + 1}/{max_retries})...")
-                    continue
-                else:
-                    raise
-            except Exception as e:
-                raise
-    
-    def _fix_spatial_coverage(self, data: Dict) -> Dict:
-        """Fix spatial coverage box format to match Schema.org standard."""
-        if isinstance(data, dict) and 'spatialCoverage' in data:
-            spatial = data['spatialCoverage']
-            if isinstance(spatial, dict) and 'geo' in spatial:
-                geo = spatial['geo']
-                if isinstance(geo, dict) and 'box' in geo:
-                    box = geo['box']
-                    if isinstance(box, str):
-                        # Fix format: "20 -40 50 10" -> "20,-40 50,10"
-                        # Check if it's space-separated (wrong format)
-                        parts = box.split()
-                        if len(parts) == 4 and ',' not in box:
-                            try:
-                                # Convert to proper format: "west,south east,north"
-                                west, south, east, north = map(float, parts)
-                                geo['box'] = f"{west},{south} {east},{north}"
-                            except (ValueError, TypeError):
-                                pass  # If conversion fails, leave as is
-        return data
+        return self._retry_with_timeout(call_generate)
 
 
 class NRPClient(OpenAIClient):
@@ -208,126 +290,44 @@ class AnthropicClient(AIClient):
         self.model = model
     
     def _call_api(self, prompt: str, system_prompt: str = None) -> str:
-        """Make API call to Anthropic."""
+        """Make API call to Anthropic with timeout enforcement."""
         print(f"  Sending request to API (this may take 1-3 minutes)...")
-        try:
-            response = self.client.messages.create(
+        
+        def api_call():
+            return self.client.messages.create(
                 model=self.model,
                 max_tokens=4096,
                 system=system_prompt or "You are a helpful assistant that generates structured data.",
                 messages=[{"role": "user", "content": prompt}],
-                timeout=180.0  # 3 minute timeout
+                timeout=API_TIMEOUT_SECONDS
             )
-            print(f"  Received response")
-            return response.content[0].text
-        except Exception as e:
-            error_msg = str(e).lower()
-            if "timeout" in error_msg or "timed out" in error_msg:
-                raise TimeoutError("API request timed out")
-            raise
+        
+        response = self._call_api_with_timeout(api_call)
+        print(f"  Received response")
+        return response.content[0].text
     
     def detect_datasets(self, url: str, webpage_content: str, context: Dict) -> Dict:
         """Detect datasets using Anthropic."""
-        prompt_path = Path(__file__).parent.parent / "prompts" / "dataset-detection-prompt.txt"
-        with open(prompt_path, 'r', encoding='utf-8') as f:
-            prompt_template = f.read()
+        prompt = self._format_detection_prompt(url, webpage_content, context, CONTENT_LIMIT_ANTHROPIC)
         
-        prompt = prompt_template.format(
-            URL=url,
-            CONTENT=webpage_content[:10000],
-            DATASET_NAME=context.get('Dataset Name', ''),
-            GROUP=context.get('Group', ''),
-            DESCRIPTION=context.get('Description', '')
-        )
-        
-        # Retry logic for timeouts
-        max_retries = 2
-        for attempt in range(max_retries):
+        def call_detect():
+            response = self._call_api(prompt)
             try:
-                response = self._call_api(prompt)
-                try:
-                    return json.loads(response)
-                except json.JSONDecodeError:
-                    return {"raw_response": response, "error": "Failed to parse JSON"}
-            except TimeoutError as e:
-                if attempt < max_retries - 1:
-                    print(f"  Timeout occurred, retrying ({attempt + 1}/{max_retries})...")
-                    continue
-                else:
-                    raise
+                return json.loads(response)
+            except json.JSONDecodeError:
+                return {"raw_response": response, "error": "Failed to parse JSON"}
+        
+        return self._retry_with_timeout(call_detect)
     
     def generate_jsonld(self, metadata: Dict, example_jsonld: str) -> str:
         """Generate JSON-LD using Anthropic."""
-        prompt_path = Path(__file__).parent.parent / "prompts" / "jsonld-generation-prompt.txt"
-        with open(prompt_path, 'r', encoding='utf-8') as f:
-            prompt_template = f.read()
+        prompt = self._format_generation_prompt(metadata, example_jsonld)
         
-        # Escape curly braces in example JSON-LD to prevent format errors
-        escaped_example = example_jsonld[:2000].replace('{', '{{').replace('}', '}}')
+        def call_generate():
+            response = self._call_api(prompt)
+            return self._extract_json_from_response(response)
         
-        prompt = prompt_template.format(
-            DATASET_NAME=metadata.get('name', ''),
-            URL=metadata.get('url', ''),
-            DESCRIPTION=metadata.get('description', ''),
-            GROUP=metadata.get('group', ''),
-            CREATOR=metadata.get('creator', ''),
-            PROVIDER=metadata.get('provider', ''),
-            PUBLISHER=metadata.get('publisher', ''),
-            KEYWORDS=metadata.get('keywords', ''),
-            SPATIAL_COVERAGE=metadata.get('spatial_coverage', ''),
-            EXTRACTED_METADATA=json.dumps(metadata.get('extracted', {}), indent=2).replace('{', '{{').replace('}', '}}'),
-            EXAMPLE_JSONLD=escaped_example
-        )
-        
-        # Retry logic for timeouts
-        max_retries = 2
-        for attempt in range(max_retries):
-            try:
-                response = self._call_api(prompt)
-                try:
-                    if '{' in response:
-                        start = response.find('{')
-                        end = response.rfind('}') + 1
-                        json_str = response[start:end]
-                        json_data = json.loads(json_str)
-                        # Fix spatial coverage format if needed
-                        json_data = self._fix_spatial_coverage(json_data)
-                        return json.dumps(json_data, indent=2)
-                    return response
-                except (json.JSONDecodeError, ValueError):
-                    return response
-            except TimeoutError as e:
-                if attempt < max_retries - 1:
-                    print(f"  Timeout occurred, retrying ({attempt + 1}/{max_retries})...")
-                    continue
-                else:
-                    raise
-            except Exception as e:
-                raise
-    
-    def _fix_spatial_coverage(self, data: Dict) -> Dict:
-        """Fix spatial coverage box format to match Schema.org standard.
-        
-        Converts "20 -40 50 10" to "20,-40 50,10" format.
-        """
-        if isinstance(data, dict) and 'spatialCoverage' in data:
-            spatial = data['spatialCoverage']
-            if isinstance(spatial, dict) and 'geo' in spatial:
-                geo = spatial['geo']
-                if isinstance(geo, dict) and 'box' in geo:
-                    box = geo['box']
-                    if isinstance(box, str):
-                        # Fix format: "20 -40 50 10" -> "20,-40 50,10"
-                        # Check if it's space-separated without commas (wrong format)
-                        parts = box.split()
-                        if len(parts) == 4 and ',' not in box:
-                            try:
-                                # Convert to proper format: "west,south east,north"
-                                west, south, east, north = map(float, parts)
-                                geo['box'] = f"{west},{south} {east},{north}"
-                            except (ValueError, TypeError):
-                                pass  # If conversion fails, leave as is
-        return data
+        return self._retry_with_timeout(call_generate)
 
 
 def fetch_webpage(url: str) -> Optional[str]:
@@ -336,7 +336,7 @@ def fetch_webpage(url: str) -> Optional[str]:
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
         }
-        response = requests.get(url, headers=headers, timeout=30)
+        response = requests.get(url, headers=headers, timeout=WEBPAGE_TIMEOUT)
         response.raise_for_status()
         return response.text
     except Exception as e:
@@ -354,12 +354,12 @@ def extract_text_content(html: str) -> str:
         return soup.get_text(separator=' ', strip=True)
     except Exception as e:
         print(f"Error parsing HTML: {e}")
-        return html[:10000]  # Return first 10k chars if parsing fails
+        return html[:HTML_FALLBACK_LIMIT]  # Return first N chars if parsing fails
 
 
 def load_example_jsonld() -> str:
     """Load an example JSON-LD file for reference."""
-    example_path = Path(__file__).parent.parent / "data" / "objects" / "summoned" / "gpp" / "2d78c4242a108f70ea2c0604964dc095b34bfd7b.jsonld"
+    example_path = DATA_DIR / "gpp" / "2d78c4242a108f70ea2c0604964dc095b34bfd7b.jsonld"
     if example_path.exists():
         with open(example_path, 'r', encoding='utf-8') as f:
             return f.read()
@@ -380,11 +380,10 @@ def save_jsonld(jsonld_str: str, output_dir: Path, dataset_name: str, url: str) 
     """Save JSON-LD to file."""
     # Create safe filename from dataset name
     safe_name = "".join(c for c in dataset_name if c.isalnum() or c in (' ', '-', '_')).rstrip()
-    safe_name = safe_name.replace(' ', '_')[:50]  # Limit length
+    safe_name = safe_name.replace(' ', '_')[:FILENAME_MAX_LENGTH]
     
     # Use URL hash as fallback
-    import hashlib
-    url_hash = hashlib.sha1(url.encode()).hexdigest()[:8]
+    url_hash = hashlib.sha1(url.encode()).hexdigest()[:URL_HASH_LENGTH]
     
     filename = f"{safe_name}_{url_hash}.jsonld"
     output_path = output_dir / filename
@@ -441,7 +440,11 @@ def main():
         html = fetch_webpage(args.test_url)
         if html:
             content = extract_text_content(html)
-            context = {'Dataset Name': 'Test Dataset', 'Group': 'test', 'Description': ''}
+            context = {
+                CSV_FIELDS['NAME']: 'Test Dataset',
+                CSV_FIELDS['GROUP']: 'test',
+                CSV_FIELDS['DESCRIPTION']: ''
+            }
             result = client.detect_datasets(args.test_url, content, context)
             print("\n=== Detection Result ===")
             print(json.dumps(result, indent=2))
@@ -454,8 +457,8 @@ def main():
     # Filter datasets that need JSON-LD
     to_process = [
         d for d in datasets 
-        if d.get('hasJSONLD?', '').upper() in ('FALSE', '#ERROR!', '')
-        and d.get('Dataset Webpage URL', '').strip()
+        if d.get(CSV_FIELDS['HAS_JSONLD'], '').upper() in ('FALSE', '#ERROR!', '')
+        and d.get(CSV_FIELDS['WEBPAGE_URL'], '').strip()
     ]
     
     if args.limit:
@@ -466,8 +469,8 @@ def main():
     timed_out_urls = []
     
     for i, dataset in enumerate(to_process, 1):
-        url = dataset.get('Dataset Webpage URL', '').strip()
-        name = dataset.get('Dataset Name', 'Unknown')
+        url = dataset.get(CSV_FIELDS['WEBPAGE_URL'], '').strip()
+        name = dataset.get(CSV_FIELDS['NAME'], 'Unknown')
         
         if not url:
             print(f"[{i}/{len(to_process)}] Skipping {name}: No URL")
@@ -492,24 +495,37 @@ def main():
             detection_result = client.detect_datasets(url, content, dataset)
             print(f"  Detection complete")
         except TimeoutError:
-            print(f"  Error: Timed out after 2 retries. Skipping this dataset.")
-            timed_out_urls.append({'name': name, 'url': url})
+            print(f"  Error: Timed out after {MAX_RETRIES} retries. Skipping this dataset.")
+            timed_out_urls.append({'name': name, 'url': url, 'reason': 'timeout'})
             continue
         except Exception as e:
-            print(f"  Error during detection: {e}")
+            # Check if it's a server error
+            if any(code in str(e).lower() for code in SERVER_ERROR_CODES):
+                print(f"  Error: API server error during detection. Skipping this dataset.")
+                print(f"  Details: {e}")
+                timed_out_urls.append({'name': name, 'url': url, 'reason': 'server_error'})
+            else:
+                print(f"  Error during detection: {e}")
+                timed_out_urls.append({'name': name, 'url': url, 'reason': 'detection_error'})
             continue
         
         # Prepare metadata
         metadata = {
             'name': name,
             'url': url,
-            'description': dataset.get('Description', ''),
-            'group': dataset.get('Group', ''),
-            'creator': dataset.get('Creator', ''),
-            'provider': dataset.get('Provider', ''),
-            'publisher': dataset.get('Publisher', ''),
-            'keywords': dataset.get('Keywords', ''),
-            'spatial_coverage': f"{dataset.get('box_lon_min', '')},{dataset.get('box_lat_min', '')},{dataset.get('box_lon_max', '')},{dataset.get('box_lat_max', '')}" if dataset.get('box_lon_min') else '',
+            'description': dataset.get(CSV_FIELDS['DESCRIPTION'], ''),
+            'group': dataset.get(CSV_FIELDS['GROUP'], ''),
+            'creator': dataset.get(CSV_FIELDS['CREATOR'], ''),
+            'provider': dataset.get(CSV_FIELDS['PROVIDER'], ''),
+            'publisher': dataset.get(CSV_FIELDS['PUBLISHER'], ''),
+            'keywords': dataset.get(CSV_FIELDS['KEYWORDS'], ''),
+            'spatial_coverage': (
+                f"{dataset.get(CSV_FIELDS['BOX_LON_MIN'], '')},"
+                f"{dataset.get(CSV_FIELDS['BOX_LAT_MIN'], '')},"
+                f"{dataset.get(CSV_FIELDS['BOX_LON_MAX'], '')},"
+                f"{dataset.get(CSV_FIELDS['BOX_LAT_MAX'], '')}"
+                if dataset.get(CSV_FIELDS['BOX_LON_MIN']) else ''
+            ),
             'extracted': detection_result
         }
         
@@ -529,20 +545,38 @@ def main():
             output_path = save_jsonld(jsonld, output_dir, name, url)
             print(f"  Saved to: {output_path}")
         except TimeoutError:
-            print(f"  Error: Timed out after 2 retries. Skipping this dataset.")
-            timed_out_urls.append({'name': name, 'url': url})
+            print(f"  Error: Timed out after {MAX_RETRIES} retries. Skipping this dataset.")
+            timed_out_urls.append({'name': name, 'url': url, 'reason': 'timeout'})
             continue
         except Exception as e:
-            print(f"  Error: {e}")
+            # Check if it's a server error
+            if any(code in str(e).lower() for code in SERVER_ERROR_CODES):
+                print(f"  Error: API server error after {MAX_RETRIES} retries. Skipping this dataset.")
+                print(f"  Details: {e}")
+                timed_out_urls.append({'name': name, 'url': url, 'reason': 'server_error'})
+            else:
+                print(f"  Error: {e}. Skipping this dataset.")
+                timed_out_urls.append({'name': name, 'url': url, 'reason': 'other_error'})
             continue
     
-    # Print summary of timed out URLs
+    # Print summary of failed URLs
     if timed_out_urls:
         print(f"\n{'='*60}")
-        print(f"Summary: {len(timed_out_urls)} dataset(s) timed out:")
+        print(f"Summary: {len(timed_out_urls)} dataset(s) failed:")
         print(f"{'='*60}")
+        # Group by reason
+        by_reason = {}
         for item in timed_out_urls:
-            print(f"  - {item['name']}: {item['url']}")
+            reason = item.get('reason', 'unknown')
+            if reason not in by_reason:
+                by_reason[reason] = []
+            by_reason[reason].append(item)
+        
+        for reason, items in by_reason.items():
+            reason_name = reason.replace('_', ' ').title()
+            print(f"\n{reason_name} ({len(items)}):")
+            for item in items:
+                print(f"  - {item['name']}: {item['url']}")
         print(f"{'='*60}")
     else:
         print(f"\n{'='*60}")
