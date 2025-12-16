@@ -42,9 +42,9 @@ import requests
 from bs4 import BeautifulSoup
 
 # Constants
-API_TIMEOUT_SECONDS = 180.0  # 3 minutes
-MAX_RETRIES = 2
-CONTENT_LIMIT_DETECTION = 5000  # Characters for detection prompt
+API_TIMEOUT_SECONDS = 360.0  # 6 minutes
+MAX_RETRIES = 1
+CONTENT_LIMIT_DETECTION = 3000  # Characters for detection prompt (reduced to avoid timeouts)
 CONTENT_LIMIT_ANTHROPIC = 10000  # Characters for Anthropic detection
 EXAMPLE_JSONLD_LIMIT = 2000  # Characters for example JSON-LD in prompt
 WEBPAGE_TIMEOUT = 30  # Seconds for webpage fetching
@@ -175,9 +175,9 @@ class AIClient:
             # Check for timeout errors
             if "timeout" in error_msg or "timed out" in error_msg:
                 raise TimeoutError("API request timed out")
-            # Check for connection errors (should be retried)
+            # Check for connection errors
             if any(err in error_msg for err in CONNECTION_ERROR_PATTERNS):
-                raise TimeoutError(f"Connection error (will retry): {exception[0]}")
+                raise TimeoutError(f"Connection error: {exception[0]}")
             # Check for server errors
             if self._is_server_error(exception[0]):
                 raise Exception(f"API server error: {exception[0]}")
@@ -245,7 +245,7 @@ class OpenAIClient(AIClient):
             messages.append({"role": "system", "content": system_prompt})
         messages.append({"role": "user", "content": prompt})
         
-        print(f"  Sending request to API for {operation} (this may take 1-3 minutes)...")
+        print(f"  Sending request to API for {operation} (this may take 1-6 minutes)...")
         
         def api_call():
             return self.client.chat.completions.create(
@@ -265,6 +265,11 @@ class OpenAIClient(AIClient):
         """Detect datasets using OpenAI."""
         prompt = self._format_detection_prompt(url, webpage_content, context, CONTENT_LIMIT_DETECTION)
         
+        # Debug: Log prompt size
+        prompt_size = len(prompt)
+        if prompt_size > 10000:
+            print(f"  Warning: Large prompt size ({prompt_size} characters), this may cause timeouts")
+        
         def call_detect():
             response = self._call_api(prompt, operation="dataset detection")
             try:
@@ -277,6 +282,11 @@ class OpenAIClient(AIClient):
     def generate_jsonld(self, metadata: Dict, example_jsonld: str) -> str:
         """Generate JSON-LD using OpenAI."""
         prompt = self._format_generation_prompt(metadata, example_jsonld)
+        
+        # Debug: Log prompt size
+        prompt_size = len(prompt)
+        if prompt_size > 15000:
+            print(f"  Warning: Large prompt size ({prompt_size} characters), this may cause timeouts")
         
         def call_generate():
             response = self._call_api(prompt, operation="JSON-LD generation")
@@ -305,7 +315,7 @@ class AnthropicClient(AIClient):
     
     def _call_api(self, prompt: str, system_prompt: str = None, operation: str = "processing") -> str:
         """Make API call to Anthropic with timeout enforcement."""
-        print(f"  Sending request to API for {operation} (this may take 1-3 minutes)...")
+        print(f"  Sending request to API for {operation} (this may take 1-6 minutes)...")
         
         def api_call():
             return self.client.messages.create(
@@ -326,6 +336,11 @@ class AnthropicClient(AIClient):
         """Detect datasets using Anthropic."""
         prompt = self._format_detection_prompt(url, webpage_content, context, CONTENT_LIMIT_ANTHROPIC)
         
+        # Debug: Log prompt size
+        prompt_size = len(prompt)
+        if prompt_size > 20000:
+            print(f"  Warning: Large prompt size ({prompt_size} characters), this may cause timeouts")
+        
         def call_detect():
             response = self._call_api(prompt, operation="dataset detection")
             try:
@@ -338,6 +353,11 @@ class AnthropicClient(AIClient):
     def generate_jsonld(self, metadata: Dict, example_jsonld: str) -> str:
         """Generate JSON-LD using Anthropic."""
         prompt = self._format_generation_prompt(metadata, example_jsonld)
+        
+        # Debug: Log prompt size
+        prompt_size = len(prompt)
+        if prompt_size > 20000:
+            print(f"  Warning: Large prompt size ({prompt_size} characters), this may cause timeouts")
         
         def call_generate():
             response = self._call_api(prompt, operation="JSON-LD generation")
@@ -525,7 +545,7 @@ def main():
             detection_result = client.detect_datasets(url, content, dataset)
             print(f"  Detection complete")
         except TimeoutError:
-            print(f"  Error: Timed out after {MAX_RETRIES} retries. Skipping this dataset.")
+            print(f"  Error: Request timed out. Skipping this dataset.")
             timed_out_urls.append({'name': name, 'url': url, 'reason': 'timeout'})
             continue
         except Exception as e:
@@ -575,13 +595,13 @@ def main():
             output_path = save_jsonld(jsonld, output_dir, name, url)
             print(f"  Saved to: {output_path}")
         except TimeoutError:
-            print(f"  Error: Timed out after {MAX_RETRIES} retries. Skipping this dataset.")
+            print(f"  Error: Request timed out. Skipping this dataset.")
             timed_out_urls.append({'name': name, 'url': url, 'reason': 'timeout'})
             continue
         except Exception as e:
             # Check if it's a server error
             if any(code in str(e).lower() for code in SERVER_ERROR_CODES):
-                print(f"  Error: API server error after {MAX_RETRIES} retries. Skipping this dataset.")
+                print(f"  Error: API server error. Skipping this dataset.")
                 print(f"  Details: {e}")
                 timed_out_urls.append({'name': name, 'url': url, 'reason': 'server_error'})
             else:
