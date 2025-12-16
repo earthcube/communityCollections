@@ -67,14 +67,20 @@ class OpenAIClient(AIClient):
             messages.append({"role": "system", "content": system_prompt})
         messages.append({"role": "user", "content": prompt})
         
-        print(f"  Sending request to API (this may take a minute)...")
-        response = self.client.chat.completions.create(
-            model=self.model,
-            messages=messages,
-            temperature=0.3,
-            timeout=120.0  # 2 minute timeout
-        )
-        print(f"  Received response")
+        print(f"  Sending request to API (this may take 1-3 minutes)...")
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model,
+                messages=messages,
+                temperature=0.3,
+                timeout=180.0  # 3 minute timeout
+            )
+            print(f"  Received response")
+        except Exception as e:
+            error_msg = str(e).lower()
+            if "timeout" in error_msg or "timed out" in error_msg:
+                raise TimeoutError("API request timed out")
+            raise
         return response.choices[0].message.content
     
     def detect_datasets(self, url: str, webpage_content: str, context: Dict) -> Dict:
@@ -93,11 +99,21 @@ class OpenAIClient(AIClient):
             DESCRIPTION=context.get('Description', '')
         )
         
-        response = self._call_api(prompt)
-        try:
-            return json.loads(response)
-        except json.JSONDecodeError:
-            return {"raw_response": response, "error": "Failed to parse JSON"}
+        # Retry logic for timeouts
+        max_retries = 2
+        for attempt in range(max_retries):
+            try:
+                response = self._call_api(prompt)
+                try:
+                    return json.loads(response)
+                except json.JSONDecodeError:
+                    return {"raw_response": response, "error": "Failed to parse JSON"}
+            except TimeoutError as e:
+                if attempt < max_retries - 1:
+                    print(f"  Timeout occurred, retrying ({attempt + 1}/{max_retries})...")
+                    continue
+                else:
+                    raise
     
     def generate_jsonld(self, metadata: Dict, example_jsonld: str) -> str:
         """Generate JSON-LD using OpenAI."""
@@ -122,22 +138,34 @@ class OpenAIClient(AIClient):
             EXAMPLE_JSONLD=escaped_example
         )
         
-        response = self._call_api(prompt)
-        # Try to extract JSON from response
-        try:
-            # Look for JSON block in response
-            if '{' in response:
-                start = response.find('{')
-                end = response.rfind('}') + 1
-                json_str = response[start:end]
-                # Validate it's valid JSON
-                json_data = json.loads(json_str)
-                # Fix spatial coverage format if needed
-                json_data = self._fix_spatial_coverage(json_data)
-                return json.dumps(json_data, indent=2)
-            return response
-        except (json.JSONDecodeError, ValueError):
-            return response
+        # Retry logic for timeouts
+        max_retries = 2
+        for attempt in range(max_retries):
+            try:
+                response = self._call_api(prompt)
+                # Try to extract JSON from response
+                try:
+                    # Look for JSON block in response
+                    if '{' in response:
+                        start = response.find('{')
+                        end = response.rfind('}') + 1
+                        json_str = response[start:end]
+                        # Validate it's valid JSON
+                        json_data = json.loads(json_str)
+                        # Fix spatial coverage format if needed
+                        json_data = self._fix_spatial_coverage(json_data)
+                        return json.dumps(json_data, indent=2)
+                    return response
+                except (json.JSONDecodeError, ValueError):
+                    return response
+            except TimeoutError as e:
+                if attempt < max_retries - 1:
+                    print(f"  Timeout occurred, retrying ({attempt + 1}/{max_retries})...")
+                    continue
+                else:
+                    raise
+            except Exception as e:
+                raise
     
     def _fix_spatial_coverage(self, data: Dict) -> Dict:
         """Fix spatial coverage box format to match Schema.org standard."""
@@ -181,13 +209,22 @@ class AnthropicClient(AIClient):
     
     def _call_api(self, prompt: str, system_prompt: str = None) -> str:
         """Make API call to Anthropic."""
-        response = self.client.messages.create(
-            model=self.model,
-            max_tokens=4096,
-            system=system_prompt or "You are a helpful assistant that generates structured data.",
-            messages=[{"role": "user", "content": prompt}]
-        )
-        return response.content[0].text
+        print(f"  Sending request to API (this may take 1-3 minutes)...")
+        try:
+            response = self.client.messages.create(
+                model=self.model,
+                max_tokens=4096,
+                system=system_prompt or "You are a helpful assistant that generates structured data.",
+                messages=[{"role": "user", "content": prompt}],
+                timeout=180.0  # 3 minute timeout
+            )
+            print(f"  Received response")
+            return response.content[0].text
+        except Exception as e:
+            error_msg = str(e).lower()
+            if "timeout" in error_msg or "timed out" in error_msg:
+                raise TimeoutError("API request timed out")
+            raise
     
     def detect_datasets(self, url: str, webpage_content: str, context: Dict) -> Dict:
         """Detect datasets using Anthropic."""
@@ -203,11 +240,21 @@ class AnthropicClient(AIClient):
             DESCRIPTION=context.get('Description', '')
         )
         
-        response = self._call_api(prompt)
-        try:
-            return json.loads(response)
-        except json.JSONDecodeError:
-            return {"raw_response": response, "error": "Failed to parse JSON"}
+        # Retry logic for timeouts
+        max_retries = 2
+        for attempt in range(max_retries):
+            try:
+                response = self._call_api(prompt)
+                try:
+                    return json.loads(response)
+                except json.JSONDecodeError:
+                    return {"raw_response": response, "error": "Failed to parse JSON"}
+            except TimeoutError as e:
+                if attempt < max_retries - 1:
+                    print(f"  Timeout occurred, retrying ({attempt + 1}/{max_retries})...")
+                    continue
+                else:
+                    raise
     
     def generate_jsonld(self, metadata: Dict, example_jsonld: str) -> str:
         """Generate JSON-LD using Anthropic."""
@@ -232,19 +279,31 @@ class AnthropicClient(AIClient):
             EXAMPLE_JSONLD=escaped_example
         )
         
-        response = self._call_api(prompt)
-        try:
-            if '{' in response:
-                start = response.find('{')
-                end = response.rfind('}') + 1
-                json_str = response[start:end]
-                json_data = json.loads(json_str)
-                # Fix spatial coverage format if needed
-                json_data = self._fix_spatial_coverage(json_data)
-                return json.dumps(json_data, indent=2)
-            return response
-        except (json.JSONDecodeError, ValueError):
-            return response
+        # Retry logic for timeouts
+        max_retries = 2
+        for attempt in range(max_retries):
+            try:
+                response = self._call_api(prompt)
+                try:
+                    if '{' in response:
+                        start = response.find('{')
+                        end = response.rfind('}') + 1
+                        json_str = response[start:end]
+                        json_data = json.loads(json_str)
+                        # Fix spatial coverage format if needed
+                        json_data = self._fix_spatial_coverage(json_data)
+                        return json.dumps(json_data, indent=2)
+                    return response
+                except (json.JSONDecodeError, ValueError):
+                    return response
+            except TimeoutError as e:
+                if attempt < max_retries - 1:
+                    print(f"  Timeout occurred, retrying ({attempt + 1}/{max_retries})...")
+                    continue
+                else:
+                    raise
+            except Exception as e:
+                raise
     
     def _fix_spatial_coverage(self, data: Dict) -> Dict:
         """Fix spatial coverage box format to match Schema.org standard.
@@ -404,6 +463,8 @@ def main():
     
     print(f"Processing {len(to_process)} datasets that need JSON-LD")
     
+    timed_out_urls = []
+    
     for i, dataset in enumerate(to_process, 1):
         url = dataset.get('Dataset Webpage URL', '').strip()
         name = dataset.get('Dataset Name', 'Unknown')
@@ -427,8 +488,16 @@ def main():
         
         # Detect datasets
         print("  Detecting datasets with AI...")
-        detection_result = client.detect_datasets(url, content, dataset)
-        print(f"  Detection complete")
+        try:
+            detection_result = client.detect_datasets(url, content, dataset)
+            print(f"  Detection complete")
+        except TimeoutError:
+            print(f"  Error: Timed out after 2 retries. Skipping this dataset.")
+            timed_out_urls.append({'name': name, 'url': url})
+            continue
+        except Exception as e:
+            print(f"  Error during detection: {e}")
+            continue
         
         # Prepare metadata
         metadata = {
@@ -446,18 +515,39 @@ def main():
         
         # Generate JSON-LD
         print("  Generating JSON-LD...")
-        jsonld = client.generate_jsonld(metadata, example_jsonld)
-        
-        # Validate JSON
         try:
-            json.loads(jsonld)
-            print("  Valid JSON")
-        except json.JSONDecodeError as e:
-            print(f"  Warning: Generated JSON may be invalid: {e}")
-        
-        # Save
-        output_path = save_jsonld(jsonld, output_dir, name, url)
-        print(f"  Saved to: {output_path}")
+            jsonld = client.generate_jsonld(metadata, example_jsonld)
+            
+            # Validate JSON
+            try:
+                json.loads(jsonld)
+                print("  Valid JSON")
+            except json.JSONDecodeError as e:
+                print(f"  Warning: Generated JSON may be invalid: {e}")
+            
+            # Save
+            output_path = save_jsonld(jsonld, output_dir, name, url)
+            print(f"  Saved to: {output_path}")
+        except TimeoutError:
+            print(f"  Error: Timed out after 2 retries. Skipping this dataset.")
+            timed_out_urls.append({'name': name, 'url': url})
+            continue
+        except Exception as e:
+            print(f"  Error: {e}")
+            continue
+    
+    # Print summary of timed out URLs
+    if timed_out_urls:
+        print(f"\n{'='*60}")
+        print(f"Summary: {len(timed_out_urls)} dataset(s) timed out:")
+        print(f"{'='*60}")
+        for item in timed_out_urls:
+            print(f"  - {item['name']}: {item['url']}")
+        print(f"{'='*60}")
+    else:
+        print(f"\n{'='*60}")
+        print("All datasets processed successfully!")
+        print(f"{'='*60}")
 
 
 if __name__ == '__main__':
