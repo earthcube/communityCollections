@@ -128,11 +128,34 @@ class OpenAIClient(AIClient):
                 end = response.rfind('}') + 1
                 json_str = response[start:end]
                 # Validate it's valid JSON
-                json.loads(json_str)
-                return json_str
+                json_data = json.loads(json_str)
+                # Fix spatial coverage format if needed
+                json_data = self._fix_spatial_coverage(json_data)
+                return json.dumps(json_data, indent=2)
             return response
         except (json.JSONDecodeError, ValueError):
             return response
+    
+    def _fix_spatial_coverage(self, data: Dict) -> Dict:
+        """Fix spatial coverage box format to match Schema.org standard."""
+        if isinstance(data, dict) and 'spatialCoverage' in data:
+            spatial = data['spatialCoverage']
+            if isinstance(spatial, dict) and 'geo' in spatial:
+                geo = spatial['geo']
+                if isinstance(geo, dict) and 'box' in geo:
+                    box = geo['box']
+                    if isinstance(box, str):
+                        # Fix format: "20 -40 50 10" -> "20,-40 50,10"
+                        # Check if it's space-separated (wrong format)
+                        parts = box.split()
+                        if len(parts) == 4 and ',' not in box:
+                            try:
+                                # Convert to proper format: "west,south east,north"
+                                west, south, east, north = map(float, parts)
+                                geo['box'] = f"{west},{south} {east},{north}"
+                            except (ValueError, TypeError):
+                                pass  # If conversion fails, leave as is
+        return data
 
 
 class NRPClient(OpenAIClient):
@@ -209,11 +232,37 @@ class AnthropicClient(AIClient):
                 start = response.find('{')
                 end = response.rfind('}') + 1
                 json_str = response[start:end]
-                json.loads(json_str)
-                return json_str
+                json_data = json.loads(json_str)
+                # Fix spatial coverage format if needed
+                json_data = self._fix_spatial_coverage(json_data)
+                return json.dumps(json_data, indent=2)
             return response
         except (json.JSONDecodeError, ValueError):
             return response
+    
+    def _fix_spatial_coverage(self, data: Dict) -> Dict:
+        """Fix spatial coverage box format to match Schema.org standard.
+        
+        Converts "20 -40 50 10" to "20,-40 50,10" format.
+        """
+        if isinstance(data, dict) and 'spatialCoverage' in data:
+            spatial = data['spatialCoverage']
+            if isinstance(spatial, dict) and 'geo' in spatial:
+                geo = spatial['geo']
+                if isinstance(geo, dict) and 'box' in geo:
+                    box = geo['box']
+                    if isinstance(box, str):
+                        # Fix format: "20 -40 50 10" -> "20,-40 50,10"
+                        # Check if it's space-separated without commas (wrong format)
+                        parts = box.split()
+                        if len(parts) == 4 and ',' not in box:
+                            try:
+                                # Convert to proper format: "west,south east,north"
+                                west, south, east, north = map(float, parts)
+                                geo['box'] = f"{west},{south} {east},{north}"
+                            except (ValueError, TypeError):
+                                pass  # If conversion fails, leave as is
+        return data
 
 
 def fetch_webpage(url: str) -> Optional[str]:

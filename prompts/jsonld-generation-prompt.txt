@@ -25,8 +25,12 @@ You are generating a JSON-LD (JSON for Linking Data) description for a scientifi
 5. Include all available metadata fields
 6. For creators, use Person or Organization types with proper structure
 7. Include distribution information if download links are available
-8. Add temporalCoverage if time period is known
-9. Add spatial coverage if geographic bounds are provided
+8. Add temporalCoverage if time period is known (format: "YYYY-MM-DD/YYYY-MM-DD")
+9. Add spatialCoverage if geographic bounds are provided:
+   - Use Place with geo containing GeoShape
+   - The box format MUST be: "west,south east,north" (comma-separated pairs, space between pairs)
+   - Example: For coordinates 20,-40,50,10 use box: "20,-40 50,10" (NOT "20 -40 50 10")
+   - Format: {"@type": "Place", "geo": {"@type": "GeoShape", "box": "west,south east,north"}}
 10. Include license and access information
 11. Use proper JSON-LD structure (arrays for multiple values, nested objects where appropriate)
 
