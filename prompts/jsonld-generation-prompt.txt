@@ -30,7 +30,7 @@ You are generating a JSON-LD (JSON for Linking Data) description for a scientifi
    - Use Place with geo containing GeoShape
    - The box format MUST be: "west,south east,north" (comma-separated pairs, space between pairs)
    - Example: For coordinates 20,-40,50,10 use box: "20,-40 50,10" (NOT "20 -40 50 10")
-   - Format: {"@type": "Place", "geo": {"@type": "GeoShape", "box": "west,south east,north"}}
+   - Format: {{"@type": "Place", "geo": {{"@type": "GeoShape", "box": "west,south east,north"}}}}
 10. Include license and access information
 11. Use proper JSON-LD structure (arrays for multiple values, nested objects where appropriate)
 

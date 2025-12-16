@@ -105,6 +105,9 @@ class OpenAIClient(AIClient):
         with open(prompt_path, 'r', encoding='utf-8') as f:
             prompt_template = f.read()
         
+        # Escape curly braces in example JSON-LD to prevent format errors
+        escaped_example = example_jsonld[:2000].replace('{', '{{').replace('}', '}}')
+        
         prompt = prompt_template.format(
             DATASET_NAME=metadata.get('name', ''),
             URL=metadata.get('url', ''),
@@ -115,8 +118,8 @@ class OpenAIClient(AIClient):
             PUBLISHER=metadata.get('publisher', ''),
             KEYWORDS=metadata.get('keywords', ''),
             SPATIAL_COVERAGE=metadata.get('spatial_coverage', ''),
-            EXTRACTED_METADATA=json.dumps(metadata.get('extracted', {}), indent=2),
-            EXAMPLE_JSONLD=example_jsonld[:2000]  # Limit example size
+            EXTRACTED_METADATA=json.dumps(metadata.get('extracted', {}), indent=2).replace('{', '{{').replace('}', '}}'),
+            EXAMPLE_JSONLD=escaped_example
         )
         
         response = self._call_api(prompt)
@@ -212,6 +215,9 @@ class AnthropicClient(AIClient):
         with open(prompt_path, 'r', encoding='utf-8') as f:
             prompt_template = f.read()
         
+        # Escape curly braces in example JSON-LD to prevent format errors
+        escaped_example = example_jsonld[:2000].replace('{', '{{').replace('}', '}}')
+        
         prompt = prompt_template.format(
             DATASET_NAME=metadata.get('name', ''),
             URL=metadata.get('url', ''),
@@ -222,8 +228,8 @@ class AnthropicClient(AIClient):
             PUBLISHER=metadata.get('publisher', ''),
             KEYWORDS=metadata.get('keywords', ''),
             SPATIAL_COVERAGE=metadata.get('spatial_coverage', ''),
-            EXTRACTED_METADATA=json.dumps(metadata.get('extracted', {}), indent=2),
-            EXAMPLE_JSONLD=example_jsonld[:2000]
+            EXTRACTED_METADATA=json.dumps(metadata.get('extracted', {}), indent=2).replace('{', '{{').replace('}', '}}'),
+            EXAMPLE_JSONLD=escaped_example
         )
         
         response = self._call_api(prompt)
