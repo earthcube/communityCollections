@@ -238,14 +238,14 @@ class OpenAIClient(AIClient):
         self.client = openai.OpenAI(api_key=api_key, base_url=base_url)
         self.model = model
     
-    def _call_api(self, prompt: str, system_prompt: str = None) -> str:
+    def _call_api(self, prompt: str, system_prompt: str = None, operation: str = "processing") -> str:
         """Make API call to OpenAI with timeout enforcement."""
         messages = []
         if system_prompt:
             messages.append({"role": "system", "content": system_prompt})
         messages.append({"role": "user", "content": prompt})
         
-        print(f"  Sending request to API (this may take 1-3 minutes)...")
+        print(f"  Sending request to API for {operation} (this may take 1-3 minutes)...")
         
         def api_call():
             return self.client.chat.completions.create(
@@ -266,7 +266,7 @@ class OpenAIClient(AIClient):
         prompt = self._format_detection_prompt(url, webpage_content, context, CONTENT_LIMIT_DETECTION)
         
         def call_detect():
-            response = self._call_api(prompt)
+            response = self._call_api(prompt, operation="dataset detection")
             try:
                 return json.loads(response)
             except json.JSONDecodeError:
@@ -279,7 +279,7 @@ class OpenAIClient(AIClient):
         prompt = self._format_generation_prompt(metadata, example_jsonld)
         
         def call_generate():
-            response = self._call_api(prompt)
+            response = self._call_api(prompt, operation="JSON-LD generation")
             return self._extract_json_from_response(response)
         
         return self._retry_with_timeout(call_generate)
@@ -303,9 +303,9 @@ class AnthropicClient(AIClient):
         self.client = anthropic.Anthropic(api_key=api_key)
         self.model = model
     
-    def _call_api(self, prompt: str, system_prompt: str = None) -> str:
+    def _call_api(self, prompt: str, system_prompt: str = None, operation: str = "processing") -> str:
         """Make API call to Anthropic with timeout enforcement."""
-        print(f"  Sending request to API (this may take 1-3 minutes)...")
+        print(f"  Sending request to API for {operation} (this may take 1-3 minutes)...")
         
         def api_call():
             return self.client.messages.create(
@@ -327,7 +327,7 @@ class AnthropicClient(AIClient):
         prompt = self._format_detection_prompt(url, webpage_content, context, CONTENT_LIMIT_ANTHROPIC)
         
         def call_detect():
-            response = self._call_api(prompt)
+            response = self._call_api(prompt, operation="dataset detection")
             try:
                 return json.loads(response)
             except json.JSONDecodeError:
@@ -340,7 +340,7 @@ class AnthropicClient(AIClient):
         prompt = self._format_generation_prompt(metadata, example_jsonld)
         
         def call_generate():
-            response = self._call_api(prompt)
+            response = self._call_api(prompt, operation="JSON-LD generation")
             return self._extract_json_from_response(response)
         
         return self._retry_with_timeout(call_generate)
