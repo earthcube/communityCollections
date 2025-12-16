@@ -1,0 +1,33 @@
+You are analyzing a scientific dataset webpage to identify available datasets and their metadata.
+
+**Task**: Examine the following webpage and identify:
+1. What datasets are available on this page?
+2. For each dataset found, extract:
+   - Dataset name/title
+   - Description
+   - Creator(s) or author(s)
+   - Publisher or organization
+   - Publication date
+   - Download links or access URLs
+   - Spatial coverage (if mentioned)
+   - Temporal coverage (if mentioned)
+   - License information
+   - Keywords or topics
+
+**Webpage URL**: {URL}
+**Webpage Content**: {CONTENT}
+
+**Context from Google Sheet**:
+- Expected Dataset Name: {DATASET_NAME}
+- Group/Category: {GROUP}
+- Description: {DESCRIPTION}
+
+**Instructions**:
+- If the page contains multiple datasets, list all of them
+- Focus on structured data products (not just documentation)
+- Look for download links, API endpoints, or data access points
+- Extract any existing JSON-LD or structured metadata if present
+- Note any errors or issues accessing the page
+
+**Output Format**: Provide a structured JSON response with the extracted information.
+
