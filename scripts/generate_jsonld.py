@@ -67,14 +67,14 @@ class OpenAIClient(AIClient):
             messages.append({"role": "system", "content": system_prompt})
         messages.append({"role": "user", "content": prompt})
         
-        print(f"  📤 Sending request to API (this may take a minute)...")
+        print(f"  Sending request to API (this may take a minute)...")
         response = self.client.chat.completions.create(
             model=self.model,
             messages=messages,
             temperature=0.3,
             timeout=120.0  # 2 minute timeout
         )
-        print(f"  ✓ Received response")
+        print(f"  Received response")
         return response.choices[0].message.content
     
     def detect_datasets(self, url: str, webpage_content: str, context: Dict) -> Dict:
@@ -361,19 +361,19 @@ def main():
         print(f"  URL: {url}")
         
         # Fetch webpage
-        print("  🌐 Fetching webpage...")
+        print("  Fetching webpage...")
         html = fetch_webpage(url)
         if not html:
-            print(f"  ⚠️  Failed to fetch webpage")
+            print(f"  Warning: Failed to fetch webpage")
             continue
         
         content = extract_text_content(html)
-        print(f"  ✓ Fetched {len(content)} characters")
+        print(f"  Fetched {len(content)} characters")
         
         # Detect datasets
-        print("  🔍 Detecting datasets with AI...")
+        print("  Detecting datasets with AI...")
         detection_result = client.detect_datasets(url, content, dataset)
-        print(f"  ✓ Detection complete")
+        print(f"  Detection complete")
         
         # Prepare metadata
         metadata = {
@@ -390,19 +390,19 @@ def main():
         }
         
         # Generate JSON-LD
-        print("  ✨ Generating JSON-LD...")
+        print("  Generating JSON-LD...")
         jsonld = client.generate_jsonld(metadata, example_jsonld)
         
         # Validate JSON
         try:
             json.loads(jsonld)
-            print("  ✓ Valid JSON")
+            print("  Valid JSON")
         except json.JSONDecodeError as e:
-            print(f"  ⚠️  Warning: Generated JSON may be invalid: {e}")
+            print(f"  Warning: Generated JSON may be invalid: {e}")
         
         # Save
         output_path = save_jsonld(jsonld, output_dir, name, url)
-        print(f"  💾 Saved to: {output_path}")
+        print(f"  Saved to: {output_path}")
 
 
 if __name__ == '__main__':
