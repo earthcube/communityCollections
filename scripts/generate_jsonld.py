@@ -55,6 +55,12 @@ HTML_FALLBACK_LIMIT = 10000  # Characters to return if HTML parsing fails
 # Server error codes to detect
 SERVER_ERROR_CODES = ['500', '502', '503', '504', 'internal server error']
 
+# Connection error patterns (should be retried)
+CONNECTION_ERROR_PATTERNS = [
+    'connection refused', 'connection reset', 'connection error',
+    'upstream connect error', 'disconnect/reset', 'delayed connect error'
+]
+
 # CSV field names
 CSV_FIELDS = {
     'HAS_JSONLD': 'hasJSONLD?',
@@ -169,6 +175,9 @@ class AIClient:
             # Check for timeout errors
             if "timeout" in error_msg or "timed out" in error_msg:
                 raise TimeoutError("API request timed out")
+            # Check for connection errors (should be retried)
+            if any(err in error_msg for err in CONNECTION_ERROR_PATTERNS):
+                raise TimeoutError(f"Connection error (will retry): {exception[0]}")
             # Check for server errors
             if self._is_server_error(exception[0]):
                 raise Exception(f"API server error: {exception[0]}")
@@ -183,6 +192,8 @@ class AIClient:
     def _load_prompt_template(self, filename: str) -> str:
         """Load a prompt template from the prompts directory."""
         prompt_path = PROMPTS_DIR / filename
+        if not prompt_path.exists():
+            raise FileNotFoundError(f"Prompt template not found: {prompt_path}")
         with open(prompt_path, 'r', encoding='utf-8') as f:
             return f.read()
     
@@ -201,7 +212,8 @@ class AIClient:
     def _format_generation_prompt(self, metadata: Dict, example_jsonld: str) -> str:
         """Format the JSON-LD generation prompt."""
         template = self._load_prompt_template("jsonld-generation-prompt.txt")
-        escaped_example = example_jsonld[:EXAMPLE_JSONLD_LIMIT].replace('{', '{{').replace('}', '}}')
+        # Handle empty example_jsonld
+        escaped_example = (example_jsonld[:EXAMPLE_JSONLD_LIMIT] if example_jsonld else '').replace('{', '{{').replace('}', '}}')
         escaped_metadata = json.dumps(metadata.get('extracted', {}), indent=2).replace('{', '{{').replace('}', '}}')
         
         return template.format(
@@ -245,6 +257,8 @@ class OpenAIClient(AIClient):
         
         response = self._call_api_with_timeout(api_call)
         print(f"  Received response")
+        if not response.choices or not response.choices[0].message.content:
+            raise ValueError("Empty response from API")
         return response.choices[0].message.content
     
     def detect_datasets(self, url: str, webpage_content: str, context: Dict) -> Dict:
@@ -304,6 +318,8 @@ class AnthropicClient(AIClient):
         
         response = self._call_api_with_timeout(api_call)
         print(f"  Received response")
+        if not response.content or not response.content[0].text:
+            raise ValueError("Empty response from API")
         return response.content[0].text
     
     def detect_datasets(self, url: str, webpage_content: str, context: Dict) -> Dict:
@@ -368,6 +384,8 @@ def load_example_jsonld() -> str:
 
 def read_csv(csv_path: str) -> List[Dict]:
     """Read the datasets CSV file."""
+    if not os.path.exists(csv_path):
+        raise FileNotFoundError(f"CSV file not found: {csv_path}")
     datasets = []
     with open(csv_path, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
@@ -382,10 +400,14 @@ def save_jsonld(jsonld_str: str, output_dir: Path, dataset_name: str, url: str) 
     safe_name = "".join(c for c in dataset_name if c.isalnum() or c in (' ', '-', '_')).rstrip()
     safe_name = safe_name.replace(' ', '_')[:FILENAME_MAX_LENGTH]
     
-    # Use URL hash as fallback
+    # Use URL hash as fallback (always include hash for uniqueness)
     url_hash = hashlib.sha1(url.encode()).hexdigest()[:URL_HASH_LENGTH]
     
-    filename = f"{safe_name}_{url_hash}.jsonld"
+    # If safe_name is empty, use just the hash
+    if not safe_name:
+        filename = f"dataset_{url_hash}.jsonld"
+    else:
+        filename = f"{safe_name}_{url_hash}.jsonld"
     output_path = output_dir / filename
     
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -451,7 +473,15 @@ def main():
         return
     
     # Process CSV
-    datasets = read_csv(args.csv)
+    try:
+        datasets = read_csv(args.csv)
+    except FileNotFoundError as e:
+        print(f"Error: {e}")
+        sys.exit(1)
+    except Exception as e:
+        print(f"Error reading CSV file: {e}")
+        sys.exit(1)
+    
     print(f"Found {len(datasets)} datasets in CSV")
     
     # Filter datasets that need JSON-LD
