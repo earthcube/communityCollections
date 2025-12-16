@@ -18,4 +18,4 @@ build/
 datasets.csv
 
 # Generated JSON-LD files
-data/objects/summoned/generated/
+#data/objects/summoned/generated/
