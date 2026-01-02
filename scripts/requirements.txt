@@ -4,6 +4,7 @@
 # AI API clients (install at least one)
 openai>=1.0.0
 anthropic>=0.18.0
+google-generativeai>=0.3.0
 
 # Web scraping and parsing
 requests>=2.31.0

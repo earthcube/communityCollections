@@ -37,6 +37,12 @@ try:
 except ImportError:
     ANTHROPIC_AVAILABLE = False
 
+try:
+    import google.generativeai as genai
+    GEMINI_AVAILABLE = True
+except ImportError:
+    GEMINI_AVAILABLE = False
+
 # Standard libraries
 import requests
 from bs4 import BeautifulSoup
@@ -366,6 +372,74 @@ class AnthropicClient(AIClient):
         return self._retry_with_timeout(call_generate)
 
 
+class GeminiClient(AIClient):
+    """Google Gemini API client."""
+    
+    def __init__(self, api_key: str, model: str = "gemini-pro"):
+        genai.configure(api_key=api_key)
+        self.model = genai.GenerativeModel(model)
+        print(f"Using Google Gemini API")
+        print(f"Using model: {model}")
+    
+    def _call_api(self, prompt: str, system_prompt: str = None, operation: str = "processing") -> str:
+        """Make API call to Gemini with timeout enforcement."""
+        print(f"  Sending request to API for {operation} (this may take 1-6 minutes)...")
+        
+        # Gemini uses generate_content, combine system and user prompts if needed
+        full_prompt = prompt
+        if system_prompt:
+            full_prompt = f"{system_prompt}\n\n{prompt}"
+        
+        def api_call():
+            response = self.model.generate_content(
+                full_prompt,
+                generation_config={
+                    "temperature": 0.3,
+                    "max_output_tokens": 4096,
+                }
+            )
+            return response
+        
+        response = self._call_api_with_timeout(api_call)
+        print(f"  Received response")
+        if not response or not response.text:
+            raise ValueError("Empty response from API")
+        return response.text
+    
+    def detect_datasets(self, url: str, webpage_content: str, context: Dict) -> Dict:
+        """Detect datasets using Gemini."""
+        prompt = self._format_detection_prompt(url, webpage_content, context, CONTENT_LIMIT_DETECTION)
+        
+        # Debug: Log prompt size
+        prompt_size = len(prompt)
+        if prompt_size > 10000:
+            print(f"  Warning: Large prompt size ({prompt_size} characters), this may cause timeouts")
+        
+        def call_detect():
+            response = self._call_api(prompt, operation="dataset detection")
+            try:
+                return json.loads(response)
+            except json.JSONDecodeError:
+                return {"raw_response": response, "error": "Failed to parse JSON"}
+        
+        return self._retry_with_timeout(call_detect)
+    
+    def generate_jsonld(self, metadata: Dict, example_jsonld: str) -> str:
+        """Generate JSON-LD using Gemini."""
+        prompt = self._format_generation_prompt(metadata, example_jsonld)
+        
+        # Debug: Log prompt size
+        prompt_size = len(prompt)
+        if prompt_size > 15000:
+            print(f"  Warning: Large prompt size ({prompt_size} characters), this may cause timeouts")
+        
+        def call_generate():
+            response = self._call_api(prompt, operation="JSON-LD generation")
+            return self._extract_json_from_response(response)
+        
+        return self._retry_with_timeout(call_generate)
+
+
 def fetch_webpage(url: str) -> Optional[str]:
     """Fetch webpage content."""
     try:
@@ -441,7 +515,7 @@ def main():
     parser = argparse.ArgumentParser(description='Generate JSON-LD for datasets')
     parser.add_argument('--csv', default='datasets.csv', help='Path to CSV file')
     parser.add_argument('--output-dir', default='data/objects/summoned/generated', help='Output directory for JSON-LD files')
-    parser.add_argument('--ai-service', choices=['openai', 'anthropic', 'nrp'], default='nrp', help='AI service to use (default: nrp)')
+    parser.add_argument('--ai-service', choices=['openai', 'anthropic', 'nrp', 'gemini'], default='nrp', help='AI service to use (default: nrp)')
     parser.add_argument('--api-key', help='API key (or set environment variable)')
     parser.add_argument('--model', help='Model name (optional)')
     parser.add_argument('--limit', type=int, help='Limit number of datasets to process')
@@ -472,6 +546,12 @@ def main():
             print("Error: anthropic package not installed. Run: pip install anthropic")
             sys.exit(1)
         client = AnthropicClient(api_key, args.model or "claude-3-5-sonnet-20241022")
+    elif args.ai_service == 'gemini':
+        if not GEMINI_AVAILABLE:
+            print("Error: google-generativeai package not installed. Run: pip install google-generativeai")
+            sys.exit(1)
+        # Default Gemini models: gemini-pro, gemini-1.5-pro, gemini-1.5-flash
+        client = GeminiClient(api_key, args.model or "gemini-pro")
     
     output_dir = Path(args.output_dir)
     example_jsonld = load_example_jsonld()
