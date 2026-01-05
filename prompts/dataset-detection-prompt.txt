@@ -1,7 +1,7 @@
 You are analyzing a scientific dataset webpage to identify available datasets and their metadata.
 
-**Task**: Examine the following webpage and identify:
-1. What datasets are available on this page?
+**Task**: Analyze the following URL and identify:
+1. What datasets are available at this URL?
 2. For each dataset found, extract:
    - Dataset name/title
    - Description
@@ -15,7 +15,10 @@ You are analyzing a scientific dataset webpage to identify available datasets an
    - Keywords or topics
 
 **Webpage URL**: {URL}
-**Webpage Content**: {CONTENT}
+
+**Important**: Please analyze the content at this URL: {URL}
+
+If you have URL Context Tool access, fetch and analyze the webpage content directly. Otherwise, use your knowledge of the domain and URL structure to infer what datasets might be available.
 
 **Context from Google Sheet**:
 - Expected Dataset Name: {DATASET_NAME}
@@ -23,7 +26,9 @@ You are analyzing a scientific dataset webpage to identify available datasets an
 - Description: {DESCRIPTION}
 
 **Instructions**:
-- If the page contains multiple datasets, list all of them
+- Browse the URL and explore the webpage structure
+- If the page contains multiple datasets or files, identify if this is a data catalog
+- For data catalogs (like MERIT DEM with multiple spatial regions), note the file naming conventions and structure
 - Focus on structured data products (not just documentation)
 - Look for download links, API endpoints, or data access points
 - Extract any existing JSON-LD or structured metadata if present

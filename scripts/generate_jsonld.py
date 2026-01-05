@@ -43,14 +43,28 @@ try:
 except ImportError:
     ANTHROPIC_AVAILABLE = False
 
-# Try to import Gemini (using deprecated package for now - still works)
+# Try to import Gemini (try new package first, fallback to deprecated)
 try:
-    import google.generativeai as genai
-    from google.api_core import exceptions as google_exceptions
+    # Try new google.genai package (supports URL Context Tool)
+    from google import genai as new_genai
+    from google.genai.types import Tool, UrlContext
+    from google.genai import errors as new_genai_errors
+    GEMINI_NEW_API = True
     GEMINI_AVAILABLE = True
 except ImportError:
-    GEMINI_AVAILABLE = False
-    google_exceptions = None
+    GEMINI_NEW_API = False
+    new_genai_errors = None
+    try:
+        # Fallback to deprecated google.generativeai package
+        import google.generativeai as genai
+        from google.api_core import exceptions as google_exceptions
+        GEMINI_AVAILABLE = True
+    except ImportError:
+        GEMINI_AVAILABLE = False
+        google_exceptions = None
+        new_genai = None
+        Tool = None
+        UrlContext = None
 
 # Standard libraries
 import requests
@@ -102,8 +116,8 @@ DATA_DIR = PROJECT_ROOT / "data" / "objects" / "summoned"
 class AIClient:
     """Abstract base class for AI clients."""
     
-    def detect_datasets(self, url: str, webpage_content: str, context: Dict) -> Dict:
-        """Detect datasets on a webpage and extract metadata."""
+    def detect_datasets(self, url: str, context: Dict) -> Dict:
+        """Detect datasets by analyzing the URL directly (AI will browse/analyze the webpage)."""
         raise NotImplementedError
     
     def generate_jsonld(self, metadata: Dict, example_jsonld: str) -> str:
@@ -212,13 +226,11 @@ class AIClient:
         with open(prompt_path, 'r', encoding='utf-8') as f:
             return f.read()
     
-    def _format_detection_prompt(self, url: str, content: str, context: Dict, content_limit: int) -> str:
-        """Format the dataset detection prompt."""
+    def _format_detection_prompt(self, url: str, context: Dict) -> str:
+        """Format the dataset detection prompt with URL only (no HTML content)."""
         template = self._load_prompt_template("dataset-detection-prompt.txt")
-        limited_content = content[:content_limit]
         return template.format(
             URL=url,
-            CONTENT=limited_content,
             DATASET_NAME=context.get(CSV_FIELDS['NAME'], ''),
             GROUP=context.get(CSV_FIELDS['GROUP'], ''),
             DESCRIPTION=context.get(CSV_FIELDS['DESCRIPTION'], '')
@@ -276,9 +288,9 @@ class OpenAIClient(AIClient):
             raise ValueError("Empty response from API")
         return response.choices[0].message.content
     
-    def detect_datasets(self, url: str, webpage_content: str, context: Dict) -> Dict:
-        """Detect datasets using OpenAI."""
-        prompt = self._format_detection_prompt(url, webpage_content, context, CONTENT_LIMIT_DETECTION)
+    def detect_datasets(self, url: str, context: Dict) -> Dict:
+        """Detect datasets using OpenAI by analyzing the URL directly."""
+        prompt = self._format_detection_prompt(url, context)
         
         # Debug: Log prompt size
         prompt_size = len(prompt)
@@ -347,9 +359,9 @@ class AnthropicClient(AIClient):
             raise ValueError("Empty response from API")
         return response.content[0].text
     
-    def detect_datasets(self, url: str, webpage_content: str, context: Dict) -> Dict:
-        """Detect datasets using Anthropic."""
-        prompt = self._format_detection_prompt(url, webpage_content, context, CONTENT_LIMIT_ANTHROPIC)
+    def detect_datasets(self, url: str, context: Dict) -> Dict:
+        """Detect datasets using Anthropic by analyzing the URL directly."""
+        prompt = self._format_detection_prompt(url, context)
         
         # Debug: Log prompt size
         prompt_size = len(prompt)
@@ -382,18 +394,31 @@ class AnthropicClient(AIClient):
 
 
 class GeminiClient(AIClient):
-    """Google Gemini API client."""
+    """Google Gemini API client with URL Context Tool support."""
     
     def __init__(self, api_key: str, model: str = "gemini-2.0-flash"):
-        genai.configure(api_key=api_key)
-        # Strip "models/" prefix if present (list_models returns full names)
-        model_name = model.replace("models/", "") if model.startswith("models/") else model
-        self.model = genai.GenerativeModel(model_name)
-        print(f"Using Google Gemini API")
-        print(f"Using model: {model_name}")
+        self.api_key = api_key
+        self.model_name = model.replace("models/", "") if model.startswith("models/") else model
+        
+        # Try to use new API with URL Context Tool support
+        if GEMINI_NEW_API:
+            self.client = new_genai.Client(api_key=api_key)
+            self.use_url_context = True
+            print(f"Using Google Gemini API (new package with URL Context Tool)")
+        else:
+            # Fallback to deprecated package
+            genai.configure(api_key=api_key)
+            self.model = genai.GenerativeModel(self.model_name)
+            self.use_url_context = False
+            print(f"Using Google Gemini API (deprecated package - URL Context Tool not available)")
+        
+        print(f"Using model: {self.model_name}")
     
-    def _call_api(self, prompt: str, system_prompt: str = None, operation: str = "processing") -> str:
-        """Make API call to Gemini with timeout enforcement and quota error handling."""
+    def _call_api(self, prompt: str, system_prompt: str = None, operation: str = "processing", url: str = None) -> str:
+        """Make API call to Gemini with timeout enforcement and quota error handling.
+        
+        If url is provided and using new API, will use URL Context Tool to fetch webpage content.
+        """
         print(f"  Sending request to API for {operation} (this may take 1-6 minutes)...")
         
         # Combine system and user prompts if needed
@@ -402,14 +427,38 @@ class GeminiClient(AIClient):
             full_prompt = f"{system_prompt}\n\n{prompt}"
         
         def api_call():
-            response = self.model.generate_content(
-                full_prompt,
-                generation_config={
-                    "temperature": 0.3,
-                    "max_output_tokens": 4096,
-                }
-            )
-            return response
+            if self.use_url_context and url:
+                # Use new API with URL Context Tool
+                from google.genai.types import GenerateContentConfig
+                url_context_tool = Tool(url_context=UrlContext())
+                response = self.client.models.generate_content(
+                    model=self.model_name,
+                    contents=full_prompt,
+                    config=GenerateContentConfig(
+                        tools=[url_context_tool],
+                        temperature=0.3,
+                        max_output_tokens=4096,
+                    )
+                )
+                # Extract text from response
+                if response.candidates and response.candidates[0].content.parts:
+                    text_parts = [part.text for part in response.candidates[0].content.parts if hasattr(part, 'text')]
+                    class Response:
+                        def __init__(self, text):
+                            self.text = text
+                    return Response('\n'.join(text_parts))
+                else:
+                    raise ValueError("Empty response from API")
+            else:
+                # Use deprecated API (no URL Context Tool)
+                response = self.model.generate_content(
+                    full_prompt,
+                    generation_config={
+                        "temperature": 0.3,
+                        "max_output_tokens": 4096,
+                    }
+                )
+                return response
         
         # Retry up to 3 times for quota errors
         max_quota_retries = 3
@@ -422,7 +471,31 @@ class GeminiClient(AIClient):
                 return response.text
             except Exception as e:
                 # Check if it's a quota error
-                if google_exceptions and isinstance(e, google_exceptions.ResourceExhausted):
+                is_quota_error = False
+                retry_delay = 30  # Default 30 seconds
+                
+                # Check for new API quota errors
+                if self.use_url_context and new_genai_errors:
+                    if isinstance(e, new_genai_errors.ClientError):
+                        error_str = str(e)
+                        if '429' in error_str or 'RESOURCE_EXHAUSTED' in error_str or 'quota' in error_str.lower():
+                            is_quota_error = True
+                            retry_match = re.search(r'retry in ([\d.]+)s', error_str, re.IGNORECASE)
+                            if retry_match:
+                                retry_delay = float(retry_match.group(1))
+                                retry_delay = min(retry_delay + 5, 60)
+                
+                # Check for deprecated API quota errors
+                if not is_quota_error and not self.use_url_context and google_exceptions:
+                    if isinstance(e, google_exceptions.ResourceExhausted):
+                        is_quota_error = True
+                        error_str = str(e)
+                        retry_match = re.search(r'retry in ([\d.]+)s', error_str, re.IGNORECASE)
+                        if retry_match:
+                            retry_delay = float(retry_match.group(1))
+                            retry_delay = min(retry_delay + 5, 60)
+                
+                if is_quota_error:
                     error_str = str(e)
                     # Extract retry delay from error message if available
                     retry_match = re.search(r'retry in ([\d.]+)s', error_str, re.IGNORECASE)
@@ -444,21 +517,30 @@ class GeminiClient(AIClient):
                     # Not a quota error, re-raise
                     raise
     
-    def detect_datasets(self, url: str, webpage_content: str, context: Dict) -> Dict:
-        """Detect datasets using Gemini."""
-        prompt = self._format_detection_prompt(url, webpage_content, context, CONTENT_LIMIT_DETECTION)
+    def detect_datasets(self, url: str, context: Dict) -> Dict:
+        """Detect datasets using Gemini by analyzing the URL directly.
+        
+        If using new API with URL Context Tool, Gemini will fetch and analyze the webpage.
+        Otherwise, it will analyze the URL string only.
+        """
+        prompt = self._format_detection_prompt(url, context)
         
         # Debug: Log prompt size
         prompt_size = len(prompt)
         if prompt_size > 10000:
             print(f"  Warning: Large prompt size ({prompt_size} characters), this may cause timeouts")
         
+        if self.use_url_context:
+            print(f"  Using URL Context Tool - Gemini will fetch and analyze: {url}")
+        
         def call_detect():
-            response = self._call_api(prompt, operation="dataset detection")
+            # Pass URL to _call_api so it can use URL Context Tool if available
+            response = self._call_api(prompt, operation="dataset detection", url=url)
+            response_text = response.text if hasattr(response, 'text') else str(response)
             try:
-                return json.loads(response)
+                return json.loads(response_text)
             except json.JSONDecodeError:
-                return {"raw_response": response, "error": "Failed to parse JSON"}
+                return {"raw_response": response_text, "error": "Failed to parse JSON"}
         
         return self._retry_with_timeout(call_detect)
     
@@ -553,7 +635,7 @@ def main():
     parser = argparse.ArgumentParser(description='Generate JSON-LD for datasets')
     parser.add_argument('--csv', default='datasets.csv', help='Path to CSV file')
     parser.add_argument('--output-dir', default='data/objects/summoned/generated', help='Output directory for JSON-LD files')
-    parser.add_argument('--ai-service', choices=['openai', 'anthropic', 'nrp', 'gemini'], default='nrp', help='AI service to use (default: nrp)')
+    parser.add_argument('--ai-service', choices=['openai', 'anthropic', 'nrp', 'gemini'], default='gemini', help='AI service to use (default: gemini)')
     parser.add_argument('--api-key', help='API key (or set environment variable)')
     parser.add_argument('--model', help='Model name (optional)')
     parser.add_argument('--limit', type=int, help='Limit number of datasets to process')
@@ -622,17 +704,15 @@ def main():
     # Test mode with single URL
     if args.test_url:
         print(f"Testing with URL: {args.test_url}")
-        html = fetch_webpage(args.test_url)
-        if html:
-            content = extract_text_content(html)
-            context = {
-                CSV_FIELDS['NAME']: 'Test Dataset',
-                CSV_FIELDS['GROUP']: 'test',
-                CSV_FIELDS['DESCRIPTION']: ''
-            }
-            result = client.detect_datasets(args.test_url, content, context)
-            print("\n=== Detection Result ===")
-            print(json.dumps(result, indent=2))
+        print("  Sending URL to AI for analysis (AI will browse/analyze the webpage)...")
+        context = {
+            CSV_FIELDS['NAME']: 'Test Dataset',
+            CSV_FIELDS['GROUP']: 'test',
+            CSV_FIELDS['DESCRIPTION']: ''
+        }
+        result = client.detect_datasets(args.test_url, context)
+        print("\n=== Detection Result ===")
+        print(json.dumps(result, indent=2))
         return
     
     # Process CSV
@@ -672,20 +752,10 @@ def main():
         print(f"\n[{i}/{len(to_process)}] Processing: {name}")
         print(f"  URL: {url}")
         
-        # Fetch webpage
-        print("  Fetching webpage...")
-        html = fetch_webpage(url)
-        if not html:
-            print(f"  Warning: Failed to fetch webpage")
-            continue
-        
-        content = extract_text_content(html)
-        print(f"  Fetched {len(content)} characters")
-        
-        # Detect datasets
-        print("  Detecting datasets with AI...")
+        # Detect datasets (AI will browse/analyze the URL directly)
+        print("  Analyzing URL with AI (AI will browse/analyze the webpage)...")
         try:
-            detection_result = client.detect_datasets(url, content, dataset)
+            detection_result = client.detect_datasets(url, dataset)
             print(f"  Detection complete")
         except TimeoutError:
             print(f"  Error: Request timed out. Skipping this dataset.")
