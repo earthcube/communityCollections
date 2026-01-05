@@ -11,7 +11,9 @@ import csv
 import hashlib
 import json
 import os
+import re
 import sys
+import time
 import argparse
 import threading
 from pathlib import Path
@@ -20,7 +22,11 @@ from typing import Dict, List, Optional
 # Try to load .env file if python-dotenv is available
 try:
     from dotenv import load_dotenv
-    load_dotenv()
+    # Load .env from project root (parent of scripts directory)
+    PROJECT_ROOT_FOR_ENV = Path(__file__).parent.parent
+    dotenv_path = PROJECT_ROOT_FOR_ENV / '.env'
+    # Use override=True to ensure environment variables are loaded
+    load_dotenv(dotenv_path, override=True)
 except ImportError:
     pass  # dotenv is optional
 
@@ -37,11 +43,14 @@ try:
 except ImportError:
     ANTHROPIC_AVAILABLE = False
 
+# Try to import Gemini (using deprecated package for now - still works)
 try:
     import google.generativeai as genai
+    from google.api_core import exceptions as google_exceptions
     GEMINI_AVAILABLE = True
 except ImportError:
     GEMINI_AVAILABLE = False
+    google_exceptions = None
 
 # Standard libraries
 import requests
@@ -375,17 +384,19 @@ class AnthropicClient(AIClient):
 class GeminiClient(AIClient):
     """Google Gemini API client."""
     
-    def __init__(self, api_key: str, model: str = "gemini-pro"):
+    def __init__(self, api_key: str, model: str = "gemini-2.0-flash"):
         genai.configure(api_key=api_key)
-        self.model = genai.GenerativeModel(model)
+        # Strip "models/" prefix if present (list_models returns full names)
+        model_name = model.replace("models/", "") if model.startswith("models/") else model
+        self.model = genai.GenerativeModel(model_name)
         print(f"Using Google Gemini API")
-        print(f"Using model: {model}")
+        print(f"Using model: {model_name}")
     
     def _call_api(self, prompt: str, system_prompt: str = None, operation: str = "processing") -> str:
-        """Make API call to Gemini with timeout enforcement."""
+        """Make API call to Gemini with timeout enforcement and quota error handling."""
         print(f"  Sending request to API for {operation} (this may take 1-6 minutes)...")
         
-        # Gemini uses generate_content, combine system and user prompts if needed
+        # Combine system and user prompts if needed
         full_prompt = prompt
         if system_prompt:
             full_prompt = f"{system_prompt}\n\n{prompt}"
@@ -400,11 +411,38 @@ class GeminiClient(AIClient):
             )
             return response
         
-        response = self._call_api_with_timeout(api_call)
-        print(f"  Received response")
-        if not response or not response.text:
-            raise ValueError("Empty response from API")
-        return response.text
+        # Retry up to 3 times for quota errors
+        max_quota_retries = 3
+        for quota_attempt in range(max_quota_retries):
+            try:
+                response = self._call_api_with_timeout(api_call)
+                print(f"  Received response")
+                if not response or not response.text:
+                    raise ValueError("Empty response from API")
+                return response.text
+            except Exception as e:
+                # Check if it's a quota error
+                if google_exceptions and isinstance(e, google_exceptions.ResourceExhausted):
+                    error_str = str(e)
+                    # Extract retry delay from error message if available
+                    retry_match = re.search(r'retry in ([\d.]+)s', error_str, re.IGNORECASE)
+                    if retry_match:
+                        retry_delay = float(retry_match.group(1))
+                        retry_delay = min(retry_delay + 5, 60)  # Add 5s buffer, max 60s
+                    else:
+                        retry_delay = 30  # Default 30 seconds
+                    
+                    if quota_attempt < max_quota_retries - 1:
+                        print(f"  Quota limit reached. Waiting {retry_delay:.0f} seconds before retry ({quota_attempt + 1}/{max_quota_retries})...")
+                        time.sleep(retry_delay)
+                        continue
+                    else:
+                        print(f"  Quota limit reached after {max_quota_retries} attempts.")
+                        print(f"  Please check your quota at: https://ai.dev/usage?tab=rate-limit")
+                        raise Exception(f"Gemini API quota exceeded. Please wait and try again later, or check your quota limits.")
+                else:
+                    # Not a quota error, re-raise
+                    raise
     
     def detect_datasets(self, url: str, webpage_content: str, context: Dict) -> Dict:
         """Detect datasets using Gemini."""
@@ -524,9 +562,34 @@ def main():
     args = parser.parse_args()
     
     # Initialize AI client
-    api_key = args.api_key or os.getenv(f"{args.ai_service.upper()}_API_KEY") or os.getenv("NRP_API_KEY")
+    env_var_name = f"{args.ai_service.upper()}_API_KEY"
+    api_key = args.api_key or os.getenv(env_var_name) or os.getenv("NRP_API_KEY")
+    
+    # Debug: Check if API key was loaded (but don't print the actual key)
     if not api_key:
-        print(f"Error: API key required. Set {args.ai_service.upper()}_API_KEY environment variable or use --api-key")
+        print(f"Error: API key required.")
+        print(f"  Looking for: {env_var_name} or NRP_API_KEY")
+        # Check if .env file exists and has the variable
+        env_file = PROJECT_ROOT / '.env'
+        if env_file.exists():
+            print(f"  Found .env file at: {env_file}")
+            with open(env_file, 'r') as f:
+                content = f.read()
+                if env_var_name in content:
+                    if f"{env_var_name}=your-" in content or f"{env_var_name}=your_" in content:
+                        print(f"  Warning: .env file contains placeholder value. Please replace 'your-{args.ai_service.lower()}-api-key-here' with your actual API key.")
+                    else:
+                        print(f"  Note: {env_var_name} found in .env but not loaded. Check file format (no spaces around =).")
+                else:
+                    print(f"  Note: {env_var_name} not found in .env file.")
+        else:
+            print(f"  .env file not found at: {env_file}")
+        print(f"  Set {env_var_name} environment variable or use --api-key")
+        sys.exit(1)
+    
+    # Check if API key looks like a placeholder
+    if api_key.startswith('your-') or 'your-' in api_key.lower():
+        print(f"Warning: API key appears to be a placeholder. Please set a real API key.")
         sys.exit(1)
     
     if args.ai_service == 'openai':
@@ -550,8 +613,8 @@ def main():
         if not GEMINI_AVAILABLE:
             print("Error: google-generativeai package not installed. Run: pip install google-generativeai")
             sys.exit(1)
-        # Default Gemini models: gemini-pro, gemini-1.5-pro, gemini-1.5-flash
-        client = GeminiClient(api_key, args.model or "gemini-pro")
+        # Default Gemini models: gemini-2.0-flash (fast), gemini-2.5-flash, gemini-2.5-pro (more capable)
+        client = GeminiClient(api_key, args.model or "gemini-2.0-flash")
     
     output_dir = Path(args.output_dir)
     example_jsonld = load_example_jsonld()
