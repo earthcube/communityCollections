@@ -1,0 +1,155 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "@id": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/",
+  "name": "MERIT DEM (Multi-Error-Removed Improved-Terrain Digital Elevation Model)",
+  "description": "MERIT DEM is a high-accuracy global digital elevation model (DEM) at 3 arc-second resolution (~90 m at the equator), developed by removing multiple error components from existing spaceborne DEMs. The developers separated and eliminated absolute bias, stripe noise, speckle noise, and tree height bias using multiple satellite datasets and filtering techniques. MERIT DEM was created by processing baseline DEMs including NASA SRTM3 DEM v2.1, JAXA AW3D-30m DEM v1, and Viewfinder Panoramas' DEM. After error removal, land areas mapped with 2 m or better vertical accuracy increased from 39% to 58%. The dataset represents terrain elevations in meters referenced to WGS84 horizontal datum and the EGM96 geoid, covering global land areas between 90°N and 60°S. Data are organized as 5°×5° tiles (6000×6000 pixels) and distributed in 30°×30° packages; filenames encode the center of the lower-left pixel (e.g., \"n30w120_dem.tif\" covers N30–N35 and W120–W115) and package names encode the lower-left corner of the 30°×30° domain (e.g., \"dem_tif_n30w120.tar\" contains tiles for N30–N60 and W120–W090).",
+  "url": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/",
+  "keywords": [
+    "topography",
+    "Digital Elevation Model",
+    "DEM",
+    "terrain elevation",
+    "geoscience",
+    "hydrology",
+    "SRTM",
+    "AW3D",
+    "global elevation",
+    "EGM96",
+    "WGS84",
+    "MERIT"
+  ],
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Dai Yamazaki",
+      "email": "mailto:yamadai@iis.u-tokyo.ac.jp",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Institute of Industrial Science, The University of Tokyo",
+        "url": "https://www.iis.u-tokyo.ac.jp/en/"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "Institute of Industrial Science, The University of Tokyo",
+      "url": "https://www.iis.u-tokyo.ac.jp/en/"
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "The University of Tokyo",
+    "url": "https://www.u-tokyo.ac.jp/en/"
+  },
+  "datePublished": "2018-10-15",
+  "version": "v1.0.3",
+  "license": [
+    {
+      "@type": "CreativeWork",
+      "name": "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+      "url": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Open Data Commons Open Database License 1.0 (ODbL 1.0)",
+      "url": "https://opendatacommons.org/licenses/odbl/1-0/"
+    }
+  ],
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Global land areas between 90°N and 60°S",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "-180,-60 180,90"
+    }
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Elevation",
+      "unitText": "meter",
+      "description": "Terrain elevation in meters referenced to WGS84 and the EGM96 geoid."
+    }
+  ],
+  "measurementTechnique": [
+    "Error removal from baseline spaceborne DEMs (absolute bias, stripe noise, speckle noise, tree height bias)",
+    "Filtering and correction using multiple satellite and ancillary datasets"
+  ],
+  "encodingFormat": [
+    "application/octet-stream (ESRI EHdr/FLT raster with HDR; 4-byte float, little endian)",
+    "image/tiff; application=geotiff",
+    "application/octet-stream (MRR, MapInfo Pro raster)"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "MERIT DEM – ESRI EHdr (FLT) packages (30°×30° tar.gz)",
+      "description": "Elevation tiles distributed as 30°×30° packages containing 5°×5° tiles (6000×6000 pixels). ESRI FLT rasters with HDR (Fortran Direct Access / ESRI FLT style; 4-byte float, little endian). Package names encode the lower-left corner (e.g., dem_flt_n30w120.tar.gz contains tiles for N30–N60, W120–W090). Filenames encode the center of the lower-left pixel (e.g., n30w120_dem.* covers N30–N35, W120–W115). Access may require registration/password per the provider instructions.",
+      "encodingFormat": "application/octet-stream",
+      "contentUrl": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/dem_flt_n30w120.tar.gz",
+      "url": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "MERIT DEM – GeoTIFF packages (30°×30° tar)",
+      "description": "Elevation tiles distributed as 30°×30° packages containing 5°×5° GeoTIFF tiles (6000×6000 pixels). Package names encode the lower-left corner (e.g., dem_tif_n30w120.tar contains tiles for N30–N60, W120–W090). Individual tile filenames encode the center of the lower-left pixel (e.g., n30w120_dem.tif covers N30–N35, W120–W115). Access may require registration/password per the provider instructions.",
+      "encodingFormat": "image/tiff; application=geotiff",
+      "contentUrl": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/dem_tif_n30w120.tar",
+      "url": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "MERIT DEM – MRR (single merged raster)",
+      "description": "Single merged MRR raster created by merging all MERIT DEM source tiles; vertical resolution converted to 0.01 meters by rounding to the nearest centimeter. MRR rasters can be displayed in the MapInfo Pro GIS platform. Prepared by Sam Roberts (Roberts Geospatial).",
+      "encodingFormat": "application/octet-stream",
+      "contentUrl": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/MERIT_DEM.mrr",
+      "url": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "MERIT DEM – 5°×5° tile download page (GeoTIFF tiles)",
+      "description": "Alternative download page for individual 5°×5° tiles (useful when large package downloads are difficult). Tile filenames encode the center of the lower-left pixel (e.g., n30w120_dem.tif covers N30–N35, W120–W115). Access may require registration/password per the provider instructions.",
+      "encodingFormat": "text/html",
+      "contentUrl": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/list_5deg.html",
+      "url": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/list_5deg.html"
+    }
+  ],
+  "citation": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "A high accuracy map of global terrain elevations",
+      "author": [
+        { "@type": "Person", "name": "D. Yamazaki" },
+        { "@type": "Person", "name": "D. Ikeshima" },
+        { "@type": "Person", "name": "R. Tawatari" },
+        { "@type": "Person", "name": "T. Yamaguchi" },
+        { "@type": "Person", "name": "F. O'Loughlin" },
+        { "@type": "Person", "name": "J. C. Neal" },
+        { "@type": "Person", "name": "C. C. Sampson" },
+        { "@type": "Person", "name": "S. Kanae" },
+        { "@type": "Person", "name": "P. D. Bates" }
+      ],
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Geophysical Research Letters"
+      },
+      "datePublished": "2017",
+      "pagination": "5844-5853",
+      "volumeNumber": "44",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "doi",
+          "value": "10.1002/2017GL072874"
+        }
+      ],
+      "sameAs": "https://doi.org/10.1002/2017GL072874"
+    }
+  ],
+  "about": [
+    { "@type": "Thing", "name": "Terrain elevation" },
+    { "@type": "Thing", "name": "Topography" },
+    { "@type": "Thing", "name": "Hydrology" },
+    { "@type": "Thing", "name": "Geoscience applications" }
+  ]
+}

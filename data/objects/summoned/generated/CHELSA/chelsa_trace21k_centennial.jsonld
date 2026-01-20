@@ -1,0 +1,82 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "@id": "https://www.chelsa-climate.org/datasets/chelsa-trace21k-centennial#dataset",
+  "name": "CHELSA-TraCE21k-centennial (V1.0)",
+  "description": "CHELSA-TraCE21k-centennial is a global, kilometer-scale climate dataset generated with the CHELSA-TraCE21k downscaling model. It consists of monthly climatologies summarized over centennial time steps from 21k BP to 0 BP.",
+  "url": "https://www.chelsa-climate.org/datasets/chelsa-trace21k-centennial",
+  "version": "1.0",
+  "creator": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "temporalCoverage": "21000BP/0BP",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Global land surface areas"
+  },
+  "keywords": [
+    "CHELSA",
+    "TraCE21k",
+    "paleoclimate",
+    "Last Glacial Maximum",
+    "downscaling",
+    "temperature",
+    "precipitation"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "pr",
+      "description": "Precipitation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tasmax",
+      "description": "Near-surface air temperature (maximum)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tasmin",
+      "description": "Near-surface air temperature (minimum)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tz",
+      "description": "Air temperature lapse rate"
+    }
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "encodingFormat": [
+    "image/tiff; application=geotiff; profile=cloud-optimized",
+    "COG"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "CHELSA-TraCE21k-centennial downloads (COG)",
+      "description": "Download portal for TraCE21k centennial climatologies.",
+      "contentUrl": "https://envicloud.wsl.ch/",
+      "encodingFormat": "image/tiff; application=geotiff; profile=cloud-optimized"
+    }
+  ],
+  "citation": "Karger, D. N., Nobis, M. P., Normand, S., Graham, C. H., & Zimmermann, N. E. (2020). CHELSA-TraCE21k: Downscaled transient temperature and precipitation data since the last glacial maximum. EnviDat. https://doi.org/10.16904/envidat.211",
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Paleoclimate"
+    },
+    {
+      "@type": "Thing",
+      "name": "Glacial-interglacial climate variability"
+    }
+  ]
+}

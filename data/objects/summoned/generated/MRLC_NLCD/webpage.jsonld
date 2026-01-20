@@ -1,0 +1,55 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "WebPage",
+  "@id": "https://www.mrlc.gov/data#webpage",
+  "name": "MRLC Data",
+  "description": "The Multi-Resolution Land Characteristics (MRLC) Consortium data portal provides nationwide (United States) and North America land cover and related remote-sensing products, including Annual NLCD (annual land cover and land change science products), RCMAP (rangeland fractional cover and trends), Exotic Annual Grass fractional cover products, NALCMS (North American land cover), and legacy NLCD products. The portal also provides tools (e.g., MRLC Viewer, EVA Tool, Rangeland Viewer) and web services (OGC WMS/WCS) for interactive access and subsetting.",
+  "url": "https://www.mrlc.gov/data",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.mrlc.gov/#website",
+    "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
+    "url": "https://www.mrlc.gov/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.mrlc.gov/#org",
+    "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
+    "url": "https://www.mrlc.gov/",
+    "description": "A consortium of U.S. federal agencies producing land cover and land change data products.",
+    "member": [
+      { "@type": "Organization", "name": "U.S. Geological Survey (USGS)" },
+      { "@type": "Organization", "name": "National Oceanic and Atmospheric Administration (NOAA)" },
+      { "@type": "Organization", "name": "U.S. Forest Service (USFS)" },
+      { "@type": "Organization", "name": "Bureau of Land Management (BLM)" },
+      { "@type": "Organization", "name": "National Park Service (NPS)" },
+      { "@type": "Organization", "name": "U.S. Department of Agriculture (USDA)" },
+      { "@type": "Organization", "name": "U.S. Environmental Protection Agency (EPA)" },
+      { "@type": "Organization", "name": "U.S. Fish and Wildlife Service (USFWS)" },
+      { "@type": "Organization", "name": "National Agricultural Statistics Service (NASS)" },
+      { "@type": "Organization", "name": "LANDFIRE" }
+    ]
+  },
+  "keywords": [
+    "MRLC",
+    "land cover",
+    "land use",
+    "NLCD",
+    "Annual NLCD",
+    "RCMAP",
+    "rangeland",
+    "tree canopy",
+    "impervious surface",
+    "remote sensing",
+    "Landsat"
+  ],
+  "about": {
+    "@type": "DataCatalog",
+    "@id": "https://www.mrlc.gov/data#catalog"
+  },
+  "mainEntity": {
+    "@type": "DataCatalog",
+    "@id": "https://www.mrlc.gov/data#catalog"
+  }
+}

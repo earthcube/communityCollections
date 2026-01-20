@@ -1,0 +1,80 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "@id": "https://www.chelsa-climate.org/datasets/chelsa_annual#dataset",
+  "name": "CHELSA-drought-indices (V2.1)",
+  "description": "CHELSA-drought-indices is a dataset that consists of standardized precipitation (SPI) and the standardized precipitation evapotranspiration index (SPEI) and related drought metrics.",
+  "url": "https://www.chelsa-climate.org/datasets/chelsa_annual",
+  "version": "2.1",
+  "creator": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "temporalCoverage": "1980-06-15/2018-07-15",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Global land surface areas",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "-180.0,-60.0 180.0,90.0"
+    }
+  },
+  "keywords": [
+    "CHELSA",
+    "drought",
+    "SPI",
+    "SPEI",
+    "drought indices",
+    "climate extremes"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "spei12",
+      "description": "Standardized precipitation evapotranspiration index (12-month)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "spi",
+      "description": "Standardized precipitation index (multiple timescales)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mymd",
+      "description": "Identifier for multiyear meteorological drought events (and related fields)"
+    }
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "encodingFormat": [
+    "image/tiff; application=geotiff; profile=cloud-optimized",
+    "COG"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "CHELSA-drought-indices downloads (COG)",
+      "description": "Download portal for CHELSA drought indices.",
+      "contentUrl": "https://envicloud.wsl.ch/",
+      "encodingFormat": "image/tiff; application=geotiff; profile=cloud-optimized"
+    }
+  ],
+  "citation": "Chen, L., Brun, P., Buri, P., Fatichi, S., Gessler, A., McCarthy, M. J., Pelicciotti, F., Stocker, B., Karger, D. N. (2024). High resolution global standardized drought indices. EnviDat. https://doi.org/10.16904/envidat.530",
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Drought"
+    },
+    {
+      "@type": "Thing",
+      "name": "Climate risk"
+    }
+  ]
+}

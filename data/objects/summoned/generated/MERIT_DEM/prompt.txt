@@ -1,0 +1,59 @@
+I need to create a Schema.org Dataset JSON-LD description for a scientific dataset.
+
+**Website URL**: http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/
+
+**Dataset Information**:
+- Name: MERIT DEM (Multi-Error-Removed Improved-Terrain Digital Elevation Model)
+- Group/Category: topography
+- Description: A high accuracy global DEM at 3 arcsecond resolution (~90 m at the equator) developed by removing multiple error components (absolute bias, stripe noise, speckle noise, and tree height bias) from existing spaceborne DEMs (NASA SRTM3 DEM v2.1, JAXA AW3D-30m DEM v1, Viewfinder Panoramas' DEM). After error removal, land areas mapped with 2 m or better vertical accuracy were increased from 39% to 58%.
+
+**Key Details**:
+- Publisher: University of Tokyo, Institute of Industrial Science
+- Creator: Dai Yamazaki (yamadai@iis.u-tokyo.ac.jp)
+- Date Published: October 15, 2018 (v1.0.3)
+- License: Creative Commons CC-BY-NC 4.0 or Open Database License (ODbL 1.0) - dual license
+- Spatial Coverage: Land areas between 90°N-60°S
+- Resolution: 3 arcsecond (~90m at the equator)
+- Data Format: Elevation in meters, referenced to WGS84 and EGM96 geoid
+- Data Organization: 5 degree × 5 degree tiles, packaged into 30 degree × 30 degree packages
+- Available Formats: ESRI EHdr (FLT), GeoTIFF, MRR
+
+**File Naming Convention**:
+- Individual tiles: Filename represents the center of the lower left pixel (e.g., "n30w120_dem.tif" covers N30-N35, W120-W115)
+- Packages: Package name represents the lower left corner (e.g., "dem_tif_n30w120.tar" contains files in domain N30-N60, W120-W090)
+
+**Citation**:
+Yamazaki D., D. Ikeshima, R. Tawatari, T. Yamaguchi, F. O'Loughlin, J.C. Neal, C.C. Sampson, S. Kanae & P.D. Bates (2017). A high accuracy map of global terrain elevations. Geophysical Research Letters, vol.44, pp.5844-5853, doi: 10.1002/2017GL072874
+
+**Instructions**:
+Please create a complete Schema.org Dataset JSON-LD that includes:
+- @context: "https://schema.org/"
+- @type: "Dataset"
+- @id: The dataset URL
+- name: Full dataset name
+- description: Comprehensive description of the dataset
+- url: Main dataset webpage URL
+- creator: Organization and/or person (University of Tokyo, Institute of Industrial Science; Dai Yamazaki)
+- publisher: Organization (University of Tokyo)
+- datePublished: Publication date
+- version: Current version (v1.0.3)
+- license: Include both license options (CC-BY-NC 4.0 and ODbL 1.0)
+- keywords: Relevant keywords (e.g., topography, Digital Elevation Model, terrain elevation, geoscience, hydrology, SRTM, AW3D)
+- spatialCoverage: Geographic coverage (90°N to 60°S)
+- distribution: Include multiple DataDownload entries for:
+  - Different formats (ESRI EHdr, GeoTIFF, MRR)
+  - Note the file naming convention and spatial organization
+  - Include the main download page URL
+- citation: Scientific publication citation
+- encodingFormat: List available formats (ESRI FLT, GeoTIFF, MRR)
+- temporalCoverage: If applicable
+- about: What the dataset is about (terrain elevation, hydrology, geoscience applications)
+
+**Output Format**: 
+Provide the complete JSON-LD in a code block, properly formatted and valid JSON.
+
+**Important Notes**:
+- This is a single dataset with multiple distribution options (formats and spatial regions)
+- The dataset is organized as spatial tiles, but it represents one cohesive dataset product
+- Include all relevant metadata from the website
+- Ensure the JSON-LD is valid and follows Schema.org Dataset schema

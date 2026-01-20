@@ -1,0 +1,99 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "WebPage",
+  "@id": "https://www.chelsa-climate.org/datasets",
+  "name": "CHELSA Climate Datasets",
+  "alternateName": "CHELSA: Climatologies at high resolution for the earth's land surface areas",
+  "description": "Webpage for the CHELSA (Climatologies at high resolution for the earth's land surface areas) climate data catalog. CHELSA is a global, kilometer-scale climate dataset generated with the CHELSA downscaling model. The catalog provides access to multiple climate datasets including daily, monthly, and climatological means, bioclimatic variables, drought indices, and paleoclimate data. Datasets cover global, European, Swiss, and Canary Islands regions with temporal coverage from the Last Glacial Maximum (21k BP) through present observations to future climate scenarios (2071-2100).",
+  "url": "https://www.chelsa-climate.org/datasets",
+  "alternateUrl": "https://chelsa-climate.org/downloads/",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "CHELSA Climate",
+    "url": "https://www.chelsa-climate.org/"
+  },
+  "about": {
+    "@type": "DataCatalog",
+    "name": "CHELSA Climate Data Catalog",
+    "description": "A comprehensive catalog of high-resolution climate datasets for the earth's land surface areas",
+    "url": "https://www.chelsa-climate.org/datasets"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "WSL",
+    "alternateName": "Swiss Federal Institute for Forest, Snow and Landscape Research",
+    "url": "https://www.wsl.ch/en/index.html"
+  },
+  "mainEntity": {
+    "@type": "DataCatalog",
+    "name": "CHELSA Climate Data Catalog",
+    "description": "Global, kilometer-scale climate datasets generated with the CHELSA downscaling model",
+    "url": "https://www.chelsa-climate.org/datasets",
+    "publisher": {
+      "@type": "Organization",
+      "name": "WSL",
+      "alternateName": "Swiss Federal Institute for Forest, Snow and Landscape Research"
+    },
+    "hasPart": [
+      {
+        "@type": "Dataset",
+        "name": "CHELSA-daily",
+        "version": "2.1"
+      },
+      {
+        "@type": "Dataset",
+        "name": "CHELSA-monthly",
+        "version": "2.1"
+      },
+      {
+        "@type": "Dataset",
+        "name": "CHELSA-climatologies",
+        "version": "2.1"
+      },
+      {
+        "@type": "Dataset",
+        "name": "CHELSA-bioclim",
+        "version": "2.1"
+      },
+      {
+        "@type": "Dataset",
+        "name": "CHELSA-drought-indices",
+        "version": "2.1"
+      }
+    ]
+  },
+  "keywords": [
+    "CHELSA",
+    "climate",
+    "climatology",
+    "high resolution",
+    "downscaling",
+    "climate data",
+    "temperature",
+    "precipitation",
+    "bioclimatic variables",
+    "drought indices",
+    "paleoclimate",
+    "climate scenarios",
+    "global climate",
+    "kilometer-scale"
+  ],
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "CHELSA Climate",
+        "item": "https://www.chelsa-climate.org/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Datasets",
+        "item": "https://www.chelsa-climate.org/datasets"
+      }
+    ]
+  }
+}

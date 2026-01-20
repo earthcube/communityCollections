@@ -1,0 +1,71 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "@id": "https://www.chelsa-climate.org/datasets/chelsa-trace21k-centennial-bioclim#dataset",
+  "name": "CHELSA-TraCE21k-centennial-bioclim (V1.0)",
+  "description": "CHELSA-TraCE21k-centennial-bioclim is a global, kilometer-scale dataset generated with the CHELSA-TraCE21k downscaling model. It consists of bioclimatic and topographic variables summarized over centennial time steps from 21k BP to 0 BP.",
+  "url": "https://www.chelsa-climate.org/datasets/chelsa-trace21k-centennial-bioclim",
+  "version": "1.0",
+  "creator": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "temporalCoverage": "21000BP/0BP",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Global land surface areas"
+  },
+  "keywords": [
+    "CHELSA",
+    "TraCE21k",
+    "paleoclimate",
+    "bioclim",
+    "bioclimatic variables",
+    "downscaling"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "BIO1–BIO19",
+      "description": "Bioclimatic variables derived from temperature and precipitation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "topographic predictors",
+      "description": "Topographic variables included with bioclim products (where provided)"
+    }
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "encodingFormat": [
+    "image/tiff; application=geotiff; profile=cloud-optimized",
+    "COG"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "CHELSA-TraCE21k-centennial-bioclim downloads (COG)",
+      "description": "Download portal for TraCE21k centennial bioclim variables.",
+      "contentUrl": "https://envicloud.wsl.ch/",
+      "encodingFormat": "image/tiff; application=geotiff; profile=cloud-optimized"
+    }
+  ],
+  "citation": "Karger, D. N., Nobis, M. P., Normand, S., Graham, C. H., & Zimmermann, N. E. (2020). CHELSA-TraCE21k: Downscaled transient temperature and precipitation data since the last glacial maximum. EnviDat. https://doi.org/10.16904/envidat.211",
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Paleoclimate bioclimatic predictors"
+    },
+    {
+      "@type": "Thing",
+      "name": "Species distribution modeling (paleo)"
+    }
+  ]
+}
