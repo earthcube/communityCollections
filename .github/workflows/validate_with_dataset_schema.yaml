@@ -19,18 +19,28 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'
+        python-version: '3.11'
 
     - name: Find and validate generated JSON-LD files
       run: |
         echo "Validating JSON-LD files in data/objects/summoned/generated/"
+        if [ ! -d "data/objects/summoned/generated" ]; then
+          echo "Directory data/objects/summoned/generated/ does not exist. Skipping validation."
+          exit 0
+        fi
+        file_count=0
         failed=0
         while IFS= read -r -d '' file; do
+          file_count=$((file_count + 1))
           echo "Validating: $file"
           if ! python scripts/validate_jsonld.py "$file"; then
             failed=1
           fi
-        done < <(find data/objects/summoned/generated -name "*.jsonld" -type f -print0)
+        done < <(find data/objects/summoned/generated -name "*.jsonld" -type f -print0 2>/dev/null)
+        if [ $file_count -eq 0 ]; then
+          echo "No JSON-LD files found in data/objects/summoned/generated/"
+          exit 0
+        fi
         if [ $failed -eq 1 ]; then
           echo "Some files failed validation"
           exit 1
@@ -49,18 +59,28 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'
+        python-version: '3.11'
 
     - name: Find and validate summoned JSON-LD files
       run: |
         echo "Validating JSON-LD files in data/objects/summoned/ (excluding generated/)"
+        if [ ! -d "data/objects/summoned" ]; then
+          echo "Directory data/objects/summoned/ does not exist. Skipping validation."
+          exit 0
+        fi
+        file_count=0
         failed=0
         while IFS= read -r -d '' file; do
+          file_count=$((file_count + 1))
           echo "Validating: $file"
           if ! python scripts/validate_jsonld.py "$file"; then
             failed=1
           fi
-        done < <(find data/objects/summoned -name "*.jsonld" -type f ! -path "*/generated/*" -print0)
+        done < <(find data/objects/summoned -name "*.jsonld" -type f ! -path "*/generated/*" -print0 2>/dev/null)
+        if [ $file_count -eq 0 ]; then
+          echo "No JSON-LD files found in data/objects/summoned/ (excluding generated/)"
+          exit 0
+        fi
         if [ $failed -eq 1 ]; then
           echo "Some files failed validation"
           exit 1
@@ -79,18 +99,28 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'
+        python-version: '3.11'
 
     - name: Find and validate all JSON-LD files
       run: |
         echo "Validating all JSON-LD files in data/ directory"
+        if [ ! -d "data" ]; then
+          echo "Directory data/ does not exist. Skipping validation."
+          exit 0
+        fi
+        file_count=0
         failed=0
         while IFS= read -r -d '' file; do
+          file_count=$((file_count + 1))
           echo "Validating: $file"
           if ! python scripts/validate_jsonld.py "$file"; then
             failed=1
           fi
-        done < <(find data -name "*.jsonld" -type f -print0)
+        done < <(find data -name "*.jsonld" -type f -print0 2>/dev/null)
+        if [ $file_count -eq 0 ]; then
+          echo "No JSON-LD files found in data/ directory"
+          exit 0
+        fi
         if [ $failed -eq 1 ]; then
           echo "Some files failed validation"
           exit 1
