@@ -1,0 +1,33 @@
+name: Generate XML sitemap for JSON-LD resources
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sitemap_job:
+    runs-on: ubuntu-latest
+    name: Generate sitemap for JSON-LD files
+    steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    # Generate single sitemap for all JSON-LD files in data and collection directories
+    - name: Generate sitemap for all JSON-LD resources
+      id: sitemap_all
+      uses: cicirello/generate-sitemap@v1
+      with:
+        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/main
+        path-to-root: .
+        include-html: false
+        include-pdf: false
+        additional-extensions: jsonld json xml
+        exclude-paths: .git .github docs scripts crawler prompts .vscode
+    - name: Output sitemap stats
+      run: |
+        echo "sitemap-path = ${{ steps.sitemap_all.outputs.sitemap-path }}"
+        echo "url-count = ${{ steps.sitemap_all.outputs.url-count }}"
+        echo "excluded-count = ${{ steps.sitemap_all.outputs.excluded-count }}"

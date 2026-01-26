@@ -1,0 +1,98 @@
+name: Validate JSON-LD files with Schema.org Dataset schema
+
+on:
+  push:
+    branches-ignore: [ 'gh-pages' ]
+  pull_request:
+    branches-ignore: [ 'gh-pages' ]
+
+jobs:
+  validate-jsonld-generated:
+    runs-on: ubuntu-latest
+    name: Validate generated JSON-LD files
+    steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Find and validate generated JSON-LD files
+      run: |
+        echo "Validating JSON-LD files in data/objects/summoned/generated/"
+        failed=0
+        while IFS= read -r -d '' file; do
+          echo "Validating: $file"
+          if ! python scripts/validate_jsonld.py "$file"; then
+            failed=1
+          fi
+        done < <(find data/objects/summoned/generated -name "*.jsonld" -type f -print0)
+        if [ $failed -eq 1 ]; then
+          echo "Some files failed validation"
+          exit 1
+        fi
+        echo "All generated JSON-LD files validated successfully"
+
+  validate-jsonld-summoned:
+    runs-on: ubuntu-latest
+    name: Validate summoned JSON-LD files
+    steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Find and validate summoned JSON-LD files
+      run: |
+        echo "Validating JSON-LD files in data/objects/summoned/ (excluding generated/)"
+        failed=0
+        while IFS= read -r -d '' file; do
+          echo "Validating: $file"
+          if ! python scripts/validate_jsonld.py "$file"; then
+            failed=1
+          fi
+        done < <(find data/objects/summoned -name "*.jsonld" -type f ! -path "*/generated/*" -print0)
+        if [ $failed -eq 1 ]; then
+          echo "Some files failed validation"
+          exit 1
+        fi
+        echo "All summoned JSON-LD files validated successfully"
+
+  validate-jsonld-all:
+    runs-on: ubuntu-latest
+    name: Validate all JSON-LD files
+    steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Find and validate all JSON-LD files
+      run: |
+        echo "Validating all JSON-LD files in data/ directory"
+        failed=0
+        while IFS= read -r -d '' file; do
+          echo "Validating: $file"
+          if ! python scripts/validate_jsonld.py "$file"; then
+            failed=1
+          fi
+        done < <(find data -name "*.jsonld" -type f -print0)
+        if [ $failed -eq 1 ]; then
+          echo "Some files failed validation"
+          exit 1
+        fi
+        echo "All JSON-LD files validated successfully"
