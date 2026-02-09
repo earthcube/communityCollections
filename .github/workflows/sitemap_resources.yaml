@@ -41,7 +41,7 @@ jobs:
         echo "sitemap-path = ${{ steps.sitemap_all.outputs.sitemap-path }}"
         echo "url-count = ${{ steps.sitemap_all.outputs.url-count }}"
         echo "excluded-count = ${{ steps.sitemap_all.outputs.excluded-count }}"
-    - run: mkdocs build --config-file mkdocs.yml
+    - run: mkdocs build --config-file mkdocs.yaml
     - name: push to gh pages
       uses: JamesIves/github-pages-deploy-action@4.1.6
       with:
