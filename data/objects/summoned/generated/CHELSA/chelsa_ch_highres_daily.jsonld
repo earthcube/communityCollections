@@ -1,0 +1,81 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "@id": "https://www.chelsa-climate.org/datasets/chelsach-highres_daily#dataset",
+  "name": "CHELSAch-highres-daily (Switzerland) (V1.0)",
+  "description": "CHELSAch-highres-daily is a high-resolution climate dataset generated with the CHELSA downscaling model for Switzerland. It consists of daily surface variables.",
+  "url": "https://www.chelsa-climate.org/datasets/chelsach-highres_daily",
+  "version": "1.0",
+  "creator": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "temporalCoverage": "1981-01-01/2022-12-31",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Switzerland"
+  },
+  "keywords": [
+    "CHELSA",
+    "Switzerland",
+    "high resolution",
+    "daily climate",
+    "temperature",
+    "precipitation"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "tas",
+      "description": "Daily mean near-surface air temperature"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tasmax",
+      "description": "Daily maximum near-surface air temperature"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tasmin",
+      "description": "Daily minimum near-surface air temperature"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pr",
+      "description": "Precipitation"
+    }
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "encodingFormat": [
+    "application/x-netcdf",
+    "NetCDF"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "CHELSAch-highres-daily downloads (NetCDF)",
+      "description": "Download portal for CHELSAch-highres-daily.",
+      "contentUrl": "https://envicloud.wsl.ch/",
+      "encodingFormat": "application/x-netcdf"
+    }
+  ],
+  "citation": "Zilker, F., Karger, D. N. (2025). CHELSAch-highres-daily climate data at high resolution. EnviDat. https://www.doi.org/10.16904/envidat.688",
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Regional high-resolution climate"
+    },
+    {
+      "@type": "Thing",
+      "name": "Mountain climatology"
+    }
+  ]
+}

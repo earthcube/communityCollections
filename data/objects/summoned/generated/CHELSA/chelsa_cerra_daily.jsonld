@@ -1,0 +1,61 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "@id": "https://www.chelsa-climate.org/datasets#chelsacerra-daily-dataset",
+  "name": "CHELSAcerra-daily (Europe) (V1.0)",
+  "description": "CHELSAcerra-daily is a high-resolution climate dataset for air temperatures generated with the CHELSA downscaling model using the Copernicus European Regional ReAnalysis (CERRA) for Europe.",
+  "url": "https://www.chelsa-climate.org/datasets",
+  "version": "1.0",
+  "creator": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "temporalCoverage": "1985-01-01/2015-12-31",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Europe"
+  },
+  "keywords": [
+    "CHELSA",
+    "CERRA",
+    "Europe",
+    "downscaling",
+    "daily temperature",
+    "regional reanalysis"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "tas",
+      "description": "Daily mean near-surface air temperature (downscaled from CERRA)"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "CHELSAcerra-daily downloads (portal)",
+      "description": "Download portal linked from the CHELSA catalog entry for CHELSAcerra-daily.",
+      "contentUrl": "https://envicloud.wsl.ch/",
+      "encodingFormat": "text/html"
+    }
+  ],
+  "citation": "Karger, D. N. and Janzing, J. (2025). CHELSAcerra-daily. EnviDat. https://doi.org/10.16904/envidat.703",
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Downscaled regional reanalysis (Europe)"
+    },
+    {
+      "@type": "Thing",
+      "name": "Daily air temperature"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "@id": "https://www.earthenv.org/landcover#dataset",
+  "name": "Consensus Land Cover (Global 1-km Consensus Land Cover), Version 1.0",
+  "description": "A global 1-km (30 arc-second) consensus land-cover product for biodiversity and ecosystem modelling. The dataset integrates multiple global remote sensing-derived land-cover products and provides consensus prevalence (0–100%) for 12 land-cover classes at each grid cell. Two Version 1.0 variants are distributed: (1) Full v1.0 (with DISCover/GLCC), integrating GlobCover (2005–2006; v2.2), MODIS land-cover (MCD12Q1; v051), GLC2000 (v1.1), and DISCover/GLCC (v2; based on older imagery 1992–1993); and (2) Reduced v1.0 (without DISCover), integrating GlobCover, MODIS, and GLC2000 only, offered as an alternative for areas with substantial land-cover change in recent decades. Each variant contains 12 GeoTIFF layers (one per class). Values are unsigned 8-bit integers representing percent prevalence (0–100).",
+  "url": "https://www.earthenv.org/landcover",
+  "creator": [
+    { "@type": "Person", "name": "Mao-Ning Tuanmu" },
+    { "@type": "Person", "name": "Walter Jetz" }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.earthenv.org/#org",
+    "name": "EarthEnv",
+    "url": "https://www.earthenv.org/",
+    "member": [
+      { "@type": "Organization", "name": "Yale University" },
+      { "@type": "Organization", "name": "University of Florida" },
+      { "@type": "Organization", "name": "University at Buffalo" }
+    ]
+  },
+  "keywords": [
+    "land cover",
+    "consensus",
+    "remote sensing",
+    "biodiversity",
+    "ecosystem modelling",
+    "GlobCover",
+    "MODIS",
+    "MCD12Q1",
+    "GLC2000",
+    "DISCover",
+    "GLCC",
+    "prevalence",
+    "GeoTIFF"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Global",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "-180,-56 180,90"
+    }
+  },
+  "spatialResolution": "30 arc-second (~1 km at the equator)",
+  "temporalCoverage": "1992-01-01/2006-12-31",
+  "encodingFormat": [
+    "image/tiff; application=geotiff"
+  ],
+  "variableMeasured": [
+    { "@type": "PropertyValue", "name": "Evergreen/Deciduous Needleleaf Trees", "description": "Consensus prevalence (0–100%)" },
+    { "@type": "PropertyValue", "name": "Evergreen Broadleaf Trees", "description": "Consensus prevalence (0–100%)" },
+    { "@type": "PropertyValue", "name": "Deciduous Broadleaf Trees", "description": "Consensus prevalence (0–100%)" },
+    { "@type": "PropertyValue", "name": "Mixed/Other Trees", "description": "Consensus prevalence (0–100%)" },
+    { "@type": "PropertyValue", "name": "Shrubs", "description": "Consensus prevalence (0–100%)" },
+    { "@type": "PropertyValue", "name": "Herbaceous Vegetation", "description": "Consensus prevalence (0–100%)" },
+    { "@type": "PropertyValue", "name": "Cultivated and Managed Vegetation", "description": "Consensus prevalence (0–100%)" },
+    { "@type": "PropertyValue", "name": "Regularly Flooded Vegetation", "description": "Consensus prevalence (0–100%)" },
+    { "@type": "PropertyValue", "name": "Urban/Built-up", "description": "Consensus prevalence (0–100%)" },
+    { "@type": "PropertyValue", "name": "Snow/Ice", "description": "Consensus prevalence (0–100%)" },
+    { "@type": "PropertyValue", "name": "Barren", "description": "Consensus prevalence (0–100%)" },
+    { "@type": "PropertyValue", "name": "Open Water", "description": "Consensus prevalence (0–100%)" }
+  ],
+  "measurementTechnique": "Integration of multiple global remote sensing-derived land-cover products to estimate per-class consensus prevalence (percent) at 1-km resolution.",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "Full Version 1.0 downloads (with DISCover) – directory",
+      "description": "Directory containing GeoTIFF layers (one per class) for Full Version 1.0 (with DISCover/GLCC).",
+      "contentUrl": "https://data.earthenv.org/consensus_landcover/with_DISCover/",
+      "encodingFormat": "text/html"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Reduced Version 1.0 downloads (without DISCover) – directory",
+      "description": "Directory containing GeoTIFF layers (one per class) for Reduced Version 1.0 (without DISCover/GLCC).",
+      "contentUrl": "https://data.earthenv.org/consensus_landcover/without_DISCover/",
+      "encodingFormat": "text/html"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Example class GeoTIFF (Full v1.0): class 1",
+      "description": "Example direct file link for a single land-cover class GeoTIFF in the Full v1.0 distribution.",
+      "contentUrl": "https://data.earthenv.org/consensus_landcover/with_DISCover/consensus_full_class_1.tif",
+      "encodingFormat": "image/tiff; application=geotiff"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Example class GeoTIFF (Reduced v1.0): class 1",
+      "description": "Example direct file link for a single land-cover class GeoTIFF in the Reduced v1.0 distribution.",
+      "contentUrl": "https://data.earthenv.org/consensus_landcover/without_DISCover/Consensus_reduced_class_1.tif",
+      "encodingFormat": "image/tiff; application=geotiff"
+    }
+  ],
+  "citation": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "A global 1-km consensus land-cover product for biodiversity and ecosystem modeling",
+      "author": [
+        { "@type": "Person", "name": "Mao-Ning Tuanmu" },
+        { "@type": "Person", "name": "Walter Jetz" }
+      ],
+      "datePublished": "2014",
+      "isPartOf": { "@type": "Periodical", "name": "Global Ecology and Biogeography" },
+      "identifier": [
+        { "@type": "PropertyValue", "propertyID": "doi", "value": "10.1111/geb.12182" }
+      ],
+      "sameAs": "https://doi.org/10.1111/geb.12182"
+    }
+  ],
+  "about": [
+    { "@type": "Thing", "name": "Land cover" },
+    { "@type": "Thing", "name": "Remote sensing" },
+    { "@type": "Thing", "name": "Biodiversity modelling" },
+    { "@type": "Thing", "name": "Ecosystem modelling" }
+  ]
+}

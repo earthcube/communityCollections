@@ -1,0 +1,806 @@
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTermSet> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r10> <https://schema.org/hasDefinedTerm> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r1g> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r10> <https://schema.org/hasDefinedTerm> <http://purl.obolibrary.org/obo/CHEBI_27594> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r10> <https://schema.org/hasDefinedTerm> <http://qudt.org/1.1/vocab/quantity#MassPerTime> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0001-7161-5959> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/email> "sz2766@columbia.edu" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/familyName> "Zhou" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/givenName> "Sha" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/identifier> "https://orcid.org/0000-0001-7161-5959" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/name> "Sha Zhou" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0002-5181-9986> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/email> "yuanwei.qin@ou.edu" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/familyName> "Qin" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/givenName> "Yuanwei" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/identifier> "https://orcid.org/0000-0002-5181-9986" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/name> "Yuanwei Qin" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DataCatalog> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r20> <https://schema.org/disambiguatingDescription> "Data Publisher for Earth & Environmental Science" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r20> <https://schema.org/name> "PANGAEA" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r20> <https://schema.org/url> "https://www.pangaea.de/" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r2g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r2g> <https://schema.org/description> "Asia" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r2g> <https://schema.org/name> "Gross primary production of carbon" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r2g> <https://schema.org/subjectOf> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r30> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r2g> <https://schema.org/unitText> "Pg/a" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r3g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTermSet> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r3g> <https://schema.org/hasDefinedTerm> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r40> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r3g> <https://schema.org/hasDefinedTerm> <http://purl.obolibrary.org/obo/CHEBI_27594> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r3g> <https://schema.org/hasDefinedTerm> <http://qudt.org/1.1/vocab/quantity#MassPerTime> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r4g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r4g> <https://schema.org/description> "Africa" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r4g> <https://schema.org/name> "Gross primary production of carbon" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r4g> <https://schema.org/subjectOf> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r50> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r4g> <https://schema.org/unitText> "Pg/a" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r5g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r5g> <https://schema.org/email> "geli.zhang@cau.edu.cn" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r5g> <https://schema.org/familyName> "Zhang" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r5g> <https://schema.org/givenName> "Geli" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r5g> <https://schema.org/name> "Geli Zhang" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r60> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r60> <https://schema.org/alternateName> "GPP" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r60> <https://schema.org/name> "gross primary production" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r60> <https://schema.org/url> "https://en.wikipedia.org/wiki/Primary_production#Gross_primary_production_and_net_primary_production" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r6g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r6g> <https://schema.org/email> "xiangming.xiao@ou.edu" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r6g> <https://schema.org/familyName> "Xiao" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r6g> <https://schema.org/givenName> "Xiangming" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r6g> <https://schema.org/name> "Xiangming Xiao" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r70> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DataDownload> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r70> <https://schema.org/contentUrl> "https://doi.pangaea.de/10.1594/PANGAEA.879543?format=textfile" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r70> <https://schema.org/encodingFormat> "text/tab-separated-values" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r7g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTermSet> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r7g> <https://schema.org/hasDefinedTerm> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r80> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r7g> <https://schema.org/hasDefinedTerm> <http://purl.obolibrary.org/obo/CHEBI_27594> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r7g> <https://schema.org/hasDefinedTerm> <http://qudt.org/1.1/vocab/quantity#MassPerTime> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r8g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r8g> <https://schema.org/description> "South America" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r8g> <https://schema.org/name> "Gross primary production of carbon" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r8g> <https://schema.org/subjectOf> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r10> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r8g> <https://schema.org/unitText> "Pg/a" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r1g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r1g> <https://schema.org/alternateName> "GPP" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r1g> <https://schema.org/name> "gross primary production" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r1g> <https://schema.org/url> "https://en.wikipedia.org/wiki/Primary_production#Gross_primary_production_and_net_primary_production" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r90> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r90> <https://schema.org/description> "Global" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r90> <https://schema.org/name> "Gross primary production of carbon" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r90> <https://schema.org/subjectOf> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r9g> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r90> <https://schema.org/unitText> "Pg/a" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3ra0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTermSet> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3ra0> <https://schema.org/hasDefinedTerm> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rag> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3ra0> <https://schema.org/hasDefinedTerm> <http://purl.obolibrary.org/obo/CHEBI_27594> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3ra0> <https://schema.org/hasDefinedTerm> <http://qudt.org/1.1/vocab/quantity#MassPerTime> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rb0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rb0> <https://schema.org/email> "geli.zhang@cau.edu.cn" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rb0> <https://schema.org/familyName> "Zhang" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rb0> <https://schema.org/givenName> "Geli" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rb0> <https://schema.org/name> "Geli Zhang" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rbg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rbg> <https://schema.org/email> "xiangming.xiao@ou.edu" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rbg> <https://schema.org/familyName> "Xiao" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rbg> <https://schema.org/givenName> "Xiangming" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rbg> <https://schema.org/name> "Xiangming Xiao" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rc0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rc0> <https://schema.org/disambiguatingDescription> "Data Publisher for Earth & Environmental Science" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rc0> <https://schema.org/name> "PANGAEA" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rc0> <https://schema.org/url> "https://www.pangaea.de/" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rcg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rcg> <https://schema.org/name> "DATE/TIME" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rcg> <https://schema.org/subjectOf> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rd0> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rcg> <https://schema.org/url> "http://en.wikipedia.org/wiki/ISO_8601" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<http://purl.obolibrary.org/obo/CHEBI_27594> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<http://purl.obolibrary.org/obo/CHEBI_27594> <https://schema.org/alternateName> "C" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<http://purl.obolibrary.org/obo/CHEBI_27594> <https://schema.org/identifier> "http://purl.obolibrary.org/obo/CHEBI_27594" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<http://purl.obolibrary.org/obo/CHEBI_27594> <https://schema.org/name> "carbon" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<http://purl.obolibrary.org/obo/CHEBI_27594> <https://schema.org/url> "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27594" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rdg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rdg> <https://schema.org/alternateName> "GPP" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rdg> <https://schema.org/name> "gross primary production" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rdg> <https://schema.org/url> "https://en.wikipedia.org/wiki/Primary_production#Gross_primary_production_and_net_primary_production" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Dataset> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/citation> <https://doi.org/10.1038/sdata.2017.165> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/conditionsOfAccess> "unrestricted" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/creator> <https://orcid.org/0000-0002-7468-2409> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rbg> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3re0> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/creator> <https://orcid.org/0000-0001-7161-5959> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r5g> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/creator> <https://orcid.org/0000-0002-5181-9986> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/creator> <https://orcid.org/0000-0001-5687-803X> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/datePublished> "2017-08-11" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/description> "This dataset is about: (Table 3) Continental and global total gross primary production of carbon for the years 2000-2016. Please consult parent dataset @ https://doi.org/10.1594/PANGAEA.879560 for more information." <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/distribution> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3reg> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/distribution> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r70> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/identifier> "https://doi.org/10.1594/PANGAEA.879543" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/inLanguage> "en" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/includedInDataCatalog> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r20> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/isAccessibleForFree> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/isPartOf> "https://doi.org/10.1594/PANGAEA.879560" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/license> "https://creativecommons.org/licenses/by/3.0/" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/name> "(Table 3) Continental and global total gross primary production of carbon for the years 2000-2016" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/publisher> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rc0> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/size> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rf0> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/temporalCoverage> "2000-01-01T00:00:00/2016-12-31T23:59:00" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/url> "https://doi.pangaea.de/10.1594/PANGAEA.879543" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rcg> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r2g> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rfg> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rg0> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r4g> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r8g> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rgg> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1594/PANGAEA.879543> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r90> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rfg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rfg> <https://schema.org/description> "North America" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rfg> <https://schema.org/name> "Gross primary production of carbon" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rfg> <https://schema.org/subjectOf> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r7g> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rfg> <https://schema.org/unitText> "Pg/a" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rg0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rg0> <https://schema.org/description> "Europe" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rg0> <https://schema.org/name> "Gross primary production of carbon" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rg0> <https://schema.org/subjectOf> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r3g> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rg0> <https://schema.org/unitText> "Pg/a" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r40> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r40> <https://schema.org/alternateName> "GPP" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r40> <https://schema.org/name> "gross primary production" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r40> <https://schema.org/url> "https://en.wikipedia.org/wiki/Primary_production#Gross_primary_production_and_net_primary_production" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rag> <https://schema.org/alternateName> "GPP" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rag> <https://schema.org/name> "gross primary production" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rag> <https://schema.org/url> "https://en.wikipedia.org/wiki/Primary_production#Gross_primary_production_and_net_primary_production" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rh0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWorkSeries> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rh0> <https://schema.org/name> "Scientific Data" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3reg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DataDownload> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3reg> <https://schema.org/contentUrl> "https://doi.pangaea.de/10.1594/PANGAEA.879543?format=html" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3reg> <https://schema.org/encodingFormat> "text/html" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rf0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/QuantitativeValue> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rf0> <https://schema.org/unitText> "data points" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rf0> <https://schema.org/value> "119"^^<http://www.w3.org/2001/XMLSchema#integer> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rd0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTermSet> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rd0> <https://schema.org/hasDefinedTerm> <http://qudt.org/1.1/vocab/quantity#Time> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTermSet> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r30> <https://schema.org/hasDefinedTerm> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r60> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r30> <https://schema.org/hasDefinedTerm> <http://purl.obolibrary.org/obo/CHEBI_27594> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r30> <https://schema.org/hasDefinedTerm> <http://qudt.org/1.1/vocab/quantity#MassPerTime> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rgg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rgg> <https://schema.org/description> "Oceania" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rgg> <https://schema.org/name> "Gross primary production of carbon" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rgg> <https://schema.org/subjectOf> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3ra0> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rgg> <https://schema.org/unitText> "Pg/a" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTermSet> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r50> <https://schema.org/hasDefinedTerm> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rdg> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r50> <https://schema.org/hasDefinedTerm> <http://purl.obolibrary.org/obo/CHEBI_27594> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r50> <https://schema.org/hasDefinedTerm> <http://qudt.org/1.1/vocab/quantity#MassPerTime> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r9g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTermSet> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r9g> <https://schema.org/hasDefinedTerm> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rhg> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r9g> <https://schema.org/hasDefinedTerm> <http://purl.obolibrary.org/obo/CHEBI_27594> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r9g> <https://schema.org/hasDefinedTerm> <http://qudt.org/1.1/vocab/quantity#MassPerTime> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1038/sdata.2017.165> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1038/sdata.2017.165> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PublicationIssue> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://orcid.org/0000-0002-7468-2409> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3r6g> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3ri0> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://orcid.org/0000-0001-7161-5959> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rb0> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://orcid.org/0000-0002-5181-9986> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://orcid.org/0000-0001-5687-803X> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/datePublished> "2017" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/identifier> "https://doi.org/10.1038/sdata.2017.165" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/isPartOf> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rh0> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/issueNumber> "4(1)" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/name> "A global moderate resolution dataset of gross primary production of vegetation for 2000–2016" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/pagination> "170165" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/url> "https://doi.org/10.1038/sdata.2017.165" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0002-7468-2409> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/email> "yaozhang@lbl.gov" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/familyName> "Zhang" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/givenName> "Yao" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/identifier> "https://orcid.org/0000-0002-7468-2409" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/name> "Yao Zhang" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3ri0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3ri0> <https://schema.org/email> "xiaocui.wu@ou.edu" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3ri0> <https://schema.org/familyName> "Wu" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3ri0> <https://schema.org/givenName> "Xiaocui" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3ri0> <https://schema.org/name> "Xiaocui Wu" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0001-5687-803X> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/email> "dongjw@igsnrr.ac.cn" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/familyName> "Dong" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/givenName> "Jinwei" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/identifier> "https://orcid.org/0000-0001-5687-803X" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/name> "Jinwei Dong" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<http://qudt.org/1.1/vocab/quantity#Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<http://qudt.org/1.1/vocab/quantity#Time> <https://schema.org/alternateName> "T" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<http://qudt.org/1.1/vocab/quantity#Time> <https://schema.org/identifier> "http://qudt.org/1.1/vocab/quantity#Time" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<http://qudt.org/1.1/vocab/quantity#Time> <https://schema.org/name> "Time" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<http://qudt.org/1.1/vocab/quantity#Time> <https://schema.org/url> "http://dbpedia.org/resource/Time" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r80> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r80> <https://schema.org/alternateName> "GPP" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r80> <https://schema.org/name> "gross primary production" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3r80> <https://schema.org/url> "https://en.wikipedia.org/wiki/Primary_production#Gross_primary_production_and_net_primary_production" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rhg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rhg> <https://schema.org/alternateName> "GPP" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rhg> <https://schema.org/name> "gross primary production" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rhg> <https://schema.org/url> "https://en.wikipedia.org/wiki/Primary_production#Gross_primary_production_and_net_primary_production" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3re0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3re0> <https://schema.org/email> "xiaocui.wu@ou.edu" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3re0> <https://schema.org/familyName> "Wu" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3re0> <https://schema.org/givenName> "Xiaocui" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3re0> <https://schema.org/name> "Xiaocui Wu" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<http://qudt.org/1.1/vocab/quantity#MassPerTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<http://qudt.org/1.1/vocab/quantity#MassPerTime> <https://schema.org/identifier> "http://qudt.org/1.1/vocab/quantity#MassPerTime" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<http://qudt.org/1.1/vocab/quantity#MassPerTime> <https://schema.org/name> "Mass per Time" <urn:gleaner.io:iow:gpp:data:2d78c4242a108f70ea2c0604964dc095b34bfd7b> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rig> <https://schema.org/email> "xiangming.xiao@ou.edu" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rig> <https://schema.org/familyName> "Xiao" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rig> <https://schema.org/givenName> "Xiangming" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rig> <https://schema.org/name> "Xiangming Xiao" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0002-5181-9986> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/email> "yuanwei.qin@ou.edu" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/familyName> "Qin" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/givenName> "Yuanwei" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/identifier> "https://orcid.org/0000-0002-5181-9986" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/name> "Yuanwei Qin" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rj0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWorkSeries> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rj0> <https://schema.org/name> "Scientific Data" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<hdl:10013/epic.51475.d001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<hdl:10013/epic.51475.d001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/WebPage> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<hdl:10013/epic.51475.d001> <https://schema.org/identifier> "hdl:10013/epic.51475.d001" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<hdl:10013/epic.51475.d001> <https://schema.org/name> "Figure 4. Spatial pattern of annual and maximum daily GPP for 2000-2016" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<hdl:10013/epic.51475.d001> <https://schema.org/url> "https://doi.pangaea.de/10013/epic.51475.d001" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rjg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rjg> <https://schema.org/email> "xiangming.xiao@ou.edu" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rjg> <https://schema.org/familyName> "Xiao" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rjg> <https://schema.org/givenName> "Xiangming" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rjg> <https://schema.org/name> "Xiangming Xiao" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1038/sdata.2017.165> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1038/sdata.2017.165> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PublicationIssue> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://orcid.org/0000-0002-7468-2409> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rig> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rk0> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://orcid.org/0000-0001-7161-5959> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rkg> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://orcid.org/0000-0002-5181-9986> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://orcid.org/0000-0001-5687-803X> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/datePublished> "2017" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/identifier> "https://doi.org/10.1038/sdata.2017.165" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/isBasedOn> <https://doi.org/10.1594/PANGAEA.879560> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/isPartOf> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rj0> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/issueNumber> "4(1)" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/name> "A global moderate resolution dataset of gross primary production of vegetation for 2000–2016" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/pagination> "170165" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/url> "https://doi.org/10.1038/sdata.2017.165" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rk0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rk0> <https://schema.org/email> "xiaocui.wu@ou.edu" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rk0> <https://schema.org/familyName> "Wu" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rk0> <https://schema.org/givenName> "Xiaocui" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rk0> <https://schema.org/name> "Xiaocui Wu" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rkg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rkg> <https://schema.org/email> "geli.zhang@cau.edu.cn" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rkg> <https://schema.org/familyName> "Zhang" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rkg> <https://schema.org/givenName> "Geli" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rkg> <https://schema.org/name> "Geli Zhang" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0001-5687-803X> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/email> "dongjw@igsnrr.ac.cn" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/familyName> "Dong" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/givenName> "Jinwei" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/identifier> "https://orcid.org/0000-0001-5687-803X" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/name> "Jinwei Dong" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rl0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DataDownload> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rl0> <https://schema.org/contentUrl> "https://doi.pangaea.de/10.1594/PANGAEA.879560?format=zip" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rl0> <https://schema.org/encodingFormat> "application/zip" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rlg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rlg> <https://schema.org/disambiguatingDescription> "Data Publisher for Earth & Environmental Science" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rlg> <https://schema.org/name> "PANGAEA" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rlg> <https://schema.org/url> "https://www.pangaea.de/" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0002-7468-2409> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/email> "yaozhang@lbl.gov" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/familyName> "Zhang" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/givenName> "Yao" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/identifier> "https://orcid.org/0000-0002-7468-2409" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/name> "Yao Zhang" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rm0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rm0> <https://schema.org/email> "geli.zhang@cau.edu.cn" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rm0> <https://schema.org/familyName> "Zhang" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rm0> <https://schema.org/givenName> "Geli" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rm0> <https://schema.org/name> "Geli Zhang" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rmg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DataCatalog> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rmg> <https://schema.org/disambiguatingDescription> "Data Publisher for Earth & Environmental Science" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rmg> <https://schema.org/name> "PANGAEA" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rmg> <https://schema.org/url> "https://www.pangaea.de/" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Dataset> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/abstract> "Accurate estimation of the gross primary production (GPP) of terrestrial vegetation is vital for understanding of the global carbon cycle and predicting the future climate change. Multiple GPP products are currently available based on different methods, but their performances vary substantially when validated against GPP estimates from eddy covariance data. This paper provides a new GPP dataset at moderate spatial (500 m) and temporal (8-day) resolutions over the entire globe for 2000-2016. This GPP dataset is based on an improved light use efficiency theory and is driven by satellite data from MODIS and climate data from NCEP Reanalysis II. It also employs a state-of-the-art vegetation index (VI) gap-filling and smoothing algorithm and a separate treatment for C3/C4 photosynthesis pathways. All these improvements aim to solve several critical problems existing in current GPP products. With a satisfactory performance when validated against in situ GPP estimates, this dataset offers an alternative GPP estimates for regional to global carbon cycle studies." <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/citation> <hdl:10013/epic.51475.d001> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/conditionsOfAccess> "unrestricted" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/creator> <https://orcid.org/0000-0002-7468-2409> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rjg> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rn0> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/creator> <https://orcid.org/0000-0001-7161-5959> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rm0> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/creator> <https://orcid.org/0000-0002-5181-9986> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/creator> <https://orcid.org/0000-0001-5687-803X> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/datePublished> "2017-08-12" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/description> "Accurate estimation of the gross primary production (GPP) of terrestrial vegetation is vital for understanding of the global carbon cycle and predicting the future climate change. Multiple GPP products are currently available based on different methods, but their performances vary substantially when validated against GPP estimates from eddy covariance data. This paper provides a new GPP dataset at moderate spatial (500 m) and temporal (8-day) resolutions over the entire globe for 2000-2016. This GPP dataset is based on an improved light use efficiency theory and is driven by satellite data from MODIS and climate data from NCEP Reanalysis II. It also employs a state-of-the-art vegetation index (VI) gap-filling and smoothing algorithm and a separate treatment for C3/C4 photosynthesis pathways. All these improvements aim to solve several critical problems existing in current GPP products. […]" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/distribution> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rl0> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/identifier> "https://doi.org/10.1594/PANGAEA.879560" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/inLanguage> "en" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/includedInDataCatalog> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rmg> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/isAccessibleForFree> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/license> "https://creativecommons.org/licenses/by/3.0/" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/name> "Global gross primary production from vegetation photosynthesis model for 2000-2016" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/publisher> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rlg> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/size> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rng> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/temporalCoverage> "2000-01-01T00:00:00/2016-12-31T23:59:00" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1594/PANGAEA.879560> <https://schema.org/url> "https://doi.pangaea.de/10.1594/PANGAEA.879560" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0001-7161-5959> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/email> "sz2766@columbia.edu" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/familyName> "Zhou" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/givenName> "Sha" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/identifier> "https://orcid.org/0000-0001-7161-5959" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/name> "Sha Zhou" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rn0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rn0> <https://schema.org/email> "xiaocui.wu@ou.edu" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rn0> <https://schema.org/familyName> "Wu" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rn0> <https://schema.org/givenName> "Xiaocui" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rn0> <https://schema.org/name> "Xiaocui Wu" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rng> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/QuantitativeValue> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rng> <https://schema.org/unitText> "datasets" <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rng> <https://schema.org/value> "2"^^<http://www.w3.org/2001/XMLSchema#integer> <urn:gleaner.io:iow:gpp:data:73b23fc49e03311c4a4abf85208ae8a0fd114aa7> .
+<https://doi.org/10.1007/s42452-020-03290-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1007/s42452-020-03290-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PublicationIssue> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1007/s42452-020-03290-0> <https://schema.org/creator> <https://orcid.org/0000-0002-1951-2255> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1007/s42452-020-03290-0> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3ro0> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1007/s42452-020-03290-0> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rog> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1007/s42452-020-03290-0> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rp0> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1007/s42452-020-03290-0> <https://schema.org/creator> <https://orcid.org/0000-0003-0104-8615> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1007/s42452-020-03290-0> <https://schema.org/creator> <https://orcid.org/0000-0002-7110-5470> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1007/s42452-020-03290-0> <https://schema.org/creator> <https://orcid.org/0000-0003-3601-9072> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1007/s42452-020-03290-0> <https://schema.org/datePublished> "2020" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1007/s42452-020-03290-0> <https://schema.org/identifier> "https://doi.org/10.1007/s42452-020-03290-0" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1007/s42452-020-03290-0> <https://schema.org/isBasedOn> <https://doi.org/10.1594/PANGAEA.911161> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1007/s42452-020-03290-0> <https://schema.org/isPartOf> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rpg> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1007/s42452-020-03290-0> <https://schema.org/issueNumber> "2(10)" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1007/s42452-020-03290-0> <https://schema.org/name> "Estimating dissolved carbon concentrations in global soils: a global database and model" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1007/s42452-020-03290-0> <https://schema.org/pagination> "1626" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1007/s42452-020-03290-0> <https://schema.org/url> "https://doi.org/10.1007/s42452-020-03290-0" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rq0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rq0> <https://schema.org/familyName> "Bouwman" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rq0> <https://schema.org/givenName> "Alexander F" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rq0> <https://schema.org/name> "Alexander F Bouwman" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rqg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/QuantitativeValue> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rqg> <https://schema.org/unitText> "MBytes" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rqg> <https://schema.org/value> "7.8E0"^^<http://www.w3.org/2001/XMLSchema#double> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rp0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rp0> <https://schema.org/familyName> "Vilmin" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rp0> <https://schema.org/givenName> "Lauriane" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rp0> <https://schema.org/name> "Lauriane Vilmin" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rr0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DataCatalog> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rr0> <https://schema.org/disambiguatingDescription> "Data Publisher for Earth & Environmental Science" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rr0> <https://schema.org/name> "PANGAEA" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rr0> <https://schema.org/url> "https://www.pangaea.de/" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0002-7110-5470> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0002-7110-5470> <https://schema.org/email> "Jose.Mogollon@awi.de" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0002-7110-5470> <https://schema.org/familyName> "Mogollón" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0002-7110-5470> <https://schema.org/givenName> "José M" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0002-7110-5470> <https://schema.org/identifier> "https://orcid.org/0000-0002-7110-5470" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0002-7110-5470> <https://schema.org/name> "José M Mogollón" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0003-3601-9072> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0003-3601-9072> <https://schema.org/email> "jmiddelburg@nioo.knaw.nl" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0003-3601-9072> <https://schema.org/familyName> "Middelburg" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0003-3601-9072> <https://schema.org/givenName> "Jack J" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0003-3601-9072> <https://schema.org/identifier> "https://orcid.org/0000-0003-3601-9072" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0003-3601-9072> <https://schema.org/name> "Jack J Middelburg" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rrg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rrg> <https://schema.org/disambiguatingDescription> "Data Publisher for Earth & Environmental Science" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rrg> <https://schema.org/name> "PANGAEA" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rrg> <https://schema.org/url> "https://www.pangaea.de/" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0002-1951-2255> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0002-1951-2255> <https://schema.org/email> "j.j.langeveld@uu.nl" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0002-1951-2255> <https://schema.org/familyName> "Langeveld" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0002-1951-2255> <https://schema.org/givenName> "Joep" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0002-1951-2255> <https://schema.org/identifier> "https://orcid.org/0000-0002-1951-2255" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0002-1951-2255> <https://schema.org/name> "Joep Langeveld" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3ro0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3ro0> <https://schema.org/familyName> "Bouwman" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3ro0> <https://schema.org/givenName> "Alexander F" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3ro0> <https://schema.org/name> "Alexander F Bouwman" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0003-0104-8615> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0003-0104-8615> <https://schema.org/familyName> "Beusen" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0003-0104-8615> <https://schema.org/givenName> "A H W" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0003-0104-8615> <https://schema.org/identifier> "https://orcid.org/0000-0003-0104-8615" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://orcid.org/0000-0003-0104-8615> <https://schema.org/name> "A H W Beusen" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rs0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rs0> <https://schema.org/familyName> "van Hoek" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rs0> <https://schema.org/givenName> "Wim Joost" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rs0> <https://schema.org/name> "Wim Joost van Hoek" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rsg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rsg> <https://schema.org/familyName> "Vilmin" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rsg> <https://schema.org/givenName> "Lauriane" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rsg> <https://schema.org/name> "Lauriane Vilmin" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rt0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DataDownload> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rt0> <https://schema.org/contentUrl> "https://store.pangaea.de/Publications/LangeveldJB-etal_2020/Langeveld_SN_Applied_Sciences_Supplementary_Information.zip" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rt0> <https://schema.org/encodingFormat> "application/zip" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Dataset> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/abstract> "Dissolved carbon leaching in and from soils plays an important role in C transport along the terrestrial-aquatic continuum. However, a global overview and analysis of dissolved carbon in soil solutions, covering a wide range of vegetation types and climates, is lacking. We compiled a global database on annual average dissolved organic carbon (DOC) and dissolved inorganic carbon (DIC) in soil solutions, including potential governing factors, with 762 entries from 351 different sites covering a range of climate zones, land cover types and soil classes. Using this database we develop regression models to calculate topsoil concentrations, and concentrations vs. depth in the subsoil at the global scale. For DIC, the lack of a  roportional globally distributed cover inhibits analysis on a global scale. For DOC, annual average concentrations range from 1.7 to 88.3 (median=25.27) mg C/L for topsoils (n=255) and from 0.42 to 372.1 (median=5.50) mg C/L for subsoils (n=285, excluding lab incubations). Highest topsoil values occur in forests of cooler, humid zones. In topsoils, multiple regression showed that precipitation is the most significant factor. Our global topsoil DOC model (R2=0.36) uses precipitation, soil class, climate zone and land cover type as model factors. Our global subsoil model describes DOC concentrations vs. depth for different USDA soil classes (overall R2=0.45). Highest subsoil DOC concentrations are calculated for Histosols." <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/comment> "This is the Supplementary Information (SI) in addition to the article 'Global database and model on dissolved carbon in soil solution' by Langeveld et al.\nBelow a brief overview of the SI content is given. For questions, please don't hestitate to contact the corresponding author, Joep Langeveld (j.j.langeveld@uu.nl & joeplangeveld@gmail.com).\n\nSI content\nSI_1\n-The database on dissolved C in soil solution\n-The bibliography of the literature used in the database\n-Instructions file (see further this file)\n\nSI_2\n-netcdf with the modelled annual average DOC concentration (mgC/L) in topsoil\n-netcdf with the modelled annual average DOC concentration (mgC/L) in subsoil(1m)\nThe modelled DOC concentration in topsoil and subsoil are provided as five-yearly datasets on grid for the period 1970-2000. Non-land grid cells are masked. For subsoils, a few cells report 'nan'; then, \nno infiltration occurs due to only land cover with ice or rock.\nThe data can be opened for analysis in any programming language (e.g. python) or for quick visualisation with e.g. Panoply (https://www.giss.nasa.gov/tools/panoply/)\n\nSI_3\n-fig_SI3.1\n-fig_SI3.2\nBoxplots showing top and subsoil DOC concentration (mg C/L) data distributed over sub-climate zones according to Kottek et al. (2006) (fig_SI3.1) and land cover groups (fig_SI3.2).\nFigures are similar to figure 4b&c, but exclude data for Histosols.Laboratory incubation data are excluded, n=469. Boxplot bars are medians. Whiskers extend up to 1.5 times the \ninterquartile range (IQR) from the lower and upper quartile, unless exceeding the minimum or maximum. Circles are values exceeding the whiskers.\n\nSI_4\n-statistical_tests\nDetails statistical tests mentioned in the article, including the corresponding text.\n\nSI_5\n-13 figures\nSubsoil regressions for DOC relative to the topsoil, for every USDA soil class, except Mollisols. Corresponding numbers are shown in table 4.\n\nSI_6\nSingle regression of C/N ratio vs DOC concentrations from the database, for only data from the Spodosol soil class." <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/conditionsOfAccess> "unrestricted" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/creator> <https://orcid.org/0000-0002-1951-2255> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rq0> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rs0> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rsg> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/creator> <https://orcid.org/0000-0003-0104-8615> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/creator> <https://orcid.org/0000-0002-7110-5470> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/creator> <https://orcid.org/0000-0003-3601-9072> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/datePublished> "2020-01-22" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/description> "Dissolved carbon leaching in and from soils plays an important role in C transport along the terrestrial-aquatic continuum. However, a global overview and analysis of dissolved carbon in soil solutions, covering a wide range of vegetation types and climates, is lacking. We compiled a global database on annual average dissolved organic carbon (DOC) and dissolved inorganic carbon (DIC) in soil solutions, including potential governing factors, with 762 entries from 351 different sites covering a range of climate zones, land cover types and soil classes. Using this database we develop regression models to calculate topsoil concentrations, and concentrations vs. depth in the subsoil at the global scale. For DIC, the lack of a  roportional globally distributed cover inhibits analysis on a global scale. […]" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/distribution> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rt0> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/identifier> "https://doi.org/10.1594/PANGAEA.911161" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/inLanguage> "en" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/includedInDataCatalog> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rr0> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/isAccessibleForFree> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/keywords> "Carbon leaching; database; DIC; dissolved carbon; DOC; global model; soil carbon; soil solution; vadose zone" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/license> "https://creativecommons.org/licenses/by/4.0/" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/name> "Global database on dissolved carbon in soil solution, including ancillary information on a range of potential drivers" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/publisher> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rrg> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/size> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rqg> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://doi.org/10.1594/PANGAEA.911161> <https://schema.org/url> "https://doi.pangaea.de/10.1594/PANGAEA.911161" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rog> <https://schema.org/familyName> "van Hoek" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rog> <https://schema.org/givenName> "Wim Joost" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rog> <https://schema.org/name> "Wim Joost van Hoek" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rpg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWorkSeries> <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rpg> <https://schema.org/name> "SN Applied Sciences" <urn:gleaner.io:iow:gpp:data:a1e2f82711848e68b9e20dbd8019b3360e4e2ad5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rtg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/QuantitativeValue> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rtg> <https://schema.org/unitText> "data points" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rtg> <https://schema.org/value> "30"^^<http://www.w3.org/2001/XMLSchema#integer> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3ru0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTermSet> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3ru0> <https://schema.org/hasDefinedTerm> <http://qudt.org/1.1/vocab/quantity#Time> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<http://qudt.org/1.1/vocab/quantity#Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<http://qudt.org/1.1/vocab/quantity#Time> <https://schema.org/alternateName> "T" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<http://qudt.org/1.1/vocab/quantity#Time> <https://schema.org/identifier> "http://qudt.org/1.1/vocab/quantity#Time" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<http://qudt.org/1.1/vocab/quantity#Time> <https://schema.org/name> "Time" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<http://qudt.org/1.1/vocab/quantity#Time> <https://schema.org/url> "http://dbpedia.org/resource/Time" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rug> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rug> <https://schema.org/email> "geli.zhang@cau.edu.cn" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rug> <https://schema.org/familyName> "Zhang" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rug> <https://schema.org/givenName> "Geli" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rug> <https://schema.org/name> "Geli Zhang" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rv0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rv0> <https://schema.org/email> "xiaocui.wu@ou.edu" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rv0> <https://schema.org/familyName> "Wu" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rv0> <https://schema.org/givenName> "Xiaocui" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rv0> <https://schema.org/name> "Xiaocui Wu" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rvg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DataCatalog> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rvg> <https://schema.org/disambiguatingDescription> "Data Publisher for Earth & Environmental Science" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rvg> <https://schema.org/name> "PANGAEA" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3rvg> <https://schema.org/url> "https://www.pangaea.de/" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0001-5687-803X> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/email> "dongjw@igsnrr.ac.cn" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/familyName> "Dong" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/givenName> "Jinwei" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/identifier> "https://orcid.org/0000-0001-5687-803X" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/name> "Jinwei Dong" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.879558> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/creator> <https://orcid.org/0000-0002-7468-2409> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s00> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s0g> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/creator> <https://orcid.org/0000-0001-7161-5959> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rug> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/creator> <https://orcid.org/0000-0002-5181-9986> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/creator> <https://orcid.org/0000-0001-5687-803X> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/datePublished> "2017" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/identifier> "https://doi.org/10.1594/PANGAEA.879558" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/name> "Global gross primary production from vegetation photosynthesis model for 2000-2016, links to model results in GeoTIFF format" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/url> "https://doi.pangaea.de/10.1594/PANGAEA.879558" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s10> <https://schema.org/email> "geli.zhang@cau.edu.cn" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s10> <https://schema.org/familyName> "Zhang" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s10> <https://schema.org/givenName> "Geli" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s10> <https://schema.org/name> "Geli Zhang" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0001-7161-5959> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/email> "sz2766@columbia.edu" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/familyName> "Zhou" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/givenName> "Sha" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/identifier> "https://orcid.org/0000-0001-7161-5959" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/name> "Sha Zhou" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0002-5181-9986> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/email> "yuanwei.qin@ou.edu" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/familyName> "Qin" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/givenName> "Yuanwei" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/identifier> "https://orcid.org/0000-0002-5181-9986" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/name> "Yuanwei Qin" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s1g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s1g> <https://schema.org/disambiguatingDescription> "Data Publisher for Earth & Environmental Science" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s1g> <https://schema.org/name> "PANGAEA" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s1g> <https://schema.org/url> "https://www.pangaea.de/" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Dataset> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/abstract> "This dataset contains 8-day temporal resolution, 500m spatial resolution gross primary production (GPP) estimation from vegetation photosynthesis model (VPM) for the entire globe during 2017-2019.  The entire globe is divided into 290 sub area (tiles) under a sinusoidal projection. For each tile each year, there are 46 GeoTiff files, each one represents the average daily GPP during a 8-day period.  Each GPP file is also associated with a quality control layer, which contains a Boolean value to indicate whether the data quality is good (0) or not (1). The simulated GPP is also validated against 113 eddy covariance flux tower across the globe." <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/citation> <https://doi.org/10.1038/sdata.2017.165> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/citation> <https://doi.org/10.1594/PANGAEA.879558> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/conditionsOfAccess> "unrestricted" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/creator> <https://orcid.org/0000-0002-7468-2409> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s20> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rv0> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/creator> <https://orcid.org/0000-0001-7161-5959> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s10> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/creator> <https://orcid.org/0000-0002-5181-9986> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/creator> <https://orcid.org/0000-0001-5687-803X> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s2g> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/datePublished> "2021-02-23" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/description> "This dataset contains 8-day temporal resolution, 500m spatial resolution gross primary production (GPP) estimation from vegetation photosynthesis model (VPM) for the entire globe during 2017-2019.  The entire globe is divided into 290 sub area (tiles) under a sinusoidal projection. For each tile each year, there are 46 GeoTiff files, each one represents the average daily GPP during a 8-day period.  Each GPP file is also associated with a quality control layer, which contains a Boolean value to indicate whether the data quality is good (0) or not (1). The simulated GPP is also validated against 113 eddy covariance flux tower across the globe." <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/distribution> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s30> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/distribution> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s3g> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/identifier> "https://doi.org/10.1594/PANGAEA.928381" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/inLanguage> "en" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/includedInDataCatalog> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rvg> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/isAccessibleForFree> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/keywords> "gross primary production; photosynthesis; vegetation; global" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/license> "https://creativecommons.org/licenses/by/4.0/" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/name> "Global gross primary production from vegetation photosynthesis model for 2017-2019" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/publisher> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s1g> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/size> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3rtg> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/temporalCoverage> "2017-01-01T00:00:00/2019-01-01T00:00:00" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/url> "https://doi.pangaea.de/10.1594/PANGAEA.928381" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s40> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s4g> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s50> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s5g> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s60> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1038/sdata.2017.165> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1038/sdata.2017.165> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PublicationIssue> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://orcid.org/0000-0002-7468-2409> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s6g> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s70> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://orcid.org/0000-0001-7161-5959> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s7g> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://orcid.org/0000-0002-5181-9986> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://orcid.org/0000-0001-5687-803X> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/datePublished> "2017" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/identifier> "https://doi.org/10.1038/sdata.2017.165" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/isPartOf> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s80> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/issueNumber> "4(1)" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/name> "A global moderate resolution dataset of gross primary production of vegetation for 2000–2016" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/pagination> "170165" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/url> "https://doi.org/10.1038/sdata.2017.165" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s2g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s2g> <https://schema.org/email> "rdoughty@caltech.edu" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s2g> <https://schema.org/familyName> "Doughty" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s2g> <https://schema.org/givenName> "Russell" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s2g> <https://schema.org/name> "Russell Doughty" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s4g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s4g> <https://schema.org/description> "GPP" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s4g> <https://schema.org/name> "File name" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s60> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s60> <https://schema.org/description> "data quality" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s60> <https://schema.org/name> "Binary Object" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s6g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s6g> <https://schema.org/email> "xiangming.xiao@ou.edu" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s6g> <https://schema.org/familyName> "Xiao" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s6g> <https://schema.org/givenName> "Xiangming" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s6g> <https://schema.org/name> "Xiangming Xiao" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s7g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s7g> <https://schema.org/email> "geli.zhang@cau.edu.cn" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s7g> <https://schema.org/familyName> "Zhang" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s7g> <https://schema.org/givenName> "Geli" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s7g> <https://schema.org/name> "Geli Zhang" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s80> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWorkSeries> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s80> <https://schema.org/name> "Scientific Data" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DataDownload> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s30> <https://schema.org/contentUrl> "https://doi.pangaea.de/10.1594/PANGAEA.928381?format=html" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s30> <https://schema.org/encodingFormat> "text/html" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s50> <https://schema.org/description> "GPP" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s50> <https://schema.org/name> "Binary Object" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s3g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DataDownload> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s3g> <https://schema.org/contentUrl> "https://doi.pangaea.de/10.1594/PANGAEA.928381?format=textfile" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s3g> <https://schema.org/encodingFormat> "text/tab-separated-values" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0002-7468-2409> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/email> "yaozhang@lbl.gov" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/familyName> "Zhang" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/givenName> "Yao" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/identifier> "https://orcid.org/0000-0002-7468-2409" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/name> "Yao Zhang" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s70> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s70> <https://schema.org/email> "xiaocui.wu@ou.edu" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s70> <https://schema.org/familyName> "Wu" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s70> <https://schema.org/givenName> "Xiaocui" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s70> <https://schema.org/name> "Xiaocui Wu" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s00> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s00> <https://schema.org/email> "xiangming.xiao@ou.edu" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s00> <https://schema.org/familyName> "Xiao" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s00> <https://schema.org/givenName> "Xiangming" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s00> <https://schema.org/name> "Xiangming Xiao" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s0g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s0g> <https://schema.org/email> "xiaocui.wu@ou.edu" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s0g> <https://schema.org/familyName> "Wu" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s0g> <https://schema.org/givenName> "Xiaocui" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s0g> <https://schema.org/name> "Xiaocui Wu" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s20> <https://schema.org/email> "xiangming.xiao@ou.edu" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s20> <https://schema.org/familyName> "Xiao" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s20> <https://schema.org/givenName> "Xiangming" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s20> <https://schema.org/name> "Xiangming Xiao" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s40> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s40> <https://schema.org/name> "DATE/TIME" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s40> <https://schema.org/subjectOf> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3ru0> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s40> <https://schema.org/url> "http://en.wikipedia.org/wiki/ISO_8601" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s5g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s5g> <https://schema.org/description> "data quality" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s5g> <https://schema.org/name> "File name" <urn:gleaner.io:iow:gpp:data:bc4d190917216d7d0db70cd10d64f3e7a1d54d03> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s8g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s8g> <https://schema.org/email> "xiaocui.wu@ou.edu" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s8g> <https://schema.org/familyName> "Wu" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s8g> <https://schema.org/givenName> "Xiaocui" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s8g> <https://schema.org/name> "Xiaocui Wu" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s90> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTermSet> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s90> <https://schema.org/hasDefinedTerm> <http://qudt.org/1.1/vocab/quantity#Time> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s9g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s9g> <https://schema.org/description> "GPP" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3s9g> <https://schema.org/name> "File name" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sa0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sa0> <https://schema.org/description> "GPP" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sa0> <https://schema.org/name> "Uniform resource locator/link to file" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0001-7161-5959> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/email> "sz2766@columbia.edu" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/familyName> "Zhou" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/givenName> "Sha" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/identifier> "https://orcid.org/0000-0001-7161-5959" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0001-7161-5959> <https://schema.org/name> "Sha Zhou" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0001-5687-803X> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/email> "dongjw@igsnrr.ac.cn" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/familyName> "Dong" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/givenName> "Jinwei" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/identifier> "https://orcid.org/0000-0001-5687-803X" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0001-5687-803X> <https://schema.org/name> "Jinwei Dong" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sag> <https://schema.org/email> "xiangming.xiao@ou.edu" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sag> <https://schema.org/familyName> "Xiao" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sag> <https://schema.org/givenName> "Xiangming" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sag> <https://schema.org/name> "Xiangming Xiao" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<http://qudt.org/1.1/vocab/quantity#Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<http://qudt.org/1.1/vocab/quantity#Time> <https://schema.org/alternateName> "T" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<http://qudt.org/1.1/vocab/quantity#Time> <https://schema.org/identifier> "http://qudt.org/1.1/vocab/quantity#Time" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<http://qudt.org/1.1/vocab/quantity#Time> <https://schema.org/name> "Time" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<http://qudt.org/1.1/vocab/quantity#Time> <https://schema.org/url> "http://dbpedia.org/resource/Time" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0002-5181-9986> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/email> "yuanwei.qin@ou.edu" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/familyName> "Qin" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/givenName> "Yuanwei" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/identifier> "https://orcid.org/0000-0002-5181-9986" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0002-5181-9986> <https://schema.org/name> "Yuanwei Qin" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sb0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/QuantitativeValue> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sb0> <https://schema.org/unitText> "data points" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sb0> <https://schema.org/value> "68"^^<http://www.w3.org/2001/XMLSchema#integer> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sbg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DataDownload> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sbg> <https://schema.org/contentUrl> "https://doi.pangaea.de/10.1594/PANGAEA.879558?format=html" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sbg> <https://schema.org/encodingFormat> "text/html" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1038/sdata.2017.165> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1038/sdata.2017.165> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PublicationIssue> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://orcid.org/0000-0002-7468-2409> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3sc0> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3scg> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://orcid.org/0000-0001-7161-5959> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3sd0> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://orcid.org/0000-0002-5181-9986> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/creator> <https://orcid.org/0000-0001-5687-803X> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/datePublished> "2017" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/identifier> "https://doi.org/10.1038/sdata.2017.165" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/isPartOf> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3sdg> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/issueNumber> "4(1)" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/name> "A global moderate resolution dataset of gross primary production of vegetation for 2000–2016" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/pagination> "170165" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1038/sdata.2017.165> <https://schema.org/url> "https://doi.org/10.1038/sdata.2017.165" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.928381> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/creator> <https://orcid.org/0000-0002-7468-2409> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3se0> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3seg> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/creator> <https://orcid.org/0000-0001-7161-5959> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3sf0> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/creator> <https://orcid.org/0000-0002-5181-9986> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/creator> <https://orcid.org/0000-0001-5687-803X> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3sfg> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/datePublished> "2021" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/identifier> "https://doi.org/10.1594/PANGAEA.928381" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/name> "Global gross primary production from vegetation photosynthesis model for 2017-2019" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.928381> <https://schema.org/url> "https://doi.pangaea.de/10.1594/PANGAEA.928381" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3se0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3se0> <https://schema.org/email> "xiangming.xiao@ou.edu" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3se0> <https://schema.org/familyName> "Xiao" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3se0> <https://schema.org/givenName> "Xiangming" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3se0> <https://schema.org/name> "Xiangming Xiao" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sg0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sg0> <https://schema.org/email> "geli.zhang@cau.edu.cn" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sg0> <https://schema.org/familyName> "Zhang" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sg0> <https://schema.org/givenName> "Geli" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sg0> <https://schema.org/name> "Geli Zhang" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sgg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sgg> <https://schema.org/description> "data quality" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sgg> <https://schema.org/name> "File name" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Dataset> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/citation> <https://doi.org/10.1038/sdata.2017.165> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/citation> <https://doi.org/10.1594/PANGAEA.928381> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/comment> "This dataset contains 8-day temporal resolution, 500m spatial resolution gross primary production (GPP) estimation from vegetation photosynthesis model (VPM) for the entire globe during 2000-2016. \nThe entire globe is divided into 290 sub area (tiles) under a sinusoidal projection. For each tile each year, there are 46 GeoTiff files, each one represents the average daily GPP during a 8-day period. \nEach GPP file is also associated with a quality control layer, which contains a Boolean value to indicate whether the data quality is good (0) or not (1). The simulated GPP is also validated against 113 eddy covariance flux tower across the globe.\nTotal amount of zipped GeoTIFF files: 785 GB (GPP files: ~38 GB, data quality files: ~7.2 GB)" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/conditionsOfAccess> "unrestricted" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/creator> <https://orcid.org/0000-0002-7468-2409> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3sag> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s8g> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/creator> <https://orcid.org/0000-0001-7161-5959> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/creator> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3sg0> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/creator> <https://orcid.org/0000-0002-5181-9986> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/creator> <https://orcid.org/0000-0001-5687-803X> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/datePublished> "2017-08-12" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/description> "This dataset contains 8-day temporal resolution, 500m spatial resolution gross primary production (GPP) estimation from vegetation photosynthesis model (VPM) for the entire globe during 2000-2016. \nThe entire globe is divided into 290 sub area (tiles) under a sinusoidal projection. For each tile each year, there are 46 GeoTiff files, each one represents the average daily GPP during a 8-day period. […]" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/distribution> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3sbg> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/distribution> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3sh0> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/identifier> "https://doi.org/10.1594/PANGAEA.879558" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/inLanguage> "en" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/includedInDataCatalog> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3shg> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/isAccessibleForFree> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/isPartOf> "https://doi.org/10.1594/PANGAEA.879560" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/license> "https://creativecommons.org/licenses/by/3.0/" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/name> "Global gross primary production from vegetation photosynthesis model for 2000-2016, links to model results in GeoTIFF format" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/publisher> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3si0> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/size> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3sb0> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/temporalCoverage> "2000-01-01T00:00:00/2016-12-31T23:59:00" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/url> "https://doi.pangaea.de/10.1594/PANGAEA.879558" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3sig> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s9g> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3sa0> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3sgg> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://doi.org/10.1594/PANGAEA.879558> <https://schema.org/variableMeasured> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3sj0> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0002-7468-2409> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/email> "yaozhang@lbl.gov" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/familyName> "Zhang" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/givenName> "Yao" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/identifier> "https://orcid.org/0000-0002-7468-2409" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://orcid.org/0000-0002-7468-2409> <https://schema.org/name> "Yao Zhang" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sc0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sc0> <https://schema.org/email> "xiangming.xiao@ou.edu" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sc0> <https://schema.org/familyName> "Xiao" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sc0> <https://schema.org/givenName> "Xiangming" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sc0> <https://schema.org/name> "Xiangming Xiao" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sig> <https://schema.org/name> "DATE/TIME" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sig> <https://schema.org/subjectOf> <https://gleaner.io/xid/genid/cl25h83h2h49b36m3s90> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sig> <https://schema.org/url> "http://en.wikipedia.org/wiki/ISO_8601" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sdg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWorkSeries> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sdg> <https://schema.org/name> "Scientific Data" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sf0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sf0> <https://schema.org/email> "geli.zhang@cau.edu.cn" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sf0> <https://schema.org/familyName> "Zhang" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sf0> <https://schema.org/givenName> "Geli" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sf0> <https://schema.org/name> "Geli Zhang" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sfg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sfg> <https://schema.org/email> "rdoughty@caltech.edu" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sfg> <https://schema.org/familyName> "Doughty" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sfg> <https://schema.org/givenName> "Russell" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sfg> <https://schema.org/name> "Russell Doughty" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sh0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DataDownload> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sh0> <https://schema.org/contentUrl> "https://doi.pangaea.de/10.1594/PANGAEA.879558?format=textfile" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sh0> <https://schema.org/encodingFormat> "text/tab-separated-values" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3scg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3scg> <https://schema.org/email> "xiaocui.wu@ou.edu" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3scg> <https://schema.org/familyName> "Wu" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3scg> <https://schema.org/givenName> "Xiaocui" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3scg> <https://schema.org/name> "Xiaocui Wu" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sd0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sd0> <https://schema.org/email> "geli.zhang@cau.edu.cn" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sd0> <https://schema.org/familyName> "Zhang" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sd0> <https://schema.org/givenName> "Geli" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sd0> <https://schema.org/name> "Geli Zhang" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3shg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DataCatalog> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3shg> <https://schema.org/disambiguatingDescription> "Data Publisher for Earth & Environmental Science" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3shg> <https://schema.org/name> "PANGAEA" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3shg> <https://schema.org/url> "https://www.pangaea.de/" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3si0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3si0> <https://schema.org/disambiguatingDescription> "Data Publisher for Earth & Environmental Science" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3si0> <https://schema.org/name> "PANGAEA" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3si0> <https://schema.org/url> "https://www.pangaea.de/" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3seg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3seg> <https://schema.org/email> "xiaocui.wu@ou.edu" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3seg> <https://schema.org/familyName> "Wu" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3seg> <https://schema.org/givenName> "Xiaocui" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3seg> <https://schema.org/name> "Xiaocui Wu" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sj0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PropertyValue> <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sj0> <https://schema.org/description> "data quality" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .
+<https://gleaner.io/xid/genid/cl25h83h2h49b36m3sj0> <https://schema.org/name> "Uniform resource locator/link to file" <urn:gleaner.io:iow:gpp:data:ef65272b4c4da100943c1142f85457f41f9f03c5> .

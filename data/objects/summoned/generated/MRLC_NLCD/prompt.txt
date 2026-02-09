@@ -1,0 +1,97 @@
+I need to create Schema.org JSON-LD descriptions for a scientific land cover data catalog and its datasets.
+
+**Website URL**: https://www.mrlc.gov/data
+
+**Catalog Information**:
+- Name: Multi-Resolution Land Characteristics (MRLC) Consortium
+- Group/Category: land_cover
+- Description: Nationwide (US) data on land cover and tree canopy cover at a 30m resolution. The MRLC Consortium is a partnership of federal agencies that produces land cover and land change data products.
+- Website: https://www.mrlc.gov/data
+- Publisher: MRLC Consortium (USGS, EPA, USDA, NOAA, USFS, and others)
+- Coverage: United States (CONUS, Alaska, Hawaii) and North America
+
+**Available Products/Datasets** (based on website structure):
+1. **Annual NLCD** - Annual National Land Cover Database (Conterminous U.S.)
+   - Collection 1.1 (current version)
+   - Temporal coverage: 1985-2024
+   - Products: Land Cover, Land Cover Change, Land Cover Confidence, Fractional Impervious Surface, Impervious Descriptor, Spectral Change Day of Year
+   - Spatial resolution: 30m
+   - Coverage: Conterminous United States (CONUS)
+
+2. **RCMAP** - Rangeland Condition Monitoring Assessment and Projection
+   - Includes Ecological Potential (EP) data
+   - Components: bare ground, herbaceous, litter, shrub, sagebrush, tree
+   - Temporal coverage: 1985-present
+   - Coverage: Western North America
+
+3. **Exotic Annual Grass** - Exotic annual grass data products
+
+4. **NALCMS** - North American Land Change Monitoring System
+   - Coverage: North America (US, Canada, Mexico)
+
+5. **Legacy NLCD** - Legacy National Land Cover Database products
+   - Older versions of NLCD data
+
+**Key Details**:
+- Organization: Multi-Resolution Land Characteristics (MRLC) Consortium
+- Consortium Members: USGS, EPA, USDA, NOAA, USFS, and other federal agencies
+- Website: https://www.mrlc.gov/data
+- Tools: MRLC NLCD Viewer, MRLC NLCD EVA Tool, MRLC Rangeland Viewer
+- Services: Download interface, web services
+- License: Public domain (USGS data)
+
+**Instructions for Step 1.0 (WebPage Description)**:
+Please create a Schema.org WebPage JSON-LD that includes:
+- @context: "https://schema.org/"
+- @type: "WebPage"
+- @id: The webpage URL
+- name: "MRLC Data" or "Multi-Resolution Land Characteristics Consortium Data"
+- description: Comprehensive description of the MRLC data catalog
+- url: Main webpage URL
+- publisher: MRLC Consortium / USGS (if identifiable)
+- inLanguage: "en"
+- isPartOf: WebSite information
+- about: Reference to the DataCatalog
+- keywords: Relevant keywords (land cover, NLCD, MRLC, land use, tree canopy, etc.)
+- mainEntity: Reference to the DataCatalog
+
+**Instructions for Step 2.2 (DataCatalog JSON-LD)**:
+Please create a Schema.org DataCatalog JSON-LD that includes:
+- @context, @type, @id, name, description, url
+- publisher: MRLC Consortium / USGS
+- creator: MRLC Consortium members
+- dataset: List of datasets in the catalog (use @id references)
+- keywords: land cover, NLCD, MRLC, land use, tree canopy, rangeland, etc.
+- about: Land cover, land use, land change, remote sensing
+- distribution: Access methods (download interface, viewer tools, web services)
+
+**Instructions for Step 2.3 (Individual Dataset JSON-LD)**:
+For each dataset (Annual NLCD, RCMAP, etc.), create a Schema.org Dataset JSON-LD that includes:
+- @context, @type, @id, name, description, url
+- creator: MRLC Consortium / specific agencies
+- publisher: MRLC Consortium / USGS
+- temporalCoverage: Specific date ranges (e.g., 1985-2024 for Annual NLCD)
+- spatialCoverage: CONUS, Alaska, Hawaii, North America, etc.
+- variableMeasured: Land cover classes, tree canopy, impervious surface, etc.
+- distribution: Multiple DataDownload entries for:
+  - Direct download links
+  - Viewer tools
+  - Web services
+- encodingFormat: GeoTIFF, raster formats
+- spatialResolution: 30m, 250m, etc.
+- version: Collection version (e.g., "Collection 1.1")
+- license: Public domain
+- citation: Relevant publications
+- measurementTechnique: Remote sensing, image classification
+- about: Land cover, land use, land change, remote sensing
+
+**Output Format**: 
+Provide the complete JSON-LD in a code block, properly formatted and valid JSON.
+
+**Important Notes**:
+- This is a DATA CATALOG with multiple distinct datasets (similar to CHELSA)
+- Each dataset should have its own JSON-LD file
+- The catalog should reference all datasets using @id references
+- Spatial coverage is primarily United States (CONUS, Alaska, Hawaii) and North America
+- Most products use 30m spatial resolution
+- Data is in the public domain (USGS data)

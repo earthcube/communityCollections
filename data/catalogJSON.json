@@ -1,0 +1,61 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "DataCatalog",
+  "name": "Ecological Forecasting Initiative STAC API",
+  "description": "Searchable spatiotemporal metadata describing forecasts by the Ecological Forecasting Initiative",
+  "identifier": "efi-stac",
+  "url": "https://radiantearth.github.io/stac-browser#/external/raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/catalog.json",
+  "isBasedOn": "https://raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/catalog.json",
+  "hasPart": [
+    {
+      "@type": "DataCatalog",
+      "name": "Aquatics Forecast Challenge",
+      "url": "https://radiantearth.github.io/stac-browser#/external/raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/aquatics/collection.json",
+      "isBasedOn": "https://raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/aquatics/collection.json"
+    },
+    {
+      "@type": "DataCatalog",
+      "name": "NEON Site Information",
+      "url": "https://radiantearth.github.io/stac-browser#/external/raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/sites/collection.json",
+      "isBasedOn": "https://raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/sites/collection.json"
+    },
+    {
+      "@type": "DataCatalog",
+      "name": "Phenology Forecast Challenge",
+      "url": "https://radiantearth.github.io/stac-browser#/external/raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/phenology/collection.json",
+      "isBasedOn": "https://raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/phenology/collection.json"
+    },
+    {
+      "@type": "DataCatalog",
+      "name": "Beetles Forecast Challenge",
+      "url": "https://radiantearth.github.io/stac-browser#/external/raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/beetles/collection.json",
+      "isBasedOn": "https://raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/beetles/collection.json"
+    },
+    {
+      "@type": "DataCatalog",
+      "name": "Terrestrial Forecast Challenge (30min)",
+      "url": "https://radiantearth.github.io/stac-browser#/external/raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/terrestrial_30min/collection.json",
+      "isBasedOn": "https://raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/terrestrial_30min/collection.json"
+    },
+    {
+      "@type": "DataCatalog",
+      "name": "Terrestrial Forecast Challenge (Daily)",
+      "url": "https://radiantearth.github.io/stac-browser#/external/raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/terrestrial_daily/collection.json",
+      "isBasedOn": "https://raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/terrestrial_daily/collection.json"
+    },
+    {
+      "@type": "DataCatalog",
+      "name": "Ticks Forecast Challenge",
+      "url": "https://radiantearth.github.io/stac-browser#/external/raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/ticks/collection.json",
+      "isBasedOn": "https://raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/ticks/collection.json"
+    }
+  ],
+  "dataset": [],
+  "isPartOf": [
+    {
+      "@type": "DataCatalog",
+      "url": "https://radiantearth.github.io/stac-browser#/external/raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/catalog.json",
+      "isBasedOn": "https://raw.githubusercontent.com/addelany/neon4cast-catalog/main/stac/catalog.json"
+    }
+  ]
+}

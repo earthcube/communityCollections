@@ -1,0 +1,50 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "WebPage",
+  "@id": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/download.html#webpage",
+  "name": "Global Forest Change 2000–2023 (GFC-2023-v1.11) — Data Download",
+  "description": "Download page for the Hansen/GLAD Global Forest Change (GFC) dataset version GFC-2023-v1.11. The page provides direct-download links for 10×10 degree GeoTIFF tiles and layer-wide URL lists for global forest extent and change products derived from time-series analysis of Landsat imagery, including year-2000 tree canopy cover, forest gain (2000–2012), annual forest loss year (2001–2023), a data mask, and reference Landsat composites for the first and last available years (typically ~2000 and ~2023). It also includes version 1.11 user notes, license/attribution guidance, and pointers to web visualization and Google Earth Engine access.",
+  "url": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/download.html",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://storage.googleapis.com/#website",
+    "name": "Google Cloud Storage",
+    "url": "https://storage.googleapis.com/"
+  },
+  "publisher": [
+    {
+      "@type": "Organization",
+      "name": "Global Land Analysis and Discovery (GLAD) Laboratory, University of Maryland",
+      "url": "https://glad.umd.edu/"
+    },
+    {
+      "@type": "Organization",
+      "name": "Google Earth Engine",
+      "url": "https://earthengine.google.com/"
+    }
+  ],
+  "keywords": [
+    "Global Forest Change",
+    "GFC",
+    "forest",
+    "deforestation",
+    "forest loss",
+    "forest gain",
+    "tree cover",
+    "Landsat",
+    "remote sensing",
+    "global mapping",
+    "GeoTIFF",
+    "GLAD",
+    "University of Maryland"
+  ],
+  "about": {
+    "@type": "Dataset",
+    "@id": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/download.html#dataset"
+  },
+  "mainEntity": {
+    "@type": "Dataset",
+    "@id": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/download.html#dataset"
+  }
+}

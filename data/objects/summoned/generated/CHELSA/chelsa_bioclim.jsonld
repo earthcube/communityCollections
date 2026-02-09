@@ -1,0 +1,80 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "@id": "https://www.chelsa-climate.org/datasets/chelsa_bioclim#dataset",
+  "name": "CHELSA-bioclim (V2.1)",
+  "description": "CHELSA-bioclim is a global, kilometer-scale climate dataset generated with the CHELSA downscaling model. It consists of bioclimatic variables and related predictors used in ecological and environmental analyses.",
+  "url": "https://www.chelsa-climate.org/datasets/chelsa_bioclim",
+  "version": "2.1",
+  "creator": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "temporalCoverage": "1981-2010/1971-2100",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Global land surface areas",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "-180.0,-60.0 180.0,90.0"
+    }
+  },
+  "keywords": [
+    "CHELSA",
+    "bioclim",
+    "bioclimatic variables",
+    "ecology",
+    "species distribution modeling",
+    "climate predictors"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "BIO1–BIO19",
+      "description": "Standard bioclimatic variables (temperature and precipitation derivatives)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "gdd",
+      "description": "Growing degree days (and related growing-season metrics where provided)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "koppen",
+      "description": "Köppen–Geiger climate classification (where provided in CHELSA bioclim products)"
+    }
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "encodingFormat": [
+    "image/tiff; application=geotiff; profile=cloud-optimized",
+    "COG"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "CHELSA-bioclim downloads (COG)",
+      "description": "Download portal for CHELSA bioclimatic variables.",
+      "contentUrl": "https://envicloud.wsl.ch/",
+      "encodingFormat": "image/tiff; application=geotiff; profile=cloud-optimized"
+    }
+  ],
+  "citation": "Brun, P., Zimmermann, N. E., Hari, C., Pellissier, L., & Karger, D. N. (2022). Global climate-related predictors at kilometer resolution for the past and future. Earth System Science Data, 14(12), 5573–5603. https://doi.org/10.5194/essd-14-5573-2022",
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Bioclimatic predictors"
+    },
+    {
+      "@type": "Thing",
+      "name": "Biodiversity and ecology"
+    }
+  ]
+}

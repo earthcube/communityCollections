@@ -1,0 +1,81 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "@id": "https://www.chelsa-climate.org/datasets/chelsach-highres-climatologies#dataset",
+  "name": "CHELSAch-highres-climatologies (Switzerland) (V1.0)",
+  "description": "CHELSAch-highres-climatologies is a high-resolution climate dataset generated with the CHELSA downscaling model for Switzerland. It consists of long-term 30-year mean aggregated surface variables.",
+  "url": "https://www.chelsa-climate.org/datasets/chelsach-highres-climatologies",
+  "version": "1.0",
+  "creator": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "temporalCoverage": "1981-01-01/2010-12-31",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Switzerland"
+  },
+  "keywords": [
+    "CHELSA",
+    "Switzerland",
+    "climatologies",
+    "high resolution",
+    "temperature",
+    "precipitation"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "tas",
+      "description": "Near-surface air temperature (aggregated)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tasmax",
+      "description": "Maximum near-surface air temperature (aggregated)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tasmin",
+      "description": "Minimum near-surface air temperature (aggregated)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pr",
+      "description": "Precipitation (aggregated)"
+    }
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "encodingFormat": [
+    "application/x-netcdf",
+    "NetCDF"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "CHELSAch-highres-climatologies downloads (NetCDF)",
+      "description": "Download portal for CHELSAch-highres-climatologies.",
+      "contentUrl": "https://envicloud.wsl.ch/",
+      "encodingFormat": "application/x-netcdf"
+    }
+  ],
+  "citation": "Karger, D. N.; Conrad, O.; Böhner, J.; Kawohl, T.; Kreft, H.; Soria-Auza, R. W.; Zimmermann, N. E.; Linder, H. P.; Kessler, M. (2017). Climatologies at high resolution for the earth's land surface areas. Scientific Data, 4, 170122. https://doi.org/10.1038/sdata.2017.122",
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Regional climatology"
+    },
+    {
+      "@type": "Thing",
+      "name": "Switzerland climate normals"
+    }
+  ]
+}

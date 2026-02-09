@@ -1,0 +1,70 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "WebPage",
+  "@id": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/",
+  "name": "MERIT DEM: Multi-Error-Removed Improved-Terrain DEM",
+  "description": "Webpage for the MERIT DEM (Multi-Error-Removed Improved-Terrain Digital Elevation Model) dataset. MERIT DEM is a high-accuracy global digital elevation model at 3 arc-second resolution (~90 m at the equator), developed by removing multiple error components from existing spaceborne DEMs. The site provides information about the dataset, download instructions, licensing, and citation information.",
+  "url": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "University of Tokyo, Institute of Industrial Science",
+    "url": "https://www.iis.u-tokyo.ac.jp/en/"
+  },
+  "about": {
+    "@type": "Dataset",
+    "name": "MERIT DEM (Multi-Error-Removed Improved-Terrain Digital Elevation Model)",
+    "url": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The University of Tokyo",
+    "subOrganization": {
+      "@type": "Organization",
+      "name": "Institute of Industrial Science"
+    },
+    "url": "https://www.u-tokyo.ac.jp/en/"
+  },
+  "datePublished": "2018-10-15",
+  "dateModified": "2018-10-15",
+  "lastReviewed": "2018-10-15",
+  "mainEntity": {
+    "@type": "Dataset",
+    "name": "MERIT DEM (Multi-Error-Removed Improved-Terrain Digital Elevation Model)",
+    "url": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "University of Tokyo",
+        "item": "https://www.u-tokyo.ac.jp/en/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Institute of Industrial Science",
+        "item": "https://www.iis.u-tokyo.ac.jp/en/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "MERIT DEM",
+        "item": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/"
+      }
+    ]
+  },
+  "keywords": [
+    "MERIT DEM",
+    "Digital Elevation Model",
+    "topography",
+    "terrain elevation",
+    "geoscience",
+    "hydrology",
+    "global DEM",
+    "SRTM",
+    "AW3D"
+  ]
+}

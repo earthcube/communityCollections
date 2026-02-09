@@ -1,0 +1,41 @@
+direction: right
+
+g: Gleaner Standard \n Index Workflow {
+   shape: image
+   icon: https://gleaner.io/gleaner.png
+  }
+gi: Gleaner Index \n (S3, triplestore)
+sc: "" {
+ shape: image
+                   icon: https://gogeomatics.ca/wp-content/uploads/STAC-03.png
+                  }
+
+
+
+sb: STAC-Browser  {
+ shape: image
+
+icon: https://www.data4sdgs.org/sites/default/files/styles/medium/public/logo/REF-Logo_Center-Tag-Color-LightBack%20copy.png.webp?itok=NeT78l1-
+}
+
+s: JSON-LD Spider {
+    f: Frontier Set \n of URLs
+    sblp: Stac Browser \n Landing Page
+    sbdc: Data Catalog Page
+    sbds: Data Set Pages
+
+    f -> sblp -> sbdc -> sbds
+}
+
+smb: Sitemap builder \n (from catalog or in stac-browser)
+pygeo: "" {
+ shape: image
+ icon: https://pygeoapi.io/img/pygeoapi-logo.png
+}
+sb -> smb -> g
+sc -> sb
+g -> gi
+sb -> s -> gi
+s3: "Object Store"
+
+sc -> pygeo -> s3 -> g -> gi

@@ -1,0 +1,67 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "DataCatalog",
+  "@id": "https://www.mrlc.gov/data#catalog",
+  "name": "MRLC Data Catalog",
+  "description": "Catalog of land cover, land change, rangeland vegetation component, and related remote-sensing products produced and distributed by the Multi-Resolution Land Characteristics (MRLC) Consortium for the United States and North America. Includes Annual NLCD, RCMAP, Exotic Annual Grass products, NALCMS, and legacy NLCD products, with access via direct downloads, interactive tools, and OGC web services.",
+  "url": "https://www.mrlc.gov/data",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.mrlc.gov/#org",
+    "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
+    "url": "https://www.mrlc.gov/"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
+    "url": "https://www.mrlc.gov/partners"
+  },
+  "keywords": [
+    "land cover",
+    "land use",
+    "land change",
+    "NLCD",
+    "Annual NLCD",
+    "tree canopy",
+    "impervious surface",
+    "rangeland",
+    "RCMAP",
+    "Exotic Annual Grass",
+    "NALCMS",
+    "remote sensing",
+    "Landsat"
+  ],
+  "about": [
+    { "@type": "Thing", "name": "Land cover" },
+    { "@type": "Thing", "name": "Land use" },
+    { "@type": "Thing", "name": "Land change" },
+    { "@type": "Thing", "name": "Remote sensing" }
+  ],
+  "dataset": [
+    { "@id": "https://www.mrlc.gov/data/project/annual-nlcd#dataset" },
+    { "@id": "https://www.mrlc.gov/data/project/rcmap#dataset" },
+    { "@id": "https://www.mrlc.gov/data/type/exotic-annual-grass#dataset" },
+    { "@id": "https://data.usgs.gov/datacatalog/data/USGS:74edd739-1584-41c3-bf08-0274681a779b#dataset" },
+    { "@id": "https://www.mrlc.gov/data/type/legacy-nlcd#dataset" }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "MRLC Data Download Interface",
+      "contentUrl": "https://www.mrlc.gov/data",
+      "description": "Primary MRLC landing page for browsing and downloading MRLC datasets and products."
+    },
+    {
+      "@type": "DataDownload",
+      "name": "MRLC OGC Web Services (WMS/WCS)",
+      "contentUrl": "https://www.mrlc.gov/data-services-page",
+      "description": "Access MRLC datasets via OGC Web Map Service (WMS) and Web Coverage Service (WCS) endpoints."
+    },
+    {
+      "@type": "DataDownload",
+      "name": "MRLC Tools",
+      "contentUrl": "https://www.mrlc.gov/tools",
+      "description": "Interactive tools for visualization, subsetting, and analysis (MRLC Viewer, Rangeland Viewer, EVA Tool)."
+    }
+  ]
+}

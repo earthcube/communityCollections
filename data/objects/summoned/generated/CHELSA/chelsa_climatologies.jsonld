@@ -1,0 +1,100 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "@id": "https://www.chelsa-climate.org/datasets/chelsa_climatologies#dataset",
+  "name": "CHELSA-climatologies (V2.1)",
+  "description": "CHELSA-climatologies is a global, kilometer-scale climate dataset generated with the CHELSA downscaling model. It consists of long-term climatological means.",
+  "url": "https://www.chelsa-climate.org/datasets/chelsa_climatologies",
+  "version": "2.1",
+  "creator": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "temporalCoverage": "1981-2010/2071-2100",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Global land surface areas",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "-180.0,-60.0 180.0,90.0"
+    }
+  },
+  "keywords": [
+    "CHELSA",
+    "climatologies",
+    "climate normals",
+    "downscaling",
+    "temperature",
+    "precipitation"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "tas",
+      "description": "Near-surface air temperature (climatological means)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tasmax",
+      "description": "Maximum near-surface air temperature (climatological means)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tasmin",
+      "description": "Minimum near-surface air temperature (climatological means)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pr",
+      "description": "Precipitation (climatological means/accumulations)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "hurs",
+      "description": "Near-surface relative humidity"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "clt",
+      "description": "Total cloud cover percentage"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sfcWind",
+      "description": "Near-surface wind speed"
+    }
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "encodingFormat": [
+    "image/tiff; application=geotiff; profile=cloud-optimized",
+    "COG"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "CHELSA-climatologies downloads (COG)",
+      "description": "Download portal for CHELSA climatologies.",
+      "contentUrl": "https://envicloud.wsl.ch/",
+      "encodingFormat": "image/tiff; application=geotiff; profile=cloud-optimized"
+    }
+  ],
+  "citation": "Karger, D. N.; Conrad, O.; Böhner, J.; Kawohl, T.; Kreft, H.; Soria-Auza, R. W.; Zimmermann, N. E.; Linder, H. P.; Kessler, M. (2017). Climatologies at high resolution for the earth's land surface areas. Scientific Data, 4, 170122. https://doi.org/10.1038/sdata.2017.122",
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Climatology"
+    },
+    {
+      "@type": "Thing",
+      "name": "Baseline climate"
+    }
+  ]
+}

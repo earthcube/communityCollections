@@ -1,0 +1,133 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "@id": "https://www.chelsa-climate.org/datasets/chelsa_daily#dataset",
+  "name": "CHELSA-daily (V2.1)",
+  "description": "CHELSA-daily is a global, kilometer-scale climate dataset generated with the CHELSA downscaling model. It consists of daily surface variables summarized as daily means, minima, maxima, or (in some cases) daily accumulations.",
+  "url": "https://www.chelsa-climate.org/datasets/chelsa_daily",
+  "version": "2.1",
+  "creator": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "temporalCoverage": "1979-01-01/2025-08-29",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Global land surface areas",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "-180.0,-60.0 180.0,90.0"
+    }
+  },
+  "keywords": [
+    "CHELSA",
+    "daily climate",
+    "downscaling",
+    "temperature",
+    "precipitation",
+    "humidity",
+    "wind speed",
+    "solar radiation"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "tas",
+      "description": "Daily mean near-surface air temperature"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tasmax",
+      "description": "Daily maximum near-surface air temperature"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tasmin",
+      "description": "Daily minimum near-surface air temperature"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pr",
+      "description": "Precipitation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "hurs",
+      "description": "Near-surface relative humidity"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sfcWind",
+      "description": "Near-surface wind speed"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "rsds",
+      "description": "Surface downwelling shortwave flux in air (solar irradiance)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "clt",
+      "description": "Total cloud cover percentage"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vpd",
+      "description": "Vapor pressure deficit"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pet",
+      "description": "Potential evapotranspiration"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "cmi",
+      "description": "Climate moisture index"
+    }
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "encodingFormat": [
+    "image/tiff; application=geotiff; profile=cloud-optimized",
+    "COG"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "CHELSA-daily downloads (COG)",
+      "description": "Download portal for CHELSA-daily. Files are provided via the CHELSA download service; see dataset page for details and variable-specific subdirectories.",
+      "contentUrl": "https://envicloud.wsl.ch/",
+      "encodingFormat": "image/tiff; application=geotiff; profile=cloud-optimized"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Catalog landing page (downloads)",
+      "description": "Alternative CHELSA downloads landing page.",
+      "contentUrl": "https://chelsa-climate.org/downloads/",
+      "encodingFormat": "text/html"
+    }
+  ],
+  "citation": "Karger, D. N.; Conrad, O.; Böhner, J.; Kawohl, T.; Kreft, H.; Soria-Auza, R. W.; Zimmermann, N. E.; Linder, H. P.; Kessler, M. (2017). Climatologies at high resolution for the earth's land surface areas. Scientific Data, 4, 170122. https://doi.org/10.1038/sdata.2017.122",
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Climate"
+    },
+    {
+      "@type": "Thing",
+      "name": "Downscaled meteorology"
+    },
+    {
+      "@type": "Thing",
+      "name": "High-resolution gridded data"
+    }
+  ]
+}

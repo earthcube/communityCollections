@@ -1,0 +1,69 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "@id": "https://www.chelsa-climate.org/datasets/chelsaw5e5#dataset",
+  "name": "CHELSA-W5E5-daily (V2.0 / listed as V1.0 in catalog entry)",
+  "description": "CHELSA-W5E5-daily is a global, kilometer-scale climate dataset generated with the CHELSA downscaling model. It consists of daily surface variables summarized as daily means, minima, maxima, or (in some cases) daily accumulations.",
+  "url": "https://www.chelsa-climate.org/datasets/chelsaw5e5",
+  "version": "1.0",
+  "creator": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.chelsa-climate.org/#publisher",
+    "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
+    "url": "https://www.wsl.ch/"
+  },
+  "temporalCoverage": "1979-01-01/2016-12-31",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Global land surface areas"
+  },
+  "keywords": [
+    "CHELSA",
+    "W5E5",
+    "daily climate",
+    "downscaling",
+    "ISIMIP",
+    "temperature",
+    "precipitation"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "tas/tasmax/tasmin",
+      "description": "Near-surface air temperature summaries"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pr",
+      "description": "Precipitation"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "CHELSA-W5E5-daily downloads (ISIMIP portal)",
+      "description": "The catalog links the W5E5-based CHELSA daily product to the ISIMIP data portal.",
+      "contentUrl": "https://data.isimip.org/",
+      "encodingFormat": "text/html"
+    }
+  ],
+  "encodingFormat": [
+    "text/html"
+  ],
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Bias-adjusted climate forcing"
+    },
+    {
+      "@type": "Thing",
+      "name": "Impact modeling"
+    }
+  ]
+}
