@@ -4,12 +4,22 @@ on:
   push:
     branches:
       - main
+      - 3-generate-jsonld-datasets-from-websites
 
 jobs:
   sitemap_job:
     runs-on: ubuntu-latest
     name: Generate sitemap for JSON-LD files
     steps:
+    - uses: actions/setup-python@v2
+      with:
+         python-version: 3.x
+    - run: pip install mkdocs
+    - run: pip install mkdocs-schema-reader
+    - name: Checkout the repo
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 1
     - name: Checkout the repo
       uses: actions/checkout@v4
       with:
@@ -20,7 +30,7 @@ jobs:
       id: sitemap_all
       uses: cicirello/generate-sitemap@v1
       with:
-        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/main
+        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/${{ github.ref_name }}
         path-to-root: .
         include-html: false
         include-pdf: false
@@ -31,3 +41,10 @@ jobs:
         echo "sitemap-path = ${{ steps.sitemap_all.outputs.sitemap-path }}"
         echo "url-count = ${{ steps.sitemap_all.outputs.url-count }}"
         echo "excluded-count = ${{ steps.sitemap_all.outputs.excluded-count }}"
+    - run: mkdocs build --config-file mkdocs_geocodesmetadata.yml
+    - name: push to gh pages
+      uses: JamesIves/github-pages-deploy-action@4.1.6
+      with:
+        branch: gh-pages
+        folder: .
+        clean: false
