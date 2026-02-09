@@ -69,7 +69,7 @@ jobs:
 ####### MKDOCS
     - run: mkdocs build --config-file mkdocs.yaml
     - name: push to gh pages
-      uses: JamesIves/github-pages-deploy-action@4
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages
         folder: .
