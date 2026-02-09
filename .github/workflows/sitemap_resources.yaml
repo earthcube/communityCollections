@@ -38,18 +38,19 @@ jobs:
         echo "sitemap-path = ${{ steps.sitemap_all.outputs.sitemap-path }}"
         echo "url-count = ${{ steps.sitemap_all.outputs.url-count }}"
         echo "excluded-count = ${{ steps.sitemap_all.outputs.excluded-count }}"
+
+    - name: Generate sitemap for just AI Generated JSON-LD resources
+      id: sitemap_generated
+      uses: cicirello/generate-sitemap@v1
+      with:
+        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/${{ github.ref_name }}/data/objects/summoned/generated
+        path-to-root: data/objects/summoned/generated
+        include-html: false
+        include-pdf: false
+        additional-extensions: jsonld json xml
+        exclude-paths:
+          .git .github docs scripts crawler prompts .vscode
 ### WE MIGHT WANT TO DO INDIVIDUAL SITEMAPS
-#    - name: Generate sitemap for all JSON-LD resources
-#      id: sitemap_generated
-#      uses: cicirello/generate-sitemap@v1
-#      with:
-#        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/${{ github.ref_name }}/data/objects/summoned/generated
-#        path-to-root: data/objects/summoned/generated
-#        include-html: false
-#        include-pdf: false
-#        additional-extensions: jsonld json xml
-#        exclude-paths:
-#          .git .github docs scripts crawler prompts .vscode
 #    - name: Generate sitemap for all JSON-LD resources
 #      id: sitemap_glim
 #      uses: cicirello/generate-sitemap@v1
