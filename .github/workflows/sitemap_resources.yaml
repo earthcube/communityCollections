@@ -30,7 +30,8 @@ jobs:
       id: sitemap_all
       uses: cicirello/generate-sitemap@v1
       with:
-        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/${{ github.ref_name }}
+        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/gh-pages
+        #              https://raw.githubusercontent.com/earthcube/communityCollections/${{ github.ref_name }}
         path-to-root: data/objects/summoned
         include-html: false
         include-pdf: false
@@ -46,7 +47,7 @@ jobs:
 #      id: sitemap_all
 #      uses: cicirello/generate-sitemap@v1
 #      with:
-#        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/${{ github.ref_name }}
+#        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/gh-pages
 #        path-to-root: data/objects/summoned/generated
 #        include-html: false
 #        include-pdf: false
@@ -68,7 +69,7 @@ jobs:
 ####### MKDOCS
     - run: mkdocs build --config-file mkdocs.yaml
     - name: push to gh pages
-      uses: JamesIves/github-pages-deploy-action@4.1.6
+      uses: JamesIves/github-pages-deploy-action@4
       with:
         branch: gh-pages
         folder: .
