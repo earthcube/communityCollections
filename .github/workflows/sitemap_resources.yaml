@@ -17,21 +17,17 @@ jobs:
     - run: pip install mkdocs
     - run: pip install mkdocs-schema-reader
     - name: Checkout the repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v6
       with:
         fetch-depth: 1
-    - name: Checkout the repo
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
 
     # Generate single sitemap for all JSON-LD files in data and collection directories
     - name: Generate sitemap for all JSON-LD resources
       id: sitemap_all
       uses: cicirello/generate-sitemap@v1
       with:
-        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/gh-pages
-        #              https://raw.githubusercontent.com/earthcube/communityCollections/${{ github.ref_name }}
+        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/${{ github.ref_name }}/data/objects/summoned
+        #              https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/gh-pages
         path-to-root: data/objects/summoned
         include-html: false
         include-pdf: false
@@ -44,10 +40,10 @@ jobs:
         echo "excluded-count = ${{ steps.sitemap_all.outputs.excluded-count }}"
 ### WE MIGHT WANT TO DO INDIVIDUAL SITEMAPS
 #    - name: Generate sitemap for all JSON-LD resources
-#      id: sitemap_all
+#      id: sitemap_generated
 #      uses: cicirello/generate-sitemap@v1
 #      with:
-#        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/gh-pages
+#        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/${{ github.ref_name }}/data/objects/summoned/generated
 #        path-to-root: data/objects/summoned/generated
 #        include-html: false
 #        include-pdf: false
@@ -55,10 +51,10 @@ jobs:
 #        exclude-paths:
 #          .git .github docs scripts crawler prompts .vscode
 #    - name: Generate sitemap for all JSON-LD resources
-#      id: sitemap_all
+#      id: sitemap_glim
 #      uses: cicirello/generate-sitemap@v1
 #      with:
-#        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/${{ github.ref_name }}
+#        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/${{ github.ref_name }}/data/objects/summoned/glim
 #        path-to-root: data/objects/summoned/glim
 #        include-html: false
 #        include-pdf: false
