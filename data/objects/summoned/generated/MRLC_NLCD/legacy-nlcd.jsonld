@@ -39,10 +39,22 @@
     "Landsat"
   ],
   "variableMeasured": [
-    { "@type": "PropertyValue", "name": "Land cover class (16-class legend)" },
-    { "@type": "PropertyValue", "name": "Land cover change (varies by product)" },
-    { "@type": "PropertyValue", "name": "Percent impervious surface (selected releases)" },
-    { "@type": "PropertyValue", "name": "Tree canopy cover (selected releases)" }
+    {
+      "@type": "PropertyValue",
+      "name": "Land cover class (16-class legend)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Land cover change (varies by product)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Percent impervious surface (selected releases)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Tree canopy cover (selected releases)"
+    }
   ],
   "measurementTechnique": [
     "Landsat remote sensing",
@@ -75,8 +87,17 @@
     "@id": "https://www.mrlc.gov/data#catalog"
   },
   "about": [
-    { "@type": "Thing", "name": "Land cover" },
-    { "@type": "Thing", "name": "Land change" },
-    { "@type": "Thing", "name": "Remote sensing" }
+    {
+      "@type": "Thing",
+      "name": "Land cover"
+    },
+    {
+      "@type": "Thing",
+      "name": "Land change"
+    },
+    {
+      "@type": "Thing",
+      "name": "Remote sensing"
+    }
   ]
 }

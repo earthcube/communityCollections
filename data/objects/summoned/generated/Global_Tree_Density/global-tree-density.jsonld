@@ -6,12 +6,54 @@
   "description": "Global tree density at a global scale provided as two spatially continuous raster maps of tree density. One map was generated using biome-level linear regression models and applied at the biome scale; the second map was generated using ecoregion-level linear regression models and applied at the ecoregion scale. The models were built using over 420,000 ground-sourced estimates of tree density and predictor variables spanning vegetative, climatic, topographic, and anthropogenic factors. The creators note that transitions at biome/ecoregion boundaries may appear abrupt and that estimates are generally more robust at country scale (or larger) than at individual pixel scale. The primary distribution is a zipped ArcGIS File Geodatabase package containing both raster models plus supporting ArcGIS layer and map-document files; additional files include a revision adding predictions for small islands and a WGS84 GeoTIFF derivative for the revision.",
   "url": "https://elischolar.library.yale.edu/yale_fes_data/1/",
   "creator": [
-    { "@type": "Person", "name": "T. W. Crowther", "affiliation": { "@type": "Organization", "name": "Yale University" } },
-    { "@type": "Person", "name": "H. B. Glick", "affiliation": { "@type": "Organization", "name": "Yale University" } },
-    { "@type": "Person", "name": "K. R. Covey", "affiliation": { "@type": "Organization", "name": "Yale University" } },
-    { "@type": "Person", "name": "G. Amatulli", "affiliation": { "@type": "Organization", "name": "Yale University" } },
-    { "@type": "Person", "name": "M.-N. Tuanmu", "affiliation": { "@type": "Organization", "name": "Yale University" } },
-    { "@type": "Person", "name": "W. Jetz", "affiliation": { "@type": "Organization", "name": "Yale University" } }
+    {
+      "@type": "Person",
+      "name": "T. W. Crowther",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Yale University"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "H. B. Glick",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Yale University"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "K. R. Covey",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Yale University"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "G. Amatulli",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Yale University"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "M.-N. Tuanmu",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Yale University"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "W. Jetz",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Yale University"
+      }
+    }
   ],
   "publisher": {
     "@type": "Organization",
@@ -109,24 +151,58 @@
       "@type": "ScholarlyArticle",
       "name": "Mapping tree density at a global scale",
       "author": [
-        { "@type": "Person", "name": "T. W. Crowther" },
-        { "@type": "Person", "name": "H. B. Glick" },
-        { "@type": "Person", "name": "K. R. Covey" },
-        { "@type": "Person", "name": "et al." }
+        {
+          "@type": "Person",
+          "name": "T. W. Crowther"
+        },
+        {
+          "@type": "Person",
+          "name": "H. B. Glick"
+        },
+        {
+          "@type": "Person",
+          "name": "K. R. Covey"
+        },
+        {
+          "@type": "Person",
+          "name": "et al."
+        }
       ],
-      "isPartOf": { "@type": "Periodical", "name": "Nature" },
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Nature"
+      },
       "datePublished": "2015-09-10",
       "identifier": [
-        { "@type": "PropertyValue", "propertyID": "doi", "value": "10.1038/nature14967" }
+        {
+          "@type": "PropertyValue",
+          "propertyID": "doi",
+          "value": "10.1038/nature14967"
+        }
       ],
       "sameAs": "https://doi.org/10.1038/nature14967"
     }
   ],
   "about": [
-    { "@type": "Thing", "name": "Tree density" },
-    { "@type": "Thing", "name": "Forests" },
-    { "@type": "Thing", "name": "Land cover" },
-    { "@type": "Thing", "name": "Biodiversity" },
-    { "@type": "Thing", "name": "Global environmental mapping" }
+    {
+      "@type": "Thing",
+      "name": "Tree density"
+    },
+    {
+      "@type": "Thing",
+      "name": "Forests"
+    },
+    {
+      "@type": "Thing",
+      "name": "Land cover"
+    },
+    {
+      "@type": "Thing",
+      "name": "Biodiversity"
+    },
+    {
+      "@type": "Thing",
+      "name": "Global environmental mapping"
+    }
   ]
 }

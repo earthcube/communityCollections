@@ -6,11 +6,26 @@
   "description": "NALCMS provides harmonized, trinational land cover maps for North America by combining national land cover products from Canada, the United States, and Mexico into a consistent continental mosaic. A recent 30-meter North American land cover dataset reflects land cover information for 2020 from Mexico and Canada, 2019 over the conterminous United States, and 2021 over Alaska, using Landsat 8 imagery inputs and country-specific classification methods integrated into a seamless product.",
   "url": "https://data.usgs.gov/datacatalog/data/USGS%3A74edd739-1584-41c3-bf08-0274681a779b",
   "creator": [
-    { "@type": "Organization", "name": "U.S. Geological Survey (USGS)" },
-    { "@type": "Organization", "name": "Natural Resources Canada" },
-    { "@type": "Organization", "name": "Instituto Nacional de Estadística y Geografía (INEGI)" },
-    { "@type": "Organization", "name": "Comisión Nacional Para el Conocimiento y Uso de la Biodiversidad (CONABIO)" },
-    { "@type": "Organization", "name": "Comisión Nacional Forestal (CONAFOR)" }
+    {
+      "@type": "Organization",
+      "name": "U.S. Geological Survey (USGS)"
+    },
+    {
+      "@type": "Organization",
+      "name": "Natural Resources Canada"
+    },
+    {
+      "@type": "Organization",
+      "name": "Instituto Nacional de Estadística y Geografía (INEGI)"
+    },
+    {
+      "@type": "Organization",
+      "name": "Comisión Nacional Para el Conocimiento y Uso de la Biodiversidad (CONABIO)"
+    },
+    {
+      "@type": "Organization",
+      "name": "Comisión Nacional Forestal (CONAFOR)"
+    }
   ],
   "publisher": {
     "@type": "Organization",
@@ -39,7 +54,12 @@
     "Landsat 8",
     "continental mosaic"
   ],
-  "variableMeasured": [{ "@type": "PropertyValue", "name": "Land cover class" }],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Land cover class"
+    }
+  ],
   "measurementTechnique": [
     "Landsat 8 remote sensing",
     "National land cover classification and continental integration/mosaicking"
@@ -62,7 +82,13 @@
     "@id": "https://www.mrlc.gov/data#catalog"
   },
   "about": [
-    { "@type": "Thing", "name": "Land cover" },
-    { "@type": "Thing", "name": "Continental land monitoring" }
+    {
+      "@type": "Thing",
+      "name": "Land cover"
+    },
+    {
+      "@type": "Thing",
+      "name": "Continental land monitoring"
+    }
   ]
 }

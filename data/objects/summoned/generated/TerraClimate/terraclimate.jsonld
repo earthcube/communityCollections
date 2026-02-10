@@ -207,10 +207,22 @@
       "@type": "ScholarlyArticle",
       "name": "TerraClimate, a high-resolution global dataset of monthly climate and climatic water balance from 1958–2015",
       "author": [
-        { "@type": "Person", "name": "J. T. Abatzoglou" },
-        { "@type": "Person", "name": "S. Z. Dobrowski" },
-        { "@type": "Person", "name": "S. A. Parks" },
-        { "@type": "Person", "name": "K. C. Hegewisch" }
+        {
+          "@type": "Person",
+          "name": "J. T. Abatzoglou"
+        },
+        {
+          "@type": "Person",
+          "name": "S. Z. Dobrowski"
+        },
+        {
+          "@type": "Person",
+          "name": "S. A. Parks"
+        },
+        {
+          "@type": "Person",
+          "name": "K. C. Hegewisch"
+        }
       ],
       "isPartOf": {
         "@type": "Periodical",
@@ -228,12 +240,33 @@
     }
   ],
   "about": [
-    { "@type": "Thing", "name": "Climate" },
-    { "@type": "Thing", "name": "Climatology" },
-    { "@type": "Thing", "name": "Hydrology" },
-    { "@type": "Thing", "name": "Drought" },
-    { "@type": "Thing", "name": "Evapotranspiration" },
-    { "@type": "Thing", "name": "Water balance" },
-    { "@type": "Thing", "name": "Ecological and hydrological studies" }
+    {
+      "@type": "Thing",
+      "name": "Climate"
+    },
+    {
+      "@type": "Thing",
+      "name": "Climatology"
+    },
+    {
+      "@type": "Thing",
+      "name": "Hydrology"
+    },
+    {
+      "@type": "Thing",
+      "name": "Drought"
+    },
+    {
+      "@type": "Thing",
+      "name": "Evapotranspiration"
+    },
+    {
+      "@type": "Thing",
+      "name": "Water balance"
+    },
+    {
+      "@type": "Thing",
+      "name": "Ecological and hydrological studies"
+    }
   ]
 }

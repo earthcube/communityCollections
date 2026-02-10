@@ -41,12 +41,30 @@
     "remote sensing"
   ],
   "variableMeasured": [
-    { "@type": "PropertyValue", "name": "Land Cover" },
-    { "@type": "PropertyValue", "name": "Land Cover Change" },
-    { "@type": "PropertyValue", "name": "Land Cover Confidence" },
-    { "@type": "PropertyValue", "name": "Fractional Impervious Surface" },
-    { "@type": "PropertyValue", "name": "Impervious Descriptor" },
-    { "@type": "PropertyValue", "name": "Spectral Change Day of Year" }
+    {
+      "@type": "PropertyValue",
+      "name": "Land Cover"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Land Cover Change"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Land Cover Confidence"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Fractional Impervious Surface"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Impervious Descriptor"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spectral Change Day of Year"
+    }
   ],
   "measurementTechnique": [
     "Landsat remote sensing",
@@ -84,8 +102,17 @@
     "@id": "https://www.mrlc.gov/data#catalog"
   },
   "about": [
-    { "@type": "Thing", "name": "Land cover" },
-    { "@type": "Thing", "name": "Land use" },
-    { "@type": "Thing", "name": "Land change" }
+    {
+      "@type": "Thing",
+      "name": "Land cover"
+    },
+    {
+      "@type": "Thing",
+      "name": "Land use"
+    },
+    {
+      "@type": "Thing",
+      "name": "Land change"
+    }
   ]
 }

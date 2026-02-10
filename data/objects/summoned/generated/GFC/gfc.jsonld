@@ -7,21 +7,66 @@
   "url": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/download.html",
   "version": "GFC-2023-v1.11",
   "creator": [
-    { "@type": "Person", "name": "Matthew C. Hansen" },
-    { "@type": "Person", "name": "Peter V. Potapov" },
-    { "@type": "Person", "name": "Rebecca Moore" },
-    { "@type": "Person", "name": "Matt Hancher" },
-    { "@type": "Person", "name": "Svetlana A. Turubanova" },
-    { "@type": "Person", "name": "Alexandra Tyukavina" },
-    { "@type": "Person", "name": "David Thau" },
-    { "@type": "Person", "name": "Stephen V. Stehman" },
-    { "@type": "Person", "name": "Scott J. Goetz" },
-    { "@type": "Person", "name": "Thomas R. Loveland" },
-    { "@type": "Person", "name": "Arun Kommareddy" },
-    { "@type": "Person", "name": "Andrey Egorov" },
-    { "@type": "Person", "name": "Lydia Chini" },
-    { "@type": "Person", "name": "Christopher O. Justice" },
-    { "@type": "Person", "name": "John R. G. Townshend" }
+    {
+      "@type": "Person",
+      "name": "Matthew C. Hansen"
+    },
+    {
+      "@type": "Person",
+      "name": "Peter V. Potapov"
+    },
+    {
+      "@type": "Person",
+      "name": "Rebecca Moore"
+    },
+    {
+      "@type": "Person",
+      "name": "Matt Hancher"
+    },
+    {
+      "@type": "Person",
+      "name": "Svetlana A. Turubanova"
+    },
+    {
+      "@type": "Person",
+      "name": "Alexandra Tyukavina"
+    },
+    {
+      "@type": "Person",
+      "name": "David Thau"
+    },
+    {
+      "@type": "Person",
+      "name": "Stephen V. Stehman"
+    },
+    {
+      "@type": "Person",
+      "name": "Scott J. Goetz"
+    },
+    {
+      "@type": "Person",
+      "name": "Thomas R. Loveland"
+    },
+    {
+      "@type": "Person",
+      "name": "Arun Kommareddy"
+    },
+    {
+      "@type": "Person",
+      "name": "Andrey Egorov"
+    },
+    {
+      "@type": "Person",
+      "name": "Lydia Chini"
+    },
+    {
+      "@type": "Person",
+      "name": "Christopher O. Justice"
+    },
+    {
+      "@type": "Person",
+      "name": "John R. G. Townshend"
+    }
   ],
   "publisher": [
     {
@@ -213,19 +258,41 @@
     {
       "@type": "ScholarlyArticle",
       "name": "High-Resolution Global Maps of 21st-Century Forest Cover Change",
-      "isPartOf": { "@type": "Periodical", "name": "Science" },
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Science"
+      },
       "datePublished": "2013-11-15",
       "identifier": [
-        { "@type": "PropertyValue", "propertyID": "doi", "value": "10.1126/science.1244693" }
+        {
+          "@type": "PropertyValue",
+          "propertyID": "doi",
+          "value": "10.1126/science.1244693"
+        }
       ],
       "sameAs": "https://doi.org/10.1126/science.1244693"
     }
   ],
   "about": [
-    { "@type": "Thing", "name": "Forest monitoring" },
-    { "@type": "Thing", "name": "Deforestation" },
-    { "@type": "Thing", "name": "Land cover change" },
-    { "@type": "Thing", "name": "Remote sensing" },
-    { "@type": "Thing", "name": "Landsat" }
+    {
+      "@type": "Thing",
+      "name": "Forest monitoring"
+    },
+    {
+      "@type": "Thing",
+      "name": "Deforestation"
+    },
+    {
+      "@type": "Thing",
+      "name": "Land cover change"
+    },
+    {
+      "@type": "Thing",
+      "name": "Remote sensing"
+    },
+    {
+      "@type": "Thing",
+      "name": "Landsat"
+    }
   ]
 }
