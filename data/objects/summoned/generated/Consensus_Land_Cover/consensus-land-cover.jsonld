@@ -62,7 +62,8 @@
   "spatialResolution": "30 arc-second (~1 km at the equator)",
   "temporalCoverage": "1992-01-01/2006-12-31",
   "encodingFormat": [
-    "image/tiff; application=geotiff"
+    "image/tiff",
+    "application=geotiff"
   ],
   "variableMeasured": [
     {
@@ -147,14 +148,20 @@
       "name": "Example class GeoTIFF (Full v1.0): class 1",
       "description": "Example direct file link for a single land-cover class GeoTIFF in the Full v1.0 distribution.",
       "contentUrl": "https://data.earthenv.org/consensus_landcover/with_DISCover/consensus_full_class_1.tif",
-      "encodingFormat": "image/tiff; application=geotiff"
+      "encodingFormat": [
+        "image/tiff",
+        "application=geotiff"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Example class GeoTIFF (Reduced v1.0): class 1",
       "description": "Example direct file link for a single land-cover class GeoTIFF in the Reduced v1.0 distribution.",
       "contentUrl": "https://data.earthenv.org/consensus_landcover/without_DISCover/Consensus_reduced_class_1.tif",
-      "encodingFormat": "image/tiff; application=geotiff"
+      "encodingFormat": [
+        "image/tiff",
+        "application=geotiff"
+      ]
     }
   ],
   "citation": [

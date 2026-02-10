@@ -120,7 +120,8 @@
   "encodingFormat": [
     "application/zip",
     "application/x-esri-geodatabase",
-    "image/tiff; application=geotiff"
+    "image/tiff",
+    "application=geotiff"
   ],
   "version": "2015-09-02 release; includes biome-level and ecoregion-level models; additional files provide Revision_01 (small islands) and a WGS84 GeoTIFF derivative for Revision_01.",
   "distribution": [

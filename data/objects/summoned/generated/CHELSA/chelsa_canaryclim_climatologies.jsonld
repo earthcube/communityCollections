@@ -45,7 +45,9 @@
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "encodingFormat": [
-    "image/tiff; application=geotiff; profile=cloud-optimized",
+    "image/tiff",
+    "application=geotiff",
+    "profile=cloud-optimized",
     "COG"
   ],
   "distribution": [
@@ -54,7 +56,11 @@
       "name": "CHELSACanaryClim-climatologies downloads (COG)",
       "description": "Download portal for CanaryClim climatologies.",
       "contentUrl": "https://envicloud.wsl.ch/",
-      "encodingFormat": "image/tiff; application=geotiff; profile=cloud-optimized"
+      "encodingFormat": [
+        "image/tiff",
+        "application=geotiff",
+        "profile=cloud-optimized"
+      ]
     }
   ],
   "citation": "Patiño, J., Collart, F., Vanderpoorten, A., Martin-Esquivel, J. L., Naranjo-Cigala, A., Mirolo, S., Karger, D. N. (2023). Spatial resolution impacts projected plant responses to climate change on topographically complex islands. Diversity and Distributions, 29(10), 1245–1262.",

@@ -94,7 +94,8 @@
   "temporalResolution": "P1M",
   "encodingFormat": [
     "application/x-netcdf",
-    "application/x-netcdf;version=4"
+    "application/x-netcdf",
+    "version=4"
   ],
   "variableMeasured": [
     {

@@ -59,7 +59,9 @@
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "encodingFormat": [
-    "image/tiff; application=geotiff; profile=cloud-optimized",
+    "image/tiff",
+    "application=geotiff",
+    "profile=cloud-optimized",
     "COG"
   ],
   "distribution": [
@@ -68,7 +70,11 @@
       "name": "CHELSA-monthly downloads (COG)",
       "description": "Download portal for CHELSA-monthly.",
       "contentUrl": "https://envicloud.wsl.ch/",
-      "encodingFormat": "image/tiff; application=geotiff; profile=cloud-optimized"
+      "encodingFormat": [
+        "image/tiff",
+        "application=geotiff",
+        "profile=cloud-optimized"
+      ]
     },
     {
       "@type": "DataDownload",
