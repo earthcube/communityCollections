@@ -94,7 +94,8 @@
   ],
   "encodingFormat": [
     "application/zip",
-    "image/tiff; application=geotiff",
+    "image/tiff",
+    "application=geotiff",
     "application/octet-stream"
   ],
   "isPartOf": {

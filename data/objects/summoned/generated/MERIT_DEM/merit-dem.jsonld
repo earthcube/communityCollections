@@ -76,9 +76,13 @@
     "Filtering and correction using multiple satellite and ancillary datasets"
   ],
   "encodingFormat": [
-    "application/octet-stream (ESRI EHdr/FLT raster with HDR; 4-byte float, little endian)",
-    "image/tiff; application=geotiff",
-    "application/octet-stream (MRR, MapInfo Pro raster)"
+    "application/octet-stream (ESRI EHdr/FLT raster with HDR",
+    "4-byte float",
+    "little endian)",
+    "image/tiff",
+    "application=geotiff",
+    "application/octet-stream (MRR",
+    "MapInfo Pro raster)"
   ],
   "distribution": [
     {
@@ -93,7 +97,10 @@
       "@type": "DataDownload",
       "name": "MERIT DEM – GeoTIFF packages (30°×30° tar)",
       "description": "Elevation tiles distributed as 30°×30° packages containing 5°×5° GeoTIFF tiles (6000×6000 pixels). Package names encode the lower-left corner (e.g., dem_tif_n30w120.tar contains tiles for N30–N60, W120–W090). Individual tile filenames encode the center of the lower-left pixel (e.g., n30w120_dem.tif covers N30–N35, W120–W115). Access may require registration/password per the provider instructions.",
-      "encodingFormat": "image/tiff; application=geotiff",
+      "encodingFormat": [
+        "image/tiff",
+        "application=geotiff"
+      ],
       "contentUrl": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/dem_tif_n30w120.tar",
       "url": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/"
     },

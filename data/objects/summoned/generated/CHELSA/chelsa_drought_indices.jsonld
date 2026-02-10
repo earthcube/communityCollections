@@ -54,7 +54,9 @@
   ],
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "encodingFormat": [
-    "image/tiff; application=geotiff; profile=cloud-optimized",
+    "image/tiff",
+    "application=geotiff",
+    "profile=cloud-optimized",
     "COG"
   ],
   "distribution": [
@@ -63,7 +65,11 @@
       "name": "CHELSA-drought-indices downloads (COG)",
       "description": "Download portal for CHELSA drought indices.",
       "contentUrl": "https://envicloud.wsl.ch/",
-      "encodingFormat": "image/tiff; application=geotiff; profile=cloud-optimized"
+      "encodingFormat": [
+        "image/tiff",
+        "application=geotiff",
+        "profile=cloud-optimized"
+      ]
     }
   ],
   "citation": "Chen, L., Brun, P., Buri, P., Fatichi, S., Gessler, A., McCarthy, M. J., Pelicciotti, F., Stocker, B., Karger, D. N. (2024). High resolution global standardized drought indices. EnviDat. https://doi.org/10.16904/envidat.530",

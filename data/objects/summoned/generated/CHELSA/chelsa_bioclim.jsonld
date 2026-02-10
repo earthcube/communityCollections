@@ -54,7 +54,9 @@
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "encodingFormat": [
-    "image/tiff; application=geotiff; profile=cloud-optimized",
+    "image/tiff",
+    "application=geotiff",
+    "profile=cloud-optimized",
     "COG"
   ],
   "distribution": [
@@ -63,7 +65,11 @@
       "name": "CHELSA-bioclim downloads (COG)",
       "description": "Download portal for CHELSA bioclimatic variables.",
       "contentUrl": "https://envicloud.wsl.ch/",
-      "encodingFormat": "image/tiff; application=geotiff; profile=cloud-optimized"
+      "encodingFormat": [
+        "image/tiff",
+        "application=geotiff",
+        "profile=cloud-optimized"
+      ]
     }
   ],
   "citation": "Brun, P., Zimmermann, N. E., Hari, C., Pellissier, L., & Karger, D. N. (2022). Global climate-related predictors at kilometer resolution for the past and future. Earth System Science Data, 14(12), 5573–5603. https://doi.org/10.5194/essd-14-5573-2022",

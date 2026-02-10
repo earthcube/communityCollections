@@ -86,7 +86,8 @@
     }
   ],
   "encodingFormat": [
-    "image/tiff; application=geotiff",
+    "image/tiff",
+    "application=geotiff",
     "application/zip"
   ],
   "isPartOf": {

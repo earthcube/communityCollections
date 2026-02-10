@@ -96,7 +96,9 @@
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "encodingFormat": [
-    "image/tiff; application=geotiff; profile=cloud-optimized",
+    "image/tiff",
+    "application=geotiff",
+    "profile=cloud-optimized",
     "COG"
   ],
   "distribution": [
@@ -105,7 +107,11 @@
       "name": "CHELSA-daily downloads (COG)",
       "description": "Download portal for CHELSA-daily. Files are provided via the CHELSA download service; see dataset page for details and variable-specific subdirectories.",
       "contentUrl": "https://envicloud.wsl.ch/",
-      "encodingFormat": "image/tiff; application=geotiff; profile=cloud-optimized"
+      "encodingFormat": [
+        "image/tiff",
+        "application=geotiff",
+        "profile=cloud-optimized"
+      ]
     },
     {
       "@type": "DataDownload",

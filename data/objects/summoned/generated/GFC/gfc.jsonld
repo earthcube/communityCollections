@@ -111,7 +111,8 @@
   ],
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "encodingFormat": [
-    "image/tiff; application=geotiff",
+    "image/tiff",
+    "application=geotiff",
     "text/plain"
   ],
   "variableMeasured": [
@@ -170,37 +171,55 @@
       "name": "Example tile (treecover2000) — 40N 080W",
       "description": "Example GeoTIFF granule for tree canopy cover in year 2000; filenames encode the tile top-left corner.",
       "contentUrl": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/Hansen_GFC-2023-v1.11_treecover2000_40N_080W.tif",
-      "encodingFormat": "image/tiff; application=geotiff"
+      "encodingFormat": [
+        "image/tiff",
+        "application=geotiff"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Example tile (gain) — 40N 080W",
       "contentUrl": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/Hansen_GFC-2023-v1.11_gain_40N_080W.tif",
-      "encodingFormat": "image/tiff; application=geotiff"
+      "encodingFormat": [
+        "image/tiff",
+        "application=geotiff"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Example tile (lossyear) — 40N 080W",
       "contentUrl": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/Hansen_GFC-2023-v1.11_lossyear_40N_080W.tif",
-      "encodingFormat": "image/tiff; application=geotiff"
+      "encodingFormat": [
+        "image/tiff",
+        "application=geotiff"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Example tile (datamask) — 40N 080W",
       "contentUrl": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/Hansen_GFC-2023-v1.11_datamask_40N_080W.tif",
-      "encodingFormat": "image/tiff; application=geotiff"
+      "encodingFormat": [
+        "image/tiff",
+        "application=geotiff"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Example tile (first composite) — 40N 080W",
       "contentUrl": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/Hansen_GFC-2023-v1.11_first_40N_080W.tif",
-      "encodingFormat": "image/tiff; application=geotiff"
+      "encodingFormat": [
+        "image/tiff",
+        "application=geotiff"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Example tile (last composite) — 40N 080W",
       "contentUrl": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/Hansen_GFC-2023-v1.11_last_40N_080W.tif",
-      "encodingFormat": "image/tiff; application=geotiff"
+      "encodingFormat": [
+        "image/tiff",
+        "application=geotiff"
+      ]
     },
     {
       "@type": "DataDownload",
