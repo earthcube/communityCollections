@@ -119,15 +119,42 @@
       "@type": "ScholarlyArticle",
       "name": "A high accuracy map of global terrain elevations",
       "author": [
-        { "@type": "Person", "name": "D. Yamazaki" },
-        { "@type": "Person", "name": "D. Ikeshima" },
-        { "@type": "Person", "name": "R. Tawatari" },
-        { "@type": "Person", "name": "T. Yamaguchi" },
-        { "@type": "Person", "name": "F. O'Loughlin" },
-        { "@type": "Person", "name": "J. C. Neal" },
-        { "@type": "Person", "name": "C. C. Sampson" },
-        { "@type": "Person", "name": "S. Kanae" },
-        { "@type": "Person", "name": "P. D. Bates" }
+        {
+          "@type": "Person",
+          "name": "D. Yamazaki"
+        },
+        {
+          "@type": "Person",
+          "name": "D. Ikeshima"
+        },
+        {
+          "@type": "Person",
+          "name": "R. Tawatari"
+        },
+        {
+          "@type": "Person",
+          "name": "T. Yamaguchi"
+        },
+        {
+          "@type": "Person",
+          "name": "F. O'Loughlin"
+        },
+        {
+          "@type": "Person",
+          "name": "J. C. Neal"
+        },
+        {
+          "@type": "Person",
+          "name": "C. C. Sampson"
+        },
+        {
+          "@type": "Person",
+          "name": "S. Kanae"
+        },
+        {
+          "@type": "Person",
+          "name": "P. D. Bates"
+        }
       ],
       "isPartOf": {
         "@type": "Periodical",
@@ -147,9 +174,21 @@
     }
   ],
   "about": [
-    { "@type": "Thing", "name": "Terrain elevation" },
-    { "@type": "Thing", "name": "Topography" },
-    { "@type": "Thing", "name": "Hydrology" },
-    { "@type": "Thing", "name": "Geoscience applications" }
+    {
+      "@type": "Thing",
+      "name": "Terrain elevation"
+    },
+    {
+      "@type": "Thing",
+      "name": "Topography"
+    },
+    {
+      "@type": "Thing",
+      "name": "Hydrology"
+    },
+    {
+      "@type": "Thing",
+      "name": "Geoscience applications"
+    }
   ]
 }

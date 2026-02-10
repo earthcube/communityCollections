@@ -40,12 +40,30 @@
     "remote sensing"
   ],
   "variableMeasured": [
-    { "@type": "PropertyValue", "name": "Bare ground cover (percent)" },
-    { "@type": "PropertyValue", "name": "Herbaceous cover (percent)" },
-    { "@type": "PropertyValue", "name": "Litter cover (percent)" },
-    { "@type": "PropertyValue", "name": "Shrub cover (percent)" },
-    { "@type": "PropertyValue", "name": "Sagebrush cover (percent)" },
-    { "@type": "PropertyValue", "name": "Tree cover (percent)" }
+    {
+      "@type": "PropertyValue",
+      "name": "Bare ground cover (percent)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Herbaceous cover (percent)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Litter cover (percent)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Shrub cover (percent)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sagebrush cover (percent)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Tree cover (percent)"
+    }
   ],
   "measurementTechnique": [
     "Landsat remote sensing",
@@ -97,8 +115,17 @@
     "@id": "https://www.mrlc.gov/data#catalog"
   },
   "about": [
-    { "@type": "Thing", "name": "Rangeland monitoring" },
-    { "@type": "Thing", "name": "Vegetation cover" },
-    { "@type": "Thing", "name": "Remote sensing" }
+    {
+      "@type": "Thing",
+      "name": "Rangeland monitoring"
+    },
+    {
+      "@type": "Thing",
+      "name": "Vegetation cover"
+    },
+    {
+      "@type": "Thing",
+      "name": "Remote sensing"
+    }
   ]
 }

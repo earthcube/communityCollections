@@ -17,9 +17,18 @@
     "name": "EarthEnv",
     "url": "https://www.earthenv.org/",
     "member": [
-      { "@type": "Organization", "name": "Yale University" },
-      { "@type": "Organization", "name": "University of Florida" },
-      { "@type": "Organization", "name": "University at Buffalo" }
+      {
+        "@type": "Organization",
+        "name": "Yale University"
+      },
+      {
+        "@type": "Organization",
+        "name": "University of Florida"
+      },
+      {
+        "@type": "Organization",
+        "name": "University at Buffalo"
+      }
     ]
   },
   "about": {

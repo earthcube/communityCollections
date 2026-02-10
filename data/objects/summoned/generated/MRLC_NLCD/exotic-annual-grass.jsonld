@@ -40,12 +40,30 @@
     "machine learning"
   ],
   "variableMeasured": [
-    { "@type": "PropertyValue", "name": "EAG fractional cover (multiple species group)" },
-    { "@type": "PropertyValue", "name": "Cheatgrass (Bromus tectorum) fractional cover" },
-    { "@type": "PropertyValue", "name": "Other Bromus spp. fractional cover (Field brome + Japanese brome)" },
-    { "@type": "PropertyValue", "name": "Medusahead (Taeniatherum caput-medusae) fractional cover" },
-    { "@type": "PropertyValue", "name": "Sandberg bluegrass (Poa secunda) fractional cover" },
-    { "@type": "PropertyValue", "name": "Confidence maps (per target)" }
+    {
+      "@type": "PropertyValue",
+      "name": "EAG fractional cover (multiple species group)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cheatgrass (Bromus tectorum) fractional cover"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Other Bromus spp. fractional cover (Field brome + Japanese brome)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Medusahead (Taeniatherum caput-medusae) fractional cover"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sandberg bluegrass (Poa secunda) fractional cover"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Confidence maps (per target)"
+    }
   ],
   "measurementTechnique": [
     "Remote sensing (HLS NDVI and related drivers)",
@@ -76,8 +94,17 @@
     "@id": "https://www.mrlc.gov/data#catalog"
   },
   "about": [
-    { "@type": "Thing", "name": "Invasive species monitoring" },
-    { "@type": "Thing", "name": "Rangeland ecology" },
-    { "@type": "Thing", "name": "Remote sensing" }
+    {
+      "@type": "Thing",
+      "name": "Invasive species monitoring"
+    },
+    {
+      "@type": "Thing",
+      "name": "Rangeland ecology"
+    },
+    {
+      "@type": "Thing",
+      "name": "Remote sensing"
+    }
   ]
 }

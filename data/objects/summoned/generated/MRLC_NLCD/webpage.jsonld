@@ -19,16 +19,46 @@
     "url": "https://www.mrlc.gov/",
     "description": "A consortium of U.S. federal agencies producing land cover and land change data products.",
     "member": [
-      { "@type": "Organization", "name": "U.S. Geological Survey (USGS)" },
-      { "@type": "Organization", "name": "National Oceanic and Atmospheric Administration (NOAA)" },
-      { "@type": "Organization", "name": "U.S. Forest Service (USFS)" },
-      { "@type": "Organization", "name": "Bureau of Land Management (BLM)" },
-      { "@type": "Organization", "name": "National Park Service (NPS)" },
-      { "@type": "Organization", "name": "U.S. Department of Agriculture (USDA)" },
-      { "@type": "Organization", "name": "U.S. Environmental Protection Agency (EPA)" },
-      { "@type": "Organization", "name": "U.S. Fish and Wildlife Service (USFWS)" },
-      { "@type": "Organization", "name": "National Agricultural Statistics Service (NASS)" },
-      { "@type": "Organization", "name": "LANDFIRE" }
+      {
+        "@type": "Organization",
+        "name": "U.S. Geological Survey (USGS)"
+      },
+      {
+        "@type": "Organization",
+        "name": "National Oceanic and Atmospheric Administration (NOAA)"
+      },
+      {
+        "@type": "Organization",
+        "name": "U.S. Forest Service (USFS)"
+      },
+      {
+        "@type": "Organization",
+        "name": "Bureau of Land Management (BLM)"
+      },
+      {
+        "@type": "Organization",
+        "name": "National Park Service (NPS)"
+      },
+      {
+        "@type": "Organization",
+        "name": "U.S. Department of Agriculture (USDA)"
+      },
+      {
+        "@type": "Organization",
+        "name": "U.S. Environmental Protection Agency (EPA)"
+      },
+      {
+        "@type": "Organization",
+        "name": "U.S. Fish and Wildlife Service (USFWS)"
+      },
+      {
+        "@type": "Organization",
+        "name": "National Agricultural Statistics Service (NASS)"
+      },
+      {
+        "@type": "Organization",
+        "name": "LANDFIRE"
+      }
     ]
   },
   "keywords": [

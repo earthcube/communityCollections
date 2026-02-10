@@ -32,17 +32,39 @@
     "Landsat"
   ],
   "about": [
-    { "@type": "Thing", "name": "Land cover" },
-    { "@type": "Thing", "name": "Land use" },
-    { "@type": "Thing", "name": "Land change" },
-    { "@type": "Thing", "name": "Remote sensing" }
+    {
+      "@type": "Thing",
+      "name": "Land cover"
+    },
+    {
+      "@type": "Thing",
+      "name": "Land use"
+    },
+    {
+      "@type": "Thing",
+      "name": "Land change"
+    },
+    {
+      "@type": "Thing",
+      "name": "Remote sensing"
+    }
   ],
   "dataset": [
-    { "@id": "https://www.mrlc.gov/data/project/annual-nlcd#dataset" },
-    { "@id": "https://www.mrlc.gov/data/project/rcmap#dataset" },
-    { "@id": "https://www.mrlc.gov/data/type/exotic-annual-grass#dataset" },
-    { "@id": "https://data.usgs.gov/datacatalog/data/USGS:74edd739-1584-41c3-bf08-0274681a779b#dataset" },
-    { "@id": "https://www.mrlc.gov/data/type/legacy-nlcd#dataset" }
+    {
+      "@id": "https://www.mrlc.gov/data/project/annual-nlcd#dataset"
+    },
+    {
+      "@id": "https://www.mrlc.gov/data/project/rcmap#dataset"
+    },
+    {
+      "@id": "https://www.mrlc.gov/data/type/exotic-annual-grass#dataset"
+    },
+    {
+      "@id": "https://data.usgs.gov/datacatalog/data/USGS:74edd739-1584-41c3-bf08-0274681a779b#dataset"
+    },
+    {
+      "@id": "https://www.mrlc.gov/data/type/legacy-nlcd#dataset"
+    }
   ],
   "distribution": [
     {

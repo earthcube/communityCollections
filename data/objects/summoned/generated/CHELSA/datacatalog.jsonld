@@ -24,17 +24,41 @@
     "drought indices"
   ],
   "dataset": [
-    { "@id": "https://www.chelsa-climate.org/datasets/chelsa_daily#dataset" },
-    { "@id": "https://www.chelsa-climate.org/datasets/chelsa_monthly#dataset" },
-    { "@id": "https://www.chelsa-climate.org/datasets/chelsa_annual#dataset" },
-    { "@id": "https://www.chelsa-climate.org/datasets/chelsa_climatologies#dataset" },
-    { "@id": "https://www.chelsa-climate.org/datasets/chelsa_bioclim#dataset" },
-    { "@id": "https://www.chelsa-climate.org/datasets/chelsach-highres_daily#dataset" },
-    { "@id": "https://www.chelsa-climate.org/datasets/chelsach-highres-climatologies#dataset" },
-    { "@id": "https://www.chelsa-climate.org/datasets/canary-clim-canaries#dataset" },
-    { "@id": "https://www.chelsa-climate.org/datasets/chelsa-trace21k-centennial#dataset" },
-    { "@id": "https://www.chelsa-climate.org/datasets/chelsa-trace21k-centennial-bioclim#dataset" },
-    { "@id": "https://www.chelsa-climate.org/datasets/chelsaw5e5#dataset" },
-    { "@id": "https://www.chelsa-climate.org/datasets#chelsacerra-daily-dataset" }
+    {
+      "@id": "https://www.chelsa-climate.org/datasets/chelsa_daily#dataset"
+    },
+    {
+      "@id": "https://www.chelsa-climate.org/datasets/chelsa_monthly#dataset"
+    },
+    {
+      "@id": "https://www.chelsa-climate.org/datasets/chelsa_annual#dataset"
+    },
+    {
+      "@id": "https://www.chelsa-climate.org/datasets/chelsa_climatologies#dataset"
+    },
+    {
+      "@id": "https://www.chelsa-climate.org/datasets/chelsa_bioclim#dataset"
+    },
+    {
+      "@id": "https://www.chelsa-climate.org/datasets/chelsach-highres_daily#dataset"
+    },
+    {
+      "@id": "https://www.chelsa-climate.org/datasets/chelsach-highres-climatologies#dataset"
+    },
+    {
+      "@id": "https://www.chelsa-climate.org/datasets/canary-clim-canaries#dataset"
+    },
+    {
+      "@id": "https://www.chelsa-climate.org/datasets/chelsa-trace21k-centennial#dataset"
+    },
+    {
+      "@id": "https://www.chelsa-climate.org/datasets/chelsa-trace21k-centennial-bioclim#dataset"
+    },
+    {
+      "@id": "https://www.chelsa-climate.org/datasets/chelsaw5e5#dataset"
+    },
+    {
+      "@id": "https://www.chelsa-climate.org/datasets#chelsacerra-daily-dataset"
+    }
   ]
 }
