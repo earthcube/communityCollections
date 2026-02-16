@@ -63,6 +63,8 @@ jobs:
         git status
         if ! git diff --staged --quiet; then
           git commit -m "chore: update JSON-LD sitemaps"
+          git fetch origin ${{ github.ref_name }}
+          git rebase origin/${{ github.ref_name }}
           git push origin HEAD:${{ github.ref_name }}
         fi
 
