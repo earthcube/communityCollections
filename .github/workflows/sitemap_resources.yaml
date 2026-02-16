@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - master
       - 3-generate-jsonld-datasets-from-websites
 
 permissions:
