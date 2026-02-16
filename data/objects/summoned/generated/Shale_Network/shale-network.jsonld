@@ -7,7 +7,7 @@
   "@id": "https://doi.org/10.4211/his-data-shalenetwork#dataset",
   "name": "Shale Network (ShaleNetwork Database)",
   "url": "https://doi.org/10.4211/his-data-shalenetwork",
-  "description": "The Shale Network database is a collaborative water quality and quantity data resource for regions of hydrocarbon extraction (including shale gas development), acting as an "honest broker" that collates datasets from academic researchers, government agencies, industry, nonprofit entities, and watershed groups. The database is published through the CUAHSI Hydrologic Information System (HIS) for discovery and access via HydroClient and associated web services, and is used to establish background concentrations and assess environmental impacts across energy production regions.",
+  "description": "The Shale Network database is a collaborative water quality and quantity data resource for regions of hydrocarbon extraction (including shale gas development), acting as an \"honest broker\" that collates datasets from academic researchers, government agencies, industry, nonprofit entities, and watershed groups. The database is published through the CUAHSI Hydrologic Information System (HIS) for discovery and access via HydroClient and associated web services, and is used to establish background concentrations and assess environmental impacts across energy production regions.",
   "keywords": [
     "Shale Network",
     "ShaleNetwork",
