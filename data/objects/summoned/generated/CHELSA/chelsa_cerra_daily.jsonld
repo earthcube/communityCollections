@@ -45,7 +45,9 @@
       "name": "CHELSAcerra-daily downloads (portal)",
       "description": "Download portal linked from the CHELSA catalog entry for CHELSAcerra-daily.",
       "contentUrl": "https://envicloud.wsl.ch/",
-      "encodingFormat": "text/html"
+      "encodingFormat": [
+        "text/html"
+      ]
     }
   ],
   "citation": "Karger, D. N. and Janzing, J. (2025). CHELSAcerra-daily. EnviDat. https://doi.org/10.16904/envidat.703",

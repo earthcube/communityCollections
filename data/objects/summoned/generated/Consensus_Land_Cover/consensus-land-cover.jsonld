@@ -135,14 +135,18 @@
       "name": "Full Version 1.0 downloads (with DISCover) – directory",
       "description": "Directory containing GeoTIFF layers (one per class) for Full Version 1.0 (with DISCover/GLCC).",
       "contentUrl": "https://data.earthenv.org/consensus_landcover/with_DISCover/",
-      "encodingFormat": "text/html"
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Reduced Version 1.0 downloads (without DISCover) – directory",
       "description": "Directory containing GeoTIFF layers (one per class) for Reduced Version 1.0 (without DISCover/GLCC).",
       "contentUrl": "https://data.earthenv.org/consensus_landcover/without_DISCover/",
-      "encodingFormat": "text/html"
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",

@@ -65,7 +65,9 @@
       "name": "CHELSAch-highres-daily downloads (NetCDF)",
       "description": "Download portal for CHELSAch-highres-daily.",
       "contentUrl": "https://envicloud.wsl.ch/",
-      "encodingFormat": "application/x-netcdf"
+      "encodingFormat": [
+        "application/x-netcdf"
+      ]
     }
   ],
   "citation": "Zilker, F., Karger, D. N. (2025). CHELSAch-highres-daily climate data at high resolution. EnviDat. https://www.doi.org/10.16904/envidat.688",

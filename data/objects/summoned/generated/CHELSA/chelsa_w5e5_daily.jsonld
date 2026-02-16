@@ -51,7 +51,9 @@
       "name": "CHELSA-W5E5-daily downloads (ISIMIP portal)",
       "description": "The catalog links the W5E5-based CHELSA daily product to the ISIMIP data portal.",
       "contentUrl": "https://data.isimip.org/",
-      "encodingFormat": "text/html"
+      "encodingFormat": [
+        "text/html"
+      ]
     }
   ],
   "encodingFormat": [
