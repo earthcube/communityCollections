@@ -82,21 +82,27 @@
       "@type": "DataDownload",
       "name": "Example component download: Bare Ground (2011–2024 ZIP)",
       "contentUrl": "https://www.mrlc.gov/downloads/sciweb1/shared/mrlc/data-bundles/Bare_Ground_2011_2024.zip",
-      "encodingFormat": "application/zip",
+      "encodingFormat": [
+        "application/zip"
+      ],
       "description": "Example direct ZIP download link for an RCMAP component time-series."
     },
     {
       "@type": "DataDownload",
       "name": "Example component download: Herbaceous (2011–2024 ZIP)",
       "contentUrl": "https://www.mrlc.gov/downloads/sciweb1/shared/mrlc/data-bundles/Herbaceous_2011_2024.zip",
-      "encodingFormat": "application/zip",
+      "encodingFormat": [
+        "application/zip"
+      ],
       "description": "Example direct ZIP download link for an RCMAP component time-series."
     },
     {
       "@type": "DataDownload",
       "name": "RCMAP FGDC metadata (XML)",
       "contentUrl": "https://www.mrlc.gov/downloads/sciweb1/shared/mrlc/metadata/RCMAP_V7_FGDC_Metadata.xml",
-      "encodingFormat": "application/xml",
+      "encodingFormat": [
+        "application/xml"
+      ],
       "description": "FGDC metadata for RCMAP products."
     },
     {

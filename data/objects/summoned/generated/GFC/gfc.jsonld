@@ -165,7 +165,9 @@
       "name": "Direct download page (tile selection map and links)",
       "description": "Interactive download instructions and example granule URLs for 10×10 degree GeoTIFF tiles.",
       "contentUrl": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/download.html",
-      "encodingFormat": "text/html"
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
@@ -227,51 +229,67 @@
       "name": "Layer-wide URL list: treecover2000",
       "description": "Text file listing URLs for all granules for the treecover2000 layer.",
       "contentUrl": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/treecover2000.txt",
-      "encodingFormat": "text/plain"
+      "encodingFormat": [
+        "text/plain"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Layer-wide URL list: gain",
       "contentUrl": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/gain.txt",
-      "encodingFormat": "text/plain"
+      "encodingFormat": [
+        "text/plain"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Layer-wide URL list: lossyear",
       "contentUrl": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/lossyear.txt",
-      "encodingFormat": "text/plain"
+      "encodingFormat": [
+        "text/plain"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Layer-wide URL list: datamask",
       "contentUrl": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/datamask.txt",
-      "encodingFormat": "text/plain"
+      "encodingFormat": [
+        "text/plain"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Layer-wide URL list: first",
       "contentUrl": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/first.txt",
-      "encodingFormat": "text/plain"
+      "encodingFormat": [
+        "text/plain"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Layer-wide URL list: last",
       "contentUrl": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/last.txt",
-      "encodingFormat": "text/plain"
+      "encodingFormat": [
+        "text/plain"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Google Earth Engine access (asset)",
       "description": "Analyze the dataset directly in Google Earth Engine using asset ID UMD/hansen/global_forest_change_2023_v1_11.",
       "contentUrl": "https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2023_v1_11",
-      "encodingFormat": "text/html"
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Web visualization (recommended linking URL)",
       "description": "Interactive visualization site recommended by the dataset providers for linking/citation.",
       "contentUrl": "https://glad.earthengine.app/view/global-forest-change",
-      "encodingFormat": "text/html"
+      "encodingFormat": [
+        "text/html"
+      ]
     }
   ],
   "citation": [

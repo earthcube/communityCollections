@@ -90,7 +90,9 @@
       "@type": "DataDownload",
       "name": "MERIT DEM – ESRI EHdr (FLT) packages (30°×30° tar.gz)",
       "description": "Elevation tiles distributed as 30°×30° packages containing 5°×5° tiles (6000×6000 pixels). ESRI FLT rasters with HDR (Fortran Direct Access / ESRI FLT style; 4-byte float, little endian). Package names encode the lower-left corner (e.g., dem_flt_n30w120.tar.gz contains tiles for N30–N60, W120–W090). Filenames encode the center of the lower-left pixel (e.g., n30w120_dem.* covers N30–N35, W120–W115). Access may require registration/password per the provider instructions.",
-      "encodingFormat": "application/octet-stream",
+      "encodingFormat": [
+        "application/octet-stream"
+      ],
       "contentUrl": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/dem_flt_n30w120.tar.gz",
       "url": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/"
     },
@@ -109,7 +111,9 @@
       "@type": "DataDownload",
       "name": "MERIT DEM – MRR (single merged raster)",
       "description": "Single merged MRR raster created by merging all MERIT DEM source tiles; vertical resolution converted to 0.01 meters by rounding to the nearest centimeter. MRR rasters can be displayed in the MapInfo Pro GIS platform. Prepared by Sam Roberts (Roberts Geospatial).",
-      "encodingFormat": "application/octet-stream",
+      "encodingFormat": [
+        "application/octet-stream"
+      ],
       "contentUrl": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/MERIT_DEM.mrr",
       "url": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/"
     },
@@ -117,7 +121,9 @@
       "@type": "DataDownload",
       "name": "MERIT DEM – 5°×5° tile download page (GeoTIFF tiles)",
       "description": "Alternative download page for individual 5°×5° tiles (useful when large package downloads are difficult). Tile filenames encode the center of the lower-left pixel (e.g., n30w120_dem.tif covers N30–N35, W120–W115). Access may require registration/password per the provider instructions.",
-      "encodingFormat": "text/html",
+      "encodingFormat": [
+        "text/html"
+      ],
       "contentUrl": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/list_5deg.html",
       "url": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/list_5deg.html"
     }

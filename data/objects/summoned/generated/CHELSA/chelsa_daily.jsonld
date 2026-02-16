@@ -119,7 +119,9 @@
       "name": "Catalog landing page (downloads)",
       "description": "Alternative CHELSA downloads landing page.",
       "contentUrl": "https://chelsa-climate.org/downloads/",
-      "encodingFormat": "text/html"
+      "encodingFormat": [
+        "text/html"
+      ]
     }
   ],
   "citation": "Karger, D. N.; Conrad, O.; Böhner, J.; Kawohl, T.; Kreft, H.; Soria-Auza, R. W.; Zimmermann, N. E.; Linder, H. P.; Kessler, M. (2017). Climatologies at high resolution for the earth's land surface areas. Scientific Data, 4, 170122. https://doi.org/10.1038/sdata.2017.122",

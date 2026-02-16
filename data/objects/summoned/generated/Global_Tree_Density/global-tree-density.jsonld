@@ -131,21 +131,27 @@
       "name": "Primary download (ZIP; ArcGIS File Geodatabase + supporting ArcGIS files)",
       "description": "Primary dataset package (zipped) containing an ArcGIS File Geodatabase (.gdb) with two rasters (biome-level and ecoregion-level), plus supporting ArcGIS layer files (.lyr) and a map document (.mxd).",
       "contentUrl": "https://elischolar.library.yale.edu/context/yale_fes_data/article/1000/type/native/viewcontent",
-      "encodingFormat": "application/zip"
+      "encodingFormat": [
+        "application/zip"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Revision 01 (small islands) ZIP",
       "description": "Revision_01 adds tree density predictions for small islands not included in the primary download; follows the original file structure.",
       "contentUrl": "https://elischolar.library.yale.edu/cgi/viewcontent.cgi?article=1000&context=yale_fes_data&filename=0&type=additional",
-      "encodingFormat": "application/zip"
+      "encodingFormat": [
+        "application/zip"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Revision 01 WGS84 GeoTIFF ZIP",
       "description": "Revision_01 biome-level model stored in WGS84 GeoTIFF format (reprojected from Goode Homolosine using nearest-neighbor resampling); includes the primary .tif and visualization support files.",
       "contentUrl": "https://elischolar.library.yale.edu/cgi/viewcontent.cgi?article=1000&context=yale_fes_data&filename=1&type=additional",
-      "encodingFormat": "application/zip"
+      "encodingFormat": [
+        "application/zip"
+      ]
     }
   ],
   "citation": [
