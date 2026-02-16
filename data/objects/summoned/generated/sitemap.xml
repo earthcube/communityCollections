@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/3-generate-jsonld-datasets-from-websites/data/objects/summoned/generated/sitemap.xml</loc>
+<lastmod>2026-02-16T17:40:23Z</lastmod>
+</url>
+<url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/3-generate-jsonld-datasets-from-websites/data/objects/summoned/generated/CHELSA/chelsa_bioclim.jsonld</loc>
 <lastmod>2026-02-16T09:22:43-06:00</lastmod>
 </url>
