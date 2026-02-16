@@ -58,8 +58,13 @@ jobs:
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        ls -la data/objects/summoned/sitemap.xml data/objects/summoned/generated/sitemap.xml 2>/dev/null || true
         git add data/objects/summoned/sitemap.xml data/objects/summoned/generated/sitemap.xml
-        git diff --staged --quiet || (git commit -m "chore: update JSON-LD sitemaps" && git push)
+        git status
+        if ! git diff --staged --quiet; then
+          git commit -m "chore: update JSON-LD sitemaps"
+          git push origin HEAD:${{ github.ref_name }}
+        fi
 
 ### WE MIGHT WANT TO DO INDIVIDUAL SITEMAPS
 #    - name: Generate sitemap for all JSON-LD resources
