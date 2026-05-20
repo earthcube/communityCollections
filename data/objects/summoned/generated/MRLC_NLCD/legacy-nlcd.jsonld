@@ -16,19 +16,6 @@
     "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
     "url": "https://www.mrlc.gov/"
   },
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "United States (nationwide coverage; includes Alaska, Hawaii, and other U.S. territories depending on product)",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180,15 -50,72"
-    }
-  },
-  "spatialResolution": {
-    "@type": "QuantitativeValue",
-    "value": 30,
-    "unitText": "m"
-  },
   "keywords": [
     "NLCD",
     "legacy NLCD",
@@ -44,25 +31,77 @@
       "@type": "PropertyValue",
       "name": "Land cover class (16-class legend)",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "United States (nationwide coverage; includes Alaska, Hawaii, and other U.S. territories depending on product)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,15 -50,72"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Land cover change (varies by product)",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "United States (nationwide coverage; includes Alaska, Hawaii, and other U.S. territories depending on product)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,15 -50,72"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Percent impervious surface (selected releases)",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "United States (nationwide coverage; includes Alaska, Hawaii, and other U.S. territories depending on product)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,15 -50,72"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Tree canopy cover (selected releases)",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "United States (nationwide coverage; includes Alaska, Hawaii, and other U.S. territories depending on product)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,15 -50,72"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     }
   ],
   "measurementTechnique": [

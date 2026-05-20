@@ -51,32 +51,42 @@
   "version": "01.00",
   "isAccessibleForFree": true,
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "temporalCoverage": "1900-01-01/2024-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Europe, EEA member countries, and cooperating reporting countries; see dataset documentation for exact country coverage"
-  },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "Water quality parameters",
       "description": "Measured and aggregated parameters describing chemical and physico-chemical water quality in inland and coastal/marine waters (including nutrients, organic matter, hazardous substances, pesticides and other chemicals).",
       "temporalCoverage": "1900-01-01/2024-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Europe, EEA member countries, and cooperating reporting countries; see dataset documentation for exact country coverage"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Monitoring locations and water bodies",
       "description": "Spatial identifiers and associated attributes for monitoring sites and water bodies reported through WISE and WFD/WISE spatial reporting.",
       "temporalCoverage": "1900-01-01/2024-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Europe, EEA member countries, and cooperating reporting countries; see dataset documentation for exact country coverage"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Ecological and chemical status (where applicable)",
       "description": "Reported status and classification attributes associated with monitored waters and water bodies, as provided in reporting streams.",
       "temporalCoverage": "1900-01-01/2024-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Europe, EEA member countries, and cooperating reporting countries; see dataset documentation for exact country coverage"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     }
   ],
   "measurementTechnique": [

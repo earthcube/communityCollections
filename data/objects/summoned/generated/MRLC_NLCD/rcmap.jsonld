@@ -16,20 +16,6 @@
     "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
     "url": "https://www.mrlc.gov/"
   },
-  "temporalCoverage": "1985-01-01/2024-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Western North America (rangelands)",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-130,25 -95,60"
-    }
-  },
-  "spatialResolution": {
-    "@type": "QuantitativeValue",
-    "value": 30,
-    "unitText": "m"
-  },
   "keywords": [
     "RCMAP",
     "rangeland",
@@ -45,37 +31,115 @@
       "@type": "PropertyValue",
       "name": "Bare ground cover (percent)",
       "temporalCoverage": "1985-01-01/2024-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western North America (rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,25 -95,60"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Herbaceous cover (percent)",
       "temporalCoverage": "1985-01-01/2024-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western North America (rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,25 -95,60"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Litter cover (percent)",
       "temporalCoverage": "1985-01-01/2024-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western North America (rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,25 -95,60"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Shrub cover (percent)",
       "temporalCoverage": "1985-01-01/2024-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western North America (rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,25 -95,60"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Sagebrush cover (percent)",
       "temporalCoverage": "1985-01-01/2024-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western North America (rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,25 -95,60"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Tree cover (percent)",
       "temporalCoverage": "1985-01-01/2024-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western North America (rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,25 -95,60"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     }
   ],
   "measurementTechnique": [

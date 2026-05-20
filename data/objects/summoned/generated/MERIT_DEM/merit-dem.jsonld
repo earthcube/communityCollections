@@ -56,14 +56,6 @@
       "url": "https://opendatacommons.org/licenses/odbl/1-0/"
     }
   ],
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global land areas between 90°N and 60°S",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180,-60 180,90"
-    }
-  },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -71,7 +63,16 @@
       "unitText": "meter",
       "description": "Terrain elevation in meters referenced to WGS84 and the EGM96 geoid.",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land areas between 90°N and 60°S",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-60 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": "not detected"
     }
   ],
   "measurementTechnique": [

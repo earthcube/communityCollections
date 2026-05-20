@@ -19,11 +19,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "temporalCoverage": "1981-01-01/2022-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Switzerland"
-  },
   "keywords": [
     "CHELSA",
     "Switzerland",
@@ -40,7 +35,12 @@
       "unitText": "kg m-2 day-1",
       "description": "Precipitation including liquid and solid phases.",
       "temporalCoverage": "1981-01-01/2022-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Switzerland"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -49,7 +49,12 @@
       "unitText": "K",
       "description": "Near-surface, usually 2 meter, air temperature.",
       "temporalCoverage": "1981-01-01/2022-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Switzerland"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -58,7 +63,12 @@
       "unitText": "K",
       "description": "Maximum near-surface, usually 2 meter, air temperature.",
       "temporalCoverage": "1981-01-01/2022-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Switzerland"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -67,7 +77,12 @@
       "unitText": "K",
       "description": "Minimum near-surface, usually 2 meter, air temperature.",
       "temporalCoverage": "1981-01-01/2022-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Switzerland"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     }
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",

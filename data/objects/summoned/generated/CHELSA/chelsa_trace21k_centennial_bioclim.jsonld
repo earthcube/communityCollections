@@ -19,11 +19,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "temporalCoverage": "21000BP/0BP",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global land surface areas"
-  },
   "keywords": [
     "CHELSA",
     "TraCE21k",
@@ -40,7 +35,12 @@
       "unitText": "K",
       "description": "Mean annual temperature calculated as the average of mean monthly temperatures over the year",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -49,7 +49,12 @@
       "unitText": "K",
       "description": "Mean diurnal temperature range computed as the average of monthly daily maximum minus daily minimum near-surface air temperature",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -58,7 +63,12 @@
       "unitText": "K",
       "description": "Isothermality: 100 × bio02 ÷ bio07; compares day-night variability to annual temperature range",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -67,7 +77,12 @@
       "unitText": "K",
       "description": "Temperature seasonality given by the standard deviation of mean monthly temperatures",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -76,7 +91,12 @@
       "unitText": "K",
       "description": "Highest monthly mean of daily maximum temperatures across the year; indicates peak thermal conditions",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -85,7 +105,12 @@
       "unitText": "K",
       "description": "Lowest monthly mean of daily minimum temperatures across the year; characterizes winter cold intensity",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -94,7 +119,12 @@
       "unitText": "K",
       "description": "Annual temperature range calculated as bio05 minus bio06; measures amplitude between warmest and coldest months",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -103,7 +133,12 @@
       "unitText": "K",
       "description": "Average monthly mean temperature over the wettest three-month period of the year",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -112,7 +147,12 @@
       "unitText": "K",
       "description": "Average monthly mean temperature over the driest three-month period of the year",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -121,7 +161,12 @@
       "unitText": "K",
       "description": "Average monthly mean temperature over the warmest three-month period of the year",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -130,7 +175,12 @@
       "unitText": "K",
       "description": "Average monthly mean temperature over the coldest three-month period of the year",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -139,7 +189,12 @@
       "unitText": "kg m-2 year-1",
       "description": "Sum of monthly precipitation totals across the year",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -148,7 +203,12 @@
       "unitText": "kg m-2 month-1",
       "description": "Maximum monthly precipitation total",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -157,7 +217,12 @@
       "unitText": "kg m-2 month-1",
       "description": "Minimum monthly precipitation total",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -166,7 +231,12 @@
       "unitText": "kg m-2",
       "description": "Coefficient of variation: 100 × standard deviation ÷ mean of monthly precipitation totals",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -175,7 +245,12 @@
       "unitText": "kg m-2 month-1",
       "description": "Average monthly precipitation during the wettest three-month period of the year",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -184,7 +259,12 @@
       "unitText": "kg m-2 month-1",
       "description": "Average monthly precipitation during the driest three-month period of the year",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -193,7 +273,12 @@
       "unitText": "kg m-2 month-1",
       "description": "Average monthly precipitation during the warmest three-month period of the year",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -202,7 +287,12 @@
       "unitText": "kg m-2 month-1",
       "description": "Average monthly precipitation during the coldest three-month period of the year",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -211,7 +301,12 @@
       "unitText": "m",
       "description": "Elevation of the ice sheet surface above sea level.",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -220,7 +315,12 @@
       "unitText": "m",
       "description": "Geometric height of the land surface above the geoid.",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -229,7 +329,12 @@
       "unitText": "days",
       "description": "Number of days per year with snow cover present at the surface.",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     }
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",

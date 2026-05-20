@@ -17,20 +17,6 @@
     "url": "https://www.mrlc.gov/"
   },
   "version": "Collection 1.1 (ver. 1.1, June 2025)",
-  "temporalCoverage": "1985-01-01/2024-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Conterminous United States (CONUS)",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-125,24 -66,50"
-    }
-  },
-  "spatialResolution": {
-    "@type": "QuantitativeValue",
-    "value": 30,
-    "unitText": "m"
-  },
   "keywords": [
     "Annual NLCD",
     "NLCD",
@@ -46,37 +32,115 @@
       "@type": "PropertyValue",
       "name": "Land Cover",
       "temporalCoverage": "1985-01-01/2024-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Conterminous United States (CONUS)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-125,24 -66,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Land Cover Change",
       "temporalCoverage": "1985-01-01/2024-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Conterminous United States (CONUS)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-125,24 -66,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Land Cover Confidence",
       "temporalCoverage": "1985-01-01/2024-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Conterminous United States (CONUS)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-125,24 -66,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Fractional Impervious Surface",
       "temporalCoverage": "1985-01-01/2024-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Conterminous United States (CONUS)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-125,24 -66,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Impervious Descriptor",
       "temporalCoverage": "1985-01-01/2024-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Conterminous United States (CONUS)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-125,24 -66,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Spectral Change Day of Year",
       "temporalCoverage": "1985-01-01/2024-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Conterminous United States (CONUS)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-125,24 -66,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     }
   ],
   "measurementTechnique": [

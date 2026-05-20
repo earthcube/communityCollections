@@ -78,20 +78,6 @@
     "name": "CC0 1.0 Universal (Public Domain Dedication)",
     "url": "https://creativecommons.org/publicdomain/zero/1.0/"
   },
-  "temporalCoverage": [
-    "1950-01-01/..",
-    "1950-01-01/2025-12-31"
-  ],
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global terrestrial land surfaces",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180,-90 180,90"
-    }
-  },
-  "spatialResolution": "1/24 degree (~4 km)",
-  "temporalResolution": "P1M",
   "encodingFormat": [
     "application/x-netcdf",
     "text/html"
@@ -105,7 +91,16 @@
         "1950-01-01/..",
         "1950-01-01/2025-12-31"
       ],
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global terrestrial land surfaces",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "1/24 degree (~4 km)"
     },
     {
       "@type": "PropertyValue",
@@ -115,7 +110,16 @@
         "1950-01-01/..",
         "1950-01-01/2025-12-31"
       ],
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global terrestrial land surfaces",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "1/24 degree (~4 km)"
     },
     {
       "@type": "PropertyValue",
@@ -125,7 +129,16 @@
         "1950-01-01/..",
         "1950-01-01/2025-12-31"
       ],
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global terrestrial land surfaces",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "1/24 degree (~4 km)"
     },
     {
       "@type": "PropertyValue",
@@ -135,7 +148,16 @@
         "1950-01-01/..",
         "1950-01-01/2025-12-31"
       ],
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global terrestrial land surfaces",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "1/24 degree (~4 km)"
     },
     {
       "@type": "PropertyValue",
@@ -145,7 +167,16 @@
         "1950-01-01/..",
         "1950-01-01/2025-12-31"
       ],
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global terrestrial land surfaces",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "1/24 degree (~4 km)"
     },
     {
       "@type": "PropertyValue",
@@ -155,7 +186,16 @@
         "1950-01-01/..",
         "1950-01-01/2025-12-31"
       ],
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global terrestrial land surfaces",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "1/24 degree (~4 km)"
     },
     {
       "@type": "PropertyValue",
@@ -165,7 +205,16 @@
         "1950-01-01/..",
         "1950-01-01/2025-12-31"
       ],
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global terrestrial land surfaces",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "1/24 degree (~4 km)"
     },
     {
       "@type": "PropertyValue",
@@ -175,7 +224,16 @@
         "1950-01-01/..",
         "1950-01-01/2025-12-31"
       ],
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global terrestrial land surfaces",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "1/24 degree (~4 km)"
     },
     {
       "@type": "PropertyValue",
@@ -185,7 +243,16 @@
         "1950-01-01/..",
         "1950-01-01/2025-12-31"
       ],
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global terrestrial land surfaces",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "1/24 degree (~4 km)"
     },
     {
       "@type": "PropertyValue",
@@ -195,7 +262,16 @@
         "1950-01-01/..",
         "1950-01-01/2025-12-31"
       ],
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global terrestrial land surfaces",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "1/24 degree (~4 km)"
     },
     {
       "@type": "PropertyValue",
@@ -205,7 +281,16 @@
         "1950-01-01/..",
         "1950-01-01/2025-12-31"
       ],
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global terrestrial land surfaces",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "1/24 degree (~4 km)"
     },
     {
       "@type": "PropertyValue",
@@ -215,7 +300,16 @@
         "1950-01-01/..",
         "1950-01-01/2025-12-31"
       ],
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global terrestrial land surfaces",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "1/24 degree (~4 km)"
     },
     {
       "@type": "PropertyValue",
@@ -225,7 +319,16 @@
         "1950-01-01/..",
         "1950-01-01/2025-12-31"
       ],
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global terrestrial land surfaces",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "1/24 degree (~4 km)"
     },
     {
       "@type": "PropertyValue",
@@ -235,7 +338,16 @@
         "1950-01-01/..",
         "1950-01-01/2025-12-31"
       ],
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global terrestrial land surfaces",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "1/24 degree (~4 km)"
     }
   ],
   "measurementTechnique": [

@@ -76,24 +76,22 @@
     }
   ],
   "isAccessibleForFree": true,
-  "temporalCoverage": "1902-01-01/2014-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global gridded land runoff reconstruction",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180,-90 180,90"
-    }
-  },
-  "spatialResolution": "0.5 degree",
-  "temporalResolution": "P1M",
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "Runoff",
       "description": "Monthly gridded runoff rates reconstructed using machine learning trained on in-situ streamflow observations.",
       "temporalCoverage": "1902-01-01/2014-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global gridded land runoff reconstruction",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "0.5 degree"
     }
   ],
   "measurementTechnique": [

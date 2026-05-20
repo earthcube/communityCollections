@@ -19,15 +19,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "temporalCoverage": "1979-01-15/2021-12-15",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global land surface areas",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180.0,-60.0 180.0,90.0"
-    }
-  },
   "keywords": [
     "CHELSA",
     "monthly climate",
@@ -44,7 +35,16 @@
       "unitText": "percent",
       "description": "Total cloud area fraction, reported as a percentage, for the whole atmospheric column.",
       "temporalCoverage": "1979-01-15/2021-12-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -53,7 +53,16 @@
       "unitText": "kg m-2 month-1",
       "description": "Monthly ratio of precipitation to potential evapotranspiration; indicator of climatic water availability.",
       "temporalCoverage": "1979-01-15/2021-12-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -62,7 +71,16 @@
       "unitText": "percent",
       "description": "Relative humidity near the surface.",
       "temporalCoverage": "1979-01-15/2021-12-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -71,7 +89,16 @@
       "unitText": "kg m-2 month-1",
       "description": "Total potential evapotranspiration for the month assuming unlimited water availability, calculated using Penman-Monteith.",
       "temporalCoverage": "1979-01-15/2021-12-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -80,7 +107,16 @@
       "unitText": "kg m-2 month-1",
       "description": "Precipitation including liquid and solid phases.",
       "temporalCoverage": "1979-01-15/2021-12-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -89,7 +125,16 @@
       "unitText": "W m-2",
       "description": "Surface solar irradiance for UV calculations.",
       "temporalCoverage": "1979-01-15/2021-12-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -98,7 +143,16 @@
       "unitText": "m s-1",
       "description": "Near-surface, usually 10 meter, wind speed.",
       "temporalCoverage": "1979-01-15/2021-12-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -107,7 +161,16 @@
       "unitText": "1",
       "description": "Standardized climatic water balance index over a 12-month integration period.",
       "temporalCoverage": "1979-01-15/2021-12-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -116,7 +179,16 @@
       "unitText": "1",
       "description": "Standardized precipitation anomaly index over a 12-month integration period.",
       "temporalCoverage": "1979-01-15/2021-12-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -125,7 +197,16 @@
       "unitText": "K",
       "description": "Near-surface, usually 2 meter, air temperature.",
       "temporalCoverage": "1979-01-15/2021-12-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -134,7 +215,16 @@
       "unitText": "K",
       "description": "Maximum near-surface, usually 2 meter, air temperature.",
       "temporalCoverage": "1979-01-15/2021-12-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -143,7 +233,16 @@
       "unitText": "K",
       "description": "Minimum near-surface, usually 2 meter, air temperature.",
       "temporalCoverage": "1979-01-15/2021-12-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -152,7 +251,16 @@
       "unitText": "Pa",
       "description": "Difference between saturation vapor pressure and actual vapor pressure.",
       "temporalCoverage": "1979-01-15/2021-12-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     }
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",

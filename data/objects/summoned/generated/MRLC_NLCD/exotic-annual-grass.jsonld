@@ -16,20 +16,6 @@
     "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
     "url": "https://www.mrlc.gov/"
   },
-  "temporalCoverage": "2016-01-01/2025-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Western United States (arid and semi-arid rangelands)",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-130,30 -95,50"
-    }
-  },
-  "spatialResolution": {
-    "@type": "QuantitativeValue",
-    "value": 30,
-    "unitText": "m"
-  },
   "keywords": [
     "Exotic Annual Grass",
     "EAG",
@@ -45,37 +31,115 @@
       "@type": "PropertyValue",
       "name": "EAG fractional cover (multiple species group)",
       "temporalCoverage": "2016-01-01/2025-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western United States (arid and semi-arid rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,30 -95,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Cheatgrass (Bromus tectorum) fractional cover",
       "temporalCoverage": "2016-01-01/2025-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western United States (arid and semi-arid rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,30 -95,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Other Bromus spp. fractional cover (Field brome + Japanese brome)",
       "temporalCoverage": "2016-01-01/2025-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western United States (arid and semi-arid rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,30 -95,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Medusahead (Taeniatherum caput-medusae) fractional cover",
       "temporalCoverage": "2016-01-01/2025-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western United States (arid and semi-arid rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,30 -95,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Sandberg bluegrass (Poa secunda) fractional cover",
       "temporalCoverage": "2016-01-01/2025-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western United States (arid and semi-arid rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,30 -95,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
       "name": "Confidence maps (per target)",
       "temporalCoverage": "2016-01-01/2025-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western United States (arid and semi-arid rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,30 -95,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     }
   ],
   "measurementTechnique": [

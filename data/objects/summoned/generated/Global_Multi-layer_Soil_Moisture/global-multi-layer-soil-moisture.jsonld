@@ -57,45 +57,70 @@
     }
   ],
   "isAccessibleForFree": true,
-  "temporalCoverage": "1970-01-01/2016-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global land areas",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180,-90 180,90"
-    }
-  },
-  "spatialResolution": "0.5 degree",
-  "temporalResolution": "P1M",
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "Soil moisture (0–10 cm)",
       "description": "Monthly soil moisture for the 0–10 cm layer.",
       "temporalCoverage": "1970-01-01/2016-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "0.5 degree"
     },
     {
       "@type": "PropertyValue",
       "name": "Soil moisture (10–30 cm)",
       "description": "Monthly soil moisture for the 10–30 cm layer.",
       "temporalCoverage": "1970-01-01/2016-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "0.5 degree"
     },
     {
       "@type": "PropertyValue",
       "name": "Soil moisture (30–50 cm)",
       "description": "Monthly soil moisture for the 30–50 cm layer.",
       "temporalCoverage": "1970-01-01/2016-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "0.5 degree"
     },
     {
       "@type": "PropertyValue",
       "name": "Soil moisture (50–100 cm)",
       "description": "Monthly soil moisture for the 50–100 cm layer.",
       "temporalCoverage": "1970-01-01/2016-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1M",
+      "spatialResolution": "0.5 degree"
     }
   ],
   "encodingFormat": [

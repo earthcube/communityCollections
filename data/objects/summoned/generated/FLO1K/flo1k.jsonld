@@ -65,38 +65,54 @@
     }
   ],
   "isAccessibleForFree": true,
-  "temporalCoverage": "1960-01-01/2015-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global land areas excluding Antarctica",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180,-90 180,90"
-    }
-  },
-  "spatialResolution": "30 arc-second (~1 km)",
-  "temporalResolution": "P1Y",
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "Mean annual streamflow",
       "description": "Mean annual flow for each year (gridded, global, ~1 km).",
       "temporalCoverage": "1960-01-01/2015-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land areas excluding Antarctica",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1Y",
+      "spatialResolution": "30 arc-second (~1 km)"
     },
     {
       "@type": "PropertyValue",
       "name": "Maximum annual streamflow (maximum monthly flow per year)",
       "description": "Maximum monthly flow within each year (gridded, global, ~1 km).",
       "temporalCoverage": "1960-01-01/2015-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land areas excluding Antarctica",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1Y",
+      "spatialResolution": "30 arc-second (~1 km)"
     },
     {
       "@type": "PropertyValue",
       "name": "Minimum annual streamflow (minimum monthly flow per year)",
       "description": "Minimum monthly flow within each year (gridded, global, ~1 km).",
       "temporalCoverage": "1960-01-01/2015-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land areas excluding Antarctica",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1Y",
+      "spatialResolution": "30 arc-second (~1 km)"
     }
   ],
   "encodingFormat": [

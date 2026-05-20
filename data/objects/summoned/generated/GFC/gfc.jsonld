@@ -81,21 +81,6 @@
       "url": "https://glad.umd.edu/"
     }
   ],
-  "temporalCoverage": "2000-01-01/2023-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global (granules provided for 180W–180E, 80N–60S)",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180,-60 180,80"
-    }
-  },
-  "spatialResolution": {
-    "@type": "QuantitativeValue",
-    "value": 30,
-    "unitCode": "MTR",
-    "description": "Approx. 30 m (1 arc-second per pixel; Earth Engine catalog lists ~30.92 m pixel size)."
-  },
   "keywords": [
     "forest monitoring",
     "deforestation",
@@ -124,7 +109,21 @@
       "unitText": "percent",
       "description": "Tree canopy cover for year 2000, defined as canopy closure for vegetation taller than 5 m.",
       "temporalCoverage": "2000-01-01/2023-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global (granules provided for 180W–180E, 80N–60S)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-60 180,80"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitCode": "MTR",
+        "description": "Approx. 30 m (1 arc-second per pixel; Earth Engine catalog lists ~30.92 m pixel size)."
+      }
     },
     {
       "@type": "PropertyValue",
@@ -133,7 +132,21 @@
       "unitText": "binary",
       "description": "Forest gain during 2000-2012.",
       "temporalCoverage": "2000-01-01/2023-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global (granules provided for 180W–180E, 80N–60S)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-60 180,80"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitCode": "MTR",
+        "description": "Approx. 30 m (1 arc-second per pixel; Earth Engine catalog lists ~30.92 m pixel size)."
+      }
     },
     {
       "@type": "PropertyValue",
@@ -142,7 +155,21 @@
       "unitText": "year code",
       "description": "Year of gross forest cover loss event; 0 indicates no loss and 1-23 correspond primarily to 2001-2023.",
       "temporalCoverage": "2000-01-01/2023-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global (granules provided for 180W–180E, 80N–60S)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-60 180,80"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitCode": "MTR",
+        "description": "Approx. 30 m (1 arc-second per pixel; Earth Engine catalog lists ~30.92 m pixel size)."
+      }
     },
     {
       "@type": "PropertyValue",
@@ -151,7 +178,21 @@
       "unitText": "class code",
       "description": "Data mask classes for no data, mapped land surface, and persistent water bodies.",
       "temporalCoverage": "2000-01-01/2023-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global (granules provided for 180W–180E, 80N–60S)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-60 180,80"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitCode": "MTR",
+        "description": "Approx. 30 m (1 arc-second per pixel; Earth Engine catalog lists ~30.92 m pixel size)."
+      }
     },
     {
       "@type": "PropertyValue",
@@ -160,7 +201,21 @@
       "unitText": "digital number",
       "description": "Circa year-2000 Landsat cloud-free composite in red, NIR, SWIR1, and SWIR2 bands.",
       "temporalCoverage": "2000-01-01/2023-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global (granules provided for 180W–180E, 80N–60S)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-60 180,80"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitCode": "MTR",
+        "description": "Approx. 30 m (1 arc-second per pixel; Earth Engine catalog lists ~30.92 m pixel size)."
+      }
     },
     {
       "@type": "PropertyValue",
@@ -169,7 +224,21 @@
       "unitText": "digital number",
       "description": "Circa year-2023 Landsat cloud-free composite in red, NIR, SWIR1, and SWIR2 bands.",
       "temporalCoverage": "2000-01-01/2023-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global (granules provided for 180W–180E, 80N–60S)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-60 180,80"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitCode": "MTR",
+        "description": "Approx. 30 m (1 arc-second per pixel; Earth Engine catalog lists ~30.92 m pixel size)."
+      }
     },
     {
       "@type": "PropertyValue",
@@ -178,7 +247,21 @@
       "unitText": "derived binary",
       "description": "Derived indicator for pixels where lossyear is greater than 0.",
       "temporalCoverage": "2000-01-01/2023-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global (granules provided for 180W–180E, 80N–60S)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-60 180,80"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitCode": "MTR",
+        "description": "Approx. 30 m (1 arc-second per pixel; Earth Engine catalog lists ~30.92 m pixel size)."
+      }
     }
   ],
   "measurementTechnique": [

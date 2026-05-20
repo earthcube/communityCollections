@@ -19,15 +19,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "temporalCoverage": "1981-2010/1971-2100",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global land surface areas",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180.0,-60.0 180.0,90.0"
-    }
-  },
   "keywords": [
     "CHELSA",
     "bioclim",
@@ -44,7 +35,16 @@
       "unitText": "°C",
       "description": "Mean annual temperature calculated as the average of mean monthly temperatures over the year",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -53,7 +53,16 @@
       "unitText": "°C",
       "description": "Mean diurnal temperature range computed as the average of monthly daily maximum minus daily minimum near-surface air temperature",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -62,7 +71,16 @@
       "unitText": "°C",
       "description": "Isothermality: 100 × bio02 ÷ bio07; compares day-night variability to annual temperature range",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -71,7 +89,16 @@
       "unitText": "°C/100",
       "description": "Temperature seasonality given by the standard deviation of mean monthly temperatures",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -80,7 +107,16 @@
       "unitText": "°C",
       "description": "Highest monthly mean of daily maximum temperatures across the year; indicates peak thermal conditions",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -89,7 +125,16 @@
       "unitText": "°C",
       "description": "Lowest monthly mean of daily minimum temperatures across the year; characterizes winter cold intensity",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -98,7 +143,16 @@
       "unitText": "°C",
       "description": "Annual temperature range calculated as bio05 minus bio06; measures amplitude between warmest and coldest months",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -107,7 +161,16 @@
       "unitText": "°C",
       "description": "Average monthly mean temperature over the wettest three-month period of the year",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -116,7 +179,16 @@
       "unitText": "°C",
       "description": "Average monthly mean temperature over the driest three-month period of the year",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -125,7 +197,16 @@
       "unitText": "°C",
       "description": "Average monthly mean temperature over the warmest three-month period of the year",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -134,7 +215,16 @@
       "unitText": "°C",
       "description": "Average monthly mean temperature over the coldest three-month period of the year",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -143,7 +233,16 @@
       "unitText": "kg m-2 year-1",
       "description": "Sum of monthly precipitation totals across the year",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -152,7 +251,16 @@
       "unitText": "kg m-2 month-1",
       "description": "Maximum monthly precipitation total",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -161,7 +269,16 @@
       "unitText": "kg m-2 month-1",
       "description": "Minimum monthly precipitation total",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -170,7 +287,16 @@
       "unitText": "kg m-2",
       "description": "Coefficient of variation: 100 × standard deviation ÷ mean of monthly precipitation totals",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -179,7 +305,16 @@
       "unitText": "kg m-2 month-1",
       "description": "Average monthly precipitation during the wettest three-month period of the year",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -188,7 +323,16 @@
       "unitText": "kg m-2 month-1",
       "description": "Average monthly precipitation during the driest three-month period of the year",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -197,7 +341,16 @@
       "unitText": "kg m-2 month-1",
       "description": "Average monthly precipitation during the warmest three-month period of the year",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -206,7 +359,16 @@
       "unitText": "kg m-2 month-1",
       "description": "Average monthly precipitation during the coldest three-month period of the year",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -215,7 +377,16 @@
       "unitText": "count",
       "description": "Number of freeze-thaw transitions per year.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -224,7 +395,16 @@
       "unitText": "julian day",
       "description": "Julian day marking the first occurrence of growing season conditions.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -233,7 +413,16 @@
       "unitText": "°C",
       "description": "Sum of daily mean temperatures above 0 °C accumulated over the year.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -242,7 +431,16 @@
       "unitText": "°C",
       "description": "Sum of daily mean temperatures above 10 °C accumulated over the year.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -251,7 +449,16 @@
       "unitText": "°C",
       "description": "Sum of daily mean temperatures above 5 °C accumulated over the year.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -260,7 +467,16 @@
       "unitText": "julian day",
       "description": "Julian day of the first occurrence of a daily mean temperature above 10 °C.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -269,7 +485,16 @@
       "unitText": "julian day",
       "description": "Julian day of the first occurrence of a daily mean temperature above 5 °C.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -278,7 +503,16 @@
       "unitText": "days",
       "description": "Number of days between the first and last occurrence of growing season conditions.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -287,7 +521,16 @@
       "unitText": "kg m-2 gsl-1",
       "description": "Total precipitation accumulated during the growing season period.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -296,7 +539,16 @@
       "unitText": "°C",
       "description": "Average daily mean temperature over all growing season days.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -305,7 +557,16 @@
       "unitText": "category",
       "description": "Köppen-Geiger climate classification.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -314,7 +575,16 @@
       "unitText": "category",
       "description": "Köppen-Geiger climate classification without As and Aw differentiation.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -323,7 +593,16 @@
       "unitText": "category",
       "description": "Köppen-Geiger climate classification after Peel et al. 2007.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -332,7 +611,16 @@
       "unitText": "category",
       "description": "Climate classification after Wissmann 1939.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -341,7 +629,16 @@
       "unitText": "category",
       "description": "Climate classification after Thornthwaite 1931.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -350,7 +647,16 @@
       "unitText": "category",
       "description": "Climate classification after Troll-Pfaffen.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -359,7 +665,16 @@
       "unitText": "julian day",
       "description": "Julian day of the last occurrence of growing season conditions.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -368,7 +683,16 @@
       "unitText": "number of days",
       "description": "Total number of days in a year with mean daily temperature above 0 °C.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -377,7 +701,16 @@
       "unitText": "number of days",
       "description": "Total number of days in a year with mean daily temperature above 10 °C.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -386,7 +719,16 @@
       "unitText": "number of days",
       "description": "Total number of days in a year with mean daily temperature above 5 °C.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -395,7 +737,16 @@
       "unitText": "g C m-2 yr-1",
       "description": "Net primary production on land expressed as carbon mass flux.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -404,7 +755,16 @@
       "unitText": "days",
       "description": "Number of days per year with snow cover present at the surface.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -413,7 +773,16 @@
       "unitText": "kg m-2 year-1",
       "description": "Total water equivalent of snowpack accumulated over the year.",
       "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     }
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",

@@ -48,50 +48,86 @@
   ],
   "isAccessibleForFree": true,
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "temporalCoverage": "1975-01-01/2030-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global Human Settlement Layer product coverage",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180,-90 180,90"
-    }
-  },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "Built-up surface",
       "description": "Gridded built-up surface area (including total and non-residential components for some products).",
       "temporalCoverage": "1975-01-01/2030-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global Human Settlement Layer product coverage",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Built-up volume",
       "description": "Gridded built-up volume estimates (including total and non-residential components for some products).",
       "temporalCoverage": "1975-01-01/2030-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global Human Settlement Layer product coverage",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Building height",
       "description": "Gridded building height estimates for selected reference years/products.",
       "temporalCoverage": "1975-01-01/2030-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global Human Settlement Layer product coverage",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Population",
       "description": "Residential population grid (number of people per cell) for multiple epochs and projections.",
       "temporalCoverage": "1975-01-01/2030-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global Human Settlement Layer product coverage",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Settlement Typology and Degree of Urbanisation",
       "description": "Settlement model classification based on the UN-recommended Degree of Urbanisation methodology.",
       "temporalCoverage": "1975-01-01/2030-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global Human Settlement Layer product coverage",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     }
   ],
   "encodingFormat": [

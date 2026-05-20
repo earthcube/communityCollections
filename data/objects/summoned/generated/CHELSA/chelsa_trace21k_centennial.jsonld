@@ -19,11 +19,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "temporalCoverage": "21000BP/0BP",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global land surface areas"
-  },
   "keywords": [
     "CHELSA",
     "TraCE21k",
@@ -41,7 +36,12 @@
       "unitText": "kg m-2 day-1",
       "description": "Precipitation including liquid and solid phases.",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -50,7 +50,12 @@
       "unitText": "K",
       "description": "Maximum near-surface, usually 2 meter, air temperature.",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -59,7 +64,12 @@
       "unitText": "K",
       "description": "Minimum near-surface, usually 2 meter, air temperature.",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -68,7 +78,12 @@
       "unitText": "K m-1",
       "description": "Rate of change in air temperature with altitude calculated over the centennial period.",
       "temporalCoverage": "21000BP/0BP",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     }
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",

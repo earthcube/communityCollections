@@ -69,60 +69,90 @@
     }
   ],
   "isAccessibleForFree": true,
-  "temporalCoverage": "1900-01-01/..",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "United States and beyond; coverage depends on contributing organizations and query parameters"
-  },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "Water quality results",
       "description": "Discrete sample results including measured values, units, methods, and qualifiers for physical, chemical, and biological characteristics.",
       "temporalCoverage": "1900-01-01/..",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "United States and beyond; coverage depends on contributing organizations and query parameters"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Station and Monitoring Location Metadata",
       "description": "Locations where samples and observations were collected, including identifiers, coordinates, and site descriptors.",
       "temporalCoverage": "1900-01-01/..",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "United States and beyond; coverage depends on contributing organizations and query parameters"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Nutrients",
       "description": "Nutrient-related characteristics such as nitrogen and phosphorus species.",
       "temporalCoverage": "1900-01-01/..",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "United States and beyond; coverage depends on contributing organizations and query parameters"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Metals and trace elements",
       "description": "Metals and trace elements measured in water, sediment, or related matrices.",
       "temporalCoverage": "1900-01-01/..",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "United States and beyond; coverage depends on contributing organizations and query parameters"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Organic contaminants and pesticides",
       "description": "Organic contaminants, pesticides, and related analytes reported by contributing organizations.",
       "temporalCoverage": "1900-01-01/..",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "United States and beyond; coverage depends on contributing organizations and query parameters"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Physical parameters",
       "description": "Physical characteristics such as temperature, specific conductance, turbidity, and dissolved oxygen (where available).",
       "temporalCoverage": "1900-01-01/..",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "United States and beyond; coverage depends on contributing organizations and query parameters"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Biological data",
       "description": "Biological observations and metrics available through WQP services where reported by data providers.",
       "temporalCoverage": "1900-01-01/..",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "United States and beyond; coverage depends on contributing organizations and query parameters"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     }
   ],
   "encodingFormat": [

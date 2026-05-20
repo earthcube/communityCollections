@@ -52,16 +52,6 @@
     "GeoTIFF"
   ],
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180,-56 180,90"
-    }
-  },
-  "spatialResolution": "30 arc-second (~1 km at the equator)",
-  "temporalCoverage": "1992-01-01/2006-12-31",
   "encodingFormat": [
     "image/tiff",
     "application=geotiff"
@@ -72,84 +62,192 @@
       "name": "Evergreen and Deciduous Needleleaf Trees",
       "description": "Consensus prevalence (0–100%)",
       "temporalCoverage": "1992-01-01/2006-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-56 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "30 arc-second (~1 km at the equator)"
     },
     {
       "@type": "PropertyValue",
       "name": "Evergreen Broadleaf Trees",
       "description": "Consensus prevalence (0–100%)",
       "temporalCoverage": "1992-01-01/2006-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-56 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "30 arc-second (~1 km at the equator)"
     },
     {
       "@type": "PropertyValue",
       "name": "Deciduous Broadleaf Trees",
       "description": "Consensus prevalence (0–100%)",
       "temporalCoverage": "1992-01-01/2006-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-56 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "30 arc-second (~1 km at the equator)"
     },
     {
       "@type": "PropertyValue",
       "name": "Mixed and Other Trees",
       "description": "Consensus prevalence (0–100%)",
       "temporalCoverage": "1992-01-01/2006-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-56 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "30 arc-second (~1 km at the equator)"
     },
     {
       "@type": "PropertyValue",
       "name": "Shrubs",
       "description": "Consensus prevalence (0–100%)",
       "temporalCoverage": "1992-01-01/2006-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-56 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "30 arc-second (~1 km at the equator)"
     },
     {
       "@type": "PropertyValue",
       "name": "Herbaceous Vegetation",
       "description": "Consensus prevalence (0–100%)",
       "temporalCoverage": "1992-01-01/2006-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-56 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "30 arc-second (~1 km at the equator)"
     },
     {
       "@type": "PropertyValue",
       "name": "Cultivated and Managed Vegetation",
       "description": "Consensus prevalence (0–100%)",
       "temporalCoverage": "1992-01-01/2006-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-56 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "30 arc-second (~1 km at the equator)"
     },
     {
       "@type": "PropertyValue",
       "name": "Regularly Flooded Vegetation",
       "description": "Consensus prevalence (0–100%)",
       "temporalCoverage": "1992-01-01/2006-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-56 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "30 arc-second (~1 km at the equator)"
     },
     {
       "@type": "PropertyValue",
       "name": "Urban and Built-Up",
       "description": "Consensus prevalence (0–100%)",
       "temporalCoverage": "1992-01-01/2006-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-56 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "30 arc-second (~1 km at the equator)"
     },
     {
       "@type": "PropertyValue",
       "name": "Snow and Ice",
       "description": "Consensus prevalence (0–100%)",
       "temporalCoverage": "1992-01-01/2006-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-56 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "30 arc-second (~1 km at the equator)"
     },
     {
       "@type": "PropertyValue",
       "name": "Barren",
       "description": "Consensus prevalence (0–100%)",
       "temporalCoverage": "1992-01-01/2006-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-56 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "30 arc-second (~1 km at the equator)"
     },
     {
       "@type": "PropertyValue",
       "name": "Open Water",
       "description": "Consensus prevalence (0–100%)",
       "temporalCoverage": "1992-01-01/2006-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-56 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "30 arc-second (~1 km at the equator)"
     }
   ],
   "measurementTechnique": "Integration of multiple global remote sensing-derived land-cover products to estimate per-class consensus prevalence (percent) at 1-km resolution.",

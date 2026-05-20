@@ -19,15 +19,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "temporalCoverage": "1980-06-15/2018-07-15",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global land surface areas",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180.0,-60.0 180.0,90.0"
-    }
-  },
   "keywords": [
     "CHELSA",
     "drought",
@@ -44,7 +35,16 @@
       "unitText": "id",
       "description": "Identifier for multiyear meteorological drought events.",
       "temporalCoverage": "1980-06-15/2018-07-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -53,7 +53,16 @@
       "unitText": "id",
       "description": "Identifier for multiyear meteorological drought events at 10 km resolution.",
       "temporalCoverage": "1980-06-15/2018-07-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -62,7 +71,16 @@
       "unitText": "1",
       "description": "Annual anomaly in vegetation greenness derived from kernel normalized difference vegetation index.",
       "temporalCoverage": "1980-06-15/2018-07-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -71,7 +89,16 @@
       "unitText": "1",
       "description": "Standardized climatic water balance index over a 12-month integration period.",
       "temporalCoverage": "1980-06-15/2018-07-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
@@ -80,7 +107,16 @@
       "unitText": "1",
       "description": "Standardized precipitation anomaly index over a 12-month integration period.",
       "temporalCoverage": "1980-06-15/2018-07-15",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     }
   ],
   "license": "https://creativecommons.org/licenses/by/4.0/",

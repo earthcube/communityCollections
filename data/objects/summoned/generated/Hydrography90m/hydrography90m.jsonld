@@ -82,67 +82,139 @@
   ],
   "datePublished": "2022-08-09",
   "isAccessibleForFree": true,
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180,-60 180,90"
-    }
-  },
-  "spatialResolution": [
-    "3 arc-second (~90 m at the equator)",
-    "90 m"
-  ],
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "Stream channels",
       "description": "Global stream channel network with unique segment identifiers and topology attributes.",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-60 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": [
+        "3 arc-second (~90 m at the equator)",
+        "90 m"
+      ]
     },
     {
       "@type": "PropertyValue",
       "name": "Drainage basins",
       "description": "Global drainage basin delineations derived from flow routing.",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-60 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": [
+        "3 arc-second (~90 m at the equator)",
+        "90 m"
+      ]
     },
     {
       "@type": "PropertyValue",
       "name": "Sub-catchments",
       "description": "Sub-catchment polygons linked to individual stream segments.",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-60 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": [
+        "3 arc-second (~90 m at the equator)",
+        "90 m"
+      ]
     },
     {
       "@type": "PropertyValue",
       "name": "Network topology",
       "description": "Upstream/downstream connectivity and routing attributes for stream segments.",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-60 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": [
+        "3 arc-second (~90 m at the equator)",
+        "90 m"
+      ]
     },
     {
       "@type": "PropertyValue",
       "name": "Stream order",
       "description": "Stream order metrics computed for the network.",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-60 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": [
+        "3 arc-second (~90 m at the equator)",
+        "90 m"
+      ]
     },
     {
       "@type": "PropertyValue",
       "name": "Stream slope",
       "description": "Slope metrics computed along stream segments.",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-60 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": [
+        "3 arc-second (~90 m at the equator)",
+        "90 m"
+      ]
     },
     {
       "@type": "PropertyValue",
       "name": "Distance metrics",
       "description": "In-stream and among-stream distance measures for network analysis.",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-60 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": [
+        "3 arc-second (~90 m at the equator)",
+        "90 m"
+      ]
     }
   ],
   "measurementTechnique": [

@@ -61,34 +61,44 @@
     }
   ],
   "isAccessibleForFree": true,
-  "temporalCoverage": "1901-01-01/2019-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global terrestrial water storage reconstruction",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180,-90 180,90"
-    }
-  },
-  "spatialResolution": "0.5 degree",
-  "temporalResolution": [
-    "P1D",
-    "P1M"
-  ],
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "Terrestrial water storage anomaly",
       "description": "Reconstructed climate-driven terrestrial water storage anomalies (TWSA) derived from statistical modeling calibrated to GRACE observations.",
       "temporalCoverage": "1901-01-01/2019-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global terrestrial water storage reconstruction",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": [
+        "P1D",
+        "P1M"
+      ],
+      "spatialResolution": "0.5 degree"
     },
     {
       "@type": "PropertyValue",
       "name": "Ensemble members",
       "description": "Multiple ensemble realizations to quantify predictive uncertainty for reconstructed TWS anomalies.",
       "temporalCoverage": "1901-01-01/2019-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global terrestrial water storage reconstruction",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": [
+        "P1D",
+        "P1M"
+      ],
+      "spatialResolution": "0.5 degree"
     }
   ],
   "measurementTechnique": [

@@ -33,20 +33,6 @@
     "name": "U.S. Geological Survey (USGS)",
     "url": "https://www.usgs.gov/"
   },
-  "temporalCoverage": "2019-01-01/2021-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "North America (Canada, United States, Mexico)",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180,15 -50,85"
-    }
-  },
-  "spatialResolution": {
-    "@type": "QuantitativeValue",
-    "value": 30,
-    "unitText": "m"
-  },
   "keywords": [
     "NALCMS",
     "North America",
@@ -60,7 +46,20 @@
       "@type": "PropertyValue",
       "name": "Land cover class",
       "temporalCoverage": "2019-01-01/2021-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "North America (Canada, United States, Mexico)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,15 -50,85"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     }
   ],
   "measurementTechnique": [

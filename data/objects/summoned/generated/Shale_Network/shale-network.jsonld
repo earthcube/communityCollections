@@ -56,46 +56,66 @@
     }
   ],
   "isAccessibleForFree": true,
-  "temporalCoverage": "2011-01-01/..",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Energy production regions, primarily the northeastern United States; see dataset portals for exact site coverage"
-  },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "Common water quality measurements",
       "description": "Common field and laboratory measurements such as pH, major ions (Na, K, Mg, Ca, sulfate, chloride, bromide), nutrients (ammonium, nitrate, nitrite, total N), alkalinity/acidity, hardness, TDS, and related parameters.",
       "temporalCoverage": "2011-01-01/..",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Energy production regions, primarily the northeastern United States; see dataset portals for exact site coverage"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Trace elements",
       "description": "Trace element concentrations such as Al, As, Ba, B, Cd, Cr, Co, Cu, Fe, Pb, Li, Mn, Hg, Mo, Ni, Se, Ag, Sr, Th, U, Zn (availability varies by site and dataset).",
       "temporalCoverage": "2011-01-01/..",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Energy production regions, primarily the northeastern United States; see dataset portals for exact site coverage"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Naturally occurring radioactive material (NORM)",
       "description": "Radiological measurements such as gross alpha/beta, Ra-226, and Ra-228 (availability varies).",
       "temporalCoverage": "2011-01-01/..",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Energy production regions, primarily the northeastern United States; see dataset portals for exact site coverage"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Organic constituents",
       "description": "Organic compounds and indicators such as benzene, toluene, ethylbenzene, xylenes, naphthalene, oil and grease, phenolics, and related constituents (availability varies).",
       "temporalCoverage": "2011-01-01/..",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Energy production regions, primarily the northeastern United States; see dataset portals for exact site coverage"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Water quantity (where available)",
       "description": "Water quantity observations associated with monitoring sites where contributed and published through HIS services.",
       "temporalCoverage": "2011-01-01/..",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Energy production regions, primarily the northeastern United States; see dataset portals for exact site coverage"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     }
   ],
   "measurementTechnique": [

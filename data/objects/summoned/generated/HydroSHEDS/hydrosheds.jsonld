@@ -50,78 +50,150 @@
     }
   ],
   "isAccessibleForFree": true,
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global and regional hydrographic products; product-specific coverage varies"
-  },
-  "spatialResolution": [
-    "3 arc-second",
-    "15 arc-second",
-    "30 arc-second"
-  ],
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "Catchment and Sub-Basin Boundaries",
       "description": "Vector catchment and sub-basin boundary products derived from HydroSHEDS hydrography.",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global and regional hydrographic products; product-specific coverage varies"
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": [
+        "3 arc-second",
+        "15 arc-second",
+        "30 arc-second"
+      ]
     },
     {
       "@type": "PropertyValue",
       "name": "River networks",
       "description": "Vector river/stream network products derived from HydroSHEDS hydrography.",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global and regional hydrographic products; product-specific coverage varies"
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": [
+        "3 arc-second",
+        "15 arc-second",
+        "30 arc-second"
+      ]
     },
     {
       "@type": "PropertyValue",
       "name": "Lakes and water bodies",
       "description": "Lake and water body products distributed as part of the HydroSHEDS product suite.",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global and regional hydrographic products; product-specific coverage varies"
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": [
+        "3 arc-second",
+        "15 arc-second",
+        "30 arc-second"
+      ]
     },
     {
       "@type": "PropertyValue",
       "name": "Void-filled DEM",
       "description": "Digital elevation model underpinning HydroSHEDS core layers.",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global and regional hydrographic products; product-specific coverage varies"
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": [
+        "3 arc-second",
+        "15 arc-second",
+        "30 arc-second"
+      ]
     },
     {
       "@type": "PropertyValue",
       "name": "Conditioned DEM",
       "description": "Hydrologically conditioned DEM used to derive flow products.",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global and regional hydrographic products; product-specific coverage varies"
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": [
+        "3 arc-second",
+        "15 arc-second",
+        "30 arc-second"
+      ]
     },
     {
       "@type": "PropertyValue",
       "name": "Flow direction",
       "description": "Drainage direction grid derived from the conditioned DEM.",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global and regional hydrographic products; product-specific coverage varies"
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": [
+        "3 arc-second",
+        "15 arc-second",
+        "30 arc-second"
+      ]
     },
     {
       "@type": "PropertyValue",
       "name": "Flow accumulation",
       "description": "Upstream contributing area / upstream cell count derived from flow direction.",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global and regional hydrographic products; product-specific coverage varies"
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": [
+        "3 arc-second",
+        "15 arc-second",
+        "30 arc-second"
+      ]
     },
     {
       "@type": "PropertyValue",
       "name": "Flow length",
       "description": "Upstream and/or downstream flow length derived from flow direction.",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global and regional hydrographic products; product-specific coverage varies"
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": [
+        "3 arc-second",
+        "15 arc-second",
+        "30 arc-second"
+      ]
     },
     {
       "@type": "PropertyValue",
       "name": "Land mask and sinks",
       "description": "Land/ocean mask and coastal/inland sink indicators used in HydroSHEDS processing.",
       "temporalCoverage": "Static",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global and regional hydrographic products; product-specific coverage varies"
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": [
+        "3 arc-second",
+        "15 arc-second",
+        "30 arc-second"
+      ]
     }
   ],
   "encodingFormat": [

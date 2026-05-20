@@ -19,11 +19,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "temporalCoverage": "1985-01-01/2015-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Europe"
-  },
   "keywords": [
     "CHELSA",
     "CERRA",
@@ -40,7 +35,12 @@
       "unitText": "K",
       "description": "Near-surface, usually 2 meter, air temperature.",
       "temporalCoverage": "1985-01-01/2015-12-31",
-      "spatialCoverage": "not detected"
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Europe"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     }
   ],
   "distribution": [
