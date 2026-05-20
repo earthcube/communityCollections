@@ -78,37 +78,51 @@
     {
       "@type": "PropertyValue",
       "name": "Water quality results",
-      "description": "Discrete sample results including measured values, units, methods, and qualifiers for physical, chemical, and biological characteristics."
+      "description": "Discrete sample results including measured values, units, methods, and qualifiers for physical, chemical, and biological characteristics.",
+      "temporalCoverage": "1900-01-01/..",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Station and Monitoring Location Metadata",
-      "description": "Locations where samples and observations were collected, including identifiers, coordinates, and site descriptors."
+      "description": "Locations where samples and observations were collected, including identifiers, coordinates, and site descriptors.",
+      "temporalCoverage": "1900-01-01/..",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Nutrients",
-      "description": "Nutrient-related characteristics such as nitrogen and phosphorus species."
+      "description": "Nutrient-related characteristics such as nitrogen and phosphorus species.",
+      "temporalCoverage": "1900-01-01/..",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Metals and trace elements",
-      "description": "Metals and trace elements measured in water, sediment, or related matrices."
+      "description": "Metals and trace elements measured in water, sediment, or related matrices.",
+      "temporalCoverage": "1900-01-01/..",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Organic contaminants and pesticides",
-      "description": "Organic contaminants, pesticides, and related analytes reported by contributing organizations."
+      "description": "Organic contaminants, pesticides, and related analytes reported by contributing organizations.",
+      "temporalCoverage": "1900-01-01/..",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Physical parameters",
-      "description": "Physical characteristics such as temperature, specific conductance, turbidity, and dissolved oxygen (where available)."
+      "description": "Physical characteristics such as temperature, specific conductance, turbidity, and dissolved oxygen (where available).",
+      "temporalCoverage": "1900-01-01/..",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Biological data",
-      "description": "Biological observations and metrics available through WQP services where reported by data providers."
+      "description": "Biological observations and metrics available through WQP services where reported by data providers.",
+      "temporalCoverage": "1900-01-01/..",
+      "spatialCoverage": "not detected"
     }
   ],
   "encodingFormat": [
@@ -126,42 +140,60 @@
       "name": "Water Quality Portal (web interface)",
       "description": "Main portal interface for querying and downloading water-quality stations and results.",
       "contentUrl": "https://www.waterqualitydata.us/",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "WQP Web Services Guide",
       "description": "Documentation for constructing REST web-service requests and available endpoints and parameters.",
       "contentUrl": "https://www.waterqualitydata.us/webservices_documentation/",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "WQP Data Download API (Swagger UI)",
       "description": "Interactive API documentation for Water Quality Portal data download services.",
       "contentUrl": "https://www.waterqualitydata.us/data/swagger-ui/index.html",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "WQP Station (sites) service",
       "description": "Base endpoint for downloading station (monitoring location) data and metadata via REST.",
       "contentUrl": "https://www.waterqualitydata.us/data/Station/search",
-      "encodingFormat": ["application/json", "text/csv", "application/xml"]
+      "encodingFormat": [
+        "application/json",
+        "text/csv",
+        "application/xml"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "WQP Result (analytical results) service",
       "description": "Base endpoint for downloading discrete water-quality result records via REST.",
       "contentUrl": "https://www.waterqualitydata.us/data/Result/search",
-      "encodingFormat": ["application/json", "text/csv", "application/xml"]
+      "encodingFormat": [
+        "application/json",
+        "text/csv",
+        "application/xml"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "WQP OGC services (WMS/WFS)",
       "description": "OGC-compliant WMS/WFS services for mapping and feature access based on WQP search parameters.",
       "contentUrl": "https://www.waterqualitydata.us/ogcservices/",
-      "encodingFormat": ["text/html", "application/xml", "application/geo+json"]
+      "encodingFormat": [
+        "text/html",
+        "application/xml",
+        "application/geo+json"
+      ]
     }
   ],
   "citation": [
@@ -169,7 +201,10 @@
       "@type": "ScholarlyArticle",
       "name": "Water quality data for national-scale aquatic research: The Water Quality Portal",
       "author": [
-        { "@type": "Person", "name": "E. K. Read" }
+        {
+          "@type": "Person",
+          "name": "E. K. Read"
+        }
       ],
       "isPartOf": {
         "@type": "Periodical",
@@ -187,10 +222,25 @@
     }
   ],
   "about": [
-    { "@type": "Thing", "name": "Water quality" },
-    { "@type": "Thing", "name": "Hydrogeochemistry" },
-    { "@type": "Thing", "name": "Environmental monitoring" },
-    { "@type": "Thing", "name": "Surface water" },
-    { "@type": "Thing", "name": "Groundwater" }
+    {
+      "@type": "Thing",
+      "name": "Water quality"
+    },
+    {
+      "@type": "Thing",
+      "name": "Hydrogeochemistry"
+    },
+    {
+      "@type": "Thing",
+      "name": "Environmental monitoring"
+    },
+    {
+      "@type": "Thing",
+      "name": "Surface water"
+    },
+    {
+      "@type": "Thing",
+      "name": "Groundwater"
+    }
   ]
 }

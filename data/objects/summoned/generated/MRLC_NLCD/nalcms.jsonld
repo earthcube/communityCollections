@@ -58,7 +58,9 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "Land cover class"
+      "name": "Land cover class",
+      "temporalCoverage": "2019-01-01/2021-12-31",
+      "spatialCoverage": "not detected"
     }
   ],
   "measurementTechnique": [

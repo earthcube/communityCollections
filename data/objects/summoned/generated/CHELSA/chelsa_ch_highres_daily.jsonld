@@ -38,28 +38,36 @@
       "name": "Precipitation",
       "alternateName": "pr",
       "unitText": "kg m-2 day-1",
-      "description": "Precipitation including liquid and solid phases."
+      "description": "Precipitation including liquid and solid phases.",
+      "temporalCoverage": "1981-01-01/2022-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Daily Mean Near-Surface Air Temperature",
       "alternateName": "tas",
       "unitText": "K",
-      "description": "Near-surface, usually 2 meter, air temperature."
+      "description": "Near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1981-01-01/2022-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Daily Maximum Near-Surface Air Temperature",
       "alternateName": "tasmax",
       "unitText": "K",
-      "description": "Maximum near-surface, usually 2 meter, air temperature."
+      "description": "Maximum near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1981-01-01/2022-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Daily Minimum Near-Surface Air Temperature",
       "alternateName": "tasmin",
       "unitText": "K",
-      "description": "Minimum near-surface, usually 2 meter, air temperature."
+      "description": "Minimum near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1981-01-01/2022-12-31",
+      "spatialCoverage": "not detected"
     }
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",

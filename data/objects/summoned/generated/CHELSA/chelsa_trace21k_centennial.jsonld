@@ -39,28 +39,36 @@
       "name": "Precipitation",
       "alternateName": "pr",
       "unitText": "kg m-2 day-1",
-      "description": "Precipitation including liquid and solid phases."
+      "description": "Precipitation including liquid and solid phases.",
+      "temporalCoverage": "21000BP/0BP",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Daily Maximum Near-Surface Air Temperature",
       "alternateName": "tasmax",
       "unitText": "K",
-      "description": "Maximum near-surface, usually 2 meter, air temperature."
+      "description": "Maximum near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "21000BP/0BP",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Daily Minimum Near-Surface Air Temperature",
       "alternateName": "tasmin",
       "unitText": "K",
-      "description": "Minimum near-surface, usually 2 meter, air temperature."
+      "description": "Minimum near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "21000BP/0BP",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Air Temperature Lapse Rate",
       "alternateName": "tz",
       "unitText": "K m-1",
-      "description": "Rate of change in air temperature with altitude calculated over the centennial period."
+      "description": "Rate of change in air temperature with altitude calculated over the centennial period.",
+      "temporalCoverage": "21000BP/0BP",
+      "spatialCoverage": "not detected"
     }
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",

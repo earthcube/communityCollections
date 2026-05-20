@@ -42,35 +42,45 @@
       "name": "Multiyear Meteorological Drought",
       "alternateName": "mymd",
       "unitText": "id",
-      "description": "Identifier for multiyear meteorological drought events."
+      "description": "Identifier for multiyear meteorological drought events.",
+      "temporalCoverage": "1980-06-15/2018-07-15",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Multiyear Meteorological Drought at 10 km Resolution",
       "alternateName": "mymd10",
       "unitText": "id",
-      "description": "Identifier for multiyear meteorological drought events at 10 km resolution."
+      "description": "Identifier for multiyear meteorological drought events at 10 km resolution.",
+      "temporalCoverage": "1980-06-15/2018-07-15",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Kernel Normalized Difference Vegetation Index Anomaly",
       "alternateName": "qkndvi",
       "unitText": "1",
-      "description": "Annual anomaly in vegetation greenness derived from kernel normalized difference vegetation index."
+      "description": "Annual anomaly in vegetation greenness derived from kernel normalized difference vegetation index.",
+      "temporalCoverage": "1980-06-15/2018-07-15",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Standardized Precipitation Evapotranspiration Index",
       "alternateName": "spei12",
       "unitText": "1",
-      "description": "Standardized climatic water balance index over a 12-month integration period."
+      "description": "Standardized climatic water balance index over a 12-month integration period.",
+      "temporalCoverage": "1980-06-15/2018-07-15",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Standardized Precipitation Index",
       "alternateName": "spi12",
       "unitText": "1",
-      "description": "Standardized precipitation anomaly index over a 12-month integration period."
+      "description": "Standardized precipitation anomaly index over a 12-month integration period.",
+      "temporalCoverage": "1980-06-15/2018-07-15",
+      "spatialCoverage": "not detected"
     }
   ],
   "license": "https://creativecommons.org/licenses/by/4.0/",

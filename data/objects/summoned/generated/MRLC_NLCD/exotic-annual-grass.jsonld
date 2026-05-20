@@ -43,27 +43,39 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "EAG fractional cover (multiple species group)"
+      "name": "EAG fractional cover (multiple species group)",
+      "temporalCoverage": "2016-01-01/2025-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Cheatgrass (Bromus tectorum) fractional cover"
+      "name": "Cheatgrass (Bromus tectorum) fractional cover",
+      "temporalCoverage": "2016-01-01/2025-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Other Bromus spp. fractional cover (Field brome + Japanese brome)"
+      "name": "Other Bromus spp. fractional cover (Field brome + Japanese brome)",
+      "temporalCoverage": "2016-01-01/2025-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Medusahead (Taeniatherum caput-medusae) fractional cover"
+      "name": "Medusahead (Taeniatherum caput-medusae) fractional cover",
+      "temporalCoverage": "2016-01-01/2025-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Sandberg bluegrass (Poa secunda) fractional cover"
+      "name": "Sandberg bluegrass (Poa secunda) fractional cover",
+      "temporalCoverage": "2016-01-01/2025-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Confidence maps (per target)"
+      "name": "Confidence maps (per target)",
+      "temporalCoverage": "2016-01-01/2025-12-31",
+      "spatialCoverage": "not detected"
     }
   ],
   "measurementTechnique": [

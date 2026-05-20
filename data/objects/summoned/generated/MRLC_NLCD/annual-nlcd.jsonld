@@ -44,27 +44,39 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "Land Cover"
+      "name": "Land Cover",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Land Cover Change"
+      "name": "Land Cover Change",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Land Cover Confidence"
+      "name": "Land Cover Confidence",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Fractional Impervious Surface"
+      "name": "Fractional Impervious Surface",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Impervious Descriptor"
+      "name": "Impervious Descriptor",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Spectral Change Day of Year"
+      "name": "Spectral Change Day of Year",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": "not detected"
     }
   ],
   "measurementTechnique": [

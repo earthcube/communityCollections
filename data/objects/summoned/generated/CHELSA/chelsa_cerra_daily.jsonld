@@ -38,7 +38,9 @@
       "name": "Daily Mean Near-Surface Air Temperature",
       "alternateName": "tas",
       "unitText": "K",
-      "description": "Near-surface, usually 2 meter, air temperature."
+      "description": "Near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1985-01-01/2015-12-31",
+      "spatialCoverage": "not detected"
     }
   ],
   "distribution": [

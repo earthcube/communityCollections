@@ -61,27 +61,37 @@
     {
       "@type": "PropertyValue",
       "name": "Built-up surface",
-      "description": "Gridded built-up surface area (including total and non-residential components for some products)."
+      "description": "Gridded built-up surface area (including total and non-residential components for some products).",
+      "temporalCoverage": "1975-01-01/2030-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Built-up volume",
-      "description": "Gridded built-up volume estimates (including total and non-residential components for some products)."
+      "description": "Gridded built-up volume estimates (including total and non-residential components for some products).",
+      "temporalCoverage": "1975-01-01/2030-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Building height",
-      "description": "Gridded building height estimates for selected reference years/products."
+      "description": "Gridded building height estimates for selected reference years/products.",
+      "temporalCoverage": "1975-01-01/2030-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Population",
-      "description": "Residential population grid (number of people per cell) for multiple epochs and projections."
+      "description": "Residential population grid (number of people per cell) for multiple epochs and projections.",
+      "temporalCoverage": "1975-01-01/2030-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Settlement Typology and Degree of Urbanisation",
-      "description": "Settlement model classification based on the UN-recommended Degree of Urbanisation methodology."
+      "description": "Settlement model classification based on the UN-recommended Degree of Urbanisation methodology.",
+      "temporalCoverage": "1975-01-01/2030-12-31",
+      "spatialCoverage": "not detected"
     }
   ],
   "encodingFormat": [
@@ -99,28 +109,36 @@
       "name": "GHSL direct download (advanced users)",
       "description": "Direct download interface for GHSL products (tile-based and single-file downloads).",
       "contentUrl": "https://human-settlement.emergency.copernicus.eu/download.php",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "GHSL download wizard (step-by-step)",
       "description": "Interactive wizard to select GHSL product group, dataset, epoch, resolution, and coordinate system for download.",
       "contentUrl": "https://human-settlement.emergency.copernicus.eu/downloadWizard.php",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Use conditions and how to cite",
       "description": "GHSL use conditions and citation guidance, including license and reference publication pointers.",
       "contentUrl": "https://human-settlement.emergency.copernicus.eu/GHSLhowToCite.php",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "JRC GHSL collection landing page",
       "description": "European Commission JRC collection page aggregating GHSL datasets and releases.",
       "contentUrl": "https://data.jrc.ec.europa.eu/collection/ghsl",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     }
   ],
   "citation": [
@@ -128,13 +146,34 @@
       "@type": "ScholarlyArticle",
       "name": "Advances on the Global Human Settlement Layer by joint assessment of Earth Observation and population survey data",
       "author": [
-        { "@type": "Person", "name": "M. Pesaresi" },
-        { "@type": "Person", "name": "M. Schiavina" },
-        { "@type": "Person", "name": "P. Politis" },
-        { "@type": "Person", "name": "S. Freire" },
-        { "@type": "Person", "name": "K. Krasnodębska" },
-        { "@type": "Person", "name": "J. H. Uhl" },
-        { "@type": "Person", "name": "T. Kemper" }
+        {
+          "@type": "Person",
+          "name": "M. Pesaresi"
+        },
+        {
+          "@type": "Person",
+          "name": "M. Schiavina"
+        },
+        {
+          "@type": "Person",
+          "name": "P. Politis"
+        },
+        {
+          "@type": "Person",
+          "name": "S. Freire"
+        },
+        {
+          "@type": "Person",
+          "name": "K. Krasnodębska"
+        },
+        {
+          "@type": "Person",
+          "name": "J. H. Uhl"
+        },
+        {
+          "@type": "Person",
+          "name": "T. Kemper"
+        }
       ],
       "isPartOf": {
         "@type": "Periodical",
@@ -145,11 +184,26 @@
     }
   ],
   "about": [
-    { "@type": "Thing", "name": "Human settlements" },
-    { "@type": "Thing", "name": "Built environment" },
-    { "@type": "Thing", "name": "Population distribution" },
-    { "@type": "Thing", "name": "Urbanization" },
-    { "@type": "Thing", "name": "Remote sensing" }
+    {
+      "@type": "Thing",
+      "name": "Human settlements"
+    },
+    {
+      "@type": "Thing",
+      "name": "Built environment"
+    },
+    {
+      "@type": "Thing",
+      "name": "Population distribution"
+    },
+    {
+      "@type": "Thing",
+      "name": "Urbanization"
+    },
+    {
+      "@type": "Thing",
+      "name": "Remote sensing"
+    }
   ],
   "sameAs": [
     "https://human-settlement.emergency.copernicus.eu/"

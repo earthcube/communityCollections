@@ -28,14 +28,38 @@
     "global"
   ],
   "creator": [
-    { "@type": "Person", "name": "Giuseppe Amatulli" },
-    { "@type": "Person", "name": "Jaime R. Garcia Marquez" },
-    { "@type": "Person", "name": "Tushar Sethi" },
-    { "@type": "Person", "name": "Jens Kiesel" },
-    { "@type": "Person", "name": "Afroditi Grigoropoulou" },
-    { "@type": "Person", "name": "Maria M. Üblacker" },
-    { "@type": "Person", "name": "Longzhu Q. Shen" },
-    { "@type": "Person", "name": "Sami Domisch" }
+    {
+      "@type": "Person",
+      "name": "Giuseppe Amatulli"
+    },
+    {
+      "@type": "Person",
+      "name": "Jaime R. Garcia Marquez"
+    },
+    {
+      "@type": "Person",
+      "name": "Tushar Sethi"
+    },
+    {
+      "@type": "Person",
+      "name": "Jens Kiesel"
+    },
+    {
+      "@type": "Person",
+      "name": "Afroditi Grigoropoulou"
+    },
+    {
+      "@type": "Person",
+      "name": "Maria M. Üblacker"
+    },
+    {
+      "@type": "Person",
+      "name": "Longzhu Q. Shen"
+    },
+    {
+      "@type": "Person",
+      "name": "Sami Domisch"
+    }
   ],
   "provider": [
     {
@@ -74,37 +98,51 @@
     {
       "@type": "PropertyValue",
       "name": "Stream channels",
-      "description": "Global stream channel network with unique segment identifiers and topology attributes."
+      "description": "Global stream channel network with unique segment identifiers and topology attributes.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Drainage basins",
-      "description": "Global drainage basin delineations derived from flow routing."
+      "description": "Global drainage basin delineations derived from flow routing.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Sub-catchments",
-      "description": "Sub-catchment polygons linked to individual stream segments."
+      "description": "Sub-catchment polygons linked to individual stream segments.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Network topology",
-      "description": "Upstream/downstream connectivity and routing attributes for stream segments."
+      "description": "Upstream/downstream connectivity and routing attributes for stream segments.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Stream order",
-      "description": "Stream order metrics computed for the network."
+      "description": "Stream order metrics computed for the network.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Stream slope",
-      "description": "Slope metrics computed along stream segments."
+      "description": "Slope metrics computed along stream segments.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Distance metrics",
-      "description": "In-stream and among-stream distance measures for network analysis."
+      "description": "In-stream and among-stream distance measures for network analysis.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
     }
   ],
   "measurementTechnique": [
@@ -126,28 +164,36 @@
       "name": "Hydrography90m website (project landing page)",
       "description": "Project website for Hydrography90m with documentation and navigation to layers and downloads.",
       "contentUrl": "https://hydrography.org/",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Hydrography90m layers overview",
       "description": "Overview of Hydrography90m layers available for download.",
       "contentUrl": "https://hydrography.org/hydrography90m/hydrography90m_layers",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Hydrography90m batch download script",
       "description": "Scripted procedure to download tiled raster and vector layers of Hydrography90m.",
       "contentUrl": "https://hydrography.org/hydrography90m/hydrography90m_download_script",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "IGB FRED dataset landing page (DOI)",
       "description": "Institutional dataset record and distribution entry for Hydrography90m hosted by IGB (FRED).",
       "contentUrl": "https://doi.org/10.18728/igb-fred-762.1",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     }
   ],
   "citation": [
@@ -155,14 +201,38 @@
       "@type": "ScholarlyArticle",
       "name": "Hydrography90m: A new high-resolution global hydrographic dataset",
       "author": [
-        { "@type": "Person", "name": "Giuseppe Amatulli" },
-        { "@type": "Person", "name": "Jaime R. Garcia Marquez" },
-        { "@type": "Person", "name": "Tushar Sethi" },
-        { "@type": "Person", "name": "Jens Kiesel" },
-        { "@type": "Person", "name": "Afroditi Grigoropoulou" },
-        { "@type": "Person", "name": "Maria M. Üblacker" },
-        { "@type": "Person", "name": "Longzhu Q. Shen" },
-        { "@type": "Person", "name": "Sami Domisch" }
+        {
+          "@type": "Person",
+          "name": "Giuseppe Amatulli"
+        },
+        {
+          "@type": "Person",
+          "name": "Jaime R. Garcia Marquez"
+        },
+        {
+          "@type": "Person",
+          "name": "Tushar Sethi"
+        },
+        {
+          "@type": "Person",
+          "name": "Jens Kiesel"
+        },
+        {
+          "@type": "Person",
+          "name": "Afroditi Grigoropoulou"
+        },
+        {
+          "@type": "Person",
+          "name": "Maria M. Üblacker"
+        },
+        {
+          "@type": "Person",
+          "name": "Longzhu Q. Shen"
+        },
+        {
+          "@type": "Person",
+          "name": "Sami Domisch"
+        }
       ],
       "isPartOf": {
         "@type": "Periodical",
@@ -180,12 +250,30 @@
     }
   ],
   "about": [
-    { "@type": "Thing", "name": "Hydrology" },
-    { "@type": "Thing", "name": "Hydrography" },
-    { "@type": "Thing", "name": "Drainage basins" },
-    { "@type": "Thing", "name": "River networks" },
-    { "@type": "Thing", "name": "Flow routing" },
-    { "@type": "Thing", "name": "Global environmental mapping" }
+    {
+      "@type": "Thing",
+      "name": "Hydrology"
+    },
+    {
+      "@type": "Thing",
+      "name": "Hydrography"
+    },
+    {
+      "@type": "Thing",
+      "name": "Drainage basins"
+    },
+    {
+      "@type": "Thing",
+      "name": "River networks"
+    },
+    {
+      "@type": "Thing",
+      "name": "Flow routing"
+    },
+    {
+      "@type": "Thing",
+      "name": "Global environmental mapping"
+    }
   ],
   "sameAs": [
     "https://www.igb-berlin.de/en/hydrography90m-dataset",

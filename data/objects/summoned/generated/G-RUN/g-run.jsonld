@@ -91,7 +91,9 @@
     {
       "@type": "PropertyValue",
       "name": "Runoff",
-      "description": "Monthly gridded runoff rates reconstructed using machine learning trained on in-situ streamflow observations."
+      "description": "Monthly gridded runoff rates reconstructed using machine learning trained on in-situ streamflow observations.",
+      "temporalCoverage": "1902-01-01/2014-12-31",
+      "spatialCoverage": "not detected"
     }
   ],
   "measurementTechnique": [
@@ -110,14 +112,18 @@
       "name": "Figshare dataset landing page",
       "description": "Dataset landing page and downloads hosted on Figshare.",
       "contentUrl": "https://figshare.com/articles/dataset/GRUN_Global_Runoff_Reconstruction/9228176",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Persistent identifier (Figshare DOI landing page)",
       "description": "Persistent DOI for the GRUN dataset on Figshare.",
       "contentUrl": "https://doi.org/10.6084/m9.figshare.9228176",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     }
   ],
   "citation": [
@@ -125,10 +131,22 @@
       "@type": "ScholarlyArticle",
       "name": "GRUN: an observation-based global gridded runoff dataset from 1902 to 2014",
       "author": [
-        { "@type": "Person", "name": "Gionata Ghiggi" },
-        { "@type": "Person", "name": "Vincent Humphrey" },
-        { "@type": "Person", "name": "Sonia I. Seneviratne" },
-        { "@type": "Person", "name": "Lukas Gudmundsson" }
+        {
+          "@type": "Person",
+          "name": "Gionata Ghiggi"
+        },
+        {
+          "@type": "Person",
+          "name": "Vincent Humphrey"
+        },
+        {
+          "@type": "Person",
+          "name": "Sonia I. Seneviratne"
+        },
+        {
+          "@type": "Person",
+          "name": "Lukas Gudmundsson"
+        }
       ],
       "isPartOf": {
         "@type": "Periodical",
@@ -146,12 +164,30 @@
     }
   ],
   "about": [
-    { "@type": "Thing", "name": "Hydrology" },
-    { "@type": "Thing", "name": "Runoff" },
-    { "@type": "Thing", "name": "Streamflow" },
-    { "@type": "Thing", "name": "Hydroclimate variability" },
-    { "@type": "Thing", "name": "Drought" },
-    { "@type": "Thing", "name": "Freshwater resources" }
+    {
+      "@type": "Thing",
+      "name": "Hydrology"
+    },
+    {
+      "@type": "Thing",
+      "name": "Runoff"
+    },
+    {
+      "@type": "Thing",
+      "name": "Streamflow"
+    },
+    {
+      "@type": "Thing",
+      "name": "Hydroclimate variability"
+    },
+    {
+      "@type": "Thing",
+      "name": "Drought"
+    },
+    {
+      "@type": "Thing",
+      "name": "Freshwater resources"
+    }
   ],
   "sameAs": [
     "https://doi.org/10.6084/m9.figshare.9228176"

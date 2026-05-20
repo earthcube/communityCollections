@@ -58,28 +58,129 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "Bulk density",
-      "description": "Predicted soil bulk density maps (global gridded layers)."
+      "name": "Bulk Density",
+      "alternateName": "bdod",
+      "unitText": "cg/cm^3",
+      "description": "Predicted bulk density maps for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Soil organic carbon content",
-      "description": "Predicted soil organic carbon content maps (global gridded layers)."
+      "name": "Cation Exchange Capacity at pH 7",
+      "alternateName": "cec",
+      "unitText": "mmol(c)/kg",
+      "description": "Predicted cation exchange capacity buffered at pH 7 for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Soil pH (in H2O)",
-      "description": "Predicted soil pH maps (global gridded layers)."
+      "name": "Coarse Fragments",
+      "alternateName": "cfvo",
+      "unitText": "cm^3/dm^3",
+      "description": "Predicted volumetric fraction of coarse fragments for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Soil texture fractions",
-      "description": "Predicted sand, silt, and clay fraction maps (global gridded layers)."
+      "name": "Clay",
+      "alternateName": "clay",
+      "unitText": "g/kg",
+      "description": "Predicted clay content for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Coarse fragments",
-      "description": "Predicted coarse fragment content maps (global gridded layers)."
+      "name": "Nitrogen",
+      "alternateName": "nitrogen",
+      "unitText": "cg/kg",
+      "description": "Predicted total nitrogen for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Organic Carbon Density",
+      "alternateName": "ocd",
+      "unitText": "hg/m^3",
+      "description": "Predicted organic carbon density for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Organic Carbon Stocks",
+      "alternateName": "ocs",
+      "unitText": "t/ha",
+      "description": "Predicted organic carbon stocks for SoilGrids soil layers.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Soil Organic Carbon",
+      "alternateName": "soc",
+      "unitText": "dg/kg",
+      "description": "Predicted soil organic carbon concentration for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pH Water",
+      "alternateName": "phh2o",
+      "unitText": "pH x 10",
+      "description": "Predicted soil pH in water for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sand",
+      "alternateName": "sand",
+      "unitText": "g/kg",
+      "description": "Predicted sand content for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Silt",
+      "alternateName": "silt",
+      "unitText": "g/kg",
+      "description": "Predicted silt content for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Volumetric Water Content at 10 kPa",
+      "alternateName": "wv0010",
+      "unitText": "10^-3 cm^3 cm^-3",
+      "description": "Predicted volumetric water content at 10 kPa for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Volumetric Water Content at 1500 kPa",
+      "alternateName": "wv1500",
+      "unitText": "10^-3 cm^3 cm^-3",
+      "description": "Predicted volumetric water content at 1500 kPa for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Volumetric Water Content at 33 kPa",
+      "alternateName": "wv003",
+      "unitText": "10^-3 cm^3 cm^-3",
+      "description": "Predicted volumetric water content at 33 kPa for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
     }
   ],
   "encodingFormat": [

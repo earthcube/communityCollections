@@ -94,12 +94,16 @@
     {
       "@type": "PropertyValue",
       "name": "Tree density (biome-level model)",
-      "description": "Biome-level regression model predictions applied at biome scale."
+      "description": "Biome-level regression model predictions applied at biome scale.",
+      "temporalCoverage": "2015-09-02",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Tree density (ecoregion-level model)",
-      "description": "Ecoregion-level regression model predictions applied at ecoregion scale."
+      "description": "Ecoregion-level regression model predictions applied at ecoregion scale.",
+      "temporalCoverage": "2015-09-02",
+      "spatialCoverage": "not detected"
     }
   ],
   "measurementTechnique": [

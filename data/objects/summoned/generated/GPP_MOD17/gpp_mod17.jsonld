@@ -43,12 +43,16 @@
     {
       "@type": "PropertyValue",
       "name": "GPP",
-      "description": "Gross Primary Production"
+      "description": "Gross Primary Production",
+      "temporalCoverage": "2000-01-01/2013-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "NPP",
-      "description": "Net Primary Production"
+      "description": "Net Primary Production",
+      "temporalCoverage": "2000-01-01/2013-12-31",
+      "spatialCoverage": "not detected"
     }
   ],
   "spatialCoverage": {

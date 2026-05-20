@@ -72,22 +72,30 @@
     {
       "@type": "PropertyValue",
       "name": "Soil moisture (0–10 cm)",
-      "description": "Monthly soil moisture for the 0–10 cm layer."
+      "description": "Monthly soil moisture for the 0–10 cm layer.",
+      "temporalCoverage": "1970-01-01/2016-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Soil moisture (10–30 cm)",
-      "description": "Monthly soil moisture for the 10–30 cm layer."
+      "description": "Monthly soil moisture for the 10–30 cm layer.",
+      "temporalCoverage": "1970-01-01/2016-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Soil moisture (30–50 cm)",
-      "description": "Monthly soil moisture for the 30–50 cm layer."
+      "description": "Monthly soil moisture for the 30–50 cm layer.",
+      "temporalCoverage": "1970-01-01/2016-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Soil moisture (50–100 cm)",
-      "description": "Monthly soil moisture for the 50–100 cm layer."
+      "description": "Monthly soil moisture for the 50–100 cm layer.",
+      "temporalCoverage": "1970-01-01/2016-12-31",
+      "spatialCoverage": "not detected"
     }
   ],
   "encodingFormat": [
@@ -102,14 +110,18 @@
       "name": "Figshare dataset landing page (DOI)",
       "description": "Persistent DOI landing page for the dataset on Figshare.",
       "contentUrl": "https://doi.org/10.6084/m9.figshare.13661312.v1",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Figshare dataset file access (version 1, file link)",
       "description": "Direct access link to a dataset file hosted on Figshare (may require browser access controls).",
       "contentUrl": "https://figshare.com/articles/dataset/Global_Multi-layer_Soil_Moisture_Products/13661312/1?file=26220602",
-      "encodingFormat": ["application/zip"]
+      "encodingFormat": [
+        "application/zip"
+      ]
     }
   ],
   "citation": [
@@ -117,8 +129,14 @@
       "@type": "ScholarlyArticle",
       "name": "Development of observation-based global multilayer soil moisture products for 1970 to 2016",
       "author": [
-        { "@type": "Person", "name": "Yaoping Wang" },
-        { "@type": "Person", "name": "Jiafu Mao" }
+        {
+          "@type": "Person",
+          "name": "Yaoping Wang"
+        },
+        {
+          "@type": "Person",
+          "name": "Jiafu Mao"
+        }
       ],
       "isPartOf": {
         "@type": "Periodical",
@@ -136,11 +154,26 @@
     }
   ],
   "about": [
-    { "@type": "Thing", "name": "Soil" },
-    { "@type": "Thing", "name": "Soil moisture" },
-    { "@type": "Thing", "name": "Hydrology" },
-    { "@type": "Thing", "name": "Climate" },
-    { "@type": "Thing", "name": "Land surface processes" }
+    {
+      "@type": "Thing",
+      "name": "Soil"
+    },
+    {
+      "@type": "Thing",
+      "name": "Soil moisture"
+    },
+    {
+      "@type": "Thing",
+      "name": "Hydrology"
+    },
+    {
+      "@type": "Thing",
+      "name": "Climate"
+    },
+    {
+      "@type": "Thing",
+      "name": "Land surface processes"
+    }
   ],
   "sameAs": [
     "https://doi.org/10.6084/m9.figshare.13661312.v1"

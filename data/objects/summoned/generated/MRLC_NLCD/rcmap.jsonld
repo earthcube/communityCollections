@@ -43,27 +43,39 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "Bare ground cover (percent)"
+      "name": "Bare ground cover (percent)",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Herbaceous cover (percent)"
+      "name": "Herbaceous cover (percent)",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Litter cover (percent)"
+      "name": "Litter cover (percent)",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Shrub cover (percent)"
+      "name": "Shrub cover (percent)",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Sagebrush cover (percent)"
+      "name": "Sagebrush cover (percent)",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Tree cover (percent)"
+      "name": "Tree cover (percent)",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": "not detected"
     }
   ],
   "measurementTechnique": [

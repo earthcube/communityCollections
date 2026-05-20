@@ -44,77 +44,99 @@
       "name": "Total Cloud Cover Percentage",
       "alternateName": "clt",
       "unitText": "percent",
-      "description": "Total cloud area fraction, reported as a percentage, for the whole atmospheric column."
+      "description": "Total cloud area fraction, reported as a percentage, for the whole atmospheric column.",
+      "temporalCoverage": "1979-01-01/2025-08-29",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Near-Surface Relative Humidity",
       "alternateName": "hurs",
       "unitText": "percent",
-      "description": "Relative humidity near the surface."
+      "description": "Relative humidity near the surface.",
+      "temporalCoverage": "1979-01-01/2025-08-29",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Precipitation",
       "alternateName": "pr",
       "unitText": "kg m-2 day-1",
-      "description": "Precipitation including liquid and solid phases."
+      "description": "Precipitation including liquid and solid phases.",
+      "temporalCoverage": "1979-01-01/2025-08-29",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Precipitation",
       "alternateName": "prec",
       "unitText": "kg m-2 day-1",
-      "description": "Downscaled forecast precipitation from ERA5; not bias corrected and should not be mixed with pr."
+      "description": "Downscaled forecast precipitation from ERA5; not bias corrected and should not be mixed with pr.",
+      "temporalCoverage": "1979-01-01/2025-08-29",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Surface Air Pressure",
       "alternateName": "ps",
       "unitText": "hPa",
-      "description": "Surface pressure, not mean sea-level pressure."
+      "description": "Surface pressure, not mean sea-level pressure.",
+      "temporalCoverage": "1979-01-01/2025-08-29",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Surface Downwelling Shortwave Flux in Air",
       "alternateName": "rsds",
       "unitText": "W m-2",
-      "description": "Surface solar irradiance for UV calculations."
+      "description": "Surface solar irradiance for UV calculations.",
+      "temporalCoverage": "1979-01-01/2025-08-29",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Near-Surface Wind Speed",
       "alternateName": "sfcWind",
       "unitText": "m s-1",
-      "description": "Near-surface, usually 10 meter, wind speed."
+      "description": "Near-surface, usually 10 meter, wind speed.",
+      "temporalCoverage": "1979-01-01/2025-08-29",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Daily Mean Near-Surface Air Temperature",
       "alternateName": "tas",
       "unitText": "K",
-      "description": "Near-surface, usually 2 meter, air temperature."
+      "description": "Near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1979-01-01/2025-08-29",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Daily Maximum Near-Surface Air Temperature",
       "alternateName": "tasmax",
       "unitText": "K",
-      "description": "Maximum near-surface, usually 2 meter, air temperature."
+      "description": "Maximum near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1979-01-01/2025-08-29",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Daily Minimum Near-Surface Air Temperature",
       "alternateName": "tasmin",
       "unitText": "K",
-      "description": "Minimum near-surface, usually 2 meter, air temperature."
+      "description": "Minimum near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1979-01-01/2025-08-29",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Air Temperature Lapse Rate",
       "alternateName": "tz",
       "unitText": "K m-1",
-      "description": "Rate of change in air temperature with altitude calculated over the centennial period."
+      "description": "Rate of change in air temperature with altitude calculated over the centennial period.",
+      "temporalCoverage": "1979-01-01/2025-08-29",
+      "spatialCoverage": "not detected"
     }
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",

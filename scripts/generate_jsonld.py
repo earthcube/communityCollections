@@ -815,6 +815,29 @@ def extract_source_facts(html: str, base_url: str) -> Dict:
             if line in ("Model Citation", "Data Citation") and i + 1 < len(lines):
                 facts["citation_text"].append({"label": line, "text": lines[i + 1]})
 
+        seen_variables = set()
+        for row in soup.find_all("tr"):
+            cells = [cell.get_text(" ", strip=True) for cell in row.find_all(["th", "td"])]
+            if len(cells) < 2:
+                continue
+            code = cells[0].strip()
+            name = cells[1].strip()
+            if not code or not name or code.lower() in {"name", "code", "property"}:
+                continue
+            if not re.fullmatch(r"[A-Za-z][A-Za-z0-9_-]*", code):
+                continue
+            unit = cells[2].strip() if len(cells) > 2 else ""
+            key = code.lower()
+            if key in seen_variables:
+                continue
+            facts["variables"].append({
+                "name": name,
+                "alternateName": code,
+                "unitText": unit,
+                "description": name,
+            })
+            seen_variables.add(key)
+
         for i, line in enumerate(lines):
             code_match = re.match(r"^\(([^)]+)\)(.*)$", line)
             if not code_match or i == 0:
@@ -831,12 +854,15 @@ def extract_source_facts(html: str, base_url: str) -> Dict:
                 if parts:
                     unit = parts[0]
                     description = parts[1] if len(parts) > 1 else ""
+            if code.lower() in seen_variables:
+                continue
             facts["variables"].append({
                 "name": name,
                 "alternateName": code,
                 "unitText": unit,
                 "description": description,
             })
+            seen_variables.add(code.lower())
     except Exception as e:
         print(f"Warning: could not extract source-page facts from {base_url}: {e}")
     return facts
@@ -871,11 +897,26 @@ def audit_generated_jsonld(data: Dict, source_facts: Dict) -> List[str]:
     if isinstance(variables, str):
         warnings.append("variableMeasured is a string; expected separate PropertyValue objects")
     elif isinstance(variables, list):
+        source_codes = {
+            str(item.get("alternateName", "")).lower()
+            for item in (source_facts or {}).get("variables", [])
+            if isinstance(item, dict) and item.get("alternateName")
+        }
+        generated_codes = set()
         for idx, item in enumerate(variables):
             if not isinstance(item, dict):
                 continue
+            if item.get("alternateName"):
+                generated_codes.add(str(item.get("alternateName")).lower())
             if _looks_like_lumped_or_code_name(str(item.get("name", ""))):
                 warnings.append(f"variableMeasured[{idx}].name looks like a code or lumped range")
+            if "temporalCoverage" not in item:
+                warnings.append(f"variableMeasured[{idx}] is missing temporalCoverage")
+            if "spatialCoverage" not in item:
+                warnings.append(f"variableMeasured[{idx}] is missing spatialCoverage")
+        missing_codes = sorted(source_codes - generated_codes)
+        if missing_codes:
+            warnings.append(f"variableMeasured is missing source-listed variable code(s): {', '.join(missing_codes)}")
 
     download_links = {
         link.get("href") for link in (source_facts or {}).get("download_links", [])

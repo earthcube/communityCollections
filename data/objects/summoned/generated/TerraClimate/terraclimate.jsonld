@@ -100,72 +100,142 @@
     {
       "@type": "PropertyValue",
       "name": "Maximum temperature",
-      "unitText": "C"
+      "unitText": "C",
+      "temporalCoverage": [
+        "1950-01-01/..",
+        "1950-01-01/2025-12-31"
+      ],
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Minimum temperature",
-      "unitText": "C"
+      "unitText": "C",
+      "temporalCoverage": [
+        "1950-01-01/..",
+        "1950-01-01/2025-12-31"
+      ],
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Vapor pressure",
-      "unitText": "kPa"
+      "unitText": "kPa",
+      "temporalCoverage": [
+        "1950-01-01/..",
+        "1950-01-01/2025-12-31"
+      ],
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Precipitation accumulation",
-      "unitText": "mm"
+      "unitText": "mm",
+      "temporalCoverage": [
+        "1950-01-01/..",
+        "1950-01-01/2025-12-31"
+      ],
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Downward surface shortwave radiation",
-      "unitText": "W/m2"
+      "unitText": "W/m2",
+      "temporalCoverage": [
+        "1950-01-01/..",
+        "1950-01-01/2025-12-31"
+      ],
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Wind speed",
-      "unitText": "m/s"
+      "unitText": "m/s",
+      "temporalCoverage": [
+        "1950-01-01/..",
+        "1950-01-01/2025-12-31"
+      ],
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Reference evapotranspiration (ASCE Penman–Monteith)",
-      "unitText": "mm"
+      "unitText": "mm",
+      "temporalCoverage": [
+        "1950-01-01/..",
+        "1950-01-01/2025-12-31"
+      ],
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Runoff",
-      "unitText": "mm"
+      "unitText": "mm",
+      "temporalCoverage": [
+        "1950-01-01/..",
+        "1950-01-01/2025-12-31"
+      ],
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Actual evapotranspiration",
-      "unitText": "mm"
+      "unitText": "mm",
+      "temporalCoverage": [
+        "1950-01-01/..",
+        "1950-01-01/2025-12-31"
+      ],
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Climate water deficit",
-      "unitText": "mm"
+      "unitText": "mm",
+      "temporalCoverage": [
+        "1950-01-01/..",
+        "1950-01-01/2025-12-31"
+      ],
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Soil moisture (total column, end of month)",
-      "unitText": "mm"
+      "unitText": "mm",
+      "temporalCoverage": [
+        "1950-01-01/..",
+        "1950-01-01/2025-12-31"
+      ],
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Snow water equivalent (end of month)",
-      "unitText": "mm"
+      "unitText": "mm",
+      "temporalCoverage": [
+        "1950-01-01/..",
+        "1950-01-01/2025-12-31"
+      ],
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Palmer Drought Severity Index (PDSI)",
-      "unitText": "unitless"
+      "unitText": "unitless",
+      "temporalCoverage": [
+        "1950-01-01/..",
+        "1950-01-01/2025-12-31"
+      ],
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Vapor pressure deficit (VPD)",
-      "unitText": "kPa"
+      "unitText": "kPa",
+      "temporalCoverage": [
+        "1950-01-01/..",
+        "1950-01-01/2025-12-31"
+      ],
+      "spatialCoverage": "not detected"
     }
   ],
   "measurementTechnique": [

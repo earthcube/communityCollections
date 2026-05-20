@@ -79,12 +79,16 @@
     {
       "@type": "PropertyValue",
       "name": "Terrestrial water storage anomaly",
-      "description": "Reconstructed climate-driven terrestrial water storage anomalies (TWSA) derived from statistical modeling calibrated to GRACE observations."
+      "description": "Reconstructed climate-driven terrestrial water storage anomalies (TWSA) derived from statistical modeling calibrated to GRACE observations.",
+      "temporalCoverage": "1901-01-01/2019-12-31",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Ensemble members",
-      "description": "Multiple ensemble realizations to quantify predictive uncertainty for reconstructed TWS anomalies."
+      "description": "Multiple ensemble realizations to quantify predictive uncertainty for reconstructed TWS anomalies.",
+      "temporalCoverage": "1901-01-01/2019-12-31",
+      "spatialCoverage": "not detected"
     }
   ],
   "measurementTechnique": [
@@ -103,14 +107,18 @@
       "name": "Figshare dataset landing page",
       "description": "Dataset landing page and downloads hosted on Figshare.",
       "contentUrl": "https://figshare.com/articles/dataset/GRACE-REC_A_reconstruction_of_climate-driven_water_storage_changes_over_the_last_century/7670849",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Figshare DOI landing page",
       "description": "Persistent DOI landing page for the dataset on Figshare.",
       "contentUrl": "https://doi.org/10.6084/m9.figshare.7670849",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     }
   ],
   "citation": [
@@ -118,8 +126,14 @@
       "@type": "ScholarlyArticle",
       "name": "GRACE-REC: a reconstruction of climate-driven water storage changes over the last century",
       "author": [
-        { "@type": "Person", "name": "Vincent Humphrey" },
-        { "@type": "Person", "name": "Lukas Gudmundsson" }
+        {
+          "@type": "Person",
+          "name": "Vincent Humphrey"
+        },
+        {
+          "@type": "Person",
+          "name": "Lukas Gudmundsson"
+        }
       ],
       "isPartOf": {
         "@type": "Periodical",
@@ -137,12 +151,30 @@
     }
   ],
   "about": [
-    { "@type": "Thing", "name": "Hydrology" },
-    { "@type": "Thing", "name": "Terrestrial water storage" },
-    { "@type": "Thing", "name": "Climate variability" },
-    { "@type": "Thing", "name": "Drought" },
-    { "@type": "Thing", "name": "Floods" },
-    { "@type": "Thing", "name": "GRACE satellite gravimetry" }
+    {
+      "@type": "Thing",
+      "name": "Hydrology"
+    },
+    {
+      "@type": "Thing",
+      "name": "Terrestrial water storage"
+    },
+    {
+      "@type": "Thing",
+      "name": "Climate variability"
+    },
+    {
+      "@type": "Thing",
+      "name": "Drought"
+    },
+    {
+      "@type": "Thing",
+      "name": "Floods"
+    },
+    {
+      "@type": "Thing",
+      "name": "GRACE satellite gravimetry"
+    }
   ],
   "sameAs": [
     "https://doi.org/10.6084/m9.figshare.7670849"

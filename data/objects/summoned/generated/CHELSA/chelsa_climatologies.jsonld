@@ -42,77 +42,99 @@
       "name": "Total Cloud Cover Percentage",
       "alternateName": "clt",
       "unitText": "percent",
-      "description": "Total cloud area fraction, reported as a percentage, for the whole atmospheric column."
+      "description": "Total cloud area fraction, reported as a percentage, for the whole atmospheric column.",
+      "temporalCoverage": "1981-2010/2071-2100",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Monthly Climate Moisture Index",
       "alternateName": "cmi",
       "unitText": "kg m-2 month-1",
-      "description": "Monthly ratio of precipitation to potential evapotranspiration; indicator of climatic water availability."
+      "description": "Monthly ratio of precipitation to potential evapotranspiration; indicator of climatic water availability.",
+      "temporalCoverage": "1981-2010/2071-2100",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Near-Surface Relative Humidity",
       "alternateName": "hurs",
       "unitText": "percent",
-      "description": "Relative humidity near the surface."
+      "description": "Relative humidity near the surface.",
+      "temporalCoverage": "1981-2010/2071-2100",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Monthly Potential Evapotranspiration",
       "alternateName": "pet",
       "unitText": "kg m-2 month-1",
-      "description": "Total potential evapotranspiration for the month assuming unlimited water availability, calculated using Penman-Monteith."
+      "description": "Total potential evapotranspiration for the month assuming unlimited water availability, calculated using Penman-Monteith.",
+      "temporalCoverage": "1981-2010/2071-2100",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Precipitation",
       "alternateName": "pr",
       "unitText": "kg m-2 day-1",
-      "description": "Precipitation including liquid and solid phases."
+      "description": "Precipitation including liquid and solid phases.",
+      "temporalCoverage": "1981-2010/2071-2100",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Surface Downwelling Shortwave Flux in Air",
       "alternateName": "rsds",
       "unitText": "W m-2",
-      "description": "Surface solar irradiance for UV calculations."
+      "description": "Surface solar irradiance for UV calculations.",
+      "temporalCoverage": "1981-2010/2071-2100",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Near-Surface Wind Speed",
       "alternateName": "sfcWind",
       "unitText": "m s-1",
-      "description": "Near-surface, usually 10 meter, wind speed."
+      "description": "Near-surface, usually 10 meter, wind speed.",
+      "temporalCoverage": "1981-2010/2071-2100",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Daily Mean Near-Surface Air Temperature",
       "alternateName": "tas",
       "unitText": "K",
-      "description": "Near-surface, usually 2 meter, air temperature."
+      "description": "Near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1981-2010/2071-2100",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Daily Maximum Near-Surface Air Temperature",
       "alternateName": "tasmax",
       "unitText": "K",
-      "description": "Maximum near-surface, usually 2 meter, air temperature."
+      "description": "Maximum near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1981-2010/2071-2100",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Daily Minimum Near-Surface Air Temperature",
       "alternateName": "tasmin",
       "unitText": "K",
-      "description": "Minimum near-surface, usually 2 meter, air temperature."
+      "description": "Minimum near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1981-2010/2071-2100",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Vapor Pressure Deficit",
       "alternateName": "vpd",
       "unitText": "Pa",
-      "description": "Difference between saturation vapor pressure and actual vapor pressure."
+      "description": "Difference between saturation vapor pressure and actual vapor pressure.",
+      "temporalCoverage": "1981-2010/2071-2100",
+      "spatialCoverage": "not detected"
     }
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",

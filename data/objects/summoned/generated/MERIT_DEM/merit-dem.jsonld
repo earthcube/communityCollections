@@ -69,7 +69,9 @@
       "@type": "PropertyValue",
       "name": "Elevation",
       "unitText": "meter",
-      "description": "Terrain elevation in meters referenced to WGS84 and the EGM96 geoid."
+      "description": "Terrain elevation in meters referenced to WGS84 and the EGM96 geoid.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
     }
   ],
   "measurementTechnique": [

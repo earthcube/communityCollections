@@ -42,19 +42,27 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "Land cover class (16-class legend)"
+      "name": "Land cover class (16-class legend)",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Land cover change (varies by product)"
+      "name": "Land cover change (varies by product)",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Percent impervious surface (selected releases)"
+      "name": "Percent impervious surface (selected releases)",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "Tree canopy cover (selected releases)"
+      "name": "Tree canopy cover (selected releases)",
+      "temporalCoverage": "Static",
+      "spatialCoverage": "not detected"
     }
   ],
   "measurementTechnique": [
