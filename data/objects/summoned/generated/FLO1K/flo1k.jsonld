@@ -50,9 +50,10 @@
   "temporalCoverage": "1960-01-01/2015-12-31",
   "spatialCoverage": {
     "@type": "Place",
+    "name": "Global land areas excluding Antarctica",
     "geo": {
       "@type": "GeoShape",
-      "box": "20,-40 50,10"
+      "box": "-180,-90 180,90"
     }
   },
   "spatialResolution": "30 arc-second (~1 km)",

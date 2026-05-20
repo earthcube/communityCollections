@@ -60,9 +60,10 @@
   "temporalCoverage": "1970-01-01/2016-12-31",
   "spatialCoverage": {
     "@type": "Place",
+    "name": "Global land areas",
     "geo": {
       "@type": "GeoShape",
-      "box": "20,-40 50,10"
+      "box": "-180,-90 180,90"
     }
   },
   "spatialResolution": "0.5 degree",

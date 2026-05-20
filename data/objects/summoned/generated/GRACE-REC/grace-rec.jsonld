@@ -64,9 +64,10 @@
   "temporalCoverage": "1901-01-01/2019-12-31",
   "spatialCoverage": {
     "@type": "Place",
+    "name": "Global terrestrial water storage reconstruction",
     "geo": {
       "@type": "GeoShape",
-      "box": "20,-40 50,10"
+      "box": "-180,-90 180,90"
     }
   },
   "spatialResolution": "0.5 degree",

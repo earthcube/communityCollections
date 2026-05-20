@@ -36,23 +36,31 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "pr",
-      "description": "Precipitation"
+      "name": "Precipitation",
+      "alternateName": "pr",
+      "unitText": "kg m-2 day-1",
+      "description": "Precipitation including liquid and solid phases."
     },
     {
       "@type": "PropertyValue",
-      "name": "tasmax",
-      "description": "Near-surface air temperature (maximum)"
+      "name": "Daily Maximum Near-Surface Air Temperature",
+      "alternateName": "tasmax",
+      "unitText": "K",
+      "description": "Maximum near-surface, usually 2 meter, air temperature."
     },
     {
       "@type": "PropertyValue",
-      "name": "tasmin",
-      "description": "Near-surface air temperature (minimum)"
+      "name": "Daily Minimum Near-Surface Air Temperature",
+      "alternateName": "tasmin",
+      "unitText": "K",
+      "description": "Minimum near-surface, usually 2 meter, air temperature."
     },
     {
       "@type": "PropertyValue",
-      "name": "tz",
-      "description": "Air temperature lapse rate"
+      "name": "Air Temperature Lapse Rate",
+      "alternateName": "tz",
+      "unitText": "K m-1",
+      "description": "Rate of change in air temperature with altitude calculated over the centennial period."
     }
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -67,7 +75,7 @@
       "@type": "DataDownload",
       "name": "CHELSA-TraCE21k-centennial downloads (COG)",
       "description": "Download portal for TraCE21k centennial climatologies.",
-      "contentUrl": "https://envicloud.wsl.ch/",
+      "contentUrl": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fcentennial%2F",
       "encodingFormat": [
         "image/tiff",
         "application=geotiff",
@@ -75,7 +83,84 @@
       ]
     }
   ],
-  "citation": "Karger, D. N., Nobis, M. P., Normand, S., Graham, C. H., & Zimmermann, N. E. (2020). CHELSA-TraCE21k: Downscaled transient temperature and precipitation data since the last glacial maximum. EnviDat. https://doi.org/10.16904/envidat.211",
+  "citation": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "CHELSA-TraCE21k: high-resolution (1 km) downscaled transient temperature and precipitation data since the Last Glacial Maximum",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "D. N. Karger"
+        },
+        {
+          "@type": "Person",
+          "name": "M. P. Nobis"
+        },
+        {
+          "@type": "Person",
+          "name": "S. Normand"
+        },
+        {
+          "@type": "Person",
+          "name": "C. H. Graham"
+        },
+        {
+          "@type": "Person",
+          "name": "N. E. Zimmermann"
+        }
+      ],
+      "datePublished": "2023",
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Climate of the Past"
+      },
+      "volumeNumber": "19",
+      "pagination": "439-456",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.5194/cp-19-439-2023"
+      },
+      "sameAs": "https://doi.org/10.5194/cp-19-439-2023"
+    },
+    {
+      "@type": "Dataset",
+      "name": "CHELSA-TraCE21k: Downscaled transient temperature and precipitation data since the last glacial maximum",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "D. N. Karger"
+        },
+        {
+          "@type": "Person",
+          "name": "M. P. Nobis"
+        },
+        {
+          "@type": "Person",
+          "name": "S. Normand"
+        },
+        {
+          "@type": "Person",
+          "name": "C. H. Graham"
+        },
+        {
+          "@type": "Person",
+          "name": "N. E. Zimmermann"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "EnviDat"
+      },
+      "datePublished": "2020",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.16904/envidat.211"
+      },
+      "sameAs": "https://doi.org/10.16904/envidat.211"
+    }
+  ],
   "about": [
     {
       "@type": "Thing",

@@ -59,11 +59,7 @@
   "temporalCoverage": "2011-01-01/..",
   "spatialCoverage": {
     "@type": "Place",
-    "name": "Energy production regions (primarily northeastern USA; see dataset portals for exact coverage)",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "20,-40 50,10"
-    }
+    "name": "Energy production regions, primarily the northeastern United States; see dataset portals for exact site coverage"
   },
   "variableMeasured": [
     {

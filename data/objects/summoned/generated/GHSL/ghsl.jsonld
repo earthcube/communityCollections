@@ -51,9 +51,10 @@
   "temporalCoverage": "1975-01-01/2030-12-31",
   "spatialCoverage": {
     "@type": "Place",
+    "name": "Global Human Settlement Layer product coverage",
     "geo": {
       "@type": "GeoShape",
-      "box": "20,-40 50,10"
+      "box": "-180,-90 180,90"
     }
   },
   "variableMeasured": [
@@ -79,7 +80,7 @@
     },
     {
       "@type": "PropertyValue",
-      "name": "Settlement typology / Degree of Urbanisation",
+      "name": "Settlement Typology and Degree of Urbanisation",
       "description": "Settlement model classification based on the UN-recommended Degree of Urbanisation methodology."
     }
   ],

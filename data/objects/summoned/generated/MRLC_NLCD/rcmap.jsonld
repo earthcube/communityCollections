@@ -135,5 +135,22 @@
       "@type": "Thing",
       "name": "Remote sensing"
     }
+  ],
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Rangeland Condition Monitoring Assessment and Projection (RCMAP)",
+      "datePublished": "2022",
+      "publisher": {
+        "@type": "Organization",
+        "name": "U.S. Geological Survey"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.3133/fs20223036"
+      },
+      "sameAs": "https://doi.org/10.3133/fs20223036"
+    }
   ]
 }

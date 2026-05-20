@@ -36,13 +36,38 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "tas/tasmax/tasmin",
-      "description": "Near-surface air temperature summaries"
+      "name": "Precipitation",
+      "alternateName": "pr",
+      "unitText": "kg m-2 day-1",
+      "description": "Precipitation including liquid and solid phases."
     },
     {
       "@type": "PropertyValue",
-      "name": "pr",
-      "description": "Precipitation"
+      "name": "Surface Downwelling Shortwave Flux in Air",
+      "alternateName": "rsds",
+      "unitText": "W m-2",
+      "description": "Surface solar irradiance for UV calculations."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Daily Mean Near-Surface Air Temperature",
+      "alternateName": "tas",
+      "unitText": "K",
+      "description": "Near-surface, usually 2 meter, air temperature."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Daily Maximum Near-Surface Air Temperature",
+      "alternateName": "tasmax",
+      "unitText": "K",
+      "description": "Maximum near-surface, usually 2 meter, air temperature."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Daily Minimum Near-Surface Air Temperature",
+      "alternateName": "tasmin",
+      "unitText": "K",
+      "description": "Minimum near-surface, usually 2 meter, air temperature."
     }
   ],
   "distribution": [
@@ -50,7 +75,7 @@
       "@type": "DataDownload",
       "name": "CHELSA-W5E5-daily downloads (ISIMIP portal)",
       "description": "The catalog links the W5E5-based CHELSA daily product to the ISIMIP data portal.",
-      "contentUrl": "https://data.isimip.org/",
+      "contentUrl": "https://data.isimip.org/10.48364/ISIMIP.836809.3",
       "encodingFormat": [
         "text/html"
       ]
@@ -67,6 +92,55 @@
     {
       "@type": "Thing",
       "name": "Impact modeling"
+    }
+  ],
+  "citation": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "CHELSA-W5E5: daily 1 km meteorological forcing data for climate impact studies",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "D. N. Karger"
+        },
+        {
+          "@type": "Person",
+          "name": "S. Lange"
+        },
+        {
+          "@type": "Person",
+          "name": "C. Hari"
+        },
+        {
+          "@type": "Person",
+          "name": "C. P. O. Reyer"
+        },
+        {
+          "@type": "Person",
+          "name": "O. Conrad"
+        },
+        {
+          "@type": "Person",
+          "name": "N. E. Zimmermann"
+        },
+        {
+          "@type": "Person",
+          "name": "K. Frieler"
+        }
+      ],
+      "datePublished": "2023",
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Earth System Science Data"
+      },
+      "volumeNumber": "15",
+      "pagination": "2445-2464",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.5194/essd-15-2445-2023"
+      },
+      "sameAs": "https://doi.org/10.5194/essd-15-2445-2023"
     }
   ]
 }

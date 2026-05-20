@@ -52,10 +52,7 @@
   "isAccessibleForFree": true,
   "spatialCoverage": {
     "@type": "Place",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "20,-40 50,10"
-    }
+    "name": "Global and regional hydrographic products; product-specific coverage varies"
   },
   "spatialResolution": [
     "3 arc-second",
@@ -65,7 +62,7 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "Catchment / sub-basin boundaries",
+      "name": "Catchment and Sub-Basin Boundaries",
       "description": "Vector catchment and sub-basin boundary products derived from HydroSHEDS hydrography."
     },
     {

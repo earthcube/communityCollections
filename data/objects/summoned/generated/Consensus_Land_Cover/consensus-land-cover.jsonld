@@ -69,7 +69,7 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "Evergreen/Deciduous Needleleaf Trees",
+      "name": "Evergreen and Deciduous Needleleaf Trees",
       "description": "Consensus prevalence (0–100%)"
     },
     {
@@ -84,7 +84,7 @@
     },
     {
       "@type": "PropertyValue",
-      "name": "Mixed/Other Trees",
+      "name": "Mixed and Other Trees",
       "description": "Consensus prevalence (0–100%)"
     },
     {
@@ -109,12 +109,12 @@
     },
     {
       "@type": "PropertyValue",
-      "name": "Urban/Built-up",
+      "name": "Urban and Built-Up",
       "description": "Consensus prevalence (0–100%)"
     },
     {
       "@type": "PropertyValue",
-      "name": "Snow/Ice",
+      "name": "Snow and Ice",
       "description": "Consensus prevalence (0–100%)"
     },
     {

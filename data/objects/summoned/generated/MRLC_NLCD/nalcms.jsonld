@@ -92,5 +92,17 @@
       "@type": "Thing",
       "name": "Continental land monitoring"
     }
+  ],
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "NALCMS: The North American Land Change Monitoring System",
+      "datePublished": "2024",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Commission for Environmental Cooperation"
+      },
+      "sameAs": "https://www.cec.org/publications/nalcms/"
+    }
   ]
 }

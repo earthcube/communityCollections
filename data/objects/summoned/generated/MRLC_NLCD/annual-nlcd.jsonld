@@ -72,7 +72,18 @@
     "Land cover classification and change detection using modern modeling approaches (including deep learning and time-series analysis)"
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "citation": "U.S. Geological Survey (USGS), 2024, Annual NLCD Collection 1 Science Products (ver. 1.1, June 2025): U.S. Geological Survey data release, https://doi.org/10.5066/P94UXNTS.",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "U.S. Geological Survey (USGS), 2024, Annual NLCD Collection 1 Science Products (ver. 1.1, June 2025): U.S. Geological Survey data release, https://doi.org/10.5066/P94UXNTS",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.5066/P94UXNTS"
+      },
+      "sameAs": "https://doi.org/10.5066/P94UXNTS"
+    }
+  ],
   "distribution": [
     {
       "@type": "DataDownload",

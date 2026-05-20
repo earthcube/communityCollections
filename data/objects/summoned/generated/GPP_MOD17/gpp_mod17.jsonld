@@ -53,9 +53,10 @@
   ],
   "spatialCoverage": {
     "@type": "Place",
+    "name": "Earth's vegetated land surface",
     "geo": {
       "@type": "GeoShape",
-      "box": "20,-40 50,10"
+      "box": "-180,-90 180,90"
     }
   },
   "temporalCoverage": "2000-01-01/2013-12-31",
@@ -64,7 +65,6 @@
     "image/tiff",
     "application/netcdf"
   ],
-  "license": "https://files.ntsg.umt.edu/",
   "conditionsOfAccess": "Access is provided via HTTP file listing at the dataset URL. Refer to the provider's data policies and downloading guidance on the hosting site.",
   "isAccessibleForFree": true,
   "distribution": [
@@ -72,19 +72,74 @@
       "@type": "DataDownload",
       "name": "MOD17 products (directory listing)",
       "contentUrl": "http://files.ntsg.umt.edu/data/NTSG_Products/MOD17/",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "MOD17 GeoTIFF products (typical distribution)",
       "contentUrl": "http://files.ntsg.umt.edu/data/NTSG_Products/MOD17/GeoTIFF/",
-      "encodingFormat": ["image/tiff"]
+      "encodingFormat": [
+        "image/tiff"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "MOD17 HDF-EOS products (typical distribution)",
       "contentUrl": "http://files.ntsg.umt.edu/data/NTSG_Products/MOD17/",
-      "encodingFormat": ["application/x-hdf"]
+      "encodingFormat": [
+        "application/x-hdf"
+      ]
+    }
+  ],
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "MOD17 User’s Guide",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Numerical Terradynamic Simulation Group, University of Montana"
+      },
+      "sameAs": "https://scholarworks.umt.edu/ntsg_pubs/227/"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "A continuous satellite-derived measure of global terrestrial primary production",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "S. W. Running"
+        },
+        {
+          "@type": "Person",
+          "name": "R. R. Nemani"
+        },
+        {
+          "@type": "Person",
+          "name": "F. A. Heinsch"
+        },
+        {
+          "@type": "Person",
+          "name": "M. Zhao"
+        },
+        {
+          "@type": "Person",
+          "name": "M. Reeves"
+        },
+        {
+          "@type": "Person",
+          "name": "H. Hashimoto"
+        }
+      ],
+      "datePublished": "2004",
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "BioScience"
+      },
+      "volumeNumber": "54",
+      "issueNumber": "6",
+      "pagination": "547-560"
     }
   ]
 }

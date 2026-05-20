@@ -39,18 +39,297 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "BIO1–BIO19",
-      "description": "Standard bioclimatic variables (temperature and precipitation derivatives)"
+      "name": "Mean Annual Near-Surface Air Temperature",
+      "alternateName": "bio01",
+      "unitText": "°C",
+      "description": "Mean annual temperature calculated as the average of mean monthly temperatures over the year"
     },
     {
       "@type": "PropertyValue",
-      "name": "gdd",
-      "description": "Growing degree days (and related growing-season metrics where provided)"
+      "name": "Mean Diurnal Near-Surface Air Temperature Range",
+      "alternateName": "bio02",
+      "unitText": "°C",
+      "description": "Mean diurnal temperature range computed as the average of monthly daily maximum minus daily minimum near-surface air temperature"
     },
     {
       "@type": "PropertyValue",
-      "name": "koppen",
-      "description": "Köppen–Geiger climate classification (where provided in CHELSA bioclim products)"
+      "name": "Isothermality",
+      "alternateName": "bio03",
+      "unitText": "°C",
+      "description": "Isothermality: 100 × bio02 ÷ bio07; compares day-night variability to annual temperature range"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Temperature Seasonality",
+      "alternateName": "bio04",
+      "unitText": "°C/100",
+      "description": "Temperature seasonality given by the standard deviation of mean monthly temperatures"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mean Daily Maximum Near-Surface Air Temperature of the Warmest Month",
+      "alternateName": "bio05",
+      "unitText": "°C",
+      "description": "Highest monthly mean of daily maximum temperatures across the year; indicates peak thermal conditions"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mean Daily Minimum Near-Surface Air Temperature of the Coldest Month",
+      "alternateName": "bio06",
+      "unitText": "°C",
+      "description": "Lowest monthly mean of daily minimum temperatures across the year; characterizes winter cold intensity"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Annual Daily Mean Near-Surface Air Temperature Range",
+      "alternateName": "bio07",
+      "unitText": "°C",
+      "description": "Annual temperature range calculated as bio05 minus bio06; measures amplitude between warmest and coldest months"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mean Daily Near-Surface Air Temperature of the Wettest Quarter",
+      "alternateName": "bio08",
+      "unitText": "°C",
+      "description": "Average monthly mean temperature over the wettest three-month period of the year"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mean Daily Near-Surface Air Temperature of the Driest Quarter",
+      "alternateName": "bio09",
+      "unitText": "°C",
+      "description": "Average monthly mean temperature over the driest three-month period of the year"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mean Daily Mean Near-Surface Air Temperature of the Warmest Quarter",
+      "alternateName": "bio10",
+      "unitText": "°C",
+      "description": "Average monthly mean temperature over the warmest three-month period of the year"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mean Daily Mean Near-Surface Air Temperature of the Coldest Quarter",
+      "alternateName": "bio11",
+      "unitText": "°C",
+      "description": "Average monthly mean temperature over the coldest three-month period of the year"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Annual Precipitation",
+      "alternateName": "bio12",
+      "unitText": "kg m-2 year-1",
+      "description": "Sum of monthly precipitation totals across the year"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Precipitation of the Wettest Month",
+      "alternateName": "bio13",
+      "unitText": "kg m-2 month-1",
+      "description": "Maximum monthly precipitation total"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Precipitation of the Driest Month",
+      "alternateName": "bio14",
+      "unitText": "kg m-2 month-1",
+      "description": "Minimum monthly precipitation total"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Precipitation Seasonality",
+      "alternateName": "bio15",
+      "unitText": "kg m-2",
+      "description": "Coefficient of variation: 100 × standard deviation ÷ mean of monthly precipitation totals"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mean Monthly Precipitation of the Wettest Quarter",
+      "alternateName": "bio16",
+      "unitText": "kg m-2 month-1",
+      "description": "Average monthly precipitation during the wettest three-month period of the year"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mean Monthly Precipitation of the Driest Quarter",
+      "alternateName": "bio17",
+      "unitText": "kg m-2 month-1",
+      "description": "Average monthly precipitation during the driest three-month period of the year"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mean Monthly Precipitation of the Warmest Quarter",
+      "alternateName": "bio18",
+      "unitText": "kg m-2 month-1",
+      "description": "Average monthly precipitation during the warmest three-month period of the year"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mean Monthly Precipitation of the Coldest Quarter",
+      "alternateName": "bio19",
+      "unitText": "kg m-2 month-1",
+      "description": "Average monthly precipitation during the coldest three-month period of the year"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Frost Change Frequency",
+      "alternateName": "fcf",
+      "unitText": "count",
+      "description": "Number of freeze-thaw transitions per year."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "First Day of the Growing Season TREELIM",
+      "alternateName": "fgd",
+      "unitText": "julian day",
+      "description": "Julian day marking the first occurrence of growing season conditions."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Growing Degree Days Heat Sum above 0 °C",
+      "alternateName": "gdd0",
+      "unitText": "°C",
+      "description": "Sum of daily mean temperatures above 0 °C accumulated over the year."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Growing Degree Days Heat Sum above 10 °C",
+      "alternateName": "gdd10",
+      "unitText": "°C",
+      "description": "Sum of daily mean temperatures above 10 °C accumulated over the year."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Growing Degree Days Heat Sum above 5 °C",
+      "alternateName": "gdd5",
+      "unitText": "°C",
+      "description": "Sum of daily mean temperatures above 5 °C accumulated over the year."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "First Growing Degree Day above 10 °C",
+      "alternateName": "gdgfgd10",
+      "unitText": "julian day",
+      "description": "Julian day of the first occurrence of a daily mean temperature above 10 °C."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "First Growing Degree Day above 5 °C",
+      "alternateName": "gdgfgd5",
+      "unitText": "julian day",
+      "description": "Julian day of the first occurrence of a daily mean temperature above 5 °C."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Growing Season Length",
+      "alternateName": "gsl",
+      "unitText": "days",
+      "description": "Number of days between the first and last occurrence of growing season conditions."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Accumulated Precipitation Amount on Growing Season Days",
+      "alternateName": "gsp",
+      "unitText": "kg m-2 gsl-1",
+      "description": "Total precipitation accumulated during the growing season period."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mean Temperature of Growing Season Days",
+      "alternateName": "gst",
+      "unitText": "°C",
+      "description": "Average daily mean temperature over all growing season days."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Köppen-Geiger Climate Classification",
+      "alternateName": "kg0",
+      "unitText": "category",
+      "description": "Köppen-Geiger climate classification."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Köppen-Geiger Climate Classification without As and Aw Differentiation",
+      "alternateName": "kg1",
+      "unitText": "category",
+      "description": "Köppen-Geiger climate classification without As and Aw differentiation."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Köppen-Geiger Climate Classification after Peel et al. 2007",
+      "alternateName": "kg2",
+      "unitText": "category",
+      "description": "Köppen-Geiger climate classification after Peel et al. 2007."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Climate Classification after Wissmann 1939",
+      "alternateName": "kg3",
+      "unitText": "category",
+      "description": "Climate classification after Wissmann 1939."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Climate Classification after Thornthwaite 1931",
+      "alternateName": "kg4",
+      "unitText": "category",
+      "description": "Climate classification after Thornthwaite 1931."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Climate Classification after Troll-Pfaffen",
+      "alternateName": "kg5",
+      "unitText": "category",
+      "description": "Climate classification after Troll-Pfaffen."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Last Day of the Growing Season TREELIM",
+      "alternateName": "lgd",
+      "unitText": "julian day",
+      "description": "Julian day of the last occurrence of growing season conditions."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Growing Degree Days above 0 °C",
+      "alternateName": "ngd0",
+      "unitText": "number of days",
+      "description": "Total number of days in a year with mean daily temperature above 0 °C."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Growing Degree Days above 10 °C",
+      "alternateName": "ngd10",
+      "unitText": "number of days",
+      "description": "Total number of days in a year with mean daily temperature above 10 °C."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Growing Degree Days above 5 °C",
+      "alternateName": "ngd5",
+      "unitText": "number of days",
+      "description": "Total number of days in a year with mean daily temperature above 5 °C."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Net Primary Production on Land as Carbon Mass Flux",
+      "alternateName": "npp",
+      "unitText": "g C m-2 yr-1",
+      "description": "Net primary production on land expressed as carbon mass flux."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Snow Cover Days",
+      "alternateName": "scd",
+      "unitText": "days",
+      "description": "Number of days per year with snow cover present at the surface."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Snow Water Equivalent",
+      "alternateName": "swe",
+      "unitText": "kg m-2 year-1",
+      "description": "Total water equivalent of snowpack accumulated over the year."
     }
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -65,7 +344,7 @@
       "@type": "DataDownload",
       "name": "CHELSA-bioclim downloads (COG)",
       "description": "Download portal for CHELSA bioclimatic variables.",
-      "contentUrl": "https://envicloud.wsl.ch/",
+      "contentUrl": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2F",
       "encodingFormat": [
         "image/tiff",
         "application=geotiff",
@@ -73,7 +352,85 @@
       ]
     }
   ],
-  "citation": "Brun, P., Zimmermann, N. E., Hari, C., Pellissier, L., & Karger, D. N. (2022). Global climate-related predictors at kilometer resolution for the past and future. Earth System Science Data, 14(12), 5573–5603. https://doi.org/10.5194/essd-14-5573-2022",
+  "citation": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Global climate-related predictors at kilometer resolution for the past and future",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "P. Brun"
+        },
+        {
+          "@type": "Person",
+          "name": "N. E. Zimmermann"
+        },
+        {
+          "@type": "Person",
+          "name": "C. Hari"
+        },
+        {
+          "@type": "Person",
+          "name": "L. Pellissier"
+        },
+        {
+          "@type": "Person",
+          "name": "D. N. Karger"
+        }
+      ],
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Earth System Science Data"
+      },
+      "datePublished": "2022",
+      "volumeNumber": "14",
+      "issueNumber": "12",
+      "pagination": "5573-5603",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.5194/essd-14-5573-2022"
+      },
+      "sameAs": "https://doi.org/10.5194/essd-14-5573-2022"
+    },
+    {
+      "@type": "Dataset",
+      "name": "CHELSA-BIOCLIM+ A novel set of global climate-related predictors at kilometre-resolution",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "P. Brun"
+        },
+        {
+          "@type": "Person",
+          "name": "N. E. Zimmermann"
+        },
+        {
+          "@type": "Person",
+          "name": "C. Hari"
+        },
+        {
+          "@type": "Person",
+          "name": "L. Pellissier"
+        },
+        {
+          "@type": "Person",
+          "name": "D. N. Karger"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "EnviDat"
+      },
+      "datePublished": "2022",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.16904/envidat.332"
+      },
+      "sameAs": "https://doi.org/10.16904/envidat.332"
+    }
+  ],
   "about": [
     {
       "@type": "Thing",

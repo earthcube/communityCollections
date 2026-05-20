@@ -119,39 +119,52 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "treecover2000",
+      "name": "Tree Canopy Cover in 2000",
+      "alternateName": "treecover2000",
       "unitText": "percent",
-      "description": "Tree canopy cover for year 2000 (0–100), defined as canopy closure for vegetation taller than 5 m."
+      "description": "Tree canopy cover for year 2000, defined as canopy closure for vegetation taller than 5 m."
     },
     {
       "@type": "PropertyValue",
-      "name": "gain",
-      "description": "Forest gain during 2000–2012 (binary: 1 gain, 0 no gain)."
+      "name": "Forest Cover Gain",
+      "alternateName": "gain",
+      "unitText": "binary",
+      "description": "Forest gain during 2000-2012."
     },
     {
       "@type": "PropertyValue",
-      "name": "lossyear",
-      "description": "Year of gross forest cover loss event (0 no loss; 1–23 correspond primarily to 2001–2023)."
+      "name": "Year of Gross Forest Cover Loss",
+      "alternateName": "lossyear",
+      "unitText": "year code",
+      "description": "Year of gross forest cover loss event; 0 indicates no loss and 1-23 correspond primarily to 2001-2023."
     },
     {
       "@type": "PropertyValue",
-      "name": "datamask",
-      "description": "Data mask: 0 no data, 1 mapped land surface, 2 persistent water bodies (based on 2000–2012)."
+      "name": "Data Mask",
+      "alternateName": "datamask",
+      "unitText": "class code",
+      "description": "Data mask classes for no data, mapped land surface, and persistent water bodies."
     },
     {
       "@type": "PropertyValue",
-      "name": "first",
-      "description": "Circa year-2000 Landsat cloud-free composite in red, NIR, SWIR1, SWIR2 bands (median, quality-assessed growing-season observations)."
+      "name": "First Reference Landsat Composite",
+      "alternateName": "first",
+      "unitText": "digital number",
+      "description": "Circa year-2000 Landsat cloud-free composite in red, NIR, SWIR1, and SWIR2 bands."
     },
     {
       "@type": "PropertyValue",
-      "name": "last",
-      "description": "Circa year-2023 Landsat cloud-free composite in red, NIR, SWIR1, SWIR2 bands (median, quality-assessed growing-season observations)."
+      "name": "Last Reference Landsat Composite",
+      "alternateName": "last",
+      "unitText": "digital number",
+      "description": "Circa year-2023 Landsat cloud-free composite in red, NIR, SWIR1, and SWIR2 bands."
     },
     {
       "@type": "PropertyValue",
-      "name": "loss (derived)",
-      "description": "Not released as a separate download layer in newer versions; corresponds to pixels where lossyear > 0."
+      "name": "Gross Forest Cover Loss",
+      "alternateName": "loss",
+      "unitText": "derived binary",
+      "description": "Derived indicator for pixels where lossyear is greater than 0."
     }
   ],
   "measurementTechnique": [

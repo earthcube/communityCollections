@@ -63,7 +63,16 @@
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "citation": [
-    "Dewitz, J., and U.S. Geological Survey, 2021, National Land Cover Database (NLCD) 2019 Products (ver. 2.0, June 2021): U.S. Geological Survey data release, https://doi.org/10.5066/P9KZCM54."
+    {
+      "@type": "CreativeWork",
+      "name": "Dewitz, J., and U.S. Geological Survey, 2021, National Land Cover Database (NLCD) 2019 Products (ver. 2.0, June 2021): U.S. Geological Survey data release, https://doi.org/10.5066/P9KZCM54",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.5066/P9KZCM54"
+      },
+      "sameAs": "https://doi.org/10.5066/P9KZCM54"
+    }
   ],
   "distribution": [
     {
