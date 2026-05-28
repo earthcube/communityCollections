@@ -19,15 +19,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "temporalCoverage": "1980-06-15/2018-07-15",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global land surface areas",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180.0,-60.0 180.0,90.0"
-    }
-  },
   "keywords": [
     "CHELSA",
     "drought",
@@ -39,18 +30,93 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "spei12",
-      "description": "Standardized precipitation evapotranspiration index (12-month)"
+      "name": "Multiyear Meteorological Drought",
+      "alternateName": "mymd",
+      "unitText": "id",
+      "description": "Identifier for multiyear meteorological drought events.",
+      "temporalCoverage": "1980-06-15/2018-07-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "spi",
-      "description": "Standardized precipitation index (multiple timescales)"
+      "name": "Multiyear Meteorological Drought at 10 km Resolution",
+      "alternateName": "mymd10",
+      "unitText": "id",
+      "description": "Identifier for multiyear meteorological drought events at 10 km resolution.",
+      "temporalCoverage": "1980-06-15/2018-07-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "mymd",
-      "description": "Identifier for multiyear meteorological drought events (and related fields)"
+      "name": "Kernel Normalized Difference Vegetation Index Anomaly",
+      "alternateName": "qkndvi",
+      "unitText": "1",
+      "description": "Annual anomaly in vegetation greenness derived from kernel normalized difference vegetation index.",
+      "temporalCoverage": "1980-06-15/2018-07-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Standardized Precipitation Evapotranspiration Index",
+      "alternateName": "spei12",
+      "unitText": "1",
+      "description": "Standardized climatic water balance index over a 12-month integration period.",
+      "temporalCoverage": "1980-06-15/2018-07-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Standardized Precipitation Index",
+      "alternateName": "spi12",
+      "unitText": "1",
+      "description": "Standardized precipitation anomaly index over a 12-month integration period.",
+      "temporalCoverage": "1980-06-15/2018-07-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     }
   ],
   "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -65,7 +131,7 @@
       "@type": "DataDownload",
       "name": "CHELSA-drought-indices downloads (COG)",
       "description": "Download portal for CHELSA drought indices.",
-      "contentUrl": "https://envicloud.wsl.ch/",
+      "contentUrl": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fannual%2F",
       "encodingFormat": [
         "image/tiff",
         "application=geotiff",
@@ -73,7 +139,114 @@
       ]
     }
   ],
-  "citation": "Chen, L., Brun, P., Buri, P., Fatichi, S., Gessler, A., McCarthy, M. J., Pelicciotti, F., Stocker, B., Karger, D. N. (2024). High resolution global standardized drought indices. EnviDat. https://doi.org/10.16904/envidat.530",
+  "citation": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Global increase in the occurrence and impact of megadroughts",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "L. Chen"
+        },
+        {
+          "@type": "Person",
+          "name": "P. Brun"
+        },
+        {
+          "@type": "Person",
+          "name": "P. Buri"
+        },
+        {
+          "@type": "Person",
+          "name": "S. Fatichi"
+        },
+        {
+          "@type": "Person",
+          "name": "A. Gessler"
+        },
+        {
+          "@type": "Person",
+          "name": "M. J. McCarthy"
+        },
+        {
+          "@type": "Person",
+          "name": "F. Pelicciotti"
+        },
+        {
+          "@type": "Person",
+          "name": "B. Stocker"
+        },
+        {
+          "@type": "Person",
+          "name": "D. N. Karger"
+        }
+      ],
+      "datePublished": "2025",
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Science"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.1126/science.ado4245"
+      },
+      "sameAs": "https://doi.org/10.1126/science.ado4245"
+    },
+    {
+      "@type": "Dataset",
+      "name": "High resolution global standardized drought indices",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "L. Chen"
+        },
+        {
+          "@type": "Person",
+          "name": "P. Brun"
+        },
+        {
+          "@type": "Person",
+          "name": "P. Buri"
+        },
+        {
+          "@type": "Person",
+          "name": "S. Fatichi"
+        },
+        {
+          "@type": "Person",
+          "name": "A. Gessler"
+        },
+        {
+          "@type": "Person",
+          "name": "M. J. McCarthy"
+        },
+        {
+          "@type": "Person",
+          "name": "F. Pelicciotti"
+        },
+        {
+          "@type": "Person",
+          "name": "B. Stocker"
+        },
+        {
+          "@type": "Person",
+          "name": "D. N. Karger"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "EnviDat"
+      },
+      "datePublished": "2024",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.16904/envidat.530"
+      },
+      "sameAs": "https://doi.org/10.16904/envidat.530"
+    }
+  ],
   "about": [
     {
       "@type": "Thing",

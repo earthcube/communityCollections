@@ -19,15 +19,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "temporalCoverage": "1979-01-15/2021-12-15",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global land surface areas",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180.0,-60.0 180.0,90.0"
-    }
-  },
   "keywords": [
     "CHELSA",
     "monthly climate",
@@ -39,23 +30,237 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "tas",
-      "description": "Near-surface air temperature (monthly aggregated)"
+      "name": "Total Cloud Cover Percentage",
+      "alternateName": "clt",
+      "unitText": "percent",
+      "description": "Total cloud area fraction, reported as a percentage, for the whole atmospheric column.",
+      "temporalCoverage": "1979-01-15/2021-12-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "tasmax",
-      "description": "Maximum near-surface air temperature (monthly aggregated)"
+      "name": "Monthly Climate Moisture Index",
+      "alternateName": "cmi",
+      "unitText": "kg m-2 month-1",
+      "description": "Monthly ratio of precipitation to potential evapotranspiration; indicator of climatic water availability.",
+      "temporalCoverage": "1979-01-15/2021-12-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "tasmin",
-      "description": "Minimum near-surface air temperature (monthly aggregated)"
+      "name": "Near-Surface Relative Humidity",
+      "alternateName": "hurs",
+      "unitText": "percent",
+      "description": "Relative humidity near the surface.",
+      "temporalCoverage": "1979-01-15/2021-12-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "pr",
-      "description": "Precipitation (monthly accumulated/aggregated)"
+      "name": "Monthly Potential Evapotranspiration",
+      "alternateName": "pet",
+      "unitText": "kg m-2 month-1",
+      "description": "Total potential evapotranspiration for the month assuming unlimited water availability, calculated using Penman-Monteith.",
+      "temporalCoverage": "1979-01-15/2021-12-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Precipitation",
+      "alternateName": "pr",
+      "unitText": "kg m-2 month-1",
+      "description": "Precipitation including liquid and solid phases.",
+      "temporalCoverage": "1979-01-15/2021-12-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Surface Downwelling Shortwave Flux in Air",
+      "alternateName": "rsds",
+      "unitText": "W m-2",
+      "description": "Surface solar irradiance for UV calculations.",
+      "temporalCoverage": "1979-01-15/2021-12-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Near-Surface Wind Speed",
+      "alternateName": "sfcWind",
+      "unitText": "m s-1",
+      "description": "Near-surface, usually 10 meter, wind speed.",
+      "temporalCoverage": "1979-01-15/2021-12-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Standardized Precipitation Evapotranspiration Index",
+      "alternateName": "spei12",
+      "unitText": "1",
+      "description": "Standardized climatic water balance index over a 12-month integration period.",
+      "temporalCoverage": "1979-01-15/2021-12-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Standardized Precipitation Index",
+      "alternateName": "spi12",
+      "unitText": "1",
+      "description": "Standardized precipitation anomaly index over a 12-month integration period.",
+      "temporalCoverage": "1979-01-15/2021-12-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Daily Mean Near-Surface Air Temperature",
+      "alternateName": "tas",
+      "unitText": "K",
+      "description": "Near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1979-01-15/2021-12-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Daily Maximum Near-Surface Air Temperature",
+      "alternateName": "tasmax",
+      "unitText": "K",
+      "description": "Maximum near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1979-01-15/2021-12-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Daily Minimum Near-Surface Air Temperature",
+      "alternateName": "tasmin",
+      "unitText": "K",
+      "description": "Minimum near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1979-01-15/2021-12-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vapor Pressure Deficit",
+      "alternateName": "vpd",
+      "unitText": "Pa",
+      "description": "Difference between saturation vapor pressure and actual vapor pressure.",
+      "temporalCoverage": "1979-01-15/2021-12-15",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land surface areas",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180.0,-60.0 180.0,90.0"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     }
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -70,7 +275,7 @@
       "@type": "DataDownload",
       "name": "CHELSA-monthly downloads (COG)",
       "description": "Download portal for CHELSA-monthly.",
-      "contentUrl": "https://envicloud.wsl.ch/",
+      "contentUrl": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fmonthly%2F",
       "encodingFormat": [
         "image/tiff",
         "application=geotiff",
@@ -87,7 +292,92 @@
       ]
     }
   ],
-  "citation": "Karger, D. N.; Conrad, O.; Böhner, J.; Kawohl, T.; Kreft, H.; Soria-Auza, R. W.; Zimmermann, N. E.; Linder, H. P.; Kessler, M. (2017). Climatologies at high resolution for the earth's land surface areas. Scientific Data, 4, 170122. https://doi.org/10.1038/sdata.2017.122",
+  "citation": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Climatologies at high resolution for the earth's land surface areas",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "D. N. Karger"
+        },
+        {
+          "@type": "Person",
+          "name": "O. Conrad"
+        },
+        {
+          "@type": "Person",
+          "name": "J. Böhner"
+        },
+        {
+          "@type": "Person",
+          "name": "T. Kawohl"
+        },
+        {
+          "@type": "Person",
+          "name": "H. Kreft"
+        },
+        {
+          "@type": "Person",
+          "name": "R. W. Soria-Auza"
+        },
+        {
+          "@type": "Person",
+          "name": "N. E. Zimmermann"
+        },
+        {
+          "@type": "Person",
+          "name": "H. P. Linder"
+        },
+        {
+          "@type": "Person",
+          "name": "M. Kessler"
+        }
+      ],
+      "datePublished": "2017",
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Scientific Data"
+      },
+      "volumeNumber": "4",
+      "pagination": "170122",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.1038/sdata.2017.122"
+      },
+      "sameAs": "https://doi.org/10.1038/sdata.2017.122"
+    },
+    {
+      "@type": "Dataset",
+      "name": "CHELSA-monthly climate data at high resolution",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "D. N. Karger"
+        },
+        {
+          "@type": "Person",
+          "name": "P. Brun"
+        },
+        {
+          "@type": "Person",
+          "name": "F. Zilker"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "EnviDat"
+      },
+      "datePublished": "2025",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.16904/envidat.686"
+      },
+      "sameAs": "https://doi.org/10.16904/envidat.686"
+    }
+  ],
   "about": [
     {
       "@type": "Thing",

@@ -56,40 +56,66 @@
     }
   ],
   "isAccessibleForFree": true,
-  "temporalCoverage": "2011-01-01/..",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Energy production regions (primarily northeastern USA; see dataset portals for exact coverage)",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "20,-40 50,10"
-    }
-  },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "Common water quality measurements",
-      "description": "Common field and laboratory measurements such as pH, major ions (Na, K, Mg, Ca, sulfate, chloride, bromide), nutrients (ammonium, nitrate, nitrite, total N), alkalinity/acidity, hardness, TDS, and related parameters."
+      "description": "Common field and laboratory measurements such as pH, major ions (Na, K, Mg, Ca, sulfate, chloride, bromide), nutrients (ammonium, nitrate, nitrite, total N), alkalinity/acidity, hardness, TDS, and related parameters.",
+      "temporalCoverage": "2011-01-01/..",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Energy production regions, primarily the northeastern United States; see dataset portals for exact site coverage"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Trace elements",
-      "description": "Trace element concentrations such as Al, As, Ba, B, Cd, Cr, Co, Cu, Fe, Pb, Li, Mn, Hg, Mo, Ni, Se, Ag, Sr, Th, U, Zn (availability varies by site and dataset)."
+      "description": "Trace element concentrations such as Al, As, Ba, B, Cd, Cr, Co, Cu, Fe, Pb, Li, Mn, Hg, Mo, Ni, Se, Ag, Sr, Th, U, Zn (availability varies by site and dataset).",
+      "temporalCoverage": "2011-01-01/..",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Energy production regions, primarily the northeastern United States; see dataset portals for exact site coverage"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Naturally occurring radioactive material (NORM)",
-      "description": "Radiological measurements such as gross alpha/beta, Ra-226, and Ra-228 (availability varies)."
+      "description": "Radiological measurements such as gross alpha/beta, Ra-226, and Ra-228 (availability varies).",
+      "temporalCoverage": "2011-01-01/..",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Energy production regions, primarily the northeastern United States; see dataset portals for exact site coverage"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Organic constituents",
-      "description": "Organic compounds and indicators such as benzene, toluene, ethylbenzene, xylenes, naphthalene, oil and grease, phenolics, and related constituents (availability varies)."
+      "description": "Organic compounds and indicators such as benzene, toluene, ethylbenzene, xylenes, naphthalene, oil and grease, phenolics, and related constituents (availability varies).",
+      "temporalCoverage": "2011-01-01/..",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Energy production regions, primarily the northeastern United States; see dataset portals for exact site coverage"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Water quantity (where available)",
-      "description": "Water quantity observations associated with monitoring sites where contributed and published through HIS services."
+      "description": "Water quantity observations associated with monitoring sites where contributed and published through HIS services.",
+      "temporalCoverage": "2011-01-01/..",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Energy production regions, primarily the northeastern United States; see dataset portals for exact site coverage"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     }
   ],
   "measurementTechnique": [
@@ -108,28 +134,36 @@
       "name": "DOI landing page",
       "description": "Persistent identifier landing page for the Shale Network database.",
       "contentUrl": "https://doi.org/10.4211/his-data-shalenetwork",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "HIS Central network registration (Shale Network)",
       "description": "HIS Central registry entry for the Shale Network WaterOneFlow service and citation information.",
       "contentUrl": "https://hiscentral.cuahsi.org/pub_network.aspx?n=228",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "HydroClient data portal access",
       "description": "CUAHSI HydroClient portal for discovering and downloading published observations.",
       "contentUrl": "https://data.cuahsi.org/",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Shale Network data access documentation",
       "description": "Project documentation describing ways to access Shale Network data, including HydroClient, HydroShare, and Penn State DataCommons.",
       "contentUrl": "https://shalenetwork.org/database/data-access.html",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     }
   ],
   "citation": [
@@ -137,7 +171,10 @@
       "@type": "CreativeWork",
       "name": "Shale Network Database",
       "author": [
-        { "@type": "Person", "name": "Susan L. Brantley" }
+        {
+          "@type": "Person",
+          "name": "Susan L. Brantley"
+        }
       ],
       "datePublished": "2011",
       "identifier": [
@@ -151,11 +188,29 @@
     }
   ],
   "about": [
-    { "@type": "Thing", "name": "Hydrogeochemistry" },
-    { "@type": "Thing", "name": "Water quality" },
-    { "@type": "Thing", "name": "Oil and gas development" },
-    { "@type": "Thing", "name": "Shale gas" },
-    { "@type": "Thing", "name": "Groundwater" },
-    { "@type": "Thing", "name": "Surface water" }
+    {
+      "@type": "Thing",
+      "name": "Hydrogeochemistry"
+    },
+    {
+      "@type": "Thing",
+      "name": "Water quality"
+    },
+    {
+      "@type": "Thing",
+      "name": "Oil and gas development"
+    },
+    {
+      "@type": "Thing",
+      "name": "Shale gas"
+    },
+    {
+      "@type": "Thing",
+      "name": "Groundwater"
+    },
+    {
+      "@type": "Thing",
+      "name": "Surface water"
+    }
   ]
 }

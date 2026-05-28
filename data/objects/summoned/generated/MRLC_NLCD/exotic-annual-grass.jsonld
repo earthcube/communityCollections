@@ -16,20 +16,6 @@
     "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
     "url": "https://www.mrlc.gov/"
   },
-  "temporalCoverage": "2016-01-01/2025-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Western United States (arid and semi-arid rangelands)",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-130,30 -95,50"
-    }
-  },
-  "spatialResolution": {
-    "@type": "QuantitativeValue",
-    "value": 30,
-    "unitText": "m"
-  },
   "keywords": [
     "Exotic Annual Grass",
     "EAG",
@@ -43,27 +29,117 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "EAG fractional cover (multiple species group)"
+      "name": "EAG fractional cover (multiple species group)",
+      "temporalCoverage": "2016-01-01/2025-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western United States (arid and semi-arid rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,30 -95,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
-      "name": "Cheatgrass (Bromus tectorum) fractional cover"
+      "name": "Cheatgrass (Bromus tectorum) fractional cover",
+      "temporalCoverage": "2016-01-01/2025-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western United States (arid and semi-arid rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,30 -95,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
-      "name": "Other Bromus spp. fractional cover (Field brome + Japanese brome)"
+      "name": "Other Bromus spp. fractional cover (Field brome + Japanese brome)",
+      "temporalCoverage": "2016-01-01/2025-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western United States (arid and semi-arid rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,30 -95,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
-      "name": "Medusahead (Taeniatherum caput-medusae) fractional cover"
+      "name": "Medusahead (Taeniatherum caput-medusae) fractional cover",
+      "temporalCoverage": "2016-01-01/2025-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western United States (arid and semi-arid rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,30 -95,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
-      "name": "Sandberg bluegrass (Poa secunda) fractional cover"
+      "name": "Sandberg bluegrass (Poa secunda) fractional cover",
+      "temporalCoverage": "2016-01-01/2025-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western United States (arid and semi-arid rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,30 -95,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
-      "name": "Confidence maps (per target)"
+      "name": "Confidence maps (per target)",
+      "temporalCoverage": "2016-01-01/2025-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Western United States (arid and semi-arid rangelands)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-130,30 -95,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     }
   ],
   "measurementTechnique": [
@@ -71,7 +147,18 @@
     "Field observations (BLM AIM plots) and machine learning regression modeling"
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "citation": "Dahal, D., Boyte, S., Megard, L., Postma, K., and Pastick, N., 2025, Early Estimates of Exotic Annual Grass (EAG) in the Sagebrush Biome, USA, 2025: U.S. Geological Survey data release, https://doi.org/10.5066/P14VQEGO.",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Dahal, D., Boyte, S., Megard, L., Postma, K., and Pastick, N., 2025, Early Estimates of Exotic Annual Grass (EAG) in the Sagebrush Biome, USA, 2025: U.S. Geological Survey data release, https://doi.org/10.5066/P14VQEGO",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.5066/P14VQEGO"
+      },
+      "sameAs": "https://doi.org/10.5066/P14VQEGO"
+    }
+  ],
   "distribution": [
     {
       "@type": "DataDownload",

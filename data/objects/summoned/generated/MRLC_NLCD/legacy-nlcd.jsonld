@@ -16,19 +16,6 @@
     "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
     "url": "https://www.mrlc.gov/"
   },
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "United States (nationwide coverage; includes Alaska, Hawaii, and other U.S. territories depending on product)",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180,15 -50,72"
-    }
-  },
-  "spatialResolution": {
-    "@type": "QuantitativeValue",
-    "value": 30,
-    "unitText": "m"
-  },
   "keywords": [
     "NLCD",
     "legacy NLCD",
@@ -42,19 +29,79 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "Land cover class (16-class legend)"
+      "name": "Land cover class (16-class legend)",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "United States (nationwide coverage; includes Alaska, Hawaii, and other U.S. territories depending on product)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,15 -50,72"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
-      "name": "Land cover change (varies by product)"
+      "name": "Land cover change (varies by product)",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "United States (nationwide coverage; includes Alaska, Hawaii, and other U.S. territories depending on product)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,15 -50,72"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
-      "name": "Percent impervious surface (selected releases)"
+      "name": "Percent impervious surface (selected releases)",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "United States (nationwide coverage; includes Alaska, Hawaii, and other U.S. territories depending on product)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,15 -50,72"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
-      "name": "Tree canopy cover (selected releases)"
+      "name": "Tree canopy cover (selected releases)",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "United States (nationwide coverage; includes Alaska, Hawaii, and other U.S. territories depending on product)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,15 -50,72"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     }
   ],
   "measurementTechnique": [
@@ -63,7 +110,16 @@
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "citation": [
-    "Dewitz, J., and U.S. Geological Survey, 2021, National Land Cover Database (NLCD) 2019 Products (ver. 2.0, June 2021): U.S. Geological Survey data release, https://doi.org/10.5066/P9KZCM54."
+    {
+      "@type": "CreativeWork",
+      "name": "Dewitz, J., and U.S. Geological Survey, 2021, National Land Cover Database (NLCD) 2019 Products (ver. 2.0, June 2021): U.S. Geological Survey data release, https://doi.org/10.5066/P9KZCM54",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.5066/P9KZCM54"
+      },
+      "sameAs": "https://doi.org/10.5066/P9KZCM54"
+    }
   ],
   "distribution": [
     {

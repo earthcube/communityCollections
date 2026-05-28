@@ -67,16 +67,6 @@
     }
   },
   "datePublished": "2015-09-02",
-  "temporalCoverage": "2015-09-02",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Global",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-180,-90 180,90"
-    }
-  },
-  "spatialResolution": "Best suited for country-scale (or larger) summaries; pixel-level precision is less reliable per creators' guidance.",
   "keywords": [
     "tree density",
     "forest",
@@ -94,12 +84,34 @@
     {
       "@type": "PropertyValue",
       "name": "Tree density (biome-level model)",
-      "description": "Biome-level regression model predictions applied at biome scale."
+      "description": "Biome-level regression model predictions applied at biome scale.",
+      "temporalCoverage": "2015-09-02",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "Best suited for country-scale (or larger) summaries; pixel-level precision is less reliable per creators' guidance."
     },
     {
       "@type": "PropertyValue",
       "name": "Tree density (ecoregion-level model)",
-      "description": "Ecoregion-level regression model predictions applied at ecoregion scale."
+      "description": "Ecoregion-level regression model predictions applied at ecoregion scale.",
+      "temporalCoverage": "2015-09-02",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "Best suited for country-scale (or larger) summaries; pixel-level precision is less reliable per creators' guidance."
     }
   ],
   "measurementTechnique": [
