@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://earthcube.github.io/communityCollections/site/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-06-01</lastmod>
+    </url>
+    <url>
+         <loc>https://earthcube.github.io/communityCollections/site/jsonld-validation-plan/</loc>
+         <lastmod>2026-06-01</lastmod>
     </url>
 </urlset>

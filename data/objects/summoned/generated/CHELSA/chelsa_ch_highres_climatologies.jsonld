@@ -19,11 +19,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "temporalCoverage": "1981-01-01/2010-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Switzerland"
-  },
   "keywords": [
     "CHELSA",
     "Switzerland",
@@ -35,23 +30,59 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "tas",
-      "description": "Near-surface air temperature (aggregated)"
+      "name": "Precipitation",
+      "alternateName": "pr",
+      "unitText": "kg m-2 day-1",
+      "description": "Precipitation including liquid and solid phases.",
+      "temporalCoverage": "1981-01-01/2010-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Switzerland"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "tasmax",
-      "description": "Maximum near-surface air temperature (aggregated)"
+      "name": "Daily Mean Near-Surface Air Temperature",
+      "alternateName": "tas",
+      "unitText": "K",
+      "description": "Near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1981-01-01/2010-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Switzerland"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "tasmin",
-      "description": "Minimum near-surface air temperature (aggregated)"
+      "name": "Daily Maximum Near-Surface Air Temperature",
+      "alternateName": "tasmax",
+      "unitText": "K",
+      "description": "Maximum near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1981-01-01/2010-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Switzerland"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "pr",
-      "description": "Precipitation (aggregated)"
+      "name": "Daily Minimum Near-Surface Air Temperature",
+      "alternateName": "tasmin",
+      "unitText": "K",
+      "description": "Minimum near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1981-01-01/2010-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Switzerland"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     }
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -64,13 +95,94 @@
       "@type": "DataDownload",
       "name": "CHELSAch-highres-climatologies downloads (NetCDF)",
       "description": "Download portal for CHELSAch-highres-climatologies.",
-      "contentUrl": "https://envicloud.wsl.ch/",
+      "contentUrl": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fch%2Fclimatologies%2F",
       "encodingFormat": [
         "application/x-netcdf"
       ]
     }
   ],
-  "citation": "Karger, D. N.; Conrad, O.; Böhner, J.; Kawohl, T.; Kreft, H.; Soria-Auza, R. W.; Zimmermann, N. E.; Linder, H. P.; Kessler, M. (2017). Climatologies at high resolution for the earth's land surface areas. Scientific Data, 4, 170122. https://doi.org/10.1038/sdata.2017.122",
+  "citation": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Climatologies at high resolution for the earth's land surface areas",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "D. N. Karger"
+        },
+        {
+          "@type": "Person",
+          "name": "O. Conrad"
+        },
+        {
+          "@type": "Person",
+          "name": "J. Böhner"
+        },
+        {
+          "@type": "Person",
+          "name": "T. Kawohl"
+        },
+        {
+          "@type": "Person",
+          "name": "H. Kreft"
+        },
+        {
+          "@type": "Person",
+          "name": "R. W. Soria-Auza"
+        },
+        {
+          "@type": "Person",
+          "name": "N. E. Zimmermann"
+        },
+        {
+          "@type": "Person",
+          "name": "H. P. Linder"
+        },
+        {
+          "@type": "Person",
+          "name": "M. Kessler"
+        }
+      ],
+      "datePublished": "2017",
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Scientific Data"
+      },
+      "volumeNumber": "4",
+      "pagination": "170122",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.1038/sdata.2017.122"
+      },
+      "sameAs": "https://doi.org/10.1038/sdata.2017.122"
+    },
+    {
+      "@type": "Dataset",
+      "name": "CHELSAch-highres-climatologies at high resolution",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "F. Zilker"
+        },
+        {
+          "@type": "Person",
+          "name": "D. N. Karger"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "EnviDat"
+      },
+      "datePublished": "2025",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.16904/envidat.689"
+      },
+      "sameAs": "https://doi.org/10.16904/envidat.689"
+    }
+  ],
   "about": [
     {
       "@type": "Thing",

@@ -4,27 +4,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
-        <link rel="canonical" href="https://earthcube.github.io/communityCollections/site/">
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Geocodes Metadata</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="canonical" href="https://earthcube.github.io/communityCollections/site/jsonld-validation-plan/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>JSON-LD Metadata Validation Plan - Geocodes Metadata</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">Geocodes Metadata</a>
+                <a class="navbar-brand" href="..">Geocodes Metadata</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,10 +35,10 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="." class="nav-link active" aria-current="page">Survey</a>
+                                <a href=".." class="nav-link">Survey</a>
                             </li>
                             <li class="nav-item">
-                                <a href="jsonld-validation-plan/" class="nav-link">JSON-LD Metadata Validation Plan</a>
+                                <a href="./" class="nav-link active" aria-current="page">JSON-LD Metadata Validation Plan</a>
                             </li>
                         </ul>
 
@@ -49,12 +49,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href=".." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="jsonld-validation-plan/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -76,9 +76,21 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#survey" class="nav-link">Survey</a>
+            <li class="nav-item" data-bs-level="1"><a href="#json-ld-metadata-validation-plan" class="nav-link">JSON-LD Metadata Validation Plan</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#questions" class="nav-link">Questions</a>
+            <li class="nav-item" data-bs-level="2"><a href="#summary" class="nav-link">Summary</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manual-checks-added" class="nav-link">Manual Checks Added</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#generation-safeguards" class="nav-link">Generation Safeguards</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#validation" class="nav-link">Validation</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -89,17 +101,30 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="survey">Survey</h1>
-<p>The top of an example STAC catalog is at:  https://earth-search.aws.element84.com/v1/</p>
-<p><img alt="overview.png" src="overview.png" /></p>
-<h2 id="questions">Questions</h2>
-<p>1) Spider the JSON-LD  or  focus on sitemap from stac-browser
-1) Or, walk the catalog ourselves and build the sitemap.xml which we then drive Gleaner with
-   2) which would be the URLs exposed by  <a href="https://github.com/radiantearth/stac-browser/">stac-browser</a>, with likely string regex
-1) Im plement a sitemap.xml build in the stac-browser source code
-   2) I played with stac-browser briefly, but I am no npm / vue expert, but explore try a bit more
-3) Leverage <a href="https://pygeoapi.io/">pyGeoAPI</a> to read the catalog and expose JSON-LD
-   4) Likely a bit more hackable than the stac-browser code</p></div>
+<h1 id="json-ld-metadata-validation-plan">JSON-LD Metadata Validation Plan</h1>
+<h2 id="summary">Summary</h2>
+<p>Validate generated JSON-LD against the authoritative dataset webpage, linked download targets, cited papers, and repository or data-release pages. Corrections should be conservative: revise only fields supported by visible source evidence, and leave an inspectable Git diff.</p>
+<h2 id="manual-checks-added">Manual Checks Added</h2>
+<ul>
+<li>Expand source-listed variables into one <code>variableMeasured</code> entry per variable. Use the physical variable label as <code>name</code> and put short codes such as <code>bio01</code>, <code>tas</code>, or <code>lossyear</code> in <code>alternateName</code>.</li>
+<li>Include all citations shown by the source page. When a page has both <code>Model Citation</code> and <code>Data Citation</code>, represent both as separate structured citation objects.</li>
+<li>Use the exact URL behind a source page's Download button or direct data/API endpoint for <code>distribution[].contentUrl</code>; do not use a generic portal root when a more specific target is available.</li>
+<li>Include variables listed in expandable menus, layer lists, and property tables, not only variables visible in the initial page text.</li>
+<li>For each <code>variableMeasured</code>, include <code>temporalCoverage</code>. Use the source-supported variable or dataset temporal range when available; otherwise use <code>Static</code>.</li>
+<li>For each <code>variableMeasured</code>, include <code>spatialCoverage</code>. Use variable-specific spatial coverage when available; otherwise use <code>not detected</code>.</li>
+</ul>
+<h2 id="generation-safeguards">Generation Safeguards</h2>
+<ul>
+<li>The generation prompt requires separate variable rows, structured citation arrays, exact download targets, and variable-level temporal and spatial coverage fields.</li>
+<li><code>generate_jsonld.py</code> extracts source-page download links, citation text, and variable rows and passes them into the generation prompt.</li>
+<li><code>generate_jsonld.py</code> emits review warnings when generated JSON-LD still contains lumped variable names, omits source-listed variables, lacks variable-level temporal or spatial coverage, contains plain-string citations, or distributions omit exact source-page download links.</li>
+</ul>
+<h2 id="validation">Validation</h2>
+<ul>
+<li>Run <code>python3 scripts/validate_jsonld_batch.py data/objects/summoned/generated</code>.</li>
+<li>Run <code>git diff --check</code>.</li>
+<li>Review <code>git diff</code> for metadata-only changes and confirm no unrelated files are modified.</li>
+</ul></div>
             </div>
         </div>
 
@@ -107,13 +132,13 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -178,8 +203,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.6.1
-Build Date UTC : 2026-06-01 19:11:44.662530+00:00
--->

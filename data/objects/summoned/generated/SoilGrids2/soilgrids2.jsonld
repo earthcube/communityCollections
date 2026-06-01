@@ -46,39 +46,258 @@
       "url": "https://www.isric.org/"
     }
   ],
-  "spatialCoverage": {
-    "@type": "Place",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "20,-40 50,10"
-    }
-  },
-  "spatialResolution": "Approximately 250 m",
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "Bulk density",
-      "description": "Predicted soil bulk density maps (global gridded layers)."
+      "name": "Bulk Density",
+      "alternateName": "bdod",
+      "unitText": "cg/cm^3",
+      "description": "Predicted bulk density maps for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global soil property maps",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": "Approximately 250 m"
     },
     {
       "@type": "PropertyValue",
-      "name": "Soil organic carbon content",
-      "description": "Predicted soil organic carbon content maps (global gridded layers)."
+      "name": "Cation Exchange Capacity at pH 7",
+      "alternateName": "cec",
+      "unitText": "mmol(c)/kg",
+      "description": "Predicted cation exchange capacity buffered at pH 7 for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global soil property maps",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": "Approximately 250 m"
     },
     {
       "@type": "PropertyValue",
-      "name": "Soil pH (in H2O)",
-      "description": "Predicted soil pH maps (global gridded layers)."
+      "name": "Coarse Fragments",
+      "alternateName": "cfvo",
+      "unitText": "cm^3/dm^3",
+      "description": "Predicted volumetric fraction of coarse fragments for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global soil property maps",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": "Approximately 250 m"
     },
     {
       "@type": "PropertyValue",
-      "name": "Soil texture fractions",
-      "description": "Predicted sand, silt, and clay fraction maps (global gridded layers)."
+      "name": "Clay",
+      "alternateName": "clay",
+      "unitText": "g/kg",
+      "description": "Predicted clay content for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global soil property maps",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": "Approximately 250 m"
     },
     {
       "@type": "PropertyValue",
-      "name": "Coarse fragments",
-      "description": "Predicted coarse fragment content maps (global gridded layers)."
+      "name": "Nitrogen",
+      "alternateName": "nitrogen",
+      "unitText": "cg/kg",
+      "description": "Predicted total nitrogen for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global soil property maps",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": "Approximately 250 m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Organic Carbon Density",
+      "alternateName": "ocd",
+      "unitText": "hg/m^3",
+      "description": "Predicted organic carbon density for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global soil property maps",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": "Approximately 250 m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Organic Carbon Stocks",
+      "alternateName": "ocs",
+      "unitText": "t/ha",
+      "description": "Predicted organic carbon stocks for SoilGrids soil layers.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global soil property maps",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": "Approximately 250 m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Soil Organic Carbon",
+      "alternateName": "soc",
+      "unitText": "dg/kg",
+      "description": "Predicted soil organic carbon concentration for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global soil property maps",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": "Approximately 250 m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pH Water",
+      "alternateName": "phh2o",
+      "unitText": "pH x 10",
+      "description": "Predicted soil pH in water for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global soil property maps",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": "Approximately 250 m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sand",
+      "alternateName": "sand",
+      "unitText": "g/kg",
+      "description": "Predicted sand content for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global soil property maps",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": "Approximately 250 m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Silt",
+      "alternateName": "silt",
+      "unitText": "g/kg",
+      "description": "Predicted silt content for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global soil property maps",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": "Approximately 250 m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Volumetric Water Content at 10 kPa",
+      "alternateName": "wv0010",
+      "unitText": "10^-3 cm^3 cm^-3",
+      "description": "Predicted volumetric water content at 10 kPa for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global soil property maps",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": "Approximately 250 m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Volumetric Water Content at 1500 kPa",
+      "alternateName": "wv1500",
+      "unitText": "10^-3 cm^3 cm^-3",
+      "description": "Predicted volumetric water content at 1500 kPa for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global soil property maps",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": "Approximately 250 m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Volumetric Water Content at 33 kPa",
+      "alternateName": "wv003",
+      "unitText": "10^-3 cm^3 cm^-3",
+      "description": "Predicted volumetric water content at 33 kPa for standard SoilGrids depth intervals.",
+      "temporalCoverage": "Static",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global soil property maps",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "Static",
+      "spatialResolution": "Approximately 250 m"
     }
   ],
   "encodingFormat": [
@@ -96,45 +315,117 @@
       "name": "ISRIC Data Hub (GeoNetwork) catalog record",
       "description": "GeoNetwork catalog record in the ISRIC Data Hub describing a SoilGrids-related dataset entry.",
       "contentUrl": "https://data.isric.org/geonetwork/srv/api/records/41cb0ae9-1604-4807-96e6-0dc8c94c5d22?language=all",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "ISRIC Data Hub sitemap / discovery endpoint",
       "description": "GeoNetwork API sitemap endpoint used for dataset discovery and indexing.",
       "contentUrl": "https://data.isric.org/geonetwork/srv/api/sitemap",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "ISRIC SoilGrids file distribution (WebDAV root)",
       "description": "ISRIC WebDAV directory listing for SoilGrids distributions (includes latest and former releases).",
       "contentUrl": "https://files.isric.org/soilgrids/",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "SoilGrids latest data directory (WebDAV)",
       "description": "Directory listing for SoilGrids latest data products (organized by variable).",
       "contentUrl": "https://files.isric.org/soilgrids/latest/data/",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "ISRIC SoilGrids overview page",
       "description": "ISRIC overview page describing SoilGrids, licensing, and access methods.",
       "contentUrl": "https://isric.org/explore/soilgrids",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     }
   ],
   "about": [
-    { "@type": "Thing", "name": "Soil" },
-    { "@type": "Thing", "name": "Soil properties" },
-    { "@type": "Thing", "name": "Digital soil mapping" },
-    { "@type": "Thing", "name": "Geospatial raster data" }
+    {
+      "@type": "Thing",
+      "name": "Soil"
+    },
+    {
+      "@type": "Thing",
+      "name": "Soil properties"
+    },
+    {
+      "@type": "Thing",
+      "name": "Digital soil mapping"
+    },
+    {
+      "@type": "Thing",
+      "name": "Geospatial raster data"
+    }
   ],
   "sameAs": [
     "https://isric.org/explore/soilgrids",
     "https://files.isric.org/soilgrids/"
+  ],
+  "citation": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "SoilGrids 2.0: producing soil information for the globe with quantified spatial uncertainty",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "L. Poggio"
+        },
+        {
+          "@type": "Person",
+          "name": "L. M. de Sousa"
+        },
+        {
+          "@type": "Person",
+          "name": "N. H. Batjes"
+        },
+        {
+          "@type": "Person",
+          "name": "G. B. M. Heuvelink"
+        },
+        {
+          "@type": "Person",
+          "name": "B. Kempen"
+        },
+        {
+          "@type": "Person",
+          "name": "E. Ribeiro"
+        },
+        {
+          "@type": "Person",
+          "name": "D. Rossiter"
+        }
+      ],
+      "datePublished": "2021",
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "SOIL"
+      },
+      "volumeNumber": "7",
+      "issueNumber": "1",
+      "pagination": "217-240",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.5194/soil-7-217-2021"
+      },
+      "sameAs": "https://doi.org/10.5194/soil-7-217-2021"
+    }
   ]
 }

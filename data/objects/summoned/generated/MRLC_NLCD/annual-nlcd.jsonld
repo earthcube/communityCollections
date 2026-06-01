@@ -17,20 +17,6 @@
     "url": "https://www.mrlc.gov/"
   },
   "version": "Collection 1.1 (ver. 1.1, June 2025)",
-  "temporalCoverage": "1985-01-01/2024-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Conterminous United States (CONUS)",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "-125,24 -66,50"
-    }
-  },
-  "spatialResolution": {
-    "@type": "QuantitativeValue",
-    "value": 30,
-    "unitText": "m"
-  },
   "keywords": [
     "Annual NLCD",
     "NLCD",
@@ -44,27 +30,117 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "Land Cover"
+      "name": "Land Cover",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Conterminous United States (CONUS)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-125,24 -66,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
-      "name": "Land Cover Change"
+      "name": "Land Cover Change",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Conterminous United States (CONUS)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-125,24 -66,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
-      "name": "Land Cover Confidence"
+      "name": "Land Cover Confidence",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Conterminous United States (CONUS)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-125,24 -66,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
-      "name": "Fractional Impervious Surface"
+      "name": "Fractional Impervious Surface",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Conterminous United States (CONUS)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-125,24 -66,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
-      "name": "Impervious Descriptor"
+      "name": "Impervious Descriptor",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Conterminous United States (CONUS)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-125,24 -66,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     },
     {
       "@type": "PropertyValue",
-      "name": "Spectral Change Day of Year"
+      "name": "Spectral Change Day of Year",
+      "temporalCoverage": "1985-01-01/2024-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Conterminous United States (CONUS)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-125,24 -66,50"
+        }
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "m"
+      }
     }
   ],
   "measurementTechnique": [
@@ -72,7 +148,18 @@
     "Land cover classification and change detection using modern modeling approaches (including deep learning and time-series analysis)"
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "citation": "U.S. Geological Survey (USGS), 2024, Annual NLCD Collection 1 Science Products (ver. 1.1, June 2025): U.S. Geological Survey data release, https://doi.org/10.5066/P94UXNTS.",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "U.S. Geological Survey (USGS), 2024, Annual NLCD Collection 1 Science Products (ver. 1.1, June 2025): U.S. Geological Survey data release, https://doi.org/10.5066/P94UXNTS",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.5066/P94UXNTS"
+      },
+      "sameAs": "https://doi.org/10.5066/P94UXNTS"
+    }
+  ],
   "distribution": [
     {
       "@type": "DataDownload",

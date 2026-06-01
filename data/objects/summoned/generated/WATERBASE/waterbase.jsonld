@@ -51,30 +51,42 @@
   "version": "01.00",
   "isAccessibleForFree": true,
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "temporalCoverage": "1900-01-01/2024-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Europe (reporting countries; see dataset documentation for exact coverage)",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "20,-40 50,10"
-    }
-  },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "Water quality parameters",
-      "description": "Measured and aggregated parameters describing chemical and physico-chemical water quality in inland and coastal/marine waters (including nutrients, organic matter, hazardous substances, pesticides and other chemicals)."
+      "description": "Measured and aggregated parameters describing chemical and physico-chemical water quality in inland and coastal/marine waters (including nutrients, organic matter, hazardous substances, pesticides and other chemicals).",
+      "temporalCoverage": "1900-01-01/2024-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Europe, EEA member countries, and cooperating reporting countries; see dataset documentation for exact country coverage"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Monitoring locations and water bodies",
-      "description": "Spatial identifiers and associated attributes for monitoring sites and water bodies reported through WISE and WFD/WISE spatial reporting."
+      "description": "Spatial identifiers and associated attributes for monitoring sites and water bodies reported through WISE and WFD/WISE spatial reporting.",
+      "temporalCoverage": "1900-01-01/2024-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Europe, EEA member countries, and cooperating reporting countries; see dataset documentation for exact country coverage"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
       "name": "Ecological and chemical status (where applicable)",
-      "description": "Reported status and classification attributes associated with monitored waters and water bodies, as provided in reporting streams."
+      "description": "Reported status and classification attributes associated with monitored waters and water bodies, as provided in reporting streams.",
+      "temporalCoverage": "1900-01-01/2024-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Europe, EEA member countries, and cooperating reporting countries; see dataset documentation for exact country coverage"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     }
   ],
   "measurementTechnique": [
@@ -96,35 +108,70 @@
       "name": "EEA Data Hub item page",
       "description": "Landing page for Waterbase - Water Quality ICM with dataset versions, temporal coverage, and access links.",
       "contentUrl": "https://www.eea.europa.eu/en/datahub/datahubitem-view/fbf3717c-cd7b-4785-933a-d0cf510542e1",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Direct download (EEA SDI DataShare)",
       "description": "Direct download endpoint for the Waterbase - Water Quality ICM 2024 release (bulk download).",
       "contentUrl": "https://sdi.eea.europa.eu/datashare/s/3JiTia3qePyGxyA/download",
-      "encodingFormat": ["application/zip"]
+      "encodingFormat": [
+        "application/zip"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Metadata factsheet (PDF)",
       "description": "Metadata factsheet for Waterbase - Water Quality ICM, 2024 release.",
       "contentUrl": "https://sdi.eea.europa.eu/catalogue/datahub/api/records/77976729-1aeb-4b61-a673-83db6c6a2ab2/formatters/xsl-view?approved=true&language=eng&output=pdf",
-      "encodingFormat": ["application/pdf"]
+      "encodingFormat": [
+        "application/pdf"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "DISCODATA endpoint (direct database access and filtering)",
       "description": "Portal and endpoint for accessing and filtering data directly in the database, supporting application-specific access and user-driven downloads.",
       "contentUrl": "https://discodata.eea.europa.eu/",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     }
   ],
   "about": [
-    { "@type": "Thing", "name": "Hydrogeochemistry" },
-    { "@type": "Thing", "name": "Water quality" },
-    { "@type": "Thing", "name": "Environmental monitoring" },
-    { "@type": "Thing", "name": "Surface water" },
-    { "@type": "Thing", "name": "Groundwater" }
+    {
+      "@type": "Thing",
+      "name": "Hydrogeochemistry"
+    },
+    {
+      "@type": "Thing",
+      "name": "Water quality"
+    },
+    {
+      "@type": "Thing",
+      "name": "Environmental monitoring"
+    },
+    {
+      "@type": "Thing",
+      "name": "Surface water"
+    },
+    {
+      "@type": "Thing",
+      "name": "Groundwater"
+    }
+  ],
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Waterbase - Water Quality ICM",
+      "datePublished": "2025",
+      "publisher": {
+        "@type": "Organization",
+        "name": "European Environment Agency"
+      },
+      "sameAs": "https://www.eea.europa.eu/en/datahub/datahubitem-view/fbf3717c-cd7b-4785-933a-d0cf510542e1"
+    }
   ]
 }

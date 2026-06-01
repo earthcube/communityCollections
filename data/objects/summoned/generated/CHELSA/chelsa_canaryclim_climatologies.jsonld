@@ -19,11 +19,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "temporalCoverage": "1979-01-01/2013-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "name": "Canary Islands"
-  },
   "keywords": [
     "CHELSA",
     "Canary Islands",
@@ -35,13 +30,59 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "tas",
-      "description": "Air temperature climatologies"
+      "name": "Precipitation",
+      "alternateName": "pr",
+      "unitText": "kg m-2 day-1",
+      "description": "Precipitation including liquid and solid phases.",
+      "temporalCoverage": "1979-01-01/2013-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Canary Islands"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     },
     {
       "@type": "PropertyValue",
-      "name": "pr",
-      "description": "Precipitation climatologies"
+      "name": "Daily Mean Near-Surface Air Temperature",
+      "alternateName": "tas",
+      "unitText": "K",
+      "description": "Near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1979-01-01/2013-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Canary Islands"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Daily Maximum Near-Surface Air Temperature",
+      "alternateName": "tasmax",
+      "unitText": "K",
+      "description": "Maximum near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1979-01-01/2013-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Canary Islands"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Daily Minimum Near-Surface Air Temperature",
+      "alternateName": "tasmin",
+      "unitText": "K",
+      "description": "Minimum near-surface, usually 2 meter, air temperature.",
+      "temporalCoverage": "1979-01-01/2013-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Canary Islands"
+      },
+      "temporalResolution": "not detected",
+      "spatialResolution": "not detected"
     }
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -56,7 +97,7 @@
       "@type": "DataDownload",
       "name": "CHELSACanaryClim-climatologies downloads (COG)",
       "description": "Download portal for CanaryClim climatologies.",
-      "contentUrl": "https://envicloud.wsl.ch/",
+      "contentUrl": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_canaryclim%2Fcanaries%2Fclimatologies%2F",
       "encodingFormat": [
         "image/tiff",
         "application=geotiff",
@@ -64,7 +105,101 @@
       ]
     }
   ],
-  "citation": "Patiño, J., Collart, F., Vanderpoorten, A., Martin-Esquivel, J. L., Naranjo-Cigala, A., Mirolo, S., Karger, D. N. (2023). Spatial resolution impacts projected plant responses to climate change on topographically complex islands. Diversity and Distributions, 29(10), 1245–1262.",
+  "citation": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Spatial resolution impacts projected plant responses to climate change on topographically complex islands",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "J. Patiño"
+        },
+        {
+          "@type": "Person",
+          "name": "F. Collart"
+        },
+        {
+          "@type": "Person",
+          "name": "A. Vanderpoorten"
+        },
+        {
+          "@type": "Person",
+          "name": "J. L. Martin-Esquivel"
+        },
+        {
+          "@type": "Person",
+          "name": "A. Naranjo-Cigala"
+        },
+        {
+          "@type": "Person",
+          "name": "S. Mirolo"
+        },
+        {
+          "@type": "Person",
+          "name": "D. N. Karger"
+        }
+      ],
+      "datePublished": "2023",
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Diversity and Distributions"
+      },
+      "volumeNumber": "29",
+      "issueNumber": "10",
+      "pagination": "1245-1262",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.1111/ddi.13757"
+      },
+      "sameAs": "https://doi.org/10.1111/ddi.13757"
+    },
+    {
+      "@type": "Dataset",
+      "name": "CHELSACanaryClim-climatologies",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "D. N. Karger"
+        },
+        {
+          "@type": "Person",
+          "name": "F. Collart"
+        },
+        {
+          "@type": "Person",
+          "name": "A. Vanderpoorten"
+        },
+        {
+          "@type": "Person",
+          "name": "J. L. Martin-Esquivel"
+        },
+        {
+          "@type": "Person",
+          "name": "A. Naranjo-Cigala"
+        },
+        {
+          "@type": "Person",
+          "name": "S. Mirolo"
+        },
+        {
+          "@type": "Person",
+          "name": "J. Patiño"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "EnviDat"
+      },
+      "datePublished": "2025",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.16904/envidat.692"
+      },
+      "sameAs": "https://doi.org/10.16904/envidat.692"
+    }
+  ],
   "about": [
     {
       "@type": "Thing",

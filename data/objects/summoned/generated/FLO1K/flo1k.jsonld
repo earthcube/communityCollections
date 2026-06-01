@@ -25,12 +25,30 @@
     "Figshare"
   ],
   "creator": [
-    { "@type": "Person", "name": "Valerio Barbarossa" },
-    { "@type": "Person", "name": "Mark A. J. Huijbregts" },
-    { "@type": "Person", "name": "Arthur H. W. Beusen" },
-    { "@type": "Person", "name": "Hylke E. Beck" },
-    { "@type": "Person", "name": "Henry King" },
-    { "@type": "Person", "name": "Aafke M. Schipper" }
+    {
+      "@type": "Person",
+      "name": "Valerio Barbarossa"
+    },
+    {
+      "@type": "Person",
+      "name": "Mark A. J. Huijbregts"
+    },
+    {
+      "@type": "Person",
+      "name": "Arthur H. W. Beusen"
+    },
+    {
+      "@type": "Person",
+      "name": "Hylke E. Beck"
+    },
+    {
+      "@type": "Person",
+      "name": "Henry King"
+    },
+    {
+      "@type": "Person",
+      "name": "Aafke M. Schipper"
+    }
   ],
   "provider": [
     {
@@ -47,31 +65,54 @@
     }
   ],
   "isAccessibleForFree": true,
-  "temporalCoverage": "1960-01-01/2015-12-31",
-  "spatialCoverage": {
-    "@type": "Place",
-    "geo": {
-      "@type": "GeoShape",
-      "box": "20,-40 50,10"
-    }
-  },
-  "spatialResolution": "30 arc-second (~1 km)",
-  "temporalResolution": "P1Y",
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "Mean annual streamflow",
-      "description": "Mean annual flow for each year (gridded, global, ~1 km)."
+      "description": "Mean annual flow for each year (gridded, global, ~1 km).",
+      "temporalCoverage": "1960-01-01/2015-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land areas excluding Antarctica",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1Y",
+      "spatialResolution": "30 arc-second (~1 km)"
     },
     {
       "@type": "PropertyValue",
       "name": "Maximum annual streamflow (maximum monthly flow per year)",
-      "description": "Maximum monthly flow within each year (gridded, global, ~1 km)."
+      "description": "Maximum monthly flow within each year (gridded, global, ~1 km).",
+      "temporalCoverage": "1960-01-01/2015-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land areas excluding Antarctica",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1Y",
+      "spatialResolution": "30 arc-second (~1 km)"
     },
     {
       "@type": "PropertyValue",
       "name": "Minimum annual streamflow (minimum monthly flow per year)",
-      "description": "Minimum monthly flow within each year (gridded, global, ~1 km)."
+      "description": "Minimum monthly flow within each year (gridded, global, ~1 km).",
+      "temporalCoverage": "1960-01-01/2015-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Global land areas excluding Antarctica",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-180,-90 180,90"
+        }
+      },
+      "temporalResolution": "P1Y",
+      "spatialResolution": "30 arc-second (~1 km)"
     }
   ],
   "encodingFormat": [
@@ -86,14 +127,18 @@
       "name": "Figshare collection landing page",
       "description": "Dataset collection landing page and downloads hosted on Figshare.",
       "contentUrl": "https://figshare.com/collections/FLO1K_global_maps_of_mean_maximum_and_minimum_annual_streamflow_at_1_km_resolution_from_1960_through_2015/3890224",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     },
     {
       "@type": "DataDownload",
       "name": "Persistent identifier (Figshare collection DOI landing page)",
       "description": "Persistent DOI for the FLO1K Figshare collection.",
       "contentUrl": "https://doi.org/10.6084/m9.figshare.c.3890224.v1",
-      "encodingFormat": ["text/html"]
+      "encodingFormat": [
+        "text/html"
+      ]
     }
   ],
   "citation": [
@@ -101,12 +146,30 @@
       "@type": "ScholarlyArticle",
       "name": "FLO1K, global maps of mean, maximum and minimum annual streamflow at 1 km resolution from 1960 through 2015",
       "author": [
-        { "@type": "Person", "name": "Valerio Barbarossa" },
-        { "@type": "Person", "name": "Mark A. J. Huijbregts" },
-        { "@type": "Person", "name": "Arthur H. W. Beusen" },
-        { "@type": "Person", "name": "Hylke E. Beck" },
-        { "@type": "Person", "name": "Henry King" },
-        { "@type": "Person", "name": "Aafke M. Schipper" }
+        {
+          "@type": "Person",
+          "name": "Valerio Barbarossa"
+        },
+        {
+          "@type": "Person",
+          "name": "Mark A. J. Huijbregts"
+        },
+        {
+          "@type": "Person",
+          "name": "Arthur H. W. Beusen"
+        },
+        {
+          "@type": "Person",
+          "name": "Hylke E. Beck"
+        },
+        {
+          "@type": "Person",
+          "name": "Henry King"
+        },
+        {
+          "@type": "Person",
+          "name": "Aafke M. Schipper"
+        }
       ],
       "isPartOf": {
         "@type": "Periodical",
@@ -124,11 +187,26 @@
     }
   ],
   "about": [
-    { "@type": "Thing", "name": "Hydrology" },
-    { "@type": "Thing", "name": "Streamflow" },
-    { "@type": "Thing", "name": "Runoff" },
-    { "@type": "Thing", "name": "River discharge" },
-    { "@type": "Thing", "name": "Freshwater resources" }
+    {
+      "@type": "Thing",
+      "name": "Hydrology"
+    },
+    {
+      "@type": "Thing",
+      "name": "Streamflow"
+    },
+    {
+      "@type": "Thing",
+      "name": "Runoff"
+    },
+    {
+      "@type": "Thing",
+      "name": "River discharge"
+    },
+    {
+      "@type": "Thing",
+      "name": "Freshwater resources"
+    }
   ],
   "sameAs": [
     "https://doi.org/10.6084/m9.figshare.c.3890224.v1"
