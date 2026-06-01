@@ -116,7 +116,7 @@ python scripts/generate_jsonld.py --ai-service gemini --csv datasets.csv
 
 ### Options
 - `--csv`: Path to CSV file (default: `datasets.csv`)
-- `--output-dir`: Output directory for JSON-LD files (default: `data/objects/summoned/generated`)
+- `--output-dir`: Output directory for JSON-LD files (default: `data/objects/summoned/earthface`)
 - `--ai-service`: Choose `gemini` (default), `nrp`, `openai`, or `anthropic` (optional - defaults to `gemini`)
 - `--api-key`: API key (or use environment variable)
 - `--model`: Model name (optional, uses defaults)

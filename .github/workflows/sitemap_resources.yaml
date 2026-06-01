@@ -42,7 +42,27 @@ jobs:
         echo "url-count = ${{ steps.sitemap_all.outputs.url-count }}"
         echo "excluded-count = ${{ steps.sitemap_all.outputs.excluded-count }}"
 
-    - name: Generate sitemap for just AI Generated JSON-LD resources
+    - name: Check optional JSON-LD subfolders
+      id: folders
+      run: |
+        echo "earthface=$([ -d data/objects/summoned/earthface ] && echo true || echo false)" >> $GITHUB_OUTPUT
+        echo "generated=$([ -d data/objects/summoned/generated ] && echo true || echo false)" >> $GITHUB_OUTPUT
+
+    - name: Generate sitemap for earthface JSON-LD resources
+      if: steps.folders.outputs.earthface == 'true'
+      id: sitemap_earthface
+      uses: cicirello/generate-sitemap@v1
+      with:
+        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/${{ github.ref_name }}/data/objects/summoned/earthface
+        path-to-root: data/objects/summoned/earthface
+        include-html: false
+        include-pdf: false
+        additional-extensions: jsonld json xml
+        exclude-paths:
+          .git .github docs scripts crawler prompts .vscode
+
+    - name: Generate sitemap for generated JSON-LD resources
+      if: steps.folders.outputs.generated == 'true'
       id: sitemap_generated
       uses: cicirello/generate-sitemap@v1
       with:
@@ -58,8 +78,9 @@ jobs:
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        ls -la data/objects/summoned/sitemap.xml data/objects/summoned/generated/sitemap.xml 2>/dev/null || true
-        git add data/objects/summoned/sitemap.xml data/objects/summoned/generated/sitemap.xml
+        git add data/objects/summoned/sitemap.xml
+        [ -f data/objects/summoned/earthface/sitemap.xml ] && git add data/objects/summoned/earthface/sitemap.xml
+        [ -f data/objects/summoned/generated/sitemap.xml ] && git add data/objects/summoned/generated/sitemap.xml
         git status
         if ! git diff --staged --quiet; then
           git commit -m "chore: update JSON-LD sitemaps"
