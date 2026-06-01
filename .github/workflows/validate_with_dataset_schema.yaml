@@ -7,9 +7,9 @@ on:
     branches-ignore: [ 'gh-pages' ]
 
 jobs:
-  validate-jsonld-generated:
+  validate-jsonld-folders:
     runs-on: ubuntu-latest
-    name: Validate generated JSON-LD files
+    name: Validate earthface and generated JSON-LD files
     steps:
     - name: Checkout the repo
       uses: actions/checkout@v4
@@ -21,9 +21,16 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: Find and validate generated JSON-LD files
+    - name: Validate JSON-LD in earthface and generated folders
       run: |
-        python scripts/validate_jsonld_batch.py data/objects/summoned/generated
+        for dir in data/objects/summoned/earthface data/objects/summoned/generated; do
+          if [ -d "$dir" ]; then
+            echo "Validating $dir..."
+            python scripts/validate_jsonld_batch.py "$dir"
+          else
+            echo "Skipping (folder not present): $dir"
+          fi
+        done
 
   validate-jsonld-summoned:
     runs-on: ubuntu-latest
@@ -47,7 +54,7 @@ jobs:
         dir_ = Path("data/objects/summoned")
         if not dir_.exists():
             print("Directory not found, skipping."); sys.exit(0)
-        files = [f for f in dir_.rglob("*.jsonld") if "generated" not in str(f)]
+        files = [f for f in dir_.rglob("*.jsonld") if "earthface" not in str(f) and "generated" not in str(f)]
         if not files:
             print("No JSON-LD files found."); sys.exit(0)
         errs = []

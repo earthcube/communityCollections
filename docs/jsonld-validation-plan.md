@@ -21,6 +21,6 @@ Validate generated JSON-LD against the authoritative dataset webpage, linked dow
 
 ## Validation
 
-- Run `python3 scripts/validate_jsonld_batch.py data/objects/summoned/generated`.
+- Run `python3 scripts/validate_jsonld_batch.py data/objects/summoned/earthface` (and/or `.../generated` when that folder exists).
 - Run `git diff --check`.
 - Review `git diff` for metadata-only changes and confirm no unrelated files are modified.

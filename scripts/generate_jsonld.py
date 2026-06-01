@@ -994,7 +994,7 @@ def save_jsonld(jsonld_str: str, output_dir: Path, dataset_name: str, url: str) 
 def main():
     parser = argparse.ArgumentParser(description='Generate JSON-LD for datasets')
     parser.add_argument('--csv', default='datasets.csv', help='Path to CSV file or URL (e.g. Google Sheets export)')
-    parser.add_argument('--output-dir', default='data/objects/summoned/generated', help='Output directory for JSON-LD files')
+    parser.add_argument('--output-dir', default='data/objects/summoned/earthface', help='Output directory for JSON-LD files')
     parser.add_argument('--ai-service', choices=['openai', 'anthropic', 'nrp', 'gemini'], default='gemini', help='AI service to use (default: gemini)')
     parser.add_argument('--api-key', help='API key (or set environment variable)')
     parser.add_argument('--model', help='Model name (optional)')
