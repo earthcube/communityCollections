@@ -1,0 +1,91 @@
+name: Generate XML sitemap for JSON-LD resources
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  sitemap_job:
+    runs-on: ubuntu-latest
+    name: Generate sitemap for JSON-LD files
+    steps:
+    - uses: actions/setup-python@v2
+      with:
+         python-version: 3.x
+    - run: pip install mkdocs
+    - run: pip install mkdocs-schema-reader
+    - name: Checkout the repo
+      uses: actions/checkout@v6
+      with:
+        fetch-depth: 0
+
+    # Generate single sitemap for all JSON-LD files in data and collection directories
+    - name: Generate sitemap for all JSON-LD resources
+      id: sitemap_all
+      uses: cicirello/generate-sitemap@v1
+      with:
+        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/${{ github.ref_name }}/data/objects/summoned
+        #              https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/gh-pages
+        path-to-root: data/objects/summoned
+        include-html: false
+        include-pdf: false
+        additional-extensions: jsonld json xml
+        exclude-paths: .git .github docs scripts crawler prompts .vscode
+    - name: Output sitemap stats
+      run: |
+        echo "sitemap-path = ${{ steps.sitemap_all.outputs.sitemap-path }}"
+        echo "url-count = ${{ steps.sitemap_all.outputs.url-count }}"
+        echo "excluded-count = ${{ steps.sitemap_all.outputs.excluded-count }}"
+
+    - name: Generate sitemap for just AI Generated JSON-LD resources
+      id: sitemap_generated
+      uses: cicirello/generate-sitemap@v1
+      with:
+        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/${{ github.ref_name }}/data/objects/summoned/generated
+        path-to-root: data/objects/summoned/generated
+        include-html: false
+        include-pdf: false
+        additional-extensions: jsonld json xml
+        exclude-paths:
+          .git .github docs scripts crawler prompts .vscode
+
+    - name: Commit and push sitemaps to branch
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        ls -la data/objects/summoned/sitemap.xml data/objects/summoned/generated/sitemap.xml 2>/dev/null || true
+        git add data/objects/summoned/sitemap.xml data/objects/summoned/generated/sitemap.xml
+        git status
+        if ! git diff --staged --quiet; then
+          git commit -m "chore: update JSON-LD sitemaps"
+          git fetch origin ${{ github.ref_name }}
+          git rebase origin/${{ github.ref_name }}
+          git push origin HEAD:${{ github.ref_name }}
+        fi
+
+### WE MIGHT WANT TO DO INDIVIDUAL SITEMAPS
+#    - name: Generate sitemap for all JSON-LD resources
+#      id: sitemap_glim
+#      uses: cicirello/generate-sitemap@v1
+#      with:
+#        base-url-path: https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/${{ github.ref_name }}/data/objects/summoned/glim
+#        path-to-root: data/objects/summoned/glim
+#        include-html: false
+#        include-pdf: false
+#        additional-extensions: jsonld json xml
+#        exclude-paths:
+#          .git .github docs scripts crawler prompts .vscode
+
+####### MKDOCS
+    - run: mkdocs build --config-file mkdocs.yaml
+    - name: push to gh pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages
+        folder: .
+        clean: false

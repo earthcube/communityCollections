@@ -1,0 +1,148 @@
+name: Validate JSON-LD files with Schema.org Dataset schema
+
+on:
+  push:
+    branches-ignore: [ 'gh-pages' ]
+  pull_request:
+    branches-ignore: [ 'gh-pages' ]
+
+jobs:
+  validate-jsonld-generated:
+    runs-on: ubuntu-latest
+    name: Validate generated JSON-LD files
+    steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Find and validate generated JSON-LD files
+      run: |
+        python scripts/validate_jsonld_batch.py data/objects/summoned/generated
+
+  validate-jsonld-summoned:
+    runs-on: ubuntu-latest
+    name: Validate summoned JSON-LD files
+    steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Find and validate summoned JSON-LD files
+      run: |
+        python - << 'RELAXED_VALIDATE'
+        import json, sys
+        from pathlib import Path
+        dir_ = Path("data/objects/summoned")
+        if not dir_.exists():
+            print("Directory not found, skipping."); sys.exit(0)
+        files = [f for f in dir_.rglob("*.jsonld") if "generated" not in str(f)]
+        if not files:
+            print("No JSON-LD files found."); sys.exit(0)
+        errs = []
+        for f in sorted(files):
+            try:
+                with open(f) as fp: data = json.load(fp)
+            except Exception as e:
+                errs.append(f"{f}: {e}"); continue
+            for k in ["@context", "@type", "name"]:
+                if k not in data: errs.append(f"{f}: missing {k}")
+            if "spatialCoverage" in data and isinstance(data["spatialCoverage"], dict):
+                geo = data["spatialCoverage"].get("geo", {})
+                if isinstance(geo, dict) and "box" in geo and isinstance(geo["box"], str):
+                    parts = geo["box"].strip().split()
+                    if len(parts) == 4:
+                        try:
+                            a,b,c,d = float(parts[0]),float(parts[1]),float(parts[2]),float(parts[3])
+                            if (-90<=b<=90 and -90<=d<=90): west,south,east,north = a,b,c,d
+                            else: south,west,north,east = a,b,c,d
+                            if not (-90<=south<=90 and -90<=north<=90 and -180<=west<=180 and -180<=east<=180):
+                                errs.append(f"{f}: box out of range")
+                        except ValueError: errs.append(f"{f}: invalid box numbers")
+                    elif len(parts) == 2:
+                        try:
+                            ws, en = parts[0].split(","), parts[1].split(",")
+                            if len(ws)==2 and len(en)==2:
+                                west,south = float(ws[0]),float(ws[1])
+                                east,north = float(en[0]),float(en[1])
+                                if not (-90<=south<=90 and -90<=north<=90 and -180<=west<=180 and -180<=east<=180):
+                                    errs.append(f"{f}: box out of range")
+                        except ValueError: errs.append(f"{f}: invalid box format")
+                    else: errs.append(f"{f}: box expected 2 or 4 numbers")
+        if errs:
+            for e in errs: print(e)
+            sys.exit(1)
+        print(f"All {len(files)} summoned JSON-LD file(s) validated.")
+        RELAXED_VALIDATE
+
+  validate-jsonld-all:
+    runs-on: ubuntu-latest
+    name: Validate all JSON-LD files
+    steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Find and validate all JSON-LD files
+      run: |
+        python - << 'RELAXED_VALIDATE_ALL'
+        import json, sys
+        from pathlib import Path
+        dir_ = Path("data")
+        if not dir_.exists():
+            print("Directory not found, skipping."); sys.exit(0)
+        files = list(dir_.rglob("*.jsonld"))
+        if not files:
+            print("No JSON-LD files found."); sys.exit(0)
+        errs = []
+        for f in sorted(files):
+            try:
+                with open(f) as fp: data = json.load(fp)
+            except Exception as e:
+                errs.append(f"{f}: {e}"); continue
+            for k in ["@context", "@type", "name"]:
+                if k not in data: errs.append(f"{f}: missing {k}")
+            if "spatialCoverage" in data and isinstance(data["spatialCoverage"], dict):
+                geo = data["spatialCoverage"].get("geo", {})
+                if isinstance(geo, dict) and "box" in geo and isinstance(geo["box"], str):
+                    parts = geo["box"].strip().split()
+                    if len(parts) == 4:
+                        try:
+                            a,b,c,d = float(parts[0]),float(parts[1]),float(parts[2]),float(parts[3])
+                            if (-90<=b<=90 and -90<=d<=90): west,south,east,north = a,b,c,d
+                            else: south,west,north,east = a,b,c,d
+                            if not (-90<=south<=90 and -90<=north<=90 and -180<=west<=180 and -180<=east<=180):
+                                errs.append(f"{f}: box out of range")
+                        except ValueError: errs.append(f"{f}: invalid box numbers")
+                    elif len(parts) == 2:
+                        try:
+                            ws, en = parts[0].split(","), parts[1].split(",")
+                            if len(ws)==2 and len(en)==2:
+                                west,south = float(ws[0]),float(ws[1])
+                                east,north = float(en[0]),float(en[1])
+                                if not (-90<=south<=90 and -90<=north<=90 and -180<=west<=180 and -180<=east<=180):
+                                    errs.append(f"{f}: box out of range")
+                        except ValueError: errs.append(f"{f}: invalid box format")
+                    else: errs.append(f"{f}: box expected 2 or 4 numbers")
+        if errs:
+            for e in errs: print(e)
+            sys.exit(1)
+        print(f"All {len(files)} JSON-LD file(s) validated.")
+        RELAXED_VALIDATE_ALL

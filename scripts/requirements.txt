@@ -1,0 +1,20 @@
+# Requirements for JSON-LD generation script
+# Install with: pip install -r requirements.txt
+
+# AI API clients (install at least one)
+openai>=1.0.0
+anthropic>=0.18.0
+google-genai>=0.2.0  # New package with URL Context Tool support
+google-generativeai>=0.3.0  # Deprecated, but kept for backward compatibility
+
+# Web scraping and parsing
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Optional: for better HTML parsing
+lxml>=4.9.0
+
+

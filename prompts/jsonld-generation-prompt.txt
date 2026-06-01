@@ -1,0 +1,78 @@
+You are generating a JSON-LD (JSON for Linking Data) description for a scientific dataset following Schema.org vocabulary.
+
+**Task**: Create a valid JSON-LD document for the following dataset.
+
+**Dataset Information** (fill from spreadsheet; no fixed URLs):
+- Name: {DATASET_NAME}
+- URL: {URL}
+- Description: {DESCRIPTION}
+- Group/Category: {GROUP}
+- Creator: {CREATOR}
+- Provider: {PROVIDER}
+- Publisher: {PUBLISHER}
+- Keywords: {KEYWORDS}
+- Spatial Coverage: {SPATIAL_COVERAGE} (box format: "west,south east,north", e.g. "20,-40 50,10")
+
+**Type-specific guidance** (choose the branch that matches the spreadsheet "Type" and subtype):
+
+• **Webpage + ld+json(figshare)** (Figshare article or collection):
+  Extracted Metadata: Hosted on Figshare. Infer creator, citation, temporal coverage, and variables from the Figshare page and any linked paper (e.g. DOI or journal article). Include distribution with the Figshare article or collection URL and DOI if available. Creator/publisher: infer from Figshare page (authors and Figshare as publisher). Use @id as dataset URL or DOI (e.g. Figshare article URL with #dataset or DOI). Figshare often uses CC-BY.
+
+• **Webpage + Listing** (download or listing page, not Figshare):
+  Extracted Metadata: Infer creator, publisher, temporal coverage, variables, and distribution from the download or listing page and any linked documentation. Include distribution with the main page URL and any data access or download URLs. Use @id as the dataset or download page URL with #dataset.
+
+• **Webpage + Catalog** (site that lists multiple datasets):
+  Extracted Metadata: The site is a catalog of datasets. You may describe the catalog as a single Dataset or as a DataCatalog; if describing one representative or aggregate dataset, infer creator, publisher, temporal coverage, variables, and distribution from the catalog page. Include distribution to the catalog URL and, if applicable, links to key datasets or download areas.
+
+• **Webpage + Dataset** (single dataset on a webpage):
+  Extracted Metadata: Infer creator, publisher, temporal coverage, variables, and distribution from the dataset page. Include distribution with the page URL and any direct download or data access links.
+
+• **Webpage + earthengine** (Google Earth Engine or similar):
+  Extracted Metadata: Infer creator, publisher, temporal coverage, and variables from the page. Include distribution with the landing page URL and any Earth Engine asset or download information.
+
+• **Webpage** (no subtype; generic webpage or DOI landing):
+  Extracted Metadata: Infer creator, publisher, temporal coverage, variables, and distribution from the webpage or DOI resolver (e.g. CUAHSI HIS, HydroShare, Zenodo). Include distribution with the landing page URL and any data access or download links.
+
+• **Sitemap** (sitemap or catalog API URL):
+  Extracted Metadata: Data are discoverable via a sitemap or catalog (e.g. GeoNetwork). If a record or catalog URL is available, include it. Infer creator (e.g. from the organization), publisher, temporal coverage, variables, and distribution (catalog URL and/or file server or API). Include distribution with the sitemap/catalog URL and, if known, the main data download or record URL.
+
+• **WebAPI** (data portal or API):
+  Extracted Metadata: The resource is a data portal or API. Describe as a Dataset (or DataCatalog if it aggregates many datasets). Include distribution with the portal URL and API endpoints if known; encodingFormat may include application/json, text/csv, application/xml. temporalCoverage may be "ongoing" or a range as appropriate for a live service.
+
+• **WebPage:Dataset or Dataset** (data hub item or standalone dataset):
+  Extracted Metadata: Hosted on a data hub or as a standalone dataset (e.g. EEA Data Hub, PANGAEA, Zenodo). Infer creator, publisher, temporal coverage, variables, and distribution from the hub item or landing page. Include distribution with the hub/dataset URL and any direct download or API links.
+
+**Additional extracted or inferred metadata** (optional; from page content or prior knowledge):
+{EXTRACTED_METADATA}
+
+**Source-page fidelity requirements**:
+- If the source page has a variable table, expandable variable menu, layer list, or property list, create one `variableMeasured` entry per source-listed variable. Do not lump ranges or groups such as "BIO1-BIO19", "tas/tasmax/tasmin", "bands 1-7", or "all layers" into one entry when the page lists individual variables.
+- Use the physically meaningful variable name from the source page as `variableMeasured[].name`. Put short codes such as `bio01`, `tas`, `pr`, `lossyear`, or `treecover2000` in `alternateName`.
+- For each `variableMeasured` entry, include `temporalCoverage`. If the variable is static or no variable-specific temporal range can be detected, set it to "Static"; otherwise use the source-supported variable or dataset temporal range.
+- For each `variableMeasured` entry, include `spatialCoverage`. If no variable-specific spatial coverage or spatial range can be detected, set it to "not detected".
+- If the source page has both "Model Citation" and "Data Citation", include both as separate entries in `citation`. Do not drop either one.
+- Always represent `citation` as an array of structured `CreativeWork`, `ScholarlyArticle`, or `Dataset` objects; do not use a plain citation string.
+- For `distribution[].contentUrl`, use the exact URL linked from the source page's Download button or direct data/API endpoint when available. Do not use a generic portal root if a more specific download link, bucket prefix, DOI landing page, API endpoint, or file list is available.
+- If a source page lists several download links for the same dataset, include each materially different download target as a separate `distribution` entry with a clear `name`.
+
+**Reference Example** (structure only; no fixed URLs):
+{EXAMPLE_JSONLD}
+
+**Requirements** (apply to all types):
+1. Use Schema.org vocabulary (https://schema.org/)
+2. Set @context to {{"@vocab": "https://schema.org/"}}
+3. Set @type to "Dataset" (or "DataCatalog" only when describing a catalog of datasets as a whole)
+4. Include @id with the dataset URL or a stable identifier (e.g. landing page URL with #dataset or DOI)
+5. Include all available metadata fields
+6. Include distribution with contentUrl(s); for each distribution use "encodingFormat" as a JSON array of strings (e.g. ["text/html"], ["application/json", "text/csv"])
+7. temporalCoverage: use "YYYY-MM-DD/YYYY-MM-DD" or "ongoing" / ".." as appropriate
+8. spatialCoverage: Use Place with geo containing GeoShape. The box format MUST be: "west,south east,north" (e.g. "20,-40 50,10")
+9. Include license and access information when known
+10. Use proper JSON-LD structure (arrays for multiple values, nested objects where appropriate)
+11. Set "keywords" as a JSON array of strings — never a single semicolon- or comma-separated string
+12. Set "encodingFormat" (at dataset level and in each distribution) as a JSON array of strings — never a single semicolon- or comma-separated string
+13. Set "citation" as a JSON array of structured objects — never as a single string
+14. Each `variableMeasured` object must include `temporalCoverage` and `spatialCoverage`
+15. Add exactly: "comment": "This dataset metadata was generated by AI."
+
+**Output**: Provide ONLY valid JSON-LD, no additional text or explanation.

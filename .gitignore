@@ -1,1 +1,21 @@
 .idea
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+
+# CSV data files (downloaded from Google Sheets)
+datasets.csv
+
+# Generated JSON-LD files
+#data/objects/summoned/generated/
