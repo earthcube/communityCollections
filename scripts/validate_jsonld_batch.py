@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Validate JSON-LD files under a directory (e.g. data/objects/summoned/generated).
+Validate JSON-LD files under a directory (e.g. data/objects/summoned/earthface).
 Checks: valid JSON, @context, @type, name; spatialCoverage box format; distribution encodingFormat as array.
 WebPage and DataCatalog are accepted with a warning (expected Dataset for dataset files).
 Exits 0 if all pass, 1 if any file fails.

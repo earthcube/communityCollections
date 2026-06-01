@@ -18,4 +18,5 @@ build/
 datasets.csv
 
 # Generated JSON-LD files
+#data/objects/summoned/earthface/
 #data/objects/summoned/generated/
