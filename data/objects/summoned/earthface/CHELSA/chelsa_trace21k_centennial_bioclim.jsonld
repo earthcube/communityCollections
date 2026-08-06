@@ -33,308 +33,330 @@
       "name": "Mean Annual Near-Surface Air Temperature",
       "alternateName": "bio01",
       "unitText": "K",
-      "description": "Mean annual temperature calculated as the average of mean monthly temperatures over the year",
+      "description": "Mean annual temperature calculated as the average of mean monthly temperatures over the year. EnviCloud directory: chelsa_trace21k/global/bioclim/bio01/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio01%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Mean Diurnal Near-Surface Air Temperature Range",
       "alternateName": "bio02",
       "unitText": "K",
-      "description": "Mean diurnal temperature range computed as the average of monthly daily maximum minus daily minimum near-surface air temperature",
+      "description": "Mean diurnal temperature range computed as the average of monthly daily maximum minus daily minimum near-surface air temperature. EnviCloud directory: chelsa_trace21k/global/bioclim/bio02/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio02%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Isothermality",
       "alternateName": "bio03",
       "unitText": "K",
-      "description": "Isothermality: 100 × bio02 ÷ bio07; compares day-night variability to annual temperature range",
+      "description": "Isothermality: 100 × bio02 ÷ bio07; compares day-night variability to annual temperature range. EnviCloud directory: chelsa_trace21k/global/bioclim/bio03/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio03%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Temperature Seasonality",
       "alternateName": "bio04",
       "unitText": "K",
-      "description": "Temperature seasonality given by the standard deviation of mean monthly temperatures",
+      "description": "Temperature seasonality given by the standard deviation of mean monthly temperatures. EnviCloud directory: chelsa_trace21k/global/bioclim/bio04/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio04%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Mean Daily Maximum Near-Surface Air Temperature of the Warmest Month",
       "alternateName": "bio05",
       "unitText": "K",
-      "description": "Highest monthly mean of daily maximum temperatures across the year; indicates peak thermal conditions",
+      "description": "Highest monthly mean of daily maximum temperatures across the year; indicates peak thermal conditions. EnviCloud directory: chelsa_trace21k/global/bioclim/bio05/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio05%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Mean Daily Minimum Near-Surface Air Temperature of the Coldest Month",
       "alternateName": "bio06",
       "unitText": "K",
-      "description": "Lowest monthly mean of daily minimum temperatures across the year; characterizes winter cold intensity",
+      "description": "Lowest monthly mean of daily minimum temperatures across the year; characterizes winter cold intensity. EnviCloud directory: chelsa_trace21k/global/bioclim/bio06/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio06%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Annual Daily Mean Near-Surface Air Temperature Range",
       "alternateName": "bio07",
       "unitText": "K",
-      "description": "Annual temperature range calculated as bio05 minus bio06; measures amplitude between warmest and coldest months",
+      "description": "Annual temperature range calculated as bio05 minus bio06; measures amplitude between warmest and coldest months. EnviCloud directory: chelsa_trace21k/global/bioclim/bio07/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio07%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Mean Daily Near-Surface Air Temperature of the Wettest Quarter",
       "alternateName": "bio08",
       "unitText": "K",
-      "description": "Average monthly mean temperature over the wettest three-month period of the year",
+      "description": "Average monthly mean temperature over the wettest three-month period of the year. EnviCloud directory: chelsa_trace21k/global/bioclim/bio08/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio08%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Mean Daily Near-Surface Air Temperature of the Driest Quarter",
       "alternateName": "bio09",
       "unitText": "K",
-      "description": "Average monthly mean temperature over the driest three-month period of the year",
+      "description": "Average monthly mean temperature over the driest three-month period of the year. EnviCloud directory: chelsa_trace21k/global/bioclim/bio09/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio09%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Mean Daily Mean Near-Surface Air Temperature of the Warmest Quarter",
       "alternateName": "bio10",
       "unitText": "K",
-      "description": "Average monthly mean temperature over the warmest three-month period of the year",
+      "description": "Average monthly mean temperature over the warmest three-month period of the year. EnviCloud directory: chelsa_trace21k/global/bioclim/bio10/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio10%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Mean Daily Mean Near-Surface Air Temperature of the Coldest Quarter",
       "alternateName": "bio11",
       "unitText": "K",
-      "description": "Average monthly mean temperature over the coldest three-month period of the year",
+      "description": "Average monthly mean temperature over the coldest three-month period of the year. EnviCloud directory: chelsa_trace21k/global/bioclim/bio11/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio11%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Annual Precipitation",
       "alternateName": "bio12",
       "unitText": "kg m-2 year-1",
-      "description": "Sum of monthly precipitation totals across the year",
+      "description": "Sum of monthly precipitation totals across the year. EnviCloud directory: chelsa_trace21k/global/bioclim/bio12/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio12%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Precipitation of the Wettest Month",
       "alternateName": "bio13",
       "unitText": "kg m-2 month-1",
-      "description": "Maximum monthly precipitation total",
+      "description": "Maximum monthly precipitation total. EnviCloud directory: chelsa_trace21k/global/bioclim/bio13/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio13%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Precipitation of the Driest Month",
       "alternateName": "bio14",
       "unitText": "kg m-2 month-1",
-      "description": "Minimum monthly precipitation total",
+      "description": "Minimum monthly precipitation total. EnviCloud directory: chelsa_trace21k/global/bioclim/bio14/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio14%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Precipitation Seasonality",
       "alternateName": "bio15",
       "unitText": "kg m-2",
-      "description": "Coefficient of variation: 100 × standard deviation ÷ mean of monthly precipitation totals",
+      "description": "Coefficient of variation: 100 × standard deviation ÷ mean of monthly precipitation totals. EnviCloud directory: chelsa_trace21k/global/bioclim/bio15/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio15%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Mean Monthly Precipitation of the Wettest Quarter",
       "alternateName": "bio16",
       "unitText": "kg m-2 month-1",
-      "description": "Average monthly precipitation during the wettest three-month period of the year",
+      "description": "Average monthly precipitation during the wettest three-month period of the year. EnviCloud directory: chelsa_trace21k/global/bioclim/bio16/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio16%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Mean Monthly Precipitation of the Driest Quarter",
       "alternateName": "bio17",
       "unitText": "kg m-2 month-1",
-      "description": "Average monthly precipitation during the driest three-month period of the year",
+      "description": "Average monthly precipitation during the driest three-month period of the year. EnviCloud directory: chelsa_trace21k/global/bioclim/bio17/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio17%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Mean Monthly Precipitation of the Warmest Quarter",
       "alternateName": "bio18",
       "unitText": "kg m-2 month-1",
-      "description": "Average monthly precipitation during the warmest three-month period of the year",
+      "description": "Average monthly precipitation during the warmest three-month period of the year. EnviCloud directory: chelsa_trace21k/global/bioclim/bio18/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio18%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Mean Monthly Precipitation of the Coldest Quarter",
       "alternateName": "bio19",
       "unitText": "kg m-2 month-1",
-      "description": "Average monthly precipitation during the coldest three-month period of the year",
+      "description": "Average monthly precipitation during the coldest three-month period of the year. EnviCloud directory: chelsa_trace21k/global/bioclim/bio19/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fbio19%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Ice Sheet Surface Altitude",
       "alternateName": "glz",
       "unitText": "m",
-      "description": "Elevation of the ice sheet surface above sea level.",
+      "description": "Elevation of the ice sheet surface above sea level. EnviCloud directory: chelsa_trace21k/global/bioclim/glz/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fglz%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Surface Altitude",
       "alternateName": "orog",
       "unitText": "m",
-      "description": "Geometric height of the land surface above the geoid.",
+      "description": "Geometric height of the land surface above the geoid. EnviCloud directory: chelsa_trace21k/global/bioclim/orog/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Forog%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Snow Cover Days",
       "alternateName": "scd",
       "unitText": "days",
-      "description": "Number of days per year with snow cover present at the surface.",
+      "description": "Number of days per year with snow cover present at the surface. EnviCloud directory: chelsa_trace21k/global/bioclim/scd/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2Fscd%2F"
     }
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -348,7 +370,7 @@
     {
       "@type": "DataDownload",
       "name": "CHELSA-TraCE21k-centennial-bioclim downloads (COG)",
-      "description": "Download portal for TraCE21k centennial bioclim variables.",
+      "description": "EnviCloud download portal (bucket prefix: chelsa_trace21k/global/bioclim/). Each variable is typically stored in a subdirectory named by its code.",
       "contentUrl": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fbioclim%2F",
       "encodingFormat": [
         "image/tiff",

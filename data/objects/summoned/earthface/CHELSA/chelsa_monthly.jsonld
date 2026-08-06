@@ -33,7 +33,7 @@
       "name": "Total Cloud Cover Percentage",
       "alternateName": "clt",
       "unitText": "percent",
-      "description": "Total cloud area fraction, reported as a percentage, for the whole atmospheric column.",
+      "description": "Total cloud area fraction, reported as a percentage, for the whole atmospheric column. EnviCloud directory: chelsa/global/monthly/clt/",
       "temporalCoverage": "1979-01-15/2021-12-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -44,14 +44,15 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fmonthly%2Fclt%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Monthly Climate Moisture Index",
       "alternateName": "cmi",
       "unitText": "kg m-2 month-1",
-      "description": "Monthly ratio of precipitation to potential evapotranspiration; indicator of climatic water availability.",
+      "description": "Monthly ratio of precipitation to potential evapotranspiration; indicator of climatic water availability. EnviCloud directory: chelsa/global/monthly/cmi/",
       "temporalCoverage": "1979-01-15/2021-12-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -62,14 +63,15 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fmonthly%2Fcmi%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Near-Surface Relative Humidity",
       "alternateName": "hurs",
       "unitText": "percent",
-      "description": "Relative humidity near the surface.",
+      "description": "Relative humidity near the surface. EnviCloud directory: chelsa/global/monthly/hurs/",
       "temporalCoverage": "1979-01-15/2021-12-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -80,14 +82,15 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fmonthly%2Fhurs%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Monthly Potential Evapotranspiration",
       "alternateName": "pet",
       "unitText": "kg m-2 month-1",
-      "description": "Total potential evapotranspiration for the month assuming unlimited water availability, calculated using Penman-Monteith.",
+      "description": "Total potential evapotranspiration for the month assuming unlimited water availability, calculated using Penman-Monteith. EnviCloud directory: chelsa/global/monthly/pet/",
       "temporalCoverage": "1979-01-15/2021-12-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -98,14 +101,15 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fmonthly%2Fpet%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Precipitation",
       "alternateName": "pr",
       "unitText": "kg m-2 month-1",
-      "description": "Precipitation including liquid and solid phases.",
+      "description": "Precipitation including liquid and solid phases. EnviCloud directory: chelsa/global/monthly/pr/",
       "temporalCoverage": "1979-01-15/2021-12-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -116,14 +120,15 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fmonthly%2Fpr%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Surface Downwelling Shortwave Flux in Air",
       "alternateName": "rsds",
       "unitText": "W m-2",
-      "description": "Surface solar irradiance for UV calculations.",
+      "description": "Surface solar irradiance for UV calculations. EnviCloud directory: chelsa/global/monthly/rsds/",
       "temporalCoverage": "1979-01-15/2021-12-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -134,14 +139,15 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fmonthly%2Frsds%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Near-Surface Wind Speed",
       "alternateName": "sfcWind",
       "unitText": "m s-1",
-      "description": "Near-surface, usually 10 meter, wind speed.",
+      "description": "Near-surface, usually 10 meter, wind speed. EnviCloud directory: chelsa/global/monthly/sfcWind/",
       "temporalCoverage": "1979-01-15/2021-12-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -152,14 +158,15 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fmonthly%2FsfcWind%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Standardized Precipitation Evapotranspiration Index",
       "alternateName": "spei12",
       "unitText": "1",
-      "description": "Standardized climatic water balance index over a 12-month integration period.",
+      "description": "Standardized climatic water balance index over a 12-month integration period. EnviCloud directory: chelsa/global/monthly/spei12/",
       "temporalCoverage": "1979-01-15/2021-12-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -170,14 +177,15 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fmonthly%2Fspei12%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Standardized Precipitation Index",
       "alternateName": "spi12",
       "unitText": "1",
-      "description": "Standardized precipitation anomaly index over a 12-month integration period.",
+      "description": "Standardized precipitation anomaly index over a 12-month integration period. EnviCloud directory: chelsa/global/monthly/spi12/",
       "temporalCoverage": "1979-01-15/2021-12-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -188,14 +196,15 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fmonthly%2Fspi12%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Daily Mean Near-Surface Air Temperature",
       "alternateName": "tas",
       "unitText": "K",
-      "description": "Near-surface, usually 2 meter, air temperature.",
+      "description": "Near-surface, usually 2 meter, air temperature. EnviCloud directory: chelsa/global/monthly/tas/",
       "temporalCoverage": "1979-01-15/2021-12-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -206,14 +215,15 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fmonthly%2Ftas%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Daily Maximum Near-Surface Air Temperature",
       "alternateName": "tasmax",
       "unitText": "K",
-      "description": "Maximum near-surface, usually 2 meter, air temperature.",
+      "description": "Maximum near-surface, usually 2 meter, air temperature. EnviCloud directory: chelsa/global/monthly/tasmax/",
       "temporalCoverage": "1979-01-15/2021-12-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -224,14 +234,15 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fmonthly%2Ftasmax%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Daily Minimum Near-Surface Air Temperature",
       "alternateName": "tasmin",
       "unitText": "K",
-      "description": "Minimum near-surface, usually 2 meter, air temperature.",
+      "description": "Minimum near-surface, usually 2 meter, air temperature. EnviCloud directory: chelsa/global/monthly/tasmin/",
       "temporalCoverage": "1979-01-15/2021-12-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -242,14 +253,15 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fmonthly%2Ftasmin%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Vapor Pressure Deficit",
       "alternateName": "vpd",
       "unitText": "Pa",
-      "description": "Difference between saturation vapor pressure and actual vapor pressure.",
+      "description": "Difference between saturation vapor pressure and actual vapor pressure. EnviCloud directory: chelsa/global/monthly/vpd/",
       "temporalCoverage": "1979-01-15/2021-12-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -260,7 +272,8 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fmonthly%2Fvpd%2F"
     }
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -274,7 +287,7 @@
     {
       "@type": "DataDownload",
       "name": "CHELSA-monthly downloads (COG)",
-      "description": "Download portal for CHELSA-monthly.",
+      "description": "EnviCloud download portal (bucket prefix: chelsa/global/monthly/). Each variable is typically stored in a subdirectory named by its code.",
       "contentUrl": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fmonthly%2F",
       "encodingFormat": [
         "image/tiff",

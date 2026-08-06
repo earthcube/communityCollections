@@ -33,21 +33,22 @@
       "name": "Daily Mean Near-Surface Air Temperature",
       "alternateName": "tas",
       "unitText": "K",
-      "description": "Near-surface, usually 2 meter, air temperature.",
+      "description": "Near-surface, usually 2 meter, air temperature. EnviCloud directory: chelsa/europe/daily/tas/",
       "temporalCoverage": "1985-01-01/2015-12-31",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Europe"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Feurope%2Fdaily%2Ftas%2F"
     }
   ],
   "distribution": [
     {
       "@type": "DataDownload",
       "name": "CHELSAcerra-daily downloads (portal)",
-      "description": "Download portal linked from the CHELSA catalog entry for CHELSAcerra-daily.",
+      "description": "EnviCloud download portal (bucket prefix: chelsa/europe/daily/). Each variable is typically stored in a subdirectory named by its code.",
       "contentUrl": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Feurope%2Fdaily%2F",
       "encodingFormat": [
         "text/html"
