@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://data.usgs.gov/datacatalog/data/USGS:74edd739-1584-41c3-bf08-0274681a779b#dataset",
   "name": "North American Land Change Monitoring System (NALCMS) – North American Land Cover (30 m)",
   "description": "NALCMS provides harmonized, trinational land cover maps for North America by combining national land cover products from Canada, the United States, and Mexico into a consistent continental mosaic. A recent 30-meter North American land cover dataset reflects land cover information for 2020 from Mexico and Canada, 2019 over the conterminous United States, and 2021 over Alaska, using Landsat 8 imagery inputs and country-specific classification methods integrated into a seamless product.",
@@ -33,14 +32,6 @@
     "name": "U.S. Geological Survey (USGS)",
     "url": "https://www.usgs.gov/"
   },
-  "keywords": [
-    "NALCMS",
-    "North America",
-    "land cover",
-    "land change",
-    "Landsat 8",
-    "continental mosaic"
-  ],
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -105,5 +96,23 @@
       },
       "sameAs": "https://www.cec.org/publications/nalcms/"
     }
-  ]
+  ],
+  "keywords": [
+    "NALCMS",
+    "North America",
+    "land cover",
+    "land change",
+    "Landsat 8",
+    "continental mosaic",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

@@ -3,26 +3,10 @@
     "@vocab": "https://schema.org/"
   },
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://figshare.com/articles/dataset/GRUN_Global_Runoff_Reconstruction/9228176#dataset",
   "name": "G-RUN (GRUN): Global Runoff Reconstruction",
   "url": "https://figshare.com/articles/dataset/GRUN_Global_Runoff_Reconstruction/9228176",
   "description": "GRUN (Global Runoff Reconstruction; often referred to as G-RUN) is an observation-based global gridded reconstruction of monthly runoff derived using machine learning trained on in-situ streamflow observations. The dataset provides global runoff rates on a 0.5° grid over the period 1902–2014 and is intended for analyses of freshwater dynamics, hydroclimate variability, drought propagation, and evaluation of hydrological model simulations.",
-  "keywords": [
-    "GRUN",
-    "G-RUN",
-    "global runoff",
-    "runoff reconstruction",
-    "streamflow",
-    "hydrology",
-    "hydroclimate",
-    "machine learning",
-    "reanalysis",
-    "monthly",
-    "0.5 degree",
-    "global gridded dataset",
-    "Figshare"
-  ],
   "creator": [
     {
       "@type": "Person",
@@ -189,5 +173,30 @@
   ],
   "sameAs": [
     "https://doi.org/10.6084/m9.figshare.9228176"
-  ]
+  ],
+  "keywords": [
+    "GRUN",
+    "G-RUN",
+    "global runoff",
+    "runoff reconstruction",
+    "streamflow",
+    "hydrology",
+    "hydroclimate",
+    "machine learning",
+    "reanalysis",
+    "monthly",
+    "0.5 degree",
+    "global gridded dataset",
+    "Figshare",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

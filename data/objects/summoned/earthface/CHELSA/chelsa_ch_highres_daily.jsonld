@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://www.chelsa-climate.org/datasets/chelsach-highres_daily#dataset",
   "name": "CHELSAch-highres-daily (Switzerland) (V1.0)",
   "description": "CHELSAch-highres-daily is a high-resolution climate dataset generated with the CHELSA downscaling model for Switzerland. It consists of daily surface variables.",
@@ -19,14 +18,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "keywords": [
-    "CHELSA",
-    "Switzerland",
-    "high resolution",
-    "daily climate",
-    "temperature",
-    "precipitation"
-  ],
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -192,5 +183,23 @@
       "@type": "Thing",
       "name": "Mountain climatology"
     }
-  ]
+  ],
+  "keywords": [
+    "CHELSA",
+    "Switzerland",
+    "high resolution",
+    "daily climate",
+    "temperature",
+    "precipitation",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

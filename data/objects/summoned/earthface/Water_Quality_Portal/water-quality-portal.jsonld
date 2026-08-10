@@ -3,28 +3,10 @@
     "@vocab": "https://schema.org/"
   },
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://www.waterqualitydata.us/#dataset",
   "name": "Water Quality Portal (WQP)",
   "url": "https://www.waterqualitydata.us/",
   "description": "The Water Quality Portal (WQP) is a cooperative, services-first data portal that integrates publicly available discrete water-quality monitoring data from the USGS National Water Information System (NWIS) and the EPA Water Quality Exchange (WQX) Data Warehouse, along with data contributed by hundreds of state, tribal, federal, and local organizations. The portal provides station metadata and analytical results for physical, chemical, and biological measurements, accessible through a web interface and programmatic web services (REST) with multiple output formats.",
-  "keywords": [
-    "water quality",
-    "USGS",
-    "US EPA",
-    "WQP",
-    "NWIS",
-    "WQX",
-    "STORET",
-    "water chemistry",
-    "hydrogeochemistry",
-    "monitoring",
-    "stations",
-    "sample results",
-    "nutrients",
-    "metals",
-    "contaminants"
-  ],
   "creator": [
     {
       "@type": "Organization",
@@ -59,13 +41,6 @@
       "@type": "Organization",
       "name": "U.S. Environmental Protection Agency (EPA)",
       "url": "https://www.epa.gov/"
-    }
-  ],
-  "contributor": [
-    {
-      "@type": "Organization",
-      "name": "U.S. Geological Survey (USGS)",
-      "url": "https://www.usgs.gov/"
     }
   ],
   "isAccessibleForFree": true,
@@ -272,5 +247,37 @@
       "@type": "Thing",
       "name": "Groundwater"
     }
-  ]
+  ],
+  "keywords": [
+    "water quality",
+    "USGS",
+    "US EPA",
+    "WQP",
+    "NWIS",
+    "WQX",
+    "STORET",
+    "water chemistry",
+    "hydrogeochemistry",
+    "monitoring",
+    "stations",
+    "sample results",
+    "nutrients",
+    "metals",
+    "contaminants",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  },
+  "contributor": {
+    "@type": "Organization",
+    "name": "U.S. Geological Survey (USGS)",
+    "url": "https://www.usgs.gov/"
+  }
 }

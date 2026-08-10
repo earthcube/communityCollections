@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "WebPage",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://www.climatologylab.org/terraclimate.html",
   "name": "TerraClimate",
   "description": "Webpage for TerraClimate, a high-resolution global dataset of monthly climate and climatic water balance for global terrestrial surfaces from 1958-2020. TerraClimate provides monthly climate data at ~4-km (1/24th degree) spatial resolution, including primary climate variables (temperature, precipitation, vapor pressure, radiation, wind-speed) and derived water balance variables (evapotranspiration, runoff, soil moisture, drought indices). The dataset uses climatically aided interpolation combining WorldClim climatological normals with time-varying data from CRU Ts4.0 and JRA55. Future climate projections are also available for +2C and +4C scenarios.",
@@ -29,19 +28,6 @@
     "description": "High-resolution global dataset of monthly climate and climatic water balance",
     "url": "https://www.climatologylab.org/terraclimate.html"
   },
-  "keywords": [
-    "TerraClimate",
-    "climate",
-    "monthly climate",
-    "water balance",
-    "global climate",
-    "high resolution",
-    "climatology",
-    "evapotranspiration",
-    "drought indices",
-    "NetCDF",
-    "THREDDS"
-  ],
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
@@ -58,5 +44,28 @@
         "item": "https://www.climatologylab.org/terraclimate.html"
       }
     ]
+  },
+  "keywords": [
+    "TerraClimate",
+    "climate",
+    "monthly climate",
+    "water balance",
+    "global climate",
+    "high resolution",
+    "climatology",
+    "evapotranspiration",
+    "drought indices",
+    "NetCDF",
+    "THREDDS",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
   }
 }

@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://www.chelsa-climate.org/datasets/chelsa_annual#dataset",
   "name": "CHELSA-drought-indices (V2.1)",
   "description": "CHELSA-drought-indices is a dataset that consists of standardized precipitation (SPI) and the standardized precipitation evapotranspiration index (SPEI) and related drought metrics.",
@@ -19,14 +18,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "keywords": [
-    "CHELSA",
-    "drought",
-    "SPI",
-    "SPEI",
-    "drought indices",
-    "climate extremes"
-  ],
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -256,5 +247,23 @@
       "@type": "Thing",
       "name": "Climate risk"
     }
-  ]
+  ],
+  "keywords": [
+    "CHELSA",
+    "drought",
+    "SPI",
+    "SPEI",
+    "drought indices",
+    "climate extremes",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

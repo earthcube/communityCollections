@@ -3,28 +3,10 @@
     "@vocab": "https://schema.org/"
   },
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://human-settlement.emergency.copernicus.eu/download.php#dataset",
   "name": "GHSL (Global Human Settlement Layer)",
   "url": "https://human-settlement.emergency.copernicus.eu/download.php",
   "description": "The Global Human Settlement Layer (GHSL) is a global, multi-temporal suite of geospatial datasets describing human settlements, built-up areas, and population distribution derived from Earth Observation and population data. GHSL products include gridded built-up surface, built-up volume, building height and settlement characteristics, population grids, and settlement typologies (e.g., Degree of Urbanisation / settlement model). Data are provided at multiple spatial resolutions and coordinate systems and span multiple epochs, including short-range projections for 1975–2030 for key products.",
-  "keywords": [
-    "GHSL",
-    "Global Human Settlement Layer",
-    "human settlements",
-    "built-up area",
-    "built-up surface",
-    "built-up volume",
-    "building height",
-    "population grid",
-    "settlement model",
-    "degree of urbanisation",
-    "urbanization",
-    "exposure mapping",
-    "remote sensing",
-    "Copernicus",
-    "JRC"
-  ],
   "creator": [
     {
       "@type": "Organization",
@@ -243,5 +225,32 @@
   ],
   "sameAs": [
     "https://human-settlement.emergency.copernicus.eu/"
-  ]
+  ],
+  "keywords": [
+    "GHSL",
+    "Global Human Settlement Layer",
+    "human settlements",
+    "built-up area",
+    "built-up surface",
+    "built-up volume",
+    "building height",
+    "population grid",
+    "settlement model",
+    "degree of urbanisation",
+    "urbanization",
+    "exposure mapping",
+    "remote sensing",
+    "Copernicus",
+    "JRC",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

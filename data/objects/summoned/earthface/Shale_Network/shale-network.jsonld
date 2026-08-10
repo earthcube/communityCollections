@@ -3,27 +3,10 @@
     "@vocab": "https://schema.org/"
   },
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://doi.org/10.4211/his-data-shalenetwork#dataset",
   "name": "Shale Network (ShaleNetwork Database)",
   "url": "https://doi.org/10.4211/his-data-shalenetwork",
   "description": "The Shale Network database is a collaborative water quality and quantity data resource for regions of hydrocarbon extraction (including shale gas development), acting as an \"honest broker\" that collates datasets from academic researchers, government agencies, industry, nonprofit entities, and watershed groups. The database is published through the CUAHSI Hydrologic Information System (HIS) for discovery and access via HydroClient and associated web services, and is used to establish background concentrations and assess environmental impacts across energy production regions.",
-  "keywords": [
-    "Shale Network",
-    "ShaleNetwork",
-    "water quality",
-    "water quantity",
-    "hydrogeochemistry",
-    "shale gas",
-    "oil and gas production",
-    "hydrocarbon extraction",
-    "groundwater chemistry",
-    "surface water chemistry",
-    "CUAHSI",
-    "HIS",
-    "WaterOneFlow",
-    "ODM"
-  ],
   "creator": [
     {
       "@type": "Organization",
@@ -212,5 +195,31 @@
       "@type": "Thing",
       "name": "Surface water"
     }
-  ]
+  ],
+  "keywords": [
+    "Shale Network",
+    "ShaleNetwork",
+    "water quality",
+    "water quantity",
+    "hydrogeochemistry",
+    "shale gas",
+    "oil and gas production",
+    "hydrocarbon extraction",
+    "groundwater chemistry",
+    "surface water chemistry",
+    "CUAHSI",
+    "HIS",
+    "WaterOneFlow",
+    "ODM",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

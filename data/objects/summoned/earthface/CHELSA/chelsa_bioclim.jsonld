@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://www.chelsa-climate.org/datasets/chelsa_bioclim#dataset",
   "name": "CHELSA-bioclim (V2.1)",
   "description": "CHELSA-bioclim is a global, kilometer-scale climate dataset generated with the CHELSA downscaling model. It consists of bioclimatic variables and related predictors used in ecological and environmental analyses.",
@@ -19,14 +18,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "keywords": [
-    "CHELSA",
-    "bioclim",
-    "bioclimatic variables",
-    "ecology",
-    "species distribution modeling",
-    "climate predictors"
-  ],
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -893,5 +884,23 @@
       "@type": "Thing",
       "name": "Biodiversity and ecology"
     }
-  ]
+  ],
+  "keywords": [
+    "CHELSA",
+    "bioclim",
+    "bioclimatic variables",
+    "ecology",
+    "species distribution modeling",
+    "climate predictors",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }
