@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "WebPage",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://doi.org/10.4211/his-data-shalenetwork",
   "name": "Shale Network (ShaleNetwork Database)",
   "description": "DOI landing page for the Shale Network database: water quality and quantity data from oil and gas production regions, published via CUAHSI HIS. Shale Network, Penn State, CUAHSI.",
@@ -32,6 +31,16 @@
     "water quality",
     "hydrogeochemistry",
     "CUAHSI",
-    "HIS"
-  ]
+    "HIS",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

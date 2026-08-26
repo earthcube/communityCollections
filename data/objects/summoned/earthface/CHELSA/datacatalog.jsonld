@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "DataCatalog",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://www.chelsa-climate.org/datasets#datacatalog",
   "name": "CHELSA Climate Data Catalog",
   "description": "CHELSA is a global, kilometer-scale climate dataset generated with the CHELSA downscaling model. It provides high-resolution climatological data for the earth's land surface areas, including daily and monthly variables, long-term climatological means, bioclimatic variables, and drought indices. The catalog also includes regional high-resolution products (e.g., Switzerland, Canary Islands), paleoclimate reconstructions (TraCE21k), and other derived products. Coverage includes global land surface areas and selected regional domains; temporal scope spans past (paleoclimate), present (including 1979 onward for many products), and future scenarios (where applicable).",
@@ -13,17 +12,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "keywords": [
-    "climate",
-    "climatology",
-    "CHELSA",
-    "downscaling",
-    "high resolution",
-    "temperature",
-    "precipitation",
-    "bioclimatic variables",
-    "drought indices"
-  ],
   "dataset": [
     {
       "@id": "https://www.chelsa-climate.org/datasets/chelsa_daily#dataset"
@@ -61,5 +49,26 @@
     {
       "@id": "https://www.chelsa-climate.org/datasets#chelsacerra-daily-dataset"
     }
-  ]
+  ],
+  "keywords": [
+    "climate",
+    "climatology",
+    "CHELSA",
+    "downscaling",
+    "high resolution",
+    "temperature",
+    "precipitation",
+    "bioclimatic variables",
+    "drought indices",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

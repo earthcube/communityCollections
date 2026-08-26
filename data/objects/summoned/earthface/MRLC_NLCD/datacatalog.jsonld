@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "DataCatalog",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://www.mrlc.gov/data#catalog",
   "name": "MRLC Data Catalog",
   "description": "Catalog of land cover, land change, rangeland vegetation component, and related remote-sensing products produced and distributed by the Multi-Resolution Land Characteristics (MRLC) Consortium for the United States and North America. Includes Annual NLCD, RCMAP, Exotic Annual Grass products, NALCMS, and legacy NLCD products, with access via direct downloads, interactive tools, and OGC web services.",
@@ -17,21 +16,6 @@
     "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
     "url": "https://www.mrlc.gov/partners"
   },
-  "keywords": [
-    "land cover",
-    "land use",
-    "land change",
-    "NLCD",
-    "Annual NLCD",
-    "tree canopy",
-    "impervious surface",
-    "rangeland",
-    "RCMAP",
-    "Exotic Annual Grass",
-    "NALCMS",
-    "remote sensing",
-    "Landsat"
-  ],
   "about": [
     {
       "@type": "Thing",
@@ -86,5 +70,30 @@
       "contentUrl": "https://www.mrlc.gov/tools",
       "description": "Interactive tools for visualization, subsetting, and analysis (MRLC Viewer, Rangeland Viewer, EVA Tool)."
     }
-  ]
+  ],
+  "keywords": [
+    "land cover",
+    "land use",
+    "land change",
+    "NLCD",
+    "Annual NLCD",
+    "tree canopy",
+    "impervious surface",
+    "rangeland",
+    "RCMAP",
+    "Exotic Annual Grass",
+    "NALCMS",
+    "remote sensing",
+    "Landsat",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

@@ -3,25 +3,10 @@
     "@vocab": "https://schema.org/"
   },
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://doi.org/10.6084/m9.figshare.13661312.v1#dataset",
   "name": "Global Multi-layer Soil Moisture Products",
   "url": "https://figshare.com/articles/dataset/Global_Multi-layer_Soil_Moisture_Products/13661312/1?file=26220602",
   "description": "Global multi-layer soil moisture products covering 1970–2016 at 0.5° spatial resolution and monthly temporal resolution, provided for four soil depth layers (0–10 cm, 10–30 cm, 30–50 cm, 50–100 cm). The dataset provides global, gap-free soil moisture fields intended for large-scale hydrologic, climate, and land-surface applications.",
-  "keywords": [
-    "soil moisture",
-    "multi-layer soil moisture",
-    "root-zone soil moisture",
-    "global",
-    "monthly",
-    "0.5 degree",
-    "soil hydrology",
-    "land surface",
-    "climate",
-    "Earth system",
-    "1970-2016",
-    "Figshare"
-  ],
   "creator": [
     {
       "@type": "Person",
@@ -202,5 +187,29 @@
   ],
   "sameAs": [
     "https://doi.org/10.6084/m9.figshare.13661312.v1"
-  ]
+  ],
+  "keywords": [
+    "soil moisture",
+    "multi-layer soil moisture",
+    "root-zone soil moisture",
+    "global",
+    "monthly",
+    "0.5 degree",
+    "soil hydrology",
+    "land surface",
+    "climate",
+    "Earth system",
+    "1970-2016",
+    "Figshare",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

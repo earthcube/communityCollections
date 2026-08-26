@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://elischolar.library.yale.edu/yale_fes_data/1/#dataset",
   "name": "Global Tree Density (Global tree density map)",
   "description": "Global tree density at a global scale provided as two spatially continuous raster maps of tree density. One map was generated using biome-level linear regression models and applied at the biome scale; the second map was generated using ecoregion-level linear regression models and applied at the ecoregion scale. The models were built using over 420,000 ground-sourced estimates of tree density and predictor variables spanning vegetative, climatic, topographic, and anthropogenic factors. The creators note that transitions at biome/ecoregion boundaries may appear abrupt and that estimates are generally more robust at country scale (or larger) than at individual pixel scale. The primary distribution is a zipped ArcGIS File Geodatabase package containing both raster models plus supporting ArcGIS layer and map-document files; additional files include a revision adding predictions for small islands and a WGS84 GeoTIFF derivative for the revision.",
@@ -67,19 +66,6 @@
     }
   },
   "datePublished": "2015-09-02",
-  "keywords": [
-    "tree density",
-    "forest",
-    "global map",
-    "biome",
-    "ecoregion",
-    "biodiversity",
-    "conservation",
-    "GIS",
-    "ArcGIS",
-    "GeoTIFF",
-    "spatial modeling"
-  ],
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -224,5 +210,28 @@
       "@type": "Thing",
       "name": "Global environmental mapping"
     }
-  ]
+  ],
+  "keywords": [
+    "tree density",
+    "forest",
+    "global map",
+    "biome",
+    "ecoregion",
+    "biodiversity",
+    "conservation",
+    "GIS",
+    "ArcGIS",
+    "GeoTIFF",
+    "spatial modeling",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

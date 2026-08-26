@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://www.chelsa-climate.org/datasets/canary-clim-canaries#dataset",
   "name": "CHELSACanaryClim-climatologies (Canary Islands) (V1.0)",
   "description": "CHELSACanaryClim-climatologies is a very-high-resolution climate dataset generated with the CHELSACanaryClim downscaling model. It consists of monthly climatologies of air temperature and precipitation for the Canary Islands.",
@@ -19,14 +18,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "keywords": [
-    "CHELSA",
-    "Canary Islands",
-    "very high resolution",
-    "climatologies",
-    "temperature",
-    "precipitation"
-  ],
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -209,5 +200,23 @@
       "@type": "Thing",
       "name": "Downscaled regional climate"
     }
-  ]
+  ],
+  "keywords": [
+    "CHELSA",
+    "Canary Islands",
+    "very high resolution",
+    "climatologies",
+    "temperature",
+    "precipitation",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }
