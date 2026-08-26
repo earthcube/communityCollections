@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://www.chelsa-climate.org/datasets/chelsa-trace21k-centennial-bioclim#dataset",
   "name": "CHELSA-TraCE21k-centennial-bioclim (V1.0)",
   "description": "CHELSA-TraCE21k-centennial-bioclim is a global, kilometer-scale dataset generated with the CHELSA-TraCE21k downscaling model. It consists of bioclimatic and topographic variables summarized over centennial time steps from 21k BP to 0 BP.",
@@ -19,14 +18,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "keywords": [
-    "CHELSA",
-    "TraCE21k",
-    "paleoclimate",
-    "bioclim",
-    "bioclimatic variables",
-    "downscaling"
-  ],
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -428,5 +419,23 @@
       "@type": "Thing",
       "name": "Species distribution modeling (paleo)"
     }
-  ]
+  ],
+  "keywords": [
+    "CHELSA",
+    "TraCE21k",
+    "paleoclimate",
+    "bioclim",
+    "bioclimatic variables",
+    "downscaling",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

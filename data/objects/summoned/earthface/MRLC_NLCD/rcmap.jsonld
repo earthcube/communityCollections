@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://www.mrlc.gov/data/project/rcmap#dataset",
   "name": "Rangeland Condition Monitoring Assessment and Projection (RCMAP)",
   "description": "RCMAP provides annual rangeland vegetation component fractional cover and related products across western North America derived from Landsat imagery. Components include bare ground, herbaceous, litter, shrub, sagebrush, tree (and related component/trend products), supporting rangeland monitoring and assessment from 1985 to present.",
@@ -16,16 +15,6 @@
     "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
     "url": "https://www.mrlc.gov/"
   },
-  "keywords": [
-    "RCMAP",
-    "rangeland",
-    "fractional cover",
-    "sagebrush",
-    "shrub",
-    "bare ground",
-    "Landsat",
-    "remote sensing"
-  ],
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -228,5 +217,25 @@
       },
       "sameAs": "https://doi.org/10.3133/fs20223036"
     }
-  ]
+  ],
+  "keywords": [
+    "RCMAP",
+    "rangeland",
+    "fractional cover",
+    "sagebrush",
+    "shrub",
+    "bare ground",
+    "Landsat",
+    "remote sensing",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

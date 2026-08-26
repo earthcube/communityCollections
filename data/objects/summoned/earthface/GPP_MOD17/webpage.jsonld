@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "WebPage",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "http://files.ntsg.umt.edu/data/NTSG_Products/MOD17/",
   "name": "GPP MOD17: Global Gross Primary Production and Net Primary Production",
   "description": "Webpage for the GPP MOD17 dataset—global gross primary production (GPP) and net primary production (NPP) derived from the MOD17 algorithm, distributed by the Numerical Terradynamic Simulation Group (NTSG), University of Montana. The site provides a directory listing for MOD17 products (e.g., 8-day, monthly, annual) in GeoTIFF, HDF-EOS, and NetCDF formats.",
@@ -35,6 +34,16 @@
     "net primary production",
     "MODIS",
     "NTSG",
-    "University of Montana"
-  ]
+    "University of Montana",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

@@ -3,29 +3,10 @@
     "@vocab": "https://schema.org/"
   },
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://www.eea.europa.eu/en/datahub/datahubitem-view/fbf3717c-cd7b-4785-933a-d0cf510542e1#dataset",
   "name": "WATERBASE (Waterbase - Water Quality ICM)",
   "url": "https://www.eea.europa.eu/en/datahub/datahubitem-view/fbf3717c-cd7b-4785-933a-d0cf510542e1",
   "description": "WATERBASE is the generic name given to the European Environment Agency (EEA) databases on the status and quality of Europe's rivers, lakes, groundwater bodies, and transitional, coastal and marine waters. The Waterbase - Water Quality ICM dataset contains time series information on nutrients, organic matter, hazardous substances, pesticides and other chemical substances, reported by EEA member and cooperating countries from monitoring sites and aggregated reporting streams. The dataset supports European water assessments, indicators, and reporting obligations under WISE State of Environment (SoE) water quality reporting and related frameworks.",
-  "keywords": [
-    "WATERBASE",
-    "Waterbase",
-    "water quality",
-    "hydrogeochemistry",
-    "rivers",
-    "lakes",
-    "groundwater",
-    "coastal waters",
-    "marine waters",
-    "transitional waters",
-    "nutrients",
-    "pesticides",
-    "hazardous substances",
-    "organic matter",
-    "WISE",
-    "EEA"
-  ],
   "creator": [
     {
       "@type": "Organization",
@@ -173,5 +154,33 @@
       },
       "sameAs": "https://www.eea.europa.eu/en/datahub/datahubitem-view/fbf3717c-cd7b-4785-933a-d0cf510542e1"
     }
-  ]
+  ],
+  "keywords": [
+    "WATERBASE",
+    "Waterbase",
+    "water quality",
+    "hydrogeochemistry",
+    "rivers",
+    "lakes",
+    "groundwater",
+    "coastal waters",
+    "marine waters",
+    "transitional waters",
+    "nutrients",
+    "pesticides",
+    "hazardous substances",
+    "organic matter",
+    "WISE",
+    "EEA",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

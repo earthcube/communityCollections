@@ -3,29 +3,10 @@
     "@vocab": "https://schema.org/"
   },
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://doi.org/10.6084/m9.figshare.7670849#dataset",
   "name": "GRACE-REC: A reconstruction of climate-driven water storage changes over the last century",
   "url": "https://figshare.com/articles/dataset/GRACE-REC_A_reconstruction_of_climate-driven_water_storage_changes_over_the_last_century/7670849",
   "description": "GRACE-REC provides reconstructed terrestrial water storage (TWS) anomalies driven by climate variability, trained on GRACE observations and meteorological forcing data. The reconstruction is provided at 0.5° spatial resolution and is available at daily and monthly temporal scales over the period 1901 to present (with updates released regularly). The product is designed for analyses of long-term hydroclimate variability, drought and flood assessment, and interpretation of GRACE/GRACE-FO water storage records and gaps.",
-  "keywords": [
-    "GRACE-REC",
-    "terrestrial water storage",
-    "TWS",
-    "water storage anomalies",
-    "hydrology",
-    "hydroclimate",
-    "drought",
-    "flood",
-    "GRACE",
-    "GRACE-FO",
-    "reconstruction",
-    "climate-driven",
-    "0.5 degree",
-    "monthly",
-    "daily",
-    "Figshare"
-  ],
   "creator": [
     {
       "@type": "Person",
@@ -188,5 +169,33 @@
   ],
   "sameAs": [
     "https://doi.org/10.6084/m9.figshare.7670849"
-  ]
+  ],
+  "keywords": [
+    "GRACE-REC",
+    "terrestrial water storage",
+    "TWS",
+    "water storage anomalies",
+    "hydrology",
+    "hydroclimate",
+    "drought",
+    "flood",
+    "GRACE",
+    "GRACE-FO",
+    "reconstruction",
+    "climate-driven",
+    "0.5 degree",
+    "monthly",
+    "daily",
+    "Figshare",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

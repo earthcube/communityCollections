@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://www.chelsa-climate.org/datasets/chelsacerra-daily#dataset",
   "name": "CHELSAcerra-daily (Europe) (V1.0)",
   "description": "CHELSAcerra-daily is a high-resolution climate dataset for air temperatures generated with the CHELSA downscaling model using the Copernicus European Regional ReAnalysis (CERRA) for Europe.",
@@ -19,14 +18,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "keywords": [
-    "CHELSA",
-    "CERRA",
-    "Europe",
-    "downscaling",
-    "daily temperature",
-    "regional reanalysis"
-  ],
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -145,5 +136,23 @@
       "@type": "Thing",
       "name": "Daily air temperature"
     }
-  ]
+  ],
+  "keywords": [
+    "CHELSA",
+    "CERRA",
+    "Europe",
+    "downscaling",
+    "daily temperature",
+    "regional reanalysis",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "WebPage",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://human-settlement.emergency.copernicus.eu/download.php",
   "name": "GHSL (Global Human Settlement Layer) — Download",
   "description": "Download page for the Global Human Settlement Layer (GHSL): built-up areas, population and settlement data from European Commission JRC / Copernicus Emergency Management Service.",
@@ -33,6 +32,16 @@
     "built-up",
     "population",
     "Copernicus",
-    "JRC"
-  ]
+    "JRC",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

@@ -3,27 +3,10 @@
     "@vocab": "https://schema.org/"
   },
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://doi.org/10.6084/m9.figshare.c.3890224.v1#dataset",
   "name": "FLO1K: Global maps of mean, maximum and minimum annual streamflow at 1 km resolution (1960–2015)",
   "url": "https://figshare.com/collections/FLO1K_global_maps_of_mean_maximum_and_minimum_annual_streamflow_at_1_km_resolution_from_1960_through_2015/3890224",
   "description": "FLO1K provides global, spatially continuous gridded maps of annual streamflow at ~1 km (30 arc-second) resolution for each year from 1960 through 2015. Annual flow metrics include mean annual flow as well as minimum and maximum monthly flow for a given year. The dataset is intended for hydrology, freshwater ecology, water resources assessment, and large-scale environmental modeling applications.",
-  "keywords": [
-    "FLO1K",
-    "streamflow",
-    "runoff",
-    "annual streamflow",
-    "mean annual flow",
-    "maximum flow",
-    "minimum flow",
-    "global",
-    "1 km",
-    "30 arc-second",
-    "hydrology",
-    "river discharge",
-    "freshwater",
-    "Figshare"
-  ],
   "creator": [
     {
       "@type": "Person",
@@ -210,5 +193,31 @@
   ],
   "sameAs": [
     "https://doi.org/10.6084/m9.figshare.c.3890224.v1"
-  ]
+  ],
+  "keywords": [
+    "FLO1K",
+    "streamflow",
+    "runoff",
+    "annual streamflow",
+    "mean annual flow",
+    "maximum flow",
+    "minimum flow",
+    "global",
+    "1 km",
+    "30 arc-second",
+    "hydrology",
+    "river discharge",
+    "freshwater",
+    "Figshare",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

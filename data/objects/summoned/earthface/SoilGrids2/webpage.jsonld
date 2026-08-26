@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "WebPage",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://soilgrids.org/",
   "name": "SoilGrids2: Global soil property maps",
   "description": "Webpage for SoilGrids2 (SoilGrids 2.0)—global gridded soil property maps at ~250 m resolution from ISRIC. The site provides access to bulk density, organic carbon, pH, texture, and coarse fragments; discovery via ISRIC Data Hub (GeoNetwork) and distribution via files.isric.org/soilgrids/.",
@@ -32,6 +31,16 @@
     "ISRIC",
     "global soil maps",
     "digital soil mapping",
-    "soil properties"
-  ]
+    "soil properties",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

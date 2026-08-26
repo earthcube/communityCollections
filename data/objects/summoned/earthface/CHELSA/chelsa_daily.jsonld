@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://www.chelsa-climate.org/datasets/chelsa_daily#dataset",
   "name": "CHELSA-daily (V2.1)",
   "description": "CHELSA-daily is a global, kilometer-scale climate dataset generated with the CHELSA downscaling model. It consists of daily surface variables summarized as daily means, minima, maxima, or (in some cases) daily accumulations.",
@@ -19,16 +18,6 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
-  "keywords": [
-    "CHELSA",
-    "daily climate",
-    "downscaling",
-    "temperature",
-    "precipitation",
-    "humidity",
-    "wind speed",
-    "solar radiation"
-  ],
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -349,5 +338,25 @@
       "@type": "Thing",
       "name": "High-resolution gridded data"
     }
-  ]
+  ],
+  "keywords": [
+    "CHELSA",
+    "daily climate",
+    "downscaling",
+    "temperature",
+    "precipitation",
+    "humidity",
+    "wind speed",
+    "solar radiation",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

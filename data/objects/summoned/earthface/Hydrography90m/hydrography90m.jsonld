@@ -3,30 +3,10 @@
     "@vocab": "https://schema.org/"
   },
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://hydrography.org/#dataset",
   "name": "Hydrography90m",
   "url": "https://hydrography.org/",
   "description": "Hydrography90m is a high-resolution global hydrographic dataset derived from the MERIT Hydro digital elevation model at 3 arc-second (~90 m at the equator). It provides a globally seamless, standardized representation of stream channels and drainage basins with associated topographic and topological attributes for flow routing and network analysis. Products include stream and basin layers, sub-catchments linked to stream segments, stream order and slope metrics, flow-routing topology via unique segment identifiers, and tiled raster/vector layers suitable for large-scale hydrology, geomorphology, ecology, and environmental modeling applications.",
-  "keywords": [
-    "Hydrography90m",
-    "hydrography",
-    "hydrology",
-    "drainage basins",
-    "catchments",
-    "sub-catchments",
-    "river networks",
-    "stream network",
-    "flow routing",
-    "stream order",
-    "stream slope",
-    "topographic attributes",
-    "topological attributes",
-    "MERIT Hydro",
-    "DEM",
-    "90 m",
-    "global"
-  ],
   "creator": [
     {
       "@type": "Person",
@@ -350,5 +330,34 @@
   "sameAs": [
     "https://www.igb-berlin.de/en/hydrography90m-dataset",
     "https://doi.org/10.18728/igb-fred-762.1"
-  ]
+  ],
+  "keywords": [
+    "Hydrography90m",
+    "hydrography",
+    "hydrology",
+    "drainage basins",
+    "catchments",
+    "sub-catchments",
+    "river networks",
+    "stream network",
+    "flow routing",
+    "stream order",
+    "stream slope",
+    "topographic attributes",
+    "topological attributes",
+    "MERIT Hydro",
+    "DEM",
+    "90 m",
+    "global",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }

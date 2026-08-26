@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "WebPage",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://www.mrlc.gov/data#webpage",
   "name": "MRLC Data",
   "description": "The Multi-Resolution Land Characteristics (MRLC) Consortium data portal provides nationwide (United States) and North America land cover and related remote-sensing products, including Annual NLCD (annual land cover and land change science products), RCMAP (rangeland fractional cover and trends), Exotic Annual Grass fractional cover products, NALCMS (North American land cover), and legacy NLCD products. The portal also provides tools (e.g., MRLC Viewer, EVA Tool, Rangeland Viewer) and web services (OGC WMS/WCS) for interactive access and subsetting.",
@@ -62,6 +61,14 @@
       }
     ]
   },
+  "about": {
+    "@type": "DataCatalog",
+    "@id": "https://www.mrlc.gov/data#catalog"
+  },
+  "mainEntity": {
+    "@type": "DataCatalog",
+    "@id": "https://www.mrlc.gov/data#catalog"
+  },
   "keywords": [
     "MRLC",
     "land cover",
@@ -73,14 +80,16 @@
     "tree canopy",
     "impervious surface",
     "remote sensing",
-    "Landsat"
+    "Landsat",
+    "AI-generated metadata"
   ],
-  "about": {
-    "@type": "DataCatalog",
-    "@id": "https://www.mrlc.gov/data#catalog"
-  },
-  "mainEntity": {
-    "@type": "DataCatalog",
-    "@id": "https://www.mrlc.gov/data#catalog"
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
   }
 }

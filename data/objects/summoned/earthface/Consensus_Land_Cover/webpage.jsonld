@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "WebPage",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://www.earthenv.org/landcover#webpage",
   "name": "Global 1-km Consensus Land Cover",
   "description": "Webpage for the Global 1-km Consensus Land Cover dataset, a global land-cover product that integrates multiple remote sensing-derived land-cover products and provides consensus information on the prevalence of 12 land-cover classes at 1-km resolution for biodiversity and ecosystem modeling. The dataset is available in two versions: Full Version 1.0 (with DISCover) and Reduced Version 1.0 (without DISCover), each containing 12 GeoTIFF layers representing consensus prevalence (0-100%) for different land-cover classes.",
@@ -46,20 +45,6 @@
     "description": "A global 1-km consensus land-cover product for biodiversity and ecosystem modelling",
     "url": "https://www.earthenv.org/landcover"
   },
-  "keywords": [
-    "land cover",
-    "consensus",
-    "remote sensing",
-    "biodiversity",
-    "ecosystem modelling",
-    "global",
-    "1-km resolution",
-    "GeoTIFF",
-    "GlobCover",
-    "MODIS",
-    "GLC2000",
-    "DISCover"
-  ],
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
@@ -76,5 +61,29 @@
         "item": "https://www.earthenv.org/landcover"
       }
     ]
+  },
+  "keywords": [
+    "land cover",
+    "consensus",
+    "remote sensing",
+    "biodiversity",
+    "ecosystem modelling",
+    "global",
+    "1-km resolution",
+    "GeoTIFF",
+    "GlobCover",
+    "MODIS",
+    "GLC2000",
+    "DISCover",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
   }
 }

@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org/",
   "@type": "Dataset",
-  "comment": "This dataset metadata was generated with the use of AI and reviewed by an expert. If you see any mistakes please file an issue on GitHub at https://github.com/earthcube/communityCollections/issues.",
   "@id": "https://www.mrlc.gov/data/type/legacy-nlcd#dataset",
   "name": "Legacy National Land Cover Database (NLCD) Products",
   "description": "Legacy NLCD products provide nationwide (United States) land cover and land cover change datasets at 30-meter resolution using a 16-class legend based on a modified Anderson Level II classification system. The legacy product suite supports cyclical updates of U.S. land cover and change, enabling monitoring and long-term trend assessments across many application areas (e.g., hydrology, environmental planning, risk analysis, education, and land management).",
@@ -16,16 +15,6 @@
     "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
     "url": "https://www.mrlc.gov/"
   },
-  "keywords": [
-    "NLCD",
-    "legacy NLCD",
-    "land cover",
-    "land change",
-    "tree canopy",
-    "impervious surface",
-    "remote sensing",
-    "Landsat"
-  ],
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -157,5 +146,25 @@
       "@type": "Thing",
       "name": "Remote sensing"
     }
-  ]
+  ],
+  "keywords": [
+    "NLCD",
+    "legacy NLCD",
+    "land cover",
+    "land change",
+    "tree canopy",
+    "impervious surface",
+    "remote sensing",
+    "Landsat",
+    "AI-generated metadata"
+  ],
+  "sdCreator": {
+    "@type": "SoftwareApplication",
+    "name": "ChatGPT",
+    "applicationCategory": "GenerativeAI",
+    "provider": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
 }
