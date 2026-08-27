@@ -117,10 +117,13 @@ DATA_DIR = PROJECT_ROOT / "data" / "objects" / "summoned"
 # AI metadata disclosure (Issue #12). Interim until Schema.org guidance from
 # https://github.com/schemaorg/schemaorg/issues/3391 is available.
 # - keywords: UI tag/banner ("AI-generated metadata")
-# - sdCreator SoftwareApplication: who created the structured data markup (ChatGPT / OpenAI)
+# - sdPublisher: Organization with alternateType SoftwareApplication (ChatGPT / OpenAI)
+#   Dataset.sdPublisher expects Organization; alternateType records that this
+#   publisher is also a SoftwareApplication.
 AI_GENERATED_KEYWORD = "AI-generated metadata"
-AI_SD_CREATOR = {
-    "@type": "SoftwareApplication",
+AI_SD_PUBLISHER = {
+    "@type": "Organization",
+    "alternateType": "SoftwareApplication",
     "name": "ChatGPT",
     "applicationCategory": "GenerativeAI",
     "provider": {
@@ -268,17 +271,21 @@ class AIClient:
         """Add machine-readable AI metadata disclosure.
 
         - keywords: "AI-generated metadata" (UI tag/banner)
-        - sdCreator: SoftwareApplication for ChatGPT (who created the structured data)
-        - removes legacy AI comment / additionalProperty / contributor ChatGPT if present
+        - sdPublisher: Organization + alternateType SoftwareApplication (ChatGPT)
+        - removes legacy AI comment / additionalProperty / contributor / sdCreator ChatGPT
         """
         if not isinstance(data, dict):
             return data
 
-        def _is_chatgpt_app(obj: Any) -> bool:
+        def _is_chatgpt_disclosure(obj: Any) -> bool:
+            if not isinstance(obj, dict) or obj.get("name") != "ChatGPT":
+                return False
+            types = obj.get("@type")
+            type_list = types if isinstance(types, list) else [types]
             return (
-                isinstance(obj, dict)
-                and obj.get("@type") == "SoftwareApplication"
-                and obj.get("name") == "ChatGPT"
+                "SoftwareApplication" in type_list
+                or "Organization" in type_list
+                or obj.get("alternateType") == "SoftwareApplication"
             )
 
         # keywords
@@ -297,30 +304,32 @@ class AIClient:
         else:
             new_keywords = [AI_GENERATED_KEYWORD]
 
-        # sdCreator: structured-data markup creator (ChatGPT)
-        ai_creator = dict(AI_SD_CREATOR)
-        existing_sd = data.get("sdCreator")
+        # sdPublisher: structured-data publisher (ChatGPT as Organization)
+        ai_publisher = dict(AI_SD_PUBLISHER)
+        existing_sd = data.get("sdPublisher")
         if existing_sd is None:
-            new_sd_creator: Any = ai_creator
+            new_sd_publisher: Any = ai_publisher
         elif isinstance(existing_sd, list):
-            kept = [c for c in existing_sd if not _is_chatgpt_app(c)]
-            new_sd_creator = kept + [ai_creator]
+            kept = [c for c in existing_sd if not _is_chatgpt_disclosure(c)]
+            new_sd_publisher = kept + [ai_publisher]
         elif isinstance(existing_sd, dict):
-            new_sd_creator = (
-                ai_creator if _is_chatgpt_app(existing_sd) else [existing_sd, ai_creator]
+            new_sd_publisher = (
+                ai_publisher
+                if _is_chatgpt_disclosure(existing_sd)
+                else [existing_sd, ai_publisher]
             )
         else:
-            new_sd_creator = ai_creator
+            new_sd_publisher = ai_publisher
 
-        # strip ChatGPT from contributor (legacy placement); keep real people/orgs
+        # strip ChatGPT from contributor / sdCreator (legacy placements)
         contributor = data.get("contributor")
         new_contributor = None
         if isinstance(contributor, list):
-            kept = [c for c in contributor if not _is_chatgpt_app(c)]
+            kept = [c for c in contributor if not _is_chatgpt_disclosure(c)]
             if kept:
                 new_contributor = kept if len(kept) != 1 else kept[0]
         elif isinstance(contributor, dict):
-            if not _is_chatgpt_app(contributor):
+            if not _is_chatgpt_disclosure(contributor):
                 new_contributor = contributor
 
         # strip legacy AI additionalProperty flags
@@ -357,13 +366,20 @@ class AIClient:
                 new_comment = comment
 
         out: Dict = {}
-        skip = {"comment", "keywords", "additionalProperty", "contributor", "sdCreator"}
+        skip = {
+            "comment",
+            "keywords",
+            "additionalProperty",
+            "contributor",
+            "sdCreator",
+            "sdPublisher",
+        }
         for k, v in data.items():
             if k in skip:
                 continue
             out[k] = v
         out["keywords"] = new_keywords
-        out["sdCreator"] = new_sd_creator
+        out["sdPublisher"] = new_sd_publisher
         if new_contributor is not None:
             out["contributor"] = new_contributor
         if new_props is not None:
