@@ -48,8 +48,9 @@
     "University of Maryland",
     "AI-generated metadata"
   ],
-  "sdCreator": {
-    "@type": "SoftwareApplication",
+  "sdPublisher": {
+    "@type": "Organization",
+    "alternateType": "SoftwareApplication",
     "name": "ChatGPT",
     "applicationCategory": "GenerativeAI",
     "provider": {
