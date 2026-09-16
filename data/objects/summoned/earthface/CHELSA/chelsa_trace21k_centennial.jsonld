@@ -24,56 +24,60 @@
       "name": "Precipitation",
       "alternateName": "pr",
       "unitText": "kg m-2 day-1",
-      "description": "Precipitation including liquid and solid phases.",
+      "description": "Precipitation including liquid and solid phases. EnviCloud directory: chelsa_trace21k/global/centennial/pr/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fcentennial%2Fpr%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Daily Maximum Near-Surface Air Temperature",
       "alternateName": "tasmax",
       "unitText": "K",
-      "description": "Maximum near-surface, usually 2 meter, air temperature.",
+      "description": "Maximum near-surface, usually 2 meter, air temperature. EnviCloud directory: chelsa_trace21k/global/centennial/tasmax/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fcentennial%2Ftasmax%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Daily Minimum Near-Surface Air Temperature",
       "alternateName": "tasmin",
       "unitText": "K",
-      "description": "Minimum near-surface, usually 2 meter, air temperature.",
+      "description": "Minimum near-surface, usually 2 meter, air temperature. EnviCloud directory: chelsa_trace21k/global/centennial/tasmin/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fcentennial%2Ftasmin%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Air Temperature Lapse Rate",
       "alternateName": "tz",
       "unitText": "K m-1",
-      "description": "Rate of change in air temperature with altitude calculated over the centennial period.",
+      "description": "Rate of change in air temperature with altitude calculated over the centennial period. EnviCloud directory: chelsa_trace21k/global/centennial/tz/",
       "temporalCoverage": "21000BP/0BP",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Global land surface areas"
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fcentennial%2Ftz%2F"
     }
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -87,7 +91,7 @@
     {
       "@type": "DataDownload",
       "name": "CHELSA-TraCE21k-centennial downloads (COG)",
-      "description": "Download portal for TraCE21k centennial climatologies.",
+      "description": "EnviCloud download portal (bucket prefix: chelsa_trace21k/global/centennial/). Each variable is typically stored in a subdirectory named by its code.",
       "contentUrl": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.zhdk.cloud.switch.ch%2Fchelsa01%2F&prefix=chelsa_trace21k%2Fglobal%2Fcentennial%2F",
       "encodingFormat": [
         "image/tiff",

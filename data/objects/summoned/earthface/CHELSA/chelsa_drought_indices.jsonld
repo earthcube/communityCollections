@@ -24,7 +24,7 @@
       "name": "Multiyear Meteorological Drought",
       "alternateName": "mymd",
       "unitText": "id",
-      "description": "Identifier for multiyear meteorological drought events.",
+      "description": "Identifier for multiyear meteorological drought events. EnviCloud directory: chelsa/global/annual/mymd/",
       "temporalCoverage": "1980-06-15/2018-07-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -35,14 +35,15 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fannual%2Fmymd%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Multiyear Meteorological Drought at 10 km Resolution",
       "alternateName": "mymd10",
       "unitText": "id",
-      "description": "Identifier for multiyear meteorological drought events at 10 km resolution.",
+      "description": "Identifier for multiyear meteorological drought events at 10 km resolution. EnviCloud directory: chelsa/global/annual/mymd10/",
       "temporalCoverage": "1980-06-15/2018-07-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -53,14 +54,15 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fannual%2Fmymd10%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Kernel Normalized Difference Vegetation Index Anomaly",
       "alternateName": "qkndvi",
       "unitText": "1",
-      "description": "Annual anomaly in vegetation greenness derived from kernel normalized difference vegetation index.",
+      "description": "Annual anomaly in vegetation greenness derived from kernel normalized difference vegetation index. EnviCloud directory: chelsa/global/annual/qkndvi/",
       "temporalCoverage": "1980-06-15/2018-07-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -71,14 +73,15 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fannual%2Fqkndvi%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Standardized Precipitation Evapotranspiration Index",
       "alternateName": "spei12",
       "unitText": "1",
-      "description": "Standardized climatic water balance index over a 12-month integration period.",
+      "description": "Standardized climatic water balance index over a 12-month integration period. EnviCloud directory: chelsa/global/annual/spei12/",
       "temporalCoverage": "1980-06-15/2018-07-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -89,14 +92,15 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fannual%2Fspei12%2F"
     },
     {
       "@type": "PropertyValue",
       "name": "Standardized Precipitation Index",
       "alternateName": "spi12",
       "unitText": "1",
-      "description": "Standardized precipitation anomaly index over a 12-month integration period.",
+      "description": "Standardized precipitation anomaly index over a 12-month integration period. EnviCloud directory: chelsa/global/annual/spi12/",
       "temporalCoverage": "1980-06-15/2018-07-15",
       "spatialCoverage": {
         "@type": "Place",
@@ -107,7 +111,8 @@
         }
       },
       "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "spatialResolution": "not detected",
+      "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fannual%2Fspi12%2F"
     }
   ],
   "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -121,7 +126,7 @@
     {
       "@type": "DataDownload",
       "name": "CHELSA-drought-indices downloads (COG)",
-      "description": "Download portal for CHELSA drought indices.",
+      "description": "EnviCloud download portal (bucket prefix: chelsa/global/annual/). Each variable is typically stored in a subdirectory named by its code.",
       "contentUrl": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fannual%2F",
       "encodingFormat": [
         "image/tiff",
