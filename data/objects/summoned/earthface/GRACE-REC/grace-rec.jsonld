@@ -51,26 +51,17 @@
       "box": "-180,-90 180,90"
     }
   },
+  "spatialResolution": "0.5 degree",
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "Terrestrial water storage anomaly",
-      "description": "Reconstructed climate-driven terrestrial water storage anomalies (TWSA) derived from statistical modeling calibrated to GRACE observations.",
-      "temporalResolution": [
-        "P1D",
-        "P1M"
-      ],
-      "spatialResolution": "0.5 degree"
+      "description": "Reconstructed climate-driven terrestrial water storage anomalies (TWSA) derived from statistical modeling calibrated to GRACE observations."
     },
     {
       "@type": "PropertyValue",
       "name": "Ensemble members",
-      "description": "Multiple ensemble realizations to quantify predictive uncertainty for reconstructed TWS anomalies.",
-      "temporalResolution": [
-        "P1D",
-        "P1M"
-      ],
-      "spatialResolution": "0.5 degree"
+      "description": "Multiple ensemble realizations to quantify predictive uncertainty for reconstructed TWS anomalies."
     }
   ],
   "measurementTechnique": [

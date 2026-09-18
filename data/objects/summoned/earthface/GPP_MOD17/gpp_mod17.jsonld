@@ -38,16 +38,12 @@
     {
       "@type": "PropertyValue",
       "name": "GPP",
-      "description": "Gross Primary Production",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Gross Primary Production"
     },
     {
       "@type": "PropertyValue",
       "name": "NPP",
-      "description": "Net Primary Production",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Net Primary Production"
     }
   ],
   "encodingFormat": [

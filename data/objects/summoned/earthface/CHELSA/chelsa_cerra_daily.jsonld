@@ -30,8 +30,6 @@
       "alternateName": "tas",
       "unitText": "K",
       "description": "Near-surface, usually 2 meter, air temperature. EnviCloud directory: chelsa/europe/daily/tas/",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Feurope%2Fdaily%2Ftas%2F"
     }
   ],

@@ -69,13 +69,13 @@
       "box": "-180,-90 180,90"
     }
   },
+  "temporalResolution": "P1M",
+  "spatialResolution": "0.5 degree",
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "Runoff",
-      "description": "Monthly gridded runoff rates reconstructed using machine learning trained on in-situ streamflow observations.",
-      "temporalResolution": "P1M",
-      "spatialResolution": "0.5 degree"
+      "description": "Monthly gridded runoff rates reconstructed using machine learning trained on in-situ streamflow observations."
     }
   ],
   "measurementTechnique": [

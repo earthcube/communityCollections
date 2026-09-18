@@ -68,104 +68,78 @@
     "application/x-netcdf",
     "text/html"
   ],
+  "temporalResolution": "P1M",
+  "spatialResolution": "1/24 degree (~4 km)",
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "Maximum temperature",
-      "unitText": "C",
-      "temporalResolution": "P1M",
-      "spatialResolution": "1/24 degree (~4 km)"
+      "unitText": "C"
     },
     {
       "@type": "PropertyValue",
       "name": "Minimum temperature",
-      "unitText": "C",
-      "temporalResolution": "P1M",
-      "spatialResolution": "1/24 degree (~4 km)"
+      "unitText": "C"
     },
     {
       "@type": "PropertyValue",
       "name": "Vapor pressure",
-      "unitText": "kPa",
-      "temporalResolution": "P1M",
-      "spatialResolution": "1/24 degree (~4 km)"
+      "unitText": "kPa"
     },
     {
       "@type": "PropertyValue",
       "name": "Precipitation accumulation",
-      "unitText": "mm",
-      "temporalResolution": "P1M",
-      "spatialResolution": "1/24 degree (~4 km)"
+      "unitText": "mm"
     },
     {
       "@type": "PropertyValue",
       "name": "Downward surface shortwave radiation",
-      "unitText": "W/m2",
-      "temporalResolution": "P1M",
-      "spatialResolution": "1/24 degree (~4 km)"
+      "unitText": "W/m2"
     },
     {
       "@type": "PropertyValue",
       "name": "Wind speed",
-      "unitText": "m/s",
-      "temporalResolution": "P1M",
-      "spatialResolution": "1/24 degree (~4 km)"
+      "unitText": "m/s"
     },
     {
       "@type": "PropertyValue",
       "name": "Reference evapotranspiration (ASCE Penman–Monteith)",
-      "unitText": "mm",
-      "temporalResolution": "P1M",
-      "spatialResolution": "1/24 degree (~4 km)"
+      "unitText": "mm"
     },
     {
       "@type": "PropertyValue",
       "name": "Runoff",
-      "unitText": "mm",
-      "temporalResolution": "P1M",
-      "spatialResolution": "1/24 degree (~4 km)"
+      "unitText": "mm"
     },
     {
       "@type": "PropertyValue",
       "name": "Actual evapotranspiration",
-      "unitText": "mm",
-      "temporalResolution": "P1M",
-      "spatialResolution": "1/24 degree (~4 km)"
+      "unitText": "mm"
     },
     {
       "@type": "PropertyValue",
       "name": "Climate water deficit",
-      "unitText": "mm",
-      "temporalResolution": "P1M",
-      "spatialResolution": "1/24 degree (~4 km)"
+      "unitText": "mm"
     },
     {
       "@type": "PropertyValue",
       "name": "Soil moisture (total column, end of month)",
-      "unitText": "mm",
-      "temporalResolution": "P1M",
-      "spatialResolution": "1/24 degree (~4 km)"
+      "unitText": "mm"
     },
     {
       "@type": "PropertyValue",
       "name": "Snow water equivalent (end of month)",
-      "unitText": "mm",
-      "temporalResolution": "P1M",
-      "spatialResolution": "1/24 degree (~4 km)"
+      "unitText": "mm"
     },
     {
       "@type": "PropertyValue",
       "name": "Palmer Drought Severity Index (PDSI)",
-      "unitText": "unitless",
-      "temporalResolution": "P1M",
-      "spatialResolution": "1/24 degree (~4 km)"
+      "unitText": "unitless"
     },
     {
       "@type": "PropertyValue",
       "name": "Vapor pressure deficit (VPD)",
-      "unitText": "kPa",
-      "temporalResolution": "P1M",
-      "spatialResolution": "1/24 degree (~4 km)"
+      "unitText": "kPa"
     }
   ],
   "measurementTechnique": [

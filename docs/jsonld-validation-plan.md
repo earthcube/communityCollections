@@ -13,12 +13,13 @@ Validate generated JSON-LD against the authoritative dataset webpage, linked dow
 - Put `temporalCoverage` and `spatialCoverage` on the Dataset (Schema.org CreativeWork properties), not on each `variableMeasured` PropertyValue.
 - Prefer a Dataset `spatialCoverage` Place with `geo.GeoShape.box` when bounds are known; include a place name when confident.
 - Prefer a Dataset `temporalCoverage` range from the source page when available.
+- Put known `temporalResolution` / `spatialResolution` on the Dataset; omit them when unknown (do not use `"not detected"` placeholders on PropertyValue).
 
 ## Generation Safeguards
 
 - The generation prompt requires separate variable rows, structured citation arrays, exact download targets, and Dataset-level temporal and spatial coverage fields.
 - `generate_jsonld.py` extracts source-page download links, citation text, and variable rows and passes them into the generation prompt.
-- `generate_jsonld.py` promotes misplaced coverage from `variableMeasured` up to the Dataset when needed, and emits review warnings when generated JSON-LD still contains lumped variable names, omits source-listed variables, lacks Dataset-level temporal or spatial coverage, contains plain-string citations, or distributions omit exact source-page download links.
+- `generate_jsonld.py` promotes misplaced coverage/resolution from `variableMeasured` up to the Dataset when needed, strips PropertyValue placeholders, and emits review warnings when generated JSON-LD still contains lumped variable names, omits source-listed variables, lacks Dataset-level temporal or spatial coverage, contains plain-string citations, or distributions omit exact source-page download links.
 
 ## Validation
 

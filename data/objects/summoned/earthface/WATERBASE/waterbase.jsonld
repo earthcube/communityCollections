@@ -41,23 +41,17 @@
     {
       "@type": "PropertyValue",
       "name": "Water quality parameters",
-      "description": "Measured and aggregated parameters describing chemical and physico-chemical water quality in inland and coastal/marine waters (including nutrients, organic matter, hazardous substances, pesticides and other chemicals).",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Measured and aggregated parameters describing chemical and physico-chemical water quality in inland and coastal/marine waters (including nutrients, organic matter, hazardous substances, pesticides and other chemicals)."
     },
     {
       "@type": "PropertyValue",
       "name": "Monitoring locations and water bodies",
-      "description": "Spatial identifiers and associated attributes for monitoring sites and water bodies reported through WISE and WFD/WISE spatial reporting.",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Spatial identifiers and associated attributes for monitoring sites and water bodies reported through WISE and WFD/WISE spatial reporting."
     },
     {
       "@type": "PropertyValue",
       "name": "Ecological and chemical status (where applicable)",
-      "description": "Reported status and classification attributes associated with monitored waters and water bodies, as provided in reporting streams.",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Reported status and classification attributes associated with monitored waters and water bodies, as provided in reporting streams."
     }
   ],
   "measurementTechnique": [

@@ -43,37 +43,27 @@
     {
       "@type": "PropertyValue",
       "name": "Built-up surface",
-      "description": "Gridded built-up surface area (including total and non-residential components for some products).",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Gridded built-up surface area (including total and non-residential components for some products)."
     },
     {
       "@type": "PropertyValue",
       "name": "Built-up volume",
-      "description": "Gridded built-up volume estimates (including total and non-residential components for some products).",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Gridded built-up volume estimates (including total and non-residential components for some products)."
     },
     {
       "@type": "PropertyValue",
       "name": "Building height",
-      "description": "Gridded building height estimates for selected reference years/products.",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Gridded building height estimates for selected reference years/products."
     },
     {
       "@type": "PropertyValue",
       "name": "Population",
-      "description": "Residential population grid (number of people per cell) for multiple epochs and projections.",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Residential population grid (number of people per cell) for multiple epochs and projections."
     },
     {
       "@type": "PropertyValue",
       "name": "Settlement Typology and Degree of Urbanisation",
-      "description": "Settlement model classification based on the UN-recommended Degree of Urbanisation methodology.",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Settlement model classification based on the UN-recommended Degree of Urbanisation methodology."
     }
   ],
   "encodingFormat": [

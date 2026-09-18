@@ -24,66 +24,35 @@
       "box": "-130,30 -95,50"
     }
   },
+  "spatialResolution": {
+    "@type": "QuantitativeValue",
+    "value": 30,
+    "unitText": "m"
+  },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "EAG fractional cover (multiple species group)",
-      "temporalResolution": "not detected",
-      "spatialResolution": {
-        "@type": "QuantitativeValue",
-        "value": 30,
-        "unitText": "m"
-      }
+      "name": "EAG fractional cover (multiple species group)"
     },
     {
       "@type": "PropertyValue",
-      "name": "Cheatgrass (Bromus tectorum) fractional cover",
-      "temporalResolution": "not detected",
-      "spatialResolution": {
-        "@type": "QuantitativeValue",
-        "value": 30,
-        "unitText": "m"
-      }
+      "name": "Cheatgrass (Bromus tectorum) fractional cover"
     },
     {
       "@type": "PropertyValue",
-      "name": "Other Bromus spp. fractional cover (Field brome + Japanese brome)",
-      "temporalResolution": "not detected",
-      "spatialResolution": {
-        "@type": "QuantitativeValue",
-        "value": 30,
-        "unitText": "m"
-      }
+      "name": "Other Bromus spp. fractional cover (Field brome + Japanese brome)"
     },
     {
       "@type": "PropertyValue",
-      "name": "Medusahead (Taeniatherum caput-medusae) fractional cover",
-      "temporalResolution": "not detected",
-      "spatialResolution": {
-        "@type": "QuantitativeValue",
-        "value": 30,
-        "unitText": "m"
-      }
+      "name": "Medusahead (Taeniatherum caput-medusae) fractional cover"
     },
     {
       "@type": "PropertyValue",
-      "name": "Sandberg bluegrass (Poa secunda) fractional cover",
-      "temporalResolution": "not detected",
-      "spatialResolution": {
-        "@type": "QuantitativeValue",
-        "value": 30,
-        "unitText": "m"
-      }
+      "name": "Sandberg bluegrass (Poa secunda) fractional cover"
     },
     {
       "@type": "PropertyValue",
-      "name": "Confidence maps (per target)",
-      "temporalResolution": "not detected",
-      "spatialResolution": {
-        "@type": "QuantitativeValue",
-        "value": 30,
-        "unitText": "m"
-      }
+      "name": "Confidence maps (per target)"
     }
   ],
   "measurementTechnique": [

@@ -48,37 +48,27 @@
     {
       "@type": "PropertyValue",
       "name": "Common water quality measurements",
-      "description": "Common field and laboratory measurements such as pH, major ions (Na, K, Mg, Ca, sulfate, chloride, bromide), nutrients (ammonium, nitrate, nitrite, total N), alkalinity/acidity, hardness, TDS, and related parameters.",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Common field and laboratory measurements such as pH, major ions (Na, K, Mg, Ca, sulfate, chloride, bromide), nutrients (ammonium, nitrate, nitrite, total N), alkalinity/acidity, hardness, TDS, and related parameters."
     },
     {
       "@type": "PropertyValue",
       "name": "Trace elements",
-      "description": "Trace element concentrations such as Al, As, Ba, B, Cd, Cr, Co, Cu, Fe, Pb, Li, Mn, Hg, Mo, Ni, Se, Ag, Sr, Th, U, Zn (availability varies by site and dataset).",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Trace element concentrations such as Al, As, Ba, B, Cd, Cr, Co, Cu, Fe, Pb, Li, Mn, Hg, Mo, Ni, Se, Ag, Sr, Th, U, Zn (availability varies by site and dataset)."
     },
     {
       "@type": "PropertyValue",
       "name": "Naturally occurring radioactive material (NORM)",
-      "description": "Radiological measurements such as gross alpha/beta, Ra-226, and Ra-228 (availability varies).",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Radiological measurements such as gross alpha/beta, Ra-226, and Ra-228 (availability varies)."
     },
     {
       "@type": "PropertyValue",
       "name": "Organic constituents",
-      "description": "Organic compounds and indicators such as benzene, toluene, ethylbenzene, xylenes, naphthalene, oil and grease, phenolics, and related constituents (availability varies).",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Organic compounds and indicators such as benzene, toluene, ethylbenzene, xylenes, naphthalene, oil and grease, phenolics, and related constituents (availability varies)."
     },
     {
       "@type": "PropertyValue",
       "name": "Water quantity (where available)",
-      "description": "Water quantity observations associated with monitoring sites where contributed and published through HIS services.",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Water quantity observations associated with monitoring sites where contributed and published through HIS services."
     }
   ],
   "measurementTechnique": [

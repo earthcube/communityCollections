@@ -53,51 +53,37 @@
     {
       "@type": "PropertyValue",
       "name": "Water quality results",
-      "description": "Discrete sample results including measured values, units, methods, and qualifiers for physical, chemical, and biological characteristics.",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Discrete sample results including measured values, units, methods, and qualifiers for physical, chemical, and biological characteristics."
     },
     {
       "@type": "PropertyValue",
       "name": "Station and Monitoring Location Metadata",
-      "description": "Locations where samples and observations were collected, including identifiers, coordinates, and site descriptors.",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Locations where samples and observations were collected, including identifiers, coordinates, and site descriptors."
     },
     {
       "@type": "PropertyValue",
       "name": "Nutrients",
-      "description": "Nutrient-related characteristics such as nitrogen and phosphorus species.",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Nutrient-related characteristics such as nitrogen and phosphorus species."
     },
     {
       "@type": "PropertyValue",
       "name": "Metals and trace elements",
-      "description": "Metals and trace elements measured in water, sediment, or related matrices.",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Metals and trace elements measured in water, sediment, or related matrices."
     },
     {
       "@type": "PropertyValue",
       "name": "Organic contaminants and pesticides",
-      "description": "Organic contaminants, pesticides, and related analytes reported by contributing organizations.",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Organic contaminants, pesticides, and related analytes reported by contributing organizations."
     },
     {
       "@type": "PropertyValue",
       "name": "Physical parameters",
-      "description": "Physical characteristics such as temperature, specific conductance, turbidity, and dissolved oxygen (where available).",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Physical characteristics such as temperature, specific conductance, turbidity, and dissolved oxygen (where available)."
     },
     {
       "@type": "PropertyValue",
       "name": "Biological data",
-      "description": "Biological observations and metrics available through WQP services where reported by data providers.",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected"
+      "description": "Biological observations and metrics available through WQP services where reported by data providers."
     }
   ],
   "encodingFormat": [

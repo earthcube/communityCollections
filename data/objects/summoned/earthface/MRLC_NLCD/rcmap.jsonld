@@ -24,66 +24,35 @@
       "box": "-130,25 -95,60"
     }
   },
+  "spatialResolution": {
+    "@type": "QuantitativeValue",
+    "value": 30,
+    "unitText": "m"
+  },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "Bare ground cover (percent)",
-      "temporalResolution": "not detected",
-      "spatialResolution": {
-        "@type": "QuantitativeValue",
-        "value": 30,
-        "unitText": "m"
-      }
+      "name": "Bare ground cover (percent)"
     },
     {
       "@type": "PropertyValue",
-      "name": "Herbaceous cover (percent)",
-      "temporalResolution": "not detected",
-      "spatialResolution": {
-        "@type": "QuantitativeValue",
-        "value": 30,
-        "unitText": "m"
-      }
+      "name": "Herbaceous cover (percent)"
     },
     {
       "@type": "PropertyValue",
-      "name": "Litter cover (percent)",
-      "temporalResolution": "not detected",
-      "spatialResolution": {
-        "@type": "QuantitativeValue",
-        "value": 30,
-        "unitText": "m"
-      }
+      "name": "Litter cover (percent)"
     },
     {
       "@type": "PropertyValue",
-      "name": "Shrub cover (percent)",
-      "temporalResolution": "not detected",
-      "spatialResolution": {
-        "@type": "QuantitativeValue",
-        "value": 30,
-        "unitText": "m"
-      }
+      "name": "Shrub cover (percent)"
     },
     {
       "@type": "PropertyValue",
-      "name": "Sagebrush cover (percent)",
-      "temporalResolution": "not detected",
-      "spatialResolution": {
-        "@type": "QuantitativeValue",
-        "value": 30,
-        "unitText": "m"
-      }
+      "name": "Sagebrush cover (percent)"
     },
     {
       "@type": "PropertyValue",
-      "name": "Tree cover (percent)",
-      "temporalResolution": "not detected",
-      "spatialResolution": {
-        "@type": "QuantitativeValue",
-        "value": 30,
-        "unitText": "m"
-      }
+      "name": "Tree cover (percent)"
     }
   ],
   "measurementTechnique": [

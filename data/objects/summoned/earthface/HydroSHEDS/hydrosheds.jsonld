@@ -34,105 +34,52 @@
     "@type": "Place",
     "name": "Global and regional hydrographic products; product-specific coverage varies"
   },
+  "temporalResolution": "Static",
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "Catchment and Sub-Basin Boundaries",
-      "description": "Vector catchment and sub-basin boundary products derived from HydroSHEDS hydrography.",
-      "temporalResolution": "Static",
-      "spatialResolution": [
-        "3 arc-second",
-        "15 arc-second",
-        "30 arc-second"
-      ]
+      "description": "Vector catchment and sub-basin boundary products derived from HydroSHEDS hydrography."
     },
     {
       "@type": "PropertyValue",
       "name": "River networks",
-      "description": "Vector river/stream network products derived from HydroSHEDS hydrography.",
-      "temporalResolution": "Static",
-      "spatialResolution": [
-        "3 arc-second",
-        "15 arc-second",
-        "30 arc-second"
-      ]
+      "description": "Vector river/stream network products derived from HydroSHEDS hydrography."
     },
     {
       "@type": "PropertyValue",
       "name": "Lakes and water bodies",
-      "description": "Lake and water body products distributed as part of the HydroSHEDS product suite.",
-      "temporalResolution": "Static",
-      "spatialResolution": [
-        "3 arc-second",
-        "15 arc-second",
-        "30 arc-second"
-      ]
+      "description": "Lake and water body products distributed as part of the HydroSHEDS product suite."
     },
     {
       "@type": "PropertyValue",
       "name": "Void-filled DEM",
-      "description": "Digital elevation model underpinning HydroSHEDS core layers.",
-      "temporalResolution": "Static",
-      "spatialResolution": [
-        "3 arc-second",
-        "15 arc-second",
-        "30 arc-second"
-      ]
+      "description": "Digital elevation model underpinning HydroSHEDS core layers."
     },
     {
       "@type": "PropertyValue",
       "name": "Conditioned DEM",
-      "description": "Hydrologically conditioned DEM used to derive flow products.",
-      "temporalResolution": "Static",
-      "spatialResolution": [
-        "3 arc-second",
-        "15 arc-second",
-        "30 arc-second"
-      ]
+      "description": "Hydrologically conditioned DEM used to derive flow products."
     },
     {
       "@type": "PropertyValue",
       "name": "Flow direction",
-      "description": "Drainage direction grid derived from the conditioned DEM.",
-      "temporalResolution": "Static",
-      "spatialResolution": [
-        "3 arc-second",
-        "15 arc-second",
-        "30 arc-second"
-      ]
+      "description": "Drainage direction grid derived from the conditioned DEM."
     },
     {
       "@type": "PropertyValue",
       "name": "Flow accumulation",
-      "description": "Upstream contributing area / upstream cell count derived from flow direction.",
-      "temporalResolution": "Static",
-      "spatialResolution": [
-        "3 arc-second",
-        "15 arc-second",
-        "30 arc-second"
-      ]
+      "description": "Upstream contributing area / upstream cell count derived from flow direction."
     },
     {
       "@type": "PropertyValue",
       "name": "Flow length",
-      "description": "Upstream and/or downstream flow length derived from flow direction.",
-      "temporalResolution": "Static",
-      "spatialResolution": [
-        "3 arc-second",
-        "15 arc-second",
-        "30 arc-second"
-      ]
+      "description": "Upstream and/or downstream flow length derived from flow direction."
     },
     {
       "@type": "PropertyValue",
       "name": "Land mask and sinks",
-      "description": "Land/ocean mask and coastal/inland sink indicators used in HydroSHEDS processing.",
-      "temporalResolution": "Static",
-      "spatialResolution": [
-        "3 arc-second",
-        "15 arc-second",
-        "30 arc-second"
-      ]
+      "description": "Land/ocean mask and coastal/inland sink indicators used in HydroSHEDS processing."
     }
   ],
   "encodingFormat": [

@@ -238,11 +238,18 @@ class AIClient:
         Schema.org defines these on CreativeWork (Dataset). Discovery UIs read
         Dataset-level coverage for maps; values nested under PropertyValue are
         easy to miss even when GeoShape.box is present in the RDF.
+
+        Also strips PropertyValue placeholder resolution fields ("not detected")
+        and promotes a meaningful Dataset-level temporalResolution/spatialResolution
+        when available.
         """
         if not isinstance(data, dict):
             return data
 
         placeholders = {"", "not detected", "none", "n/a", "na"}
+
+        def _is_placeholder_text(value: Any) -> bool:
+            return isinstance(value, str) and value.strip().lower() in placeholders
 
         def _is_meaningful_temporal(value: Any) -> bool:
             if isinstance(value, list):
@@ -261,6 +268,21 @@ class AIClient:
                 return True
             if value.get("name") and str(value.get("name")).strip().lower() not in placeholders:
                 return True
+            return False
+
+        def _is_meaningful_resolution(value: Any) -> bool:
+            if value is None or _is_placeholder_text(value):
+                return False
+            if isinstance(value, (int, float)):
+                return True
+            if isinstance(value, str):
+                return bool(value.strip())
+            if isinstance(value, dict):
+                # QuantitativeValue or similar structured resolution
+                if value.get("value") is not None and not _is_placeholder_text(value.get("value")):
+                    return True
+                if value.get("minValue") is not None or value.get("maxValue") is not None:
+                    return True
             return False
 
         variables = data.get("variableMeasured")
@@ -282,15 +304,33 @@ class AIClient:
                     data["spatialCoverage"] = item["spatialCoverage"]
                     break
 
-        # Strip coverage from PropertyValue entries (wrong Schema.org domain)
+        if not _is_meaningful_resolution(data.get("temporalResolution")):
+            for item in var_list:
+                if isinstance(item, dict) and _is_meaningful_resolution(item.get("temporalResolution")):
+                    data["temporalResolution"] = item["temporalResolution"]
+                    break
+
+        if not _is_meaningful_resolution(data.get("spatialResolution")):
+            for item in var_list:
+                if isinstance(item, dict) and _is_meaningful_resolution(item.get("spatialResolution")):
+                    data["spatialResolution"] = item["spatialResolution"]
+                    break
+
+        # Strip coverage and resolution from PropertyValue entries (wrong Schema.org
+        # domain for these Dataset/CreativeWork properties). Placeholders are dropped;
+        # meaningful resolution is kept only at Dataset level after promotion above.
+        def _clean_variable(item: Dict) -> None:
+            item.pop("temporalCoverage", None)
+            item.pop("spatialCoverage", None)
+            item.pop("temporalResolution", None)
+            item.pop("spatialResolution", None)
+
         if isinstance(variables, list):
             for item in variables:
                 if isinstance(item, dict):
-                    item.pop("temporalCoverage", None)
-                    item.pop("spatialCoverage", None)
+                    _clean_variable(item)
         elif isinstance(variables, dict):
-            variables.pop("temporalCoverage", None)
-            variables.pop("spatialCoverage", None)
+            _clean_variable(variables)
 
         return data
     

@@ -24,46 +24,28 @@
       "box": "-180,15 -50,72"
     }
   },
+  "temporalResolution": "Static",
+  "spatialResolution": {
+    "@type": "QuantitativeValue",
+    "value": 30,
+    "unitText": "m"
+  },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "Land cover class (16-class legend)",
-      "temporalResolution": "Static",
-      "spatialResolution": {
-        "@type": "QuantitativeValue",
-        "value": 30,
-        "unitText": "m"
-      }
+      "name": "Land cover class (16-class legend)"
     },
     {
       "@type": "PropertyValue",
-      "name": "Land cover change (varies by product)",
-      "temporalResolution": "Static",
-      "spatialResolution": {
-        "@type": "QuantitativeValue",
-        "value": 30,
-        "unitText": "m"
-      }
+      "name": "Land cover change (varies by product)"
     },
     {
       "@type": "PropertyValue",
-      "name": "Percent impervious surface (selected releases)",
-      "temporalResolution": "Static",
-      "spatialResolution": {
-        "@type": "QuantitativeValue",
-        "value": 30,
-        "unitText": "m"
-      }
+      "name": "Percent impervious surface (selected releases)"
     },
     {
       "@type": "PropertyValue",
-      "name": "Tree canopy cover (selected releases)",
-      "temporalResolution": "Static",
-      "spatialResolution": {
-        "@type": "QuantitativeValue",
-        "value": 30,
-        "unitText": "m"
-      }
+      "name": "Tree canopy cover (selected releases)"
     }
   ],
   "measurementTechnique": [

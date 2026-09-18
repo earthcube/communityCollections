@@ -34,8 +34,6 @@
       "alternateName": "clt",
       "unitText": "percent",
       "description": "Total cloud area fraction, reported as a percentage, for the whole atmospheric column. EnviCloud directory: chelsa/global/daily/clt/",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fdaily%2Fclt%2F"
     },
     {
@@ -44,8 +42,6 @@
       "alternateName": "hurs",
       "unitText": "percent",
       "description": "Relative humidity near the surface. EnviCloud directory: chelsa/global/daily/hurs/",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fdaily%2Fhurs%2F"
     },
     {
@@ -54,8 +50,6 @@
       "alternateName": "pr",
       "unitText": "kg m-2 day-1",
       "description": "Precipitation including liquid and solid phases. EnviCloud directory: chelsa/global/daily/pr/",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fdaily%2Fpr%2F"
     },
     {
@@ -64,8 +58,6 @@
       "alternateName": "prec",
       "unitText": "kg m-2 day-1",
       "description": "Downscaled forecast precipitation from ERA5; not bias corrected and should not be mixed with pr. EnviCloud directory: chelsa/global/daily/prec/",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fdaily%2Fprec%2F"
     },
     {
@@ -74,8 +66,6 @@
       "alternateName": "ps",
       "unitText": "hPa",
       "description": "Surface pressure, not mean sea-level pressure. EnviCloud directory: chelsa/global/daily/ps/",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fdaily%2Fps%2F"
     },
     {
@@ -84,8 +74,6 @@
       "alternateName": "rsds",
       "unitText": "W m-2",
       "description": "Surface solar irradiance for UV calculations. EnviCloud directory: chelsa/global/daily/rsds/",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fdaily%2Frsds%2F"
     },
     {
@@ -94,8 +82,6 @@
       "alternateName": "sfcWind",
       "unitText": "m s-1",
       "description": "Near-surface, usually 10 meter, wind speed. EnviCloud directory: chelsa/global/daily/sfcWind/",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fdaily%2FsfcWind%2F"
     },
     {
@@ -104,8 +90,6 @@
       "alternateName": "tas",
       "unitText": "K",
       "description": "Near-surface, usually 2 meter, air temperature. EnviCloud directory: chelsa/global/daily/tas/",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fdaily%2Ftas%2F"
     },
     {
@@ -114,8 +98,6 @@
       "alternateName": "tasmax",
       "unitText": "K",
       "description": "Maximum near-surface, usually 2 meter, air temperature. EnviCloud directory: chelsa/global/daily/tasmax/",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fdaily%2Ftasmax%2F"
     },
     {
@@ -124,8 +106,6 @@
       "alternateName": "tasmin",
       "unitText": "K",
       "description": "Minimum near-surface, usually 2 meter, air temperature. EnviCloud directory: chelsa/global/daily/tasmin/",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fdaily%2Ftasmin%2F"
     },
     {
@@ -134,8 +114,6 @@
       "alternateName": "tz",
       "unitText": "K m-1",
       "description": "Rate of change in air temperature with altitude calculated over the centennial period. EnviCloud directory: chelsa/global/daily/tz/",
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fdaily%2Ftz%2F"
     }
   ],

@@ -41,16 +41,15 @@
       "box": "-180,15 -50,85"
     }
   },
+  "spatialResolution": {
+    "@type": "QuantitativeValue",
+    "value": 30,
+    "unitText": "m"
+  },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "Land cover class",
-      "temporalResolution": "not detected",
-      "spatialResolution": {
-        "@type": "QuantitativeValue",
-        "value": 30,
-        "unitText": "m"
-      }
+      "name": "Land cover class"
     }
   ],
   "measurementTechnique": [
