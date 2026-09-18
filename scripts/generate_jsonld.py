@@ -270,13 +270,13 @@ class AIClient:
             else ([variables] if isinstance(variables, dict) else [])
         )
 
-        if "temporalCoverage" not in data:
+        if not _is_meaningful_temporal(data.get("temporalCoverage")):
             for item in var_list:
                 if isinstance(item, dict) and _is_meaningful_temporal(item.get("temporalCoverage")):
                     data["temporalCoverage"] = item["temporalCoverage"]
                     break
 
-        if "spatialCoverage" not in data:
+        if not _is_meaningful_spatial(data.get("spatialCoverage")):
             for item in var_list:
                 if isinstance(item, dict) and _is_meaningful_spatial(item.get("spatialCoverage")):
                     data["spatialCoverage"] = item["spatialCoverage"]
