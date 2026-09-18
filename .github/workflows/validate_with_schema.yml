@@ -32,6 +32,7 @@ jobs:
       name: schema validate dataset everything
       with:
         files: |
+          data/objects/summoned/earthface/**/*.jsonld
           data/objects/summoned/glim/*.jsonld
           data/objects/summoned/gpp/*.jsonld
           data/objects/summoned/nitrogen/*.jsonld
