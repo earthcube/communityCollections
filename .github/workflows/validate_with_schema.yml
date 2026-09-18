@@ -18,7 +18,7 @@ jobs:
         files: data/objects/summoned/earthface/**/*.jsonld
 
         # optional, defaults to `$schema` in your JSON file
-        schema: https://raw.githubusercontent.com/earthcube/GeoCODES-Metadata/refs/heads/main/schemas/GeoCodes-DatasetSchema.json
+        schema: schema/GeoCodes-DatasetSchema.json
         schema-version: draft-07
         print-valid-files: true
         strict: false # default is true
@@ -32,7 +32,7 @@ jobs:
         files: data/objects/summoned/**/*.jsonld
 
         # optional, defaults to `$schema` in your JSON file
-        schema: https://raw.githubusercontent.com/earthcube/GeoCODES-Metadata/refs/heads/main/schemas/GeoCodes-DatasetSchema.json
+        schema: schema/GeoCodes-DatasetSchema.json
         schema-version: draft-07
         print-valid-files: true
         strict: false # default is true
