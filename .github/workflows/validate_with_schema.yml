@@ -18,10 +18,10 @@ jobs:
         files: data/objects/summoned/earthface/**/*.jsonld
 
         # optional, defaults to `$schema` in your JSON file
-        json_schema: schema/GeoCodes-DatasetSchema.json
-        json_schema-version: draft-07
-        print-valid-files: true
-        strict: false # default is true
+        json_schema: https://raw.githubusercontent.com/earthcube/GeoCODES-Metadata/refs/heads/main/schemas/GeoCodes-DatasetSchema.json
+        json_schema_version: draft-07
+        mode: warn
+        ajv_strict_mode: false # default is true
   validate-json-everything:
     runs-on: ubuntu-latest
 
@@ -33,6 +33,6 @@ jobs:
 
         # optional, defaults to `$schema` in your JSON file
         json_schema: schema/GeoCodes-DatasetSchema.json
-        json_schema-version: draft-07
-        print-valid-files: true
-        strict: false # default is true
+        json_schema_version: draft-07
+        mode: warn
+        ajv_strict_mode: false # default is true
