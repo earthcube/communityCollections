@@ -31,7 +31,7 @@ jobs:
     - uses: GrantBirki/json-yaml-validate@v5
       name: schema validate dataset everything
       with:
-        files: |-
+        files: |
           data/objects/summoned/glim/*.jsonld
           data/objects/summoned/gpp/*.jsonld
           data/objects/summoned/nitrogen/*.jsonld
