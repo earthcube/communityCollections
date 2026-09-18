@@ -1,0 +1,38 @@
+name: validate_with_schema.yml
+
+on:
+  push:
+    branches-ignore: [ 'gh-pages' ]
+
+jobs:
+  validate-json-earthface:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 4
+    - uses: walbo/validate-json@v1.1.0
+      name: schema validate dataset json
+      with:
+        files: data/objects/summoned/earthface/**/*.jsonld
+
+        # optional, defaults to `$schema` in your JSON file
+        schema: https://raw.githubusercontent.com/earthcube/GeoCODES-Metadata/refs/heads/main/schemas/GeoCodes-DatasetSchema.json
+        schema-version: draft-07
+        print-valid-files: true
+        strict: false # default is true
+  validate-json-everything:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: walbo/validate-json@v1.1.0
+      name: schema validate dataset json
+      with:
+        files: data/objects/summoned/**/*.jsonld
+
+        # optional, defaults to `$schema` in your JSON file
+        schema: https://raw.githubusercontent.com/earthcube/GeoCODES-Metadata/refs/heads/main/schemas/GeoCodes-DatasetSchema.json
+        schema-version: draft-07
+        print-valid-files: true
+        strict: false # default is true
