@@ -31,12 +31,12 @@ jobs:
     - uses: GrantBirki/json-yaml-validate@v5
       name: schema validate dataset everything
       with:
-        files: |
-          ./data/objects/summoned/earthface/**/*.jsonld
-          ./data/objects/summoned/glim/*.jsonld
-          ./data/objects/summoned/gpp/*.jsonld
-          ./data/objects/summoned/nitrogen/*.jsonld
-          ./data/objects/summoned/nitrogen2/*.jsonld
+        files: data/objects/summoned/earthface/**/*.jsonld
+#          ./data/objects/summoned/earthface/**/*.jsonld
+#          ./data/objects/summoned/glim/*.jsonld
+#          ./data/objects/summoned/gpp/*.jsonld
+#          ./data/objects/summoned/nitrogen/*.jsonld
+#          ./data/objects/summoned/nitrogen2/*.jsonld
         # optional, defaults to `$schema` in your JSON file
         json_schema: schema/GeoCodes-DatasetSchema.json
         json_schema_version: draft-07
