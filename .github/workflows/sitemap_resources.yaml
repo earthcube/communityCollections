@@ -35,7 +35,7 @@ jobs:
         include-html: false
         include-pdf: false
         additional-extensions: jsonld json xml
-        exclude-paths: .git .github docs scripts crawler prompts .vscode  sitemap.xml
+        exclude-paths: .git .github docs scripts crawler prompts .vscode  sitemap.xml */sitemap.xml
     - name: Output sitemap stats
       run: |
         echo "sitemap-path = ${{ steps.sitemap_all.outputs.sitemap-path }}"
@@ -72,7 +72,7 @@ jobs:
         include-pdf: false
         additional-extensions: jsonld json xml
         exclude-paths:
-          .git .github docs scripts crawler prompts .vscode sitemap.xml
+          .git .github docs scripts crawler prompts .vscode sitemap.xml */sitemap.xml
 
     - name: Commit and push sitemaps to branch
       run: |
