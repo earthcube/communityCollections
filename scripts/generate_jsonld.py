@@ -181,6 +181,8 @@ class AIClient:
                 json_data = json.loads(json_str)
                 # Fix spatial coverage format if needed
                 json_data = self._fix_spatial_coverage(json_data)
+                # Schema.org: spatial/temporalCoverage belong on Dataset, not PropertyValue
+                json_data = self._promote_coverage_to_dataset(json_data)
                 # Ensure keywords is a JSON array (not semicolon/comma-separated string)
                 json_data = self._fix_keywords(json_data)
                 json_data = self._fix_encoding_format(json_data)
@@ -197,27 +199,99 @@ class AIClient:
         except (json.JSONDecodeError, ValueError):
             return response
     
-    def _fix_spatial_coverage(self, data: Dict) -> Dict:
+    @staticmethod
+    def _fix_spatial_coverage(data: Dict) -> Dict:
         """Fix spatial coverage box format to match Schema.org standard.
-        
+
         Converts "20 -40 50 10" to "20,-40 50,10" format.
+        Walks nested objects/lists so Dataset-level and misplaced PropertyValue
+        coverage are both corrected before promotion.
         """
-        if isinstance(data, dict) and 'spatialCoverage' in data:
-            spatial = data['spatialCoverage']
-            if isinstance(spatial, dict) and 'geo' in spatial:
-                geo = spatial['geo']
-                if isinstance(geo, dict) and 'box' in geo:
-                    box = geo['box']
-                    if isinstance(box, str):
-                        # Fix format: "20 -40 50 10" -> "20,-40 50,10"
-                        parts = box.split()
-                        if len(parts) == 4 and ',' not in box:
-                            try:
-                                # Convert to proper format: "west,south east,north"
-                                west, south, east, north = map(float, parts)
-                                geo['box'] = f"{west},{south} {east},{north}"
-                            except (ValueError, TypeError):
-                                pass  # If conversion fails, leave as is
+        if isinstance(data, dict):
+            if "spatialCoverage" in data:
+                spatial = data["spatialCoverage"]
+                if isinstance(spatial, dict) and "geo" in spatial:
+                    geo = spatial["geo"]
+                    if isinstance(geo, dict) and "box" in geo:
+                        box = geo["box"]
+                        if isinstance(box, str):
+                            # Fix format: "20 -40 50 10" -> "20,-40 50,10"
+                            parts = box.split()
+                            if len(parts) == 4 and "," not in box:
+                                try:
+                                    # Convert to proper format: "west,south east,north"
+                                    west, south, east, north = map(float, parts)
+                                    geo["box"] = f"{west},{south} {east},{north}"
+                                except (ValueError, TypeError):
+                                    pass  # If conversion fails, leave as is
+            for value in data.values():
+                AIClient._fix_spatial_coverage(value)
+        elif isinstance(data, list):
+            for item in data:
+                AIClient._fix_spatial_coverage(item)
+        return data
+
+    @staticmethod
+    def _promote_coverage_to_dataset(data: Dict) -> Dict:
+        """Move spatialCoverage/temporalCoverage from variableMeasured to Dataset.
+
+        Schema.org defines these on CreativeWork (Dataset). Discovery UIs read
+        Dataset-level coverage for maps; values nested under PropertyValue are
+        easy to miss even when GeoShape.box is present in the RDF.
+        """
+        if not isinstance(data, dict):
+            return data
+
+        placeholders = {"", "not detected", "none", "n/a", "na"}
+
+        def _is_meaningful_temporal(value: Any) -> bool:
+            if isinstance(value, list):
+                return any(_is_meaningful_temporal(v) for v in value)
+            if not isinstance(value, str):
+                return False
+            return value.strip().lower() not in placeholders
+
+        def _is_meaningful_spatial(value: Any) -> bool:
+            if isinstance(value, str):
+                return value.strip().lower() not in placeholders
+            if not isinstance(value, dict):
+                return False
+            geo = value.get("geo")
+            if isinstance(geo, dict) and geo.get("box"):
+                return True
+            if value.get("name") and str(value.get("name")).strip().lower() not in placeholders:
+                return True
+            return False
+
+        variables = data.get("variableMeasured")
+        var_list = (
+            variables
+            if isinstance(variables, list)
+            else ([variables] if isinstance(variables, dict) else [])
+        )
+
+        if "temporalCoverage" not in data:
+            for item in var_list:
+                if isinstance(item, dict) and _is_meaningful_temporal(item.get("temporalCoverage")):
+                    data["temporalCoverage"] = item["temporalCoverage"]
+                    break
+
+        if "spatialCoverage" not in data:
+            for item in var_list:
+                if isinstance(item, dict) and _is_meaningful_spatial(item.get("spatialCoverage")):
+                    data["spatialCoverage"] = item["spatialCoverage"]
+                    break
+
+        # Strip coverage from PropertyValue entries (wrong Schema.org domain)
+        if isinstance(variables, list):
+            for item in variables:
+                if isinstance(item, dict):
+                    item.pop("temporalCoverage", None)
+                    item.pop("spatialCoverage", None)
+        elif isinstance(variables, dict):
+            variables.pop("temporalCoverage", None)
+            variables.pop("spatialCoverage", None)
+
         return data
     
     def _fix_keywords(self, data: Dict) -> Dict:
@@ -1031,13 +1105,23 @@ def audit_generated_jsonld(data: Dict, source_facts: Dict) -> List[str]:
                 generated_codes.add(str(item.get("alternateName")).lower())
             if _looks_like_lumped_or_code_name(str(item.get("name", ""))):
                 warnings.append(f"variableMeasured[{idx}].name looks like a code or lumped range")
-            if "temporalCoverage" not in item:
-                warnings.append(f"variableMeasured[{idx}] is missing temporalCoverage")
-            if "spatialCoverage" not in item:
-                warnings.append(f"variableMeasured[{idx}] is missing spatialCoverage")
+            if "temporalCoverage" in item:
+                warnings.append(
+                    f"variableMeasured[{idx}] has temporalCoverage; move to Dataset-level"
+                )
+            if "spatialCoverage" in item:
+                warnings.append(
+                    f"variableMeasured[{idx}] has spatialCoverage; move to Dataset-level"
+                )
         missing_codes = sorted(source_codes - generated_codes)
         if missing_codes:
             warnings.append(f"variableMeasured is missing source-listed variable code(s): {', '.join(missing_codes)}")
+
+    if data.get("@type") in ("Dataset", "DataCatalog"):
+        if "temporalCoverage" not in data:
+            warnings.append("Dataset is missing temporalCoverage")
+        if "spatialCoverage" not in data:
+            warnings.append("Dataset is missing spatialCoverage")
 
     download_links = {
         link.get("href") for link in (source_facts or {}).get("download_links", [])

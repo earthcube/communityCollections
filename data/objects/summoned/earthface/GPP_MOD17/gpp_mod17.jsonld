@@ -25,20 +25,20 @@
     "name": "University of Montana",
     "url": "https://www.umt.edu/"
   },
+  "temporalCoverage": "2000-01-01/2013-12-31",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Earth's vegetated land surface",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "-180,-90 180,90"
+    }
+  },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
       "name": "GPP",
       "description": "Gross Primary Production",
-      "temporalCoverage": "2000-01-01/2013-12-31",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Earth's vegetated land surface",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-90 180,90"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected"
     },
@@ -46,15 +46,6 @@
       "@type": "PropertyValue",
       "name": "NPP",
       "description": "Net Primary Production",
-      "temporalCoverage": "2000-01-01/2013-12-31",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Earth's vegetated land surface",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-90 180,90"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected"
     }

@@ -80,6 +80,15 @@
       "url": "https://glad.umd.edu/"
     }
   ],
+  "temporalCoverage": "2000-01-01/2023-12-31",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Global (granules provided for 180W–180E, 80N–60S)",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "-180,-60 180,80"
+    }
+  },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "encodingFormat": [
     "image/tiff",
@@ -93,15 +102,6 @@
       "alternateName": "treecover2000",
       "unitText": "percent",
       "description": "Tree canopy cover for year 2000, defined as canopy closure for vegetation taller than 5 m.",
-      "temporalCoverage": "2000-01-01/2023-12-31",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global (granules provided for 180W–180E, 80N–60S)",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-60 180,80"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": {
         "@type": "QuantitativeValue",
@@ -116,15 +116,6 @@
       "alternateName": "gain",
       "unitText": "binary",
       "description": "Forest gain during 2000-2012.",
-      "temporalCoverage": "2000-01-01/2023-12-31",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global (granules provided for 180W–180E, 80N–60S)",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-60 180,80"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": {
         "@type": "QuantitativeValue",
@@ -139,15 +130,6 @@
       "alternateName": "lossyear",
       "unitText": "year code",
       "description": "Year of gross forest cover loss event; 0 indicates no loss and 1-23 correspond primarily to 2001-2023.",
-      "temporalCoverage": "2000-01-01/2023-12-31",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global (granules provided for 180W–180E, 80N–60S)",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-60 180,80"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": {
         "@type": "QuantitativeValue",
@@ -162,15 +144,6 @@
       "alternateName": "datamask",
       "unitText": "class code",
       "description": "Data mask classes for no data, mapped land surface, and persistent water bodies.",
-      "temporalCoverage": "2000-01-01/2023-12-31",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global (granules provided for 180W–180E, 80N–60S)",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-60 180,80"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": {
         "@type": "QuantitativeValue",
@@ -185,15 +158,6 @@
       "alternateName": "first",
       "unitText": "digital number",
       "description": "Circa year-2000 Landsat cloud-free composite in red, NIR, SWIR1, and SWIR2 bands.",
-      "temporalCoverage": "2000-01-01/2023-12-31",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global (granules provided for 180W–180E, 80N–60S)",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-60 180,80"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": {
         "@type": "QuantitativeValue",
@@ -208,15 +172,6 @@
       "alternateName": "last",
       "unitText": "digital number",
       "description": "Circa year-2023 Landsat cloud-free composite in red, NIR, SWIR1, and SWIR2 bands.",
-      "temporalCoverage": "2000-01-01/2023-12-31",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global (granules provided for 180W–180E, 80N–60S)",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-60 180,80"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": {
         "@type": "QuantitativeValue",
@@ -231,15 +186,6 @@
       "alternateName": "loss",
       "unitText": "derived binary",
       "description": "Derived indicator for pixels where lossyear is greater than 0.",
-      "temporalCoverage": "2000-01-01/2023-12-31",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global (granules provided for 180W–180E, 80N–60S)",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-60 180,80"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": {
         "@type": "QuantitativeValue",

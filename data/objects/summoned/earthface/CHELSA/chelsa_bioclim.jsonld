@@ -18,6 +18,15 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
+  "temporalCoverage": "1981-2010/1971-2100",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Global land surface areas",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "-180.0,-60.0 180.0,90.0"
+    }
+  },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -25,15 +34,6 @@
       "alternateName": "bio01",
       "unitText": "°C",
       "description": "Mean annual temperature calculated as the average of mean monthly temperatures over the year. EnviCloud directory: chelsa/global/bioclim/bio01/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio01%2F"
@@ -44,15 +44,6 @@
       "alternateName": "bio02",
       "unitText": "°C",
       "description": "Mean diurnal temperature range computed as the average of monthly daily maximum minus daily minimum near-surface air temperature. EnviCloud directory: chelsa/global/bioclim/bio02/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio02%2F"
@@ -63,15 +54,6 @@
       "alternateName": "bio03",
       "unitText": "°C",
       "description": "Isothermality: 100 × bio02 ÷ bio07; compares day-night variability to annual temperature range. EnviCloud directory: chelsa/global/bioclim/bio03/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio03%2F"
@@ -82,15 +64,6 @@
       "alternateName": "bio04",
       "unitText": "°C/100",
       "description": "Temperature seasonality given by the standard deviation of mean monthly temperatures. EnviCloud directory: chelsa/global/bioclim/bio04/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio04%2F"
@@ -101,15 +74,6 @@
       "alternateName": "bio05",
       "unitText": "°C",
       "description": "Highest monthly mean of daily maximum temperatures across the year; indicates peak thermal conditions. EnviCloud directory: chelsa/global/bioclim/bio05/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio05%2F"
@@ -120,15 +84,6 @@
       "alternateName": "bio06",
       "unitText": "°C",
       "description": "Lowest monthly mean of daily minimum temperatures across the year; characterizes winter cold intensity. EnviCloud directory: chelsa/global/bioclim/bio06/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio06%2F"
@@ -139,15 +94,6 @@
       "alternateName": "bio07",
       "unitText": "°C",
       "description": "Annual temperature range calculated as bio05 minus bio06; measures amplitude between warmest and coldest months. EnviCloud directory: chelsa/global/bioclim/bio07/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio07%2F"
@@ -158,15 +104,6 @@
       "alternateName": "bio08",
       "unitText": "°C",
       "description": "Average monthly mean temperature over the wettest three-month period of the year. EnviCloud directory: chelsa/global/bioclim/bio08/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio08%2F"
@@ -177,15 +114,6 @@
       "alternateName": "bio09",
       "unitText": "°C",
       "description": "Average monthly mean temperature over the driest three-month period of the year. EnviCloud directory: chelsa/global/bioclim/bio09/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio09%2F"
@@ -196,15 +124,6 @@
       "alternateName": "bio10",
       "unitText": "°C",
       "description": "Average monthly mean temperature over the warmest three-month period of the year. EnviCloud directory: chelsa/global/bioclim/bio10/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio10%2F"
@@ -215,15 +134,6 @@
       "alternateName": "bio11",
       "unitText": "°C",
       "description": "Average monthly mean temperature over the coldest three-month period of the year. EnviCloud directory: chelsa/global/bioclim/bio11/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio11%2F"
@@ -234,15 +144,6 @@
       "alternateName": "bio12",
       "unitText": "kg m-2 year-1",
       "description": "Sum of monthly precipitation totals across the year. EnviCloud directory: chelsa/global/bioclim/bio12/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio12%2F"
@@ -253,15 +154,6 @@
       "alternateName": "bio13",
       "unitText": "kg m-2 month-1",
       "description": "Maximum monthly precipitation total. EnviCloud directory: chelsa/global/bioclim/bio13/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio13%2F"
@@ -272,15 +164,6 @@
       "alternateName": "bio14",
       "unitText": "kg m-2 month-1",
       "description": "Minimum monthly precipitation total. EnviCloud directory: chelsa/global/bioclim/bio14/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio14%2F"
@@ -291,15 +174,6 @@
       "alternateName": "bio15",
       "unitText": "kg m-2",
       "description": "Coefficient of variation: 100 × standard deviation ÷ mean of monthly precipitation totals. EnviCloud directory: chelsa/global/bioclim/bio15/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio15%2F"
@@ -310,15 +184,6 @@
       "alternateName": "bio16",
       "unitText": "kg m-2 month-1",
       "description": "Average monthly precipitation during the wettest three-month period of the year. EnviCloud directory: chelsa/global/bioclim/bio16/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio16%2F"
@@ -329,15 +194,6 @@
       "alternateName": "bio17",
       "unitText": "kg m-2 month-1",
       "description": "Average monthly precipitation during the driest three-month period of the year. EnviCloud directory: chelsa/global/bioclim/bio17/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio17%2F"
@@ -348,15 +204,6 @@
       "alternateName": "bio18",
       "unitText": "kg m-2 month-1",
       "description": "Average monthly precipitation during the warmest three-month period of the year. EnviCloud directory: chelsa/global/bioclim/bio18/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio18%2F"
@@ -367,15 +214,6 @@
       "alternateName": "bio19",
       "unitText": "kg m-2 month-1",
       "description": "Average monthly precipitation during the coldest three-month period of the year. EnviCloud directory: chelsa/global/bioclim/bio19/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fbio19%2F"
@@ -386,15 +224,6 @@
       "alternateName": "fcf",
       "unitText": "count",
       "description": "Number of freeze-thaw transitions per year. EnviCloud directory: chelsa/global/bioclim/fcf/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Ffcf%2F"
@@ -405,15 +234,6 @@
       "alternateName": "fgd",
       "unitText": "julian day",
       "description": "Julian day marking the first occurrence of growing season conditions. EnviCloud directory: chelsa/global/bioclim/fgd/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Ffgd%2F"
@@ -424,15 +244,6 @@
       "alternateName": "gdd0",
       "unitText": "°C",
       "description": "Sum of daily mean temperatures above 0 °C accumulated over the year. EnviCloud directory: chelsa/global/bioclim/gdd0/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fgdd0%2F"
@@ -443,15 +254,6 @@
       "alternateName": "gdd10",
       "unitText": "°C",
       "description": "Sum of daily mean temperatures above 10 °C accumulated over the year. EnviCloud directory: chelsa/global/bioclim/gdd10/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fgdd10%2F"
@@ -462,15 +264,6 @@
       "alternateName": "gdd5",
       "unitText": "°C",
       "description": "Sum of daily mean temperatures above 5 °C accumulated over the year. EnviCloud directory: chelsa/global/bioclim/gdd5/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fgdd5%2F"
@@ -481,15 +274,6 @@
       "alternateName": "gdgfgd10",
       "unitText": "julian day",
       "description": "Julian day of the first occurrence of a daily mean temperature above 10 °C. EnviCloud directory: chelsa/global/bioclim/gdgfgd10/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fgdgfgd10%2F"
@@ -500,15 +284,6 @@
       "alternateName": "gdgfgd5",
       "unitText": "julian day",
       "description": "Julian day of the first occurrence of a daily mean temperature above 5 °C. EnviCloud directory: chelsa/global/bioclim/gdgfgd5/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fgdgfgd5%2F"
@@ -519,15 +294,6 @@
       "alternateName": "gsl",
       "unitText": "days",
       "description": "Number of days between the first and last occurrence of growing season conditions. EnviCloud directory: chelsa/global/bioclim/gsl/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fgsl%2F"
@@ -538,15 +304,6 @@
       "alternateName": "gsp",
       "unitText": "kg m-2 gsl-1",
       "description": "Total precipitation accumulated during the growing season period. EnviCloud directory: chelsa/global/bioclim/gsp/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fgsp%2F"
@@ -557,15 +314,6 @@
       "alternateName": "gst",
       "unitText": "°C",
       "description": "Average daily mean temperature over all growing season days. EnviCloud directory: chelsa/global/bioclim/gst/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fgst%2F"
@@ -576,15 +324,6 @@
       "alternateName": "kg0",
       "unitText": "category",
       "description": "Köppen-Geiger climate classification. EnviCloud directory: chelsa/global/bioclim/kg0/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fkg0%2F"
@@ -595,15 +334,6 @@
       "alternateName": "kg1",
       "unitText": "category",
       "description": "Köppen-Geiger climate classification without As and Aw differentiation. EnviCloud directory: chelsa/global/bioclim/kg1/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fkg1%2F"
@@ -614,15 +344,6 @@
       "alternateName": "kg2",
       "unitText": "category",
       "description": "Köppen-Geiger climate classification after Peel et al. 2007. EnviCloud directory: chelsa/global/bioclim/kg2/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fkg2%2F"
@@ -633,15 +354,6 @@
       "alternateName": "kg3",
       "unitText": "category",
       "description": "Climate classification after Wissmann 1939. EnviCloud directory: chelsa/global/bioclim/kg3/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fkg3%2F"
@@ -652,15 +364,6 @@
       "alternateName": "kg4",
       "unitText": "category",
       "description": "Climate classification after Thornthwaite 1931. EnviCloud directory: chelsa/global/bioclim/kg4/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fkg4%2F"
@@ -671,15 +374,6 @@
       "alternateName": "kg5",
       "unitText": "category",
       "description": "Climate classification after Troll-Pfaffen. EnviCloud directory: chelsa/global/bioclim/kg5/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fkg5%2F"
@@ -690,15 +384,6 @@
       "alternateName": "lgd",
       "unitText": "julian day",
       "description": "Julian day of the last occurrence of growing season conditions. EnviCloud directory: chelsa/global/bioclim/lgd/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Flgd%2F"
@@ -709,15 +394,6 @@
       "alternateName": "ngd0",
       "unitText": "number of days",
       "description": "Total number of days in a year with mean daily temperature above 0 °C. EnviCloud directory: chelsa/global/bioclim/ngd0/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fngd0%2F"
@@ -728,15 +404,6 @@
       "alternateName": "ngd10",
       "unitText": "number of days",
       "description": "Total number of days in a year with mean daily temperature above 10 °C. EnviCloud directory: chelsa/global/bioclim/ngd10/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fngd10%2F"
@@ -747,15 +414,6 @@
       "alternateName": "ngd5",
       "unitText": "number of days",
       "description": "Total number of days in a year with mean daily temperature above 5 °C. EnviCloud directory: chelsa/global/bioclim/ngd5/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fngd5%2F"
@@ -766,15 +424,6 @@
       "alternateName": "npp",
       "unitText": "g C m-2 yr-1",
       "description": "Net primary production on land expressed as carbon mass flux. EnviCloud directory: chelsa/global/bioclim/npp/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fnpp%2F"
@@ -785,15 +434,6 @@
       "alternateName": "scd",
       "unitText": "days",
       "description": "Number of days per year with snow cover present at the surface. EnviCloud directory: chelsa/global/bioclim/scd/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fscd%2F"
@@ -804,15 +444,6 @@
       "alternateName": "swe",
       "unitText": "kg m-2 year-1",
       "description": "Total water equivalent of snowpack accumulated over the year. EnviCloud directory: chelsa/global/bioclim/swe/",
-      "temporalCoverage": "1981-2010/1971-2100",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fbioclim%2Fswe%2F"

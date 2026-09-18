@@ -47,6 +47,18 @@
       "description": "Primary THREDDS hosting and web services for TerraClimate NetCDF distributions."
     }
   ],
+  "temporalCoverage": [
+    "1950-01-01/..",
+    "1950-01-01/2025-12-31"
+  ],
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Global terrestrial land surfaces",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "-180,-90 180,90"
+    }
+  },
   "license": {
     "@type": "CreativeWork",
     "name": "CC0 1.0 Universal (Public Domain Dedication)",
@@ -61,18 +73,6 @@
       "@type": "PropertyValue",
       "name": "Maximum temperature",
       "unitText": "C",
-      "temporalCoverage": [
-        "1950-01-01/..",
-        "1950-01-01/2025-12-31"
-      ],
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global terrestrial land surfaces",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-90 180,90"
-        }
-      },
       "temporalResolution": "P1M",
       "spatialResolution": "1/24 degree (~4 km)"
     },
@@ -80,18 +80,6 @@
       "@type": "PropertyValue",
       "name": "Minimum temperature",
       "unitText": "C",
-      "temporalCoverage": [
-        "1950-01-01/..",
-        "1950-01-01/2025-12-31"
-      ],
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global terrestrial land surfaces",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-90 180,90"
-        }
-      },
       "temporalResolution": "P1M",
       "spatialResolution": "1/24 degree (~4 km)"
     },
@@ -99,18 +87,6 @@
       "@type": "PropertyValue",
       "name": "Vapor pressure",
       "unitText": "kPa",
-      "temporalCoverage": [
-        "1950-01-01/..",
-        "1950-01-01/2025-12-31"
-      ],
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global terrestrial land surfaces",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-90 180,90"
-        }
-      },
       "temporalResolution": "P1M",
       "spatialResolution": "1/24 degree (~4 km)"
     },
@@ -118,18 +94,6 @@
       "@type": "PropertyValue",
       "name": "Precipitation accumulation",
       "unitText": "mm",
-      "temporalCoverage": [
-        "1950-01-01/..",
-        "1950-01-01/2025-12-31"
-      ],
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global terrestrial land surfaces",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-90 180,90"
-        }
-      },
       "temporalResolution": "P1M",
       "spatialResolution": "1/24 degree (~4 km)"
     },
@@ -137,18 +101,6 @@
       "@type": "PropertyValue",
       "name": "Downward surface shortwave radiation",
       "unitText": "W/m2",
-      "temporalCoverage": [
-        "1950-01-01/..",
-        "1950-01-01/2025-12-31"
-      ],
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global terrestrial land surfaces",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-90 180,90"
-        }
-      },
       "temporalResolution": "P1M",
       "spatialResolution": "1/24 degree (~4 km)"
     },
@@ -156,18 +108,6 @@
       "@type": "PropertyValue",
       "name": "Wind speed",
       "unitText": "m/s",
-      "temporalCoverage": [
-        "1950-01-01/..",
-        "1950-01-01/2025-12-31"
-      ],
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global terrestrial land surfaces",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-90 180,90"
-        }
-      },
       "temporalResolution": "P1M",
       "spatialResolution": "1/24 degree (~4 km)"
     },
@@ -175,18 +115,6 @@
       "@type": "PropertyValue",
       "name": "Reference evapotranspiration (ASCE Penman–Monteith)",
       "unitText": "mm",
-      "temporalCoverage": [
-        "1950-01-01/..",
-        "1950-01-01/2025-12-31"
-      ],
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global terrestrial land surfaces",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-90 180,90"
-        }
-      },
       "temporalResolution": "P1M",
       "spatialResolution": "1/24 degree (~4 km)"
     },
@@ -194,18 +122,6 @@
       "@type": "PropertyValue",
       "name": "Runoff",
       "unitText": "mm",
-      "temporalCoverage": [
-        "1950-01-01/..",
-        "1950-01-01/2025-12-31"
-      ],
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global terrestrial land surfaces",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-90 180,90"
-        }
-      },
       "temporalResolution": "P1M",
       "spatialResolution": "1/24 degree (~4 km)"
     },
@@ -213,18 +129,6 @@
       "@type": "PropertyValue",
       "name": "Actual evapotranspiration",
       "unitText": "mm",
-      "temporalCoverage": [
-        "1950-01-01/..",
-        "1950-01-01/2025-12-31"
-      ],
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global terrestrial land surfaces",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-90 180,90"
-        }
-      },
       "temporalResolution": "P1M",
       "spatialResolution": "1/24 degree (~4 km)"
     },
@@ -232,18 +136,6 @@
       "@type": "PropertyValue",
       "name": "Climate water deficit",
       "unitText": "mm",
-      "temporalCoverage": [
-        "1950-01-01/..",
-        "1950-01-01/2025-12-31"
-      ],
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global terrestrial land surfaces",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-90 180,90"
-        }
-      },
       "temporalResolution": "P1M",
       "spatialResolution": "1/24 degree (~4 km)"
     },
@@ -251,18 +143,6 @@
       "@type": "PropertyValue",
       "name": "Soil moisture (total column, end of month)",
       "unitText": "mm",
-      "temporalCoverage": [
-        "1950-01-01/..",
-        "1950-01-01/2025-12-31"
-      ],
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global terrestrial land surfaces",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-90 180,90"
-        }
-      },
       "temporalResolution": "P1M",
       "spatialResolution": "1/24 degree (~4 km)"
     },
@@ -270,18 +150,6 @@
       "@type": "PropertyValue",
       "name": "Snow water equivalent (end of month)",
       "unitText": "mm",
-      "temporalCoverage": [
-        "1950-01-01/..",
-        "1950-01-01/2025-12-31"
-      ],
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global terrestrial land surfaces",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-90 180,90"
-        }
-      },
       "temporalResolution": "P1M",
       "spatialResolution": "1/24 degree (~4 km)"
     },
@@ -289,18 +157,6 @@
       "@type": "PropertyValue",
       "name": "Palmer Drought Severity Index (PDSI)",
       "unitText": "unitless",
-      "temporalCoverage": [
-        "1950-01-01/..",
-        "1950-01-01/2025-12-31"
-      ],
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global terrestrial land surfaces",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-90 180,90"
-        }
-      },
       "temporalResolution": "P1M",
       "spatialResolution": "1/24 degree (~4 km)"
     },
@@ -308,18 +164,6 @@
       "@type": "PropertyValue",
       "name": "Vapor pressure deficit (VPD)",
       "unitText": "kPa",
-      "temporalCoverage": [
-        "1950-01-01/..",
-        "1950-01-01/2025-12-31"
-      ],
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global terrestrial land surfaces",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180,-90 180,90"
-        }
-      },
       "temporalResolution": "P1M",
       "spatialResolution": "1/24 degree (~4 km)"
     }

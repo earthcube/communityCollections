@@ -18,6 +18,11 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
+  "temporalCoverage": "1979-01-01/2016-12-31",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Global land surface areas"
+  },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -25,11 +30,6 @@
       "alternateName": "pr",
       "unitText": "kg m-2 day-1",
       "description": "Precipitation including liquid and solid phases.",
-      "temporalCoverage": "1979-01-01/2016-12-31",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas"
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected"
     },
@@ -39,11 +39,6 @@
       "alternateName": "rsds",
       "unitText": "W m-2",
       "description": "Surface solar irradiance for UV calculations.",
-      "temporalCoverage": "1979-01-01/2016-12-31",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas"
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected"
     },
@@ -53,11 +48,6 @@
       "alternateName": "tas",
       "unitText": "K",
       "description": "Near-surface, usually 2 meter, air temperature.",
-      "temporalCoverage": "1979-01-01/2016-12-31",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas"
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected"
     },
@@ -67,11 +57,6 @@
       "alternateName": "tasmax",
       "unitText": "K",
       "description": "Maximum near-surface, usually 2 meter, air temperature.",
-      "temporalCoverage": "1979-01-01/2016-12-31",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas"
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected"
     },
@@ -81,11 +66,6 @@
       "alternateName": "tasmin",
       "unitText": "K",
       "description": "Minimum near-surface, usually 2 meter, air temperature.",
-      "temporalCoverage": "1979-01-01/2016-12-31",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas"
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected"
     }

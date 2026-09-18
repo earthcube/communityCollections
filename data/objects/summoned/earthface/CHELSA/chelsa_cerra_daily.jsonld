@@ -18,6 +18,11 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
+  "temporalCoverage": "1985-01-01/2015-12-31",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Europe"
+  },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -25,11 +30,6 @@
       "alternateName": "tas",
       "unitText": "K",
       "description": "Near-surface, usually 2 meter, air temperature. EnviCloud directory: chelsa/europe/daily/tas/",
-      "temporalCoverage": "1985-01-01/2015-12-31",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Europe"
-      },
       "temporalResolution": "not detected",
       "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Feurope%2Fdaily%2Ftas%2F"
