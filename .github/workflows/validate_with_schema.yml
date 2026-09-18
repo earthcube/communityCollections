@@ -20,7 +20,8 @@ jobs:
         # optional, defaults to `$schema` in your JSON file
         json_schema: schema/GeoCodes-DatasetSchema.json
         json_schema_version: draft-07
-        mode: warn
+        #mode: warn
+        mode: fail
         ajv_strict_mode: false # default is true
         use_gitignore: false
   validate-json-everything:
@@ -30,11 +31,12 @@ jobs:
     - uses: GrantBirki/json-yaml-validate@v5
       name: schema validate dataset json
       with:
-        files: data/objects/summoned/**/**/*.jsonld
+        files: data/objects/summoned/**/*.jsonld
 
         # optional, defaults to `$schema` in your JSON file
         json_schema: schema/GeoCodes-DatasetSchema.json
         json_schema_version: draft-07
-        mode: warn
+        #mode: warn
+        mode: fail
         ajv_strict_mode: false # default is true
         use_gitignore: false
