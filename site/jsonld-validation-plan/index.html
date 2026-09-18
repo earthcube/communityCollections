@@ -110,14 +110,16 @@
 <li>Include all citations shown by the source page. When a page has both <code>Model Citation</code> and <code>Data Citation</code>, represent both as separate structured citation objects.</li>
 <li>Use the exact URL behind a source page's Download button or direct data/API endpoint for <code>distribution[].contentUrl</code>; do not use a generic portal root when a more specific target is available.</li>
 <li>Include variables listed in expandable menus, layer lists, and property tables, not only variables visible in the initial page text.</li>
-<li>For each <code>variableMeasured</code>, include <code>temporalCoverage</code>. Use the source-supported variable or dataset temporal range when available; otherwise use <code>Static</code>.</li>
-<li>For each <code>variableMeasured</code>, include <code>spatialCoverage</code>. Use variable-specific spatial coverage when available; otherwise use <code>not detected</code>.</li>
+<li>Put <code>temporalCoverage</code> and <code>spatialCoverage</code> on the Dataset (Schema.org CreativeWork properties), not on each <code>variableMeasured</code> PropertyValue.</li>
+<li>Prefer a Dataset <code>spatialCoverage</code> Place with <code>geo.GeoShape.box</code> when bounds are known; include a place name when confident.</li>
+<li>Prefer a Dataset <code>temporalCoverage</code> range from the source page when available.</li>
+<li>Put known <code>temporalResolution</code> / <code>spatialResolution</code> on the Dataset; omit them when unknown (do not use <code>"not detected"</code> placeholders on PropertyValue).</li>
 </ul>
 <h2 id="generation-safeguards">Generation Safeguards</h2>
 <ul>
-<li>The generation prompt requires separate variable rows, structured citation arrays, exact download targets, and variable-level temporal and spatial coverage fields.</li>
+<li>The generation prompt requires separate variable rows, structured citation arrays, exact download targets, and Dataset-level temporal and spatial coverage fields.</li>
 <li><code>generate_jsonld.py</code> extracts source-page download links, citation text, and variable rows and passes them into the generation prompt.</li>
-<li><code>generate_jsonld.py</code> emits review warnings when generated JSON-LD still contains lumped variable names, omits source-listed variables, lacks variable-level temporal or spatial coverage, contains plain-string citations, or distributions omit exact source-page download links.</li>
+<li><code>generate_jsonld.py</code> promotes misplaced coverage/resolution from <code>variableMeasured</code> up to the Dataset when needed, strips PropertyValue placeholders, and emits review warnings when generated JSON-LD still contains lumped variable names, omits source-listed variables, lacks Dataset-level temporal or spatial coverage, contains plain-string citations, or distributions omit exact source-page download links.</li>
 </ul>
 <h2 id="validation">Validation</h2>
 <ul>

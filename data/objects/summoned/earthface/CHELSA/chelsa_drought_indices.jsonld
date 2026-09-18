@@ -18,6 +18,15 @@
     "name": "WSL (Swiss Federal Institute for Forest, Snow and Landscape Research)",
     "url": "https://www.wsl.ch/"
   },
+  "temporalCoverage": "1980-06-15/2018-07-15",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Global land surface areas",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "-180.0,-60.0 180.0,90.0"
+    }
+  },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -25,17 +34,6 @@
       "alternateName": "mymd",
       "unitText": "id",
       "description": "Identifier for multiyear meteorological drought events. EnviCloud directory: chelsa/global/annual/mymd/",
-      "temporalCoverage": "1980-06-15/2018-07-15",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fannual%2Fmymd%2F"
     },
     {
@@ -44,17 +42,6 @@
       "alternateName": "mymd10",
       "unitText": "id",
       "description": "Identifier for multiyear meteorological drought events at 10 km resolution. EnviCloud directory: chelsa/global/annual/mymd10/",
-      "temporalCoverage": "1980-06-15/2018-07-15",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fannual%2Fmymd10%2F"
     },
     {
@@ -63,17 +50,6 @@
       "alternateName": "qkndvi",
       "unitText": "1",
       "description": "Annual anomaly in vegetation greenness derived from kernel normalized difference vegetation index. EnviCloud directory: chelsa/global/annual/qkndvi/",
-      "temporalCoverage": "1980-06-15/2018-07-15",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fannual%2Fqkndvi%2F"
     },
     {
@@ -82,17 +58,6 @@
       "alternateName": "spei12",
       "unitText": "1",
       "description": "Standardized climatic water balance index over a 12-month integration period. EnviCloud directory: chelsa/global/annual/spei12/",
-      "temporalCoverage": "1980-06-15/2018-07-15",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fannual%2Fspei12%2F"
     },
     {
@@ -101,17 +66,6 @@
       "alternateName": "spi12",
       "unitText": "1",
       "description": "Standardized precipitation anomaly index over a 12-month integration period. EnviCloud directory: chelsa/global/annual/spi12/",
-      "temporalCoverage": "1980-06-15/2018-07-15",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Global land surface areas",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-180.0,-60.0 180.0,90.0"
-        }
-      },
-      "temporalResolution": "not detected",
-      "spatialResolution": "not detected",
       "url": "https://envicloud.wsl.ch/#/?bucket=https%3A%2F%2Fos.unil.cloud.switch.ch%2Fchelsa02%2F&prefix=chelsa%2Fglobal%2Fannual%2Fspi12%2F"
     }
   ],
