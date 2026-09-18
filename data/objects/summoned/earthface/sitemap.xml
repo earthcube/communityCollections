@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/sitemap.xml</loc>
-<lastmod>2026-08-27T19:02:10Z</lastmod>
-</url>
-<url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/CHELSA/chelsa_bioclim.jsonld</loc>
 <lastmod>2026-09-16T10:16:34-05:00</lastmod>
 </url>
