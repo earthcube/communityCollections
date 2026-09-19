@@ -474,12 +474,19 @@
             }
         },
         "citation": {
-            "description": "A citation or reference to a creative work related to the dataset",
+            "description": "A citation or reference to a creative work (e.g., ScholarlyArticle or CreativeWork) related to the dataset",
             "oneOf": [
                 {"type": "string"},
+                {"$ref": "#/definitions/creativeWork_type"},
+                {"$ref": "#/definitions/scholarlyArticle_type"},
                 {
                     "type": "array",
-                    "items": {"$ref": "#/definitions/creativeWork_type"}
+                    "items": {
+                        "anyOf": [
+                            {"$ref": "#/definitions/creativeWork_type"},
+                            {"$ref": "#/definitions/scholarlyArticle_type"}
+                        ]
+                    }
                 }
             ]
         }
@@ -686,6 +693,23 @@
                     "const": "CreativeWork"
                 },
                 "url": {"type": "string"}
+            },
+            "required": ["@type"]
+        },
+        "scholarlyArticle_type": {
+            "type": "object",
+            "description": "A scholarly article (e.g., from a peer-reviewed journal or conference proceedings)",
+            "properties": {
+                "name": {"type": "string"},
+                "@type": {
+                    "type": "string",
+                    "default": "ScholarlyArticle",
+                    "const": "ScholarlyArticle"
+                },
+                "url": {"type": "string"},
+                "author": {"type": "string"},
+                "datePublished": {"type": "string"},
+                "isPartOf": {"type": "string"}
             },
             "required": ["@type"]
         },
