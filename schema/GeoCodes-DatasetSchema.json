@@ -229,8 +229,8 @@
             ]
         },
         "publisher": {
-            "description": "Party who made the dataset publicly available",
-            "anyOf": [
+            "description": "Party or parties who made the dataset publicly available",
+            "oneOf": [
                 {
                     "type": "object",
                     "properties": {
@@ -241,7 +241,25 @@
                     }
                 },
                 {"$ref": "#/definitions/person_type"},
-                {"$ref": "#/definitions/organization_type"}
+                {"$ref": "#/definitions/organization_type"},
+                {
+                    "type": "array",
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "object",
+                                "properties": {
+                                    "@id": {
+                                        "type": "string",
+                                        "description": "a identifier for an agent defined in this metadata, or externally; must be dereferenceable"
+                                    }
+                                }
+                            },
+                            {"$ref": "#/definitions/person_type"},
+                            {"$ref": "#/definitions/organization_type"}
+                        ]
+                    }
+                }
             ]
         },
         "funding": {
