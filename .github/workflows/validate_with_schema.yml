@@ -1,0 +1,45 @@
+name: validate_with_schema.yml
+
+on:
+  push:
+    branches-ignore: [ 'gh-pages' ]
+
+jobs:
+  validate-json-earthface:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 4
+    - uses: GrantBirki/json-yaml-validate@v5
+      name: schema validate dataset earthface
+      with:
+        files: data/objects/summoned/earthface/**/*.jsonld
+
+        # optional, defaults to `$schema` in your JSON file
+        json_schema: schema/GeoCodes-DatasetSchema.json
+        json_schema_version: draft-07
+        mode: warn
+        # mode: fail
+        ajv_strict_mode: false # default is true
+        use_gitignore: false
+  validate-json-everything:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 4
+    - uses: GrantBirki/json-yaml-validate@v5
+      name: schema validate dataset everything
+      with:
+        files: data/objects/summoned/**/*.jsonld
+
+        # optional, defaults to `$schema` in your JSON file
+        json_schema: schema/GeoCodes-DatasetSchema.json
+        json_schema_version: draft-07
+        mode: warn
+        # mode: fail
+        ajv_strict_mode: false # default is true
+        use_gitignore: false
