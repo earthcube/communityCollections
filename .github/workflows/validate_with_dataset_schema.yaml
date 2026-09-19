@@ -65,6 +65,11 @@ jobs:
                 errs.append(f"{f}: {e}"); continue
             for k in ["@context", "@type", "name"]:
                 if k not in data: errs.append(f"{f}: missing {k}")
+            context = data.get("@context")
+            if not isinstance(context, dict):
+                errs.append(f"{f}: @context must be an object")
+            elif context.get("@vocab") != "https://schema.org/":
+                errs.append(f"{f}: @context.@vocab must be https://schema.org/")
             if "spatialCoverage" in data and isinstance(data["spatialCoverage"], dict):
                 geo = data["spatialCoverage"].get("geo", {})
                 if isinstance(geo, dict) and "box" in geo and isinstance(geo["box"], str):
@@ -126,6 +131,11 @@ jobs:
                 errs.append(f"{f}: {e}"); continue
             for k in ["@context", "@type", "name"]:
                 if k not in data: errs.append(f"{f}: missing {k}")
+            context = data.get("@context")
+            if not isinstance(context, dict):
+                errs.append(f"{f}: @context must be an object")
+            elif context.get("@vocab") != "https://schema.org/":
+                errs.append(f"{f}: @context.@vocab must be https://schema.org/")
             if "spatialCoverage" in data and isinstance(data["spatialCoverage"], dict):
                 geo = data["spatialCoverage"].get("geo", {})
                 if isinstance(geo, dict) and "box" in geo and isinstance(geo["box"], str):

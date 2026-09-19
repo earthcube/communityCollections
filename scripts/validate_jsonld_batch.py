@@ -75,6 +75,16 @@ def check_distribution_encoding_format(data):
     return errs
 
 
+def validate_context(data):
+    """Validate @context uses the expected Schema.org object form."""
+    context = data.get("@context")
+    if not isinstance(context, dict):
+        return False, "@context must be an object"
+    if context.get("@vocab") != "https://schema.org/":
+        return False, "@context.@vocab must be 'https://schema.org/'"
+    return True, None
+
+
 def validate_file(path: Path) -> tuple[bool, list]:
     """
     Validate one JSON-LD file. Returns (success: bool, list of warning/error messages).
@@ -95,6 +105,11 @@ def validate_file(path: Path) -> tuple[bool, list]:
         if key not in data:
             errors.append(f"missing '{key}'")
     if errors:
+        return False, errors
+
+    ok, msg = validate_context(data)
+    if not ok:
+        errors.append(msg)
         return False, errors
 
     # @type: Dataset expected; WebPage and DataCatalog allowed with warning
