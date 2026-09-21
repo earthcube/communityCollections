@@ -140,7 +140,8 @@
       "encodingFormat": [
         "image/tiff",
         "application=geotiff"
-      ]
+      ],
+      "contentSize": "51687504"
     },
     {
       "@type": "DataDownload",
@@ -150,7 +151,8 @@
       "encodingFormat": [
         "image/tiff",
         "application=geotiff"
-      ]
+      ],
+      "contentSize": "53562756"
     }
   ],
   "citation": [
