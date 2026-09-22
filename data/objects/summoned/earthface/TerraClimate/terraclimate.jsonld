@@ -172,7 +172,8 @@
       "encodingFormat": [
         "application/x-netcdf"
       ],
-      "contentUrl": "https://tds-proxy.nkn.uidaho.edu/thredds/dodsC/agg_terraclimate_tmax_1950_CurrentYear_GLOBE.nc"
+      "contentUrl": "https://tds-proxy.nkn.uidaho.edu/thredds/dodsC/agg_terraclimate_tmax_1950_CurrentYear_GLOBE.nc",
+      "contentSize": "65"
     },
     {
       "@type": "DataDownload",

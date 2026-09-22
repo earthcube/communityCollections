@@ -114,12 +114,13 @@
 <li>Prefer a Dataset <code>spatialCoverage</code> Place with <code>geo.GeoShape.box</code> when bounds are known; include a place name when confident.</li>
 <li>Prefer a Dataset <code>temporalCoverage</code> range from the source page when available.</li>
 <li>Put known <code>temporalResolution</code> / <code>spatialResolution</code> on the Dataset; omit them when unknown (do not use <code>"not detected"</code> placeholders on PropertyValue).</li>
+<li>After generation, <code>generate_jsonld.py</code> may set <code>distribution[].contentSize</code> from an HTTP HEAD <code>Content-Length</code> on direct file URLs (GeoTIFF, NetCDF, zip, etc.). Do not invent sizes by hand.</li>
 </ul>
 <h2 id="generation-safeguards">Generation Safeguards</h2>
 <ul>
 <li>The generation prompt requires separate variable rows, structured citation arrays, exact download targets, and Dataset-level temporal and spatial coverage fields.</li>
 <li><code>generate_jsonld.py</code> extracts source-page download links, citation text, and variable rows and passes them into the generation prompt.</li>
-<li><code>generate_jsonld.py</code> promotes misplaced coverage/resolution from <code>variableMeasured</code> up to the Dataset when needed, strips PropertyValue placeholders, and emits review warnings when generated JSON-LD still contains lumped variable names, omits source-listed variables, lacks Dataset-level temporal or spatial coverage, contains plain-string citations, or distributions omit exact source-page download links.</li>
+<li><code>generate_jsonld.py</code> promotes misplaced coverage/resolution from <code>variableMeasured</code> up to the Dataset when needed, strips PropertyValue placeholders, probes direct download URLs with HEAD for <code>contentSize</code>, and emits review warnings when generated JSON-LD still contains lumped variable names, omits source-listed variables, lacks Dataset-level temporal or spatial coverage, contains plain-string citations, or distributions omit exact source-page download links.</li>
 </ul>
 <h2 id="validation">Validation</h2>
 <ul>

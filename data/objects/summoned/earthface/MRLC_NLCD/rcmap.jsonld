@@ -74,7 +74,8 @@
       "encodingFormat": [
         "application/zip"
       ],
-      "description": "Example direct ZIP download link for an RCMAP component time-series."
+      "description": "Example direct ZIP download link for an RCMAP component time-series.",
+      "contentSize": "49574957781"
     },
     {
       "@type": "DataDownload",
@@ -83,7 +84,8 @@
       "encodingFormat": [
         "application/zip"
       ],
-      "description": "Example direct ZIP download link for an RCMAP component time-series."
+      "description": "Example direct ZIP download link for an RCMAP component time-series.",
+      "contentSize": "56425011033"
     },
     {
       "@type": "DataDownload",

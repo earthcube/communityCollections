@@ -175,7 +175,8 @@
       "encodingFormat": [
         "image/tiff",
         "application=geotiff"
-      ]
+      ],
+      "contentSize": "191808104"
     },
     {
       "@type": "DataDownload",
@@ -184,7 +185,8 @@
       "encodingFormat": [
         "image/tiff",
         "application=geotiff"
-      ]
+      ],
+      "contentSize": "21651447"
     },
     {
       "@type": "DataDownload",
@@ -193,7 +195,8 @@
       "encodingFormat": [
         "image/tiff",
         "application=geotiff"
-      ]
+      ],
+      "contentSize": "41297957"
     },
     {
       "@type": "DataDownload",
@@ -202,7 +205,8 @@
       "encodingFormat": [
         "image/tiff",
         "application=geotiff"
-      ]
+      ],
+      "contentSize": "21939754"
     },
     {
       "@type": "DataDownload",
@@ -211,7 +215,8 @@
       "encodingFormat": [
         "image/tiff",
         "application=geotiff"
-      ]
+      ],
+      "contentSize": "1544813752"
     },
     {
       "@type": "DataDownload",
@@ -220,7 +225,8 @@
       "encodingFormat": [
         "image/tiff",
         "application=geotiff"
-      ]
+      ],
+      "contentSize": "1668519623"
     },
     {
       "@type": "DataDownload",

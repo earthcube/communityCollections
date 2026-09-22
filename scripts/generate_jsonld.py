@@ -79,9 +79,20 @@ CONTENT_LIMIT_DETECTION = 3000  # Characters for detection prompt (reduced to av
 CONTENT_LIMIT_ANTHROPIC = 10000  # Characters for Anthropic detection
 EXAMPLE_JSONLD_LIMIT = 2000  # Characters for example JSON-LD in prompt
 WEBPAGE_TIMEOUT = 30  # Seconds for webpage fetching
+HEAD_TIMEOUT = 20  # Seconds for distribution content-length HEAD requests
 FILENAME_MAX_LENGTH = 50  # Maximum length for dataset name in filename
 URL_HASH_LENGTH = 8  # Length of URL hash in filename
 HTML_FALLBACK_LIMIT = 10000  # Characters to return if HTML parsing fails
+
+# Direct download extensions worth probing with HEAD for Schema.org contentSize
+# (Issue #17). Landing pages / directories are skipped.
+CONTENT_SIZE_EXTENSIONS = {
+    ".tif", ".tiff", ".nc", ".nc4", ".netcdf",
+    ".hdf", ".hdf5", ".h5", ".img", ".bil", ".asc",
+    ".zip", ".gz", ".tgz", ".bz2", ".7z",
+    ".gpkg", ".geojson", ".json", ".csv", ".tsv",
+    ".parquet", ".kml", ".kmz", ".ncml",
+}
 
 # Server error codes to detect
 SERVER_ERROR_CODES = ['500', '502', '503', '504', 'internal server error']
@@ -186,6 +197,7 @@ class AIClient:
                 # Ensure keywords is a JSON array (not semicolon/comma-separated string)
                 json_data = self._fix_keywords(json_data)
                 json_data = self._fix_encoding_format(json_data)
+                json_data = self._enrich_distribution_content_size(json_data)
                 json_data = self._add_ai_disclosure(json_data)
                 return json.dumps(json_data, indent=2)
             elif '[' in response:
@@ -380,7 +392,132 @@ class AIClient:
             for item in data:
                 self._fix_encoding_format(item)
         return data
-    
+
+    @staticmethod
+    def _looks_like_direct_download(url: str) -> bool:
+        """True when URL likely points at a file (not an HTML landing page/dir)."""
+        if not isinstance(url, str) or not url.strip():
+            return False
+        parsed = urlparse(url.strip())
+        if parsed.scheme not in ("http", "https"):
+            return False
+        path = (parsed.path or "").rstrip("/")
+        if not path or path.endswith("/"):
+            return False
+        # Skip obvious HTML / viewer pages
+        lower = path.lower()
+        if lower.endswith((".html", ".htm", ".php", ".asp", ".aspx")):
+            return False
+        suffix = Path(lower).suffix
+        return suffix in CONTENT_SIZE_EXTENSIONS
+
+    @staticmethod
+    def _head_content_length(url: str) -> Optional[int]:
+        """Return Content-Length from HEAD (Issue #17), or None on failure.
+
+        Soft-fails on timeouts, SSL issues, and servers that reject HEAD.
+        Falls back to curl when the Python SSL stack cannot verify the cert
+        (common on some local Windows Python installs) but curl succeeds.
+        """
+        headers = {
+            "User-Agent": "communityCollections/1.0 (+https://github.com/earthcube/communityCollections)",
+            "Accept": "*/*",
+        }
+        try:
+            resp = requests.head(
+                url,
+                allow_redirects=True,
+                timeout=HEAD_TIMEOUT,
+                headers=headers,
+            )
+            if resp.status_code == 200:
+                raw = resp.headers.get("Content-Length") or resp.headers.get(
+                    "content-length"
+                )
+                if raw and str(raw).isdigit():
+                    return int(raw)
+            # Some hosts disallow HEAD; try a 1-byte ranged GET for headers only
+            if resp.status_code in (403, 405, 501):
+                resp = requests.get(
+                    url,
+                    allow_redirects=True,
+                    timeout=HEAD_TIMEOUT,
+                    headers={**headers, "Range": "bytes=0-0"},
+                    stream=True,
+                )
+                try:
+                    raw = resp.headers.get("Content-Length") or resp.headers.get(
+                        "content-length"
+                    )
+                    # Content-Range: bytes 0-0/53562756
+                    if not raw:
+                        cr = resp.headers.get("Content-Range") or resp.headers.get(
+                            "content-range"
+                        )
+                        if cr and "/" in cr:
+                            total = cr.rsplit("/", 1)[-1]
+                            if total.isdigit():
+                                return int(total)
+                    if raw and str(raw).isdigit():
+                        return int(raw)
+                finally:
+                    resp.close()
+        except requests.exceptions.SSLError:
+            # Fall back to curl when local Python cert store is incomplete
+            try:
+                import subprocess
+
+                completed = subprocess.run(
+                    ["curl", "-sI", "-L", "--max-time", str(HEAD_TIMEOUT), url],
+                    capture_output=True,
+                    text=True,
+                    timeout=HEAD_TIMEOUT + 5,
+                    check=False,
+                )
+                if completed.returncode == 0:
+                    for line in completed.stdout.splitlines():
+                        if line.lower().startswith("content-length:"):
+                            raw = line.split(":", 1)[1].strip()
+                            if raw.isdigit():
+                                return int(raw)
+            except (OSError, subprocess.SubprocessError, ValueError):
+                return None
+        except (requests.RequestException, ValueError, TypeError):
+            return None
+        return None
+
+    @staticmethod
+    def _enrich_distribution_content_size(data: Dict) -> Dict:
+        """Fill distribution.contentSize via HEAD Content-Length when possible.
+
+        Schema.org contentSize is Text (byte count as a string). Only probes
+        likely direct file URLs (GeoTIFF, NetCDF, zip, etc.). Does not overwrite
+        an existing non-empty contentSize.
+        """
+        if not isinstance(data, dict):
+            return data
+        dist = data.get("distribution")
+        items = (
+            dist
+            if isinstance(dist, list)
+            else ([dist] if isinstance(dist, dict) else [])
+        )
+        for item in items:
+            if not isinstance(item, dict):
+                continue
+            existing = item.get("contentSize")
+            if existing not in (None, ""):
+                continue
+            url = item.get("contentUrl")
+            if not AIClient._looks_like_direct_download(url):
+                continue
+            size = AIClient._head_content_length(url)
+            if size is not None and size > 0:
+                item["contentSize"] = str(size)
+                # Prefer server Content-Type when encodingFormat is missing
+                # (left alone when already set by the model).
+        return data
+
     def _add_ai_disclosure(self, data: Dict) -> Dict:
         """Add machine-readable AI metadata disclosure.
 
