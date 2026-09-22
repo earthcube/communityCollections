@@ -22,7 +22,12 @@ You are generating a JSON-LD (JSON for Linking Data) description for a scientifi
   Extracted Metadata: Infer creator, publisher, temporal coverage, variables, and distribution from the download or listing page and any linked documentation. Include distribution with the main page URL and any data access or download URLs. Use @id as the dataset or download page URL with #dataset.
 
 • **Webpage + Catalog** (site that lists multiple datasets):
-  Extracted Metadata: The site is a catalog of datasets. You may describe the catalog as a single Dataset or as a DataCatalog; if describing one representative or aggregate dataset, infer creator, publisher, temporal coverage, variables, and distribution from the catalog page. Include distribution to the catalog URL and, if applicable, links to key datasets or download areas.
+  Extracted Metadata: Emit TWO separate JSON-LD records (do not nest a blank-node DataCatalog inside WebPage):
+  1) WebPage — page metadata only; `about` and `mainEntity` MUST reference the DataCatalog by `@id` only (include `@type` + `@id`, no embedded `hasPart`/`dataset`/`name`/`description` on those refs).
+  2) DataCatalog — full catalog description; link member Dataset(s) via `dataset` as an array of `{"@id": "..."}` refs (preferred). For small catalogs (<~20 datasets) you may embed Dataset objects, but every Dataset MUST still have an `@id`.
+  Use stable `@id`s with the gleaner xid pattern when a canonical site fragment is not already established:
+  `https://gleaner.io/xid/{type}/{host/path}` — e.g. webpage `https://gleaner.io/xid/webpage/www.example.org/`, datacatalog `https://gleaner.io/xid/datacatalog/www.example.org/datasets`. Keep `url` as the real human-facing page URL.
+  Infer creator, publisher, temporal coverage, variables, and distribution from the catalog page. Include distribution to the catalog URL and, if applicable, links to key datasets or download areas.
 
 • **Webpage + Dataset** (single dataset on a webpage):
   Extracted Metadata: Infer creator, publisher, temporal coverage, variables, and distribution from the dataset page. Include distribution with the page URL and any direct download or data access links.
@@ -53,6 +58,8 @@ You are generating a JSON-LD (JSON for Linking Data) description for a scientifi
 - For Dataset `spatialCoverage`, use a Place with geo/GeoShape when bounds are known; include a place `name` when confident. If bounds are unknown, omit spatialCoverage rather than inventing a box.
 - If the source page has both "Model Citation" and "Data Citation", include both as separate entries in `citation`. Do not drop either one.
 - Always represent `citation` as an array of structured `CreativeWork`, `ScholarlyArticle`, or `Dataset` objects; do not use a plain citation string.
+- Every cited `Dataset` (and preferably `ScholarlyArticle`) MUST have an `@id`. Prefer the DOI URL as `@id` (and `sameAs` when useful); never leave a typed citation as a blank node.
+- When a WebPage `about`/`mainEntity` points at a Dataset or DataCatalog that exists as its own record, use only `@type` + `@id` matching that record's `@id` — do not embed an anonymous typed object with only `name`/`url`.
 - For `distribution[].contentUrl`, use the exact URL linked from the source page's Download button or direct data/API endpoint when available. Do not use a generic portal root if a more specific download link, bucket prefix, DOI landing page, API endpoint, or file list is available.
 - If a source page lists several download links for the same dataset, include each materially different download target as a separate `distribution` entry with a clear `name`.
 - Do not invent `distribution[].contentSize`. A post-processing step will attempt HTTP HEAD on direct file URLs (GeoTIFF, NetCDF, zip, etc.) and set `contentSize` from Content-Length when available.
@@ -63,8 +70,8 @@ You are generating a JSON-LD (JSON for Linking Data) description for a scientifi
 **Requirements** (apply to all types):
 1. Use Schema.org vocabulary (https://schema.org/)
 2. Set @context to {{"@vocab": "https://schema.org/"}}
-3. Set @type to "Dataset" (or "DataCatalog" only when describing a catalog of datasets as a whole)
-4. Include @id with the dataset URL or a stable identifier (e.g. landing page URL with #dataset or DOI)
+3. Set @type to "Dataset", or to "DataCatalog" / "WebPage" when emitting those record types for catalog sites (two files: WebPage + DataCatalog)
+4. Include @id on every typed top-level and linked entity (Dataset, DataCatalog, WebPage, and citation Dataset). Prefer landing-page URL with #dataset/DOI, or gleaner xid `https://gleaner.io/xid/{type}/{host/path}` for WebPage/DataCatalog when using that pattern. Never emit an embedded DataCatalog/Dataset without @id (blank nodes break resolution).
 5. Include all available metadata fields
 6. Include distribution with contentUrl(s); for each distribution use "encodingFormat" as a JSON array of strings (e.g. ["text/html"], ["application/json", "text/csv"]). Do not invent contentSize (filled later via HEAD when possible).
 7. temporalCoverage (Dataset-level): use "YYYY-MM-DD/YYYY-MM-DD" or "ongoing" / ".." as appropriate; do not nest under variableMeasured

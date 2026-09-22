@@ -428,6 +428,7 @@
     },
     {
       "@type": "Dataset",
+      "@id": "https://doi.org/10.16904/envidat.332",
       "name": "CHELSA-BIOCLIM+ A novel set of global climate-related predictors at kilometre-resolution",
       "author": [
         {
