@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/sitemap.xml</loc>
-<lastmod>2026-09-18T17:18:49Z</lastmod>
+<lastmod>2026-09-18T23:26:05Z</lastmod>
 </url>
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/glim/1560991f9071fd8c168bf8bff8d5abcdaf7d3370.jsonld</loc>
@@ -126,7 +126,7 @@
 </url>
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/Consensus_Land_Cover/consensus-land-cover.jsonld</loc>
-<lastmod>2026-09-18T18:25:32-05:00</lastmod>
+<lastmod>2026-09-21T20:41:22-05:00</lastmod>
 </url>
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/Consensus_Land_Cover/webpage.jsonld</loc>
@@ -150,7 +150,7 @@
 </url>
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/GFC/gfc.jsonld</loc>
-<lastmod>2026-09-18T18:25:32-05:00</lastmod>
+<lastmod>2026-09-21T20:41:22-05:00</lastmod>
 </url>
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/GFC/webpage.jsonld</loc>
@@ -242,7 +242,7 @@
 </url>
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/MRLC_NLCD/rcmap.jsonld</loc>
-<lastmod>2026-09-18T18:25:32-05:00</lastmod>
+<lastmod>2026-09-21T20:41:22-05:00</lastmod>
 </url>
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/MRLC_NLCD/webpage.jsonld</loc>
@@ -266,7 +266,7 @@
 </url>
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/TerraClimate/terraclimate.jsonld</loc>
-<lastmod>2026-09-18T18:25:32-05:00</lastmod>
+<lastmod>2026-09-21T20:41:22-05:00</lastmod>
 </url>
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/TerraClimate/webpage.jsonld</loc>
