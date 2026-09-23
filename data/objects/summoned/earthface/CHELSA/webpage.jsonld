@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org/",
   "@type": "WebPage",
-  "@id": "https://www.chelsa-climate.org/datasets",
+  "@id": "https://gleaner.io/xid/webpage/www.chelsa-climate.org/",
   "name": "CHELSA Climate Datasets",
   "alternateName": "CHELSA: Climatologies at high resolution for the earth's land surface areas",
   "description": "Webpage for the CHELSA (Climatologies at high resolution for the earth's land surface areas) climate data catalog. CHELSA is a global, kilometer-scale climate dataset generated with the CHELSA downscaling model. The catalog provides access to multiple climate datasets including daily, monthly, and climatological means, bioclimatic variables, drought indices, and paleoclimate data. Datasets cover global, European, Swiss, and Canary Islands regions with temporal coverage from the Last Glacial Maximum (21k BP) through present observations to future climate scenarios (2071-2100).",
@@ -15,9 +15,7 @@
   },
   "about": {
     "@type": "DataCatalog",
-    "name": "CHELSA Climate Data Catalog",
-    "description": "A comprehensive catalog of high-resolution climate datasets for the earth's land surface areas",
-    "url": "https://www.chelsa-climate.org/datasets"
+    "@id": "https://gleaner.io/xid/datacatalog/www.chelsa-climate.org/datasets"
   },
   "publisher": {
     "@type": "Organization",
@@ -27,41 +25,7 @@
   },
   "mainEntity": {
     "@type": "DataCatalog",
-    "name": "CHELSA Climate Data Catalog",
-    "description": "Global, kilometer-scale climate datasets generated with the CHELSA downscaling model",
-    "url": "https://www.chelsa-climate.org/datasets",
-    "publisher": {
-      "@type": "Organization",
-      "name": "WSL",
-      "alternateName": "Swiss Federal Institute for Forest, Snow and Landscape Research"
-    },
-    "hasPart": [
-      {
-        "@type": "Dataset",
-        "name": "CHELSA-daily",
-        "version": "2.1"
-      },
-      {
-        "@type": "Dataset",
-        "name": "CHELSA-monthly",
-        "version": "2.1"
-      },
-      {
-        "@type": "Dataset",
-        "name": "CHELSA-climatologies",
-        "version": "2.1"
-      },
-      {
-        "@type": "Dataset",
-        "name": "CHELSA-bioclim",
-        "version": "2.1"
-      },
-      {
-        "@type": "Dataset",
-        "name": "CHELSA-drought-indices",
-        "version": "2.1"
-      }
-    ]
+    "@id": "https://gleaner.io/xid/datacatalog/www.chelsa-climate.org/datasets"
   },
   "breadcrumb": {
     "@type": "BreadcrumbList",

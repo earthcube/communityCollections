@@ -13,8 +13,7 @@
   },
   "about": {
     "@type": "Dataset",
-    "name": "FLO1K",
-    "url": "https://doi.org/10.6084/m9.figshare.c.3890224.v1"
+    "@id": "https://doi.org/10.6084/m9.figshare.c.3890224.v1#dataset"
   },
   "publisher": {
     "@type": "Organization",
@@ -23,8 +22,7 @@
   },
   "mainEntity": {
     "@type": "Dataset",
-    "name": "FLO1K: Global maps of mean, maximum and minimum annual streamflow at 1 km resolution (1960–2015)",
-    "url": "https://doi.org/10.6084/m9.figshare.c.3890224.v1#dataset"
+    "@id": "https://doi.org/10.6084/m9.figshare.c.3890224.v1#dataset"
   },
   "keywords": [
     "FLO1K",

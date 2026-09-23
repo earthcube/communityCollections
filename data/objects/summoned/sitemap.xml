@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/sitemap.xml</loc>
-<lastmod>2026-09-18T23:26:05Z</lastmod>
+<lastmod>2026-09-22T01:41:48Z</lastmod>
 </url>
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/glim/1560991f9071fd8c168bf8bff8d5abcdaf7d3370.jsonld</loc>
@@ -70,7 +70,7 @@
 </url>
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/CHELSA/chelsa_bioclim.jsonld</loc>
-<lastmod>2026-09-18T18:25:32-05:00</lastmod>
+<lastmod>2026-09-23T09:11:35-05:00</lastmod>
 </url>
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/CHELSA/chelsa_canaryclim_climatologies.jsonld</loc>
@@ -118,11 +118,11 @@
 </url>
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/CHELSA/datacatalog.jsonld</loc>
-<lastmod>2026-08-27T14:01:40-05:00</lastmod>
+<lastmod>2026-09-23T09:11:35-05:00</lastmod>
 </url>
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/CHELSA/webpage.jsonld</loc>
-<lastmod>2026-08-27T14:01:40-05:00</lastmod>
+<lastmod>2026-09-23T09:11:35-05:00</lastmod>
 </url>
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/Consensus_Land_Cover/consensus-land-cover.jsonld</loc>
@@ -138,7 +138,7 @@
 </url>
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/FLO1K/webpage.jsonld</loc>
-<lastmod>2026-08-27T14:01:40-05:00</lastmod>
+<lastmod>2026-09-23T09:11:35-05:00</lastmod>
 </url>
 <url>
 <loc>https://raw.githubusercontent.com/earthcube/communityCollections/refs/heads/master/data/objects/summoned/earthface/G-RUN/g-run.jsonld</loc>
