@@ -866,7 +866,7 @@
                     ]
                 },
                 "geo": {
-                    "anyOf": [
+                    "oneOf": [
                         {
                             "type": "object",
                             "description": "A point location. Point locations are recommended for data that is associated with specific sample locations, particularly if these are widely spaced such that an enclosing bounding box would be a misleading representation of the spatial location. Be aware that some client applications might only index or display bounding box extents or a single point location.",
@@ -878,7 +878,9 @@
                                 },
                                 "latitude": {"type": "number"},
                                 "longitude": {"type": "number"}
-                            }
+                            },
+                            "required": ["@type", "latitude", "longitude"],
+                            "additionalProperties": false
                         },
                         {
                             "type": "object",
@@ -890,7 +892,9 @@
                                     "default": "GeoShape"
                                 },
                                 "line": {"type": "string"}
-                            }
+                            },
+                            "required": ["@type", "line"],
+                            "additionalProperties": false
                         },
                         {
                             "type": "object",
@@ -905,7 +909,9 @@
                                     "type": "string",
                                     "description": "a series of four or more points where the first and final points are identical."
                                 }
-                            }
+                            },
+                            "required": ["@type", "polygon"],
+                            "additionalProperties": false
                         },
                         {
                             "type": "object",
@@ -926,7 +932,9 @@
                                         "-33.8 151.2 -33.7 151.3"
                                     ]
                                 }
-                            }
+                            },
+                            "required": ["@type", "box"],
+                            "additionalProperties": false
                         }
                     ]
                 }
