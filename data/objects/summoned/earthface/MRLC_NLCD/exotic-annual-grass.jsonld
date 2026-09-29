@@ -124,6 +124,7 @@
   ],
   "sdPublisher": {
     "@type": "Organization",
+    "@id": "https://www.earthcube.org/decoder/aigeneratedmetadata",
     "alternateType": "SoftwareApplication",
     "name": "ChatGPT",
     "applicationCategory": "GenerativeAI",
