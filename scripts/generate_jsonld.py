@@ -132,8 +132,11 @@ DATA_DIR = PROJECT_ROOT / "data" / "objects" / "summoned"
 #   Dataset.sdPublisher expects Organization; alternateType records that this
 #   publisher is also a SoftwareApplication.
 AI_GENERATED_KEYWORD = "AI-generated metadata"
+# Shared @id so every AI disclosure node resolves to the same entity (#20).
+AI_SD_PUBLISHER_ID = "https://www.earthcube.org/decoder/aigeneratedmetadata"
 AI_SD_PUBLISHER = {
     "@type": "Organization",
+    "@id": AI_SD_PUBLISHER_ID,
     "alternateType": "SoftwareApplication",
     "name": "ChatGPT",
     "applicationCategory": "GenerativeAI",
