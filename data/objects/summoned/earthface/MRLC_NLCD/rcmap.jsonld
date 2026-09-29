@@ -1,5 +1,7 @@
 {
-  "@context": "https://schema.org/",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
   "@type": "Dataset",
   "@id": "https://www.mrlc.gov/data/project/rcmap#dataset",
   "name": "Rangeland Condition Monitoring Assessment and Projection (RCMAP)",
