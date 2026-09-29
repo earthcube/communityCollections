@@ -21,42 +21,52 @@
     "member": [
       {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/u-s-geological-survey-usgs",
         "name": "U.S. Geological Survey (USGS)"
       },
       {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/national-oceanic-and-atmospheric-administration-noaa",
         "name": "National Oceanic and Atmospheric Administration (NOAA)"
       },
       {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/u-s-forest-service-usfs",
         "name": "U.S. Forest Service (USFS)"
       },
       {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/bureau-of-land-management-blm",
         "name": "Bureau of Land Management (BLM)"
       },
       {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/national-park-service-nps",
         "name": "National Park Service (NPS)"
       },
       {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/u-s-department-of-agriculture-usda",
         "name": "U.S. Department of Agriculture (USDA)"
       },
       {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/u-s-environmental-protection-agency-epa",
         "name": "U.S. Environmental Protection Agency (EPA)"
       },
       {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/u-s-fish-and-wildlife-service-usfws",
         "name": "U.S. Fish and Wildlife Service (USFWS)"
       },
       {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/national-agricultural-statistics-service-nass",
         "name": "National Agricultural Statistics Service (NASS)"
       },
       {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/landfire",
         "name": "LANDFIRE"
       }
     ]
@@ -90,6 +100,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

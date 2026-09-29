@@ -8,21 +8,25 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
+    "@id": "https://gleaner.io/xid/website/figshare.com/",
     "name": "Figshare",
     "url": "https://figshare.com/"
   },
   "about": {
     "@type": "Dataset",
+    "@id": "https://doi.org/10.6084/m9.figshare.13661312.v1#dataset",
     "name": "Global Multi-layer Soil Moisture Products",
     "url": "https://doi.org/10.6084/m9.figshare.13661312.v1"
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/xid/organization/figshare.com/",
     "name": "Figshare",
     "url": "https://figshare.com/"
   },
   "mainEntity": {
     "@type": "Dataset",
+    "@id": "https://doi.org/10.6084/m9.figshare.13661312.v1#dataset",
     "name": "Global Multi-layer Soil Moisture Products",
     "url": "https://doi.org/10.6084/m9.figshare.13661312.v1#dataset"
   },
@@ -41,6 +45,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

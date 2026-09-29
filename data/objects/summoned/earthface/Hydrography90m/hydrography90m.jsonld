@@ -10,45 +10,55 @@
   "creator": [
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/giuseppe-amatulli",
       "name": "Giuseppe Amatulli"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/jaime-r-garcia-marquez",
       "name": "Jaime R. Garcia Marquez"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/tushar-sethi",
       "name": "Tushar Sethi"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/jens-kiesel",
       "name": "Jens Kiesel"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/afroditi-grigoropoulou",
       "name": "Afroditi Grigoropoulou"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/maria-m-blacker",
       "name": "Maria M. Üblacker"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/longzhu-q-shen",
       "name": "Longzhu Q. Shen"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/sami-domisch",
       "name": "Sami Domisch"
     }
   ],
   "provider": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/hydrography.org/",
       "name": "Hydrography.org",
       "url": "https://hydrography.org/"
     },
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.igb-berlin.de/en",
       "name": "Leibniz-Institute of Freshwater Ecology and Inland Fisheries (IGB)",
       "url": "https://www.igb-berlin.de/en"
     }
@@ -56,6 +66,7 @@
   "publisher": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.igb-berlin.de/en",
       "name": "Leibniz-Institute of Freshwater Ecology and Inland Fisheries (IGB)",
       "url": "https://www.igb-berlin.de/en"
     }
@@ -65,6 +76,7 @@
   "temporalCoverage": "Static",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/xid/place/global",
     "name": "Global",
     "geo": {
       "@type": "GeoShape",
@@ -163,43 +175,53 @@
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5194/essd-14-4525-2022",
       "name": "Hydrography90m: A new high-resolution global hydrographic dataset",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/giuseppe-amatulli",
           "name": "Giuseppe Amatulli"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/jaime-r-garcia-marquez",
           "name": "Jaime R. Garcia Marquez"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/tushar-sethi",
           "name": "Tushar Sethi"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/jens-kiesel",
           "name": "Jens Kiesel"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/afroditi-grigoropoulou",
           "name": "Afroditi Grigoropoulou"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/maria-m-blacker",
           "name": "Maria M. Üblacker"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/longzhu-q-shen",
           "name": "Longzhu Q. Shen"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/sami-domisch",
           "name": "Sami Domisch"
         }
       ],
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/xid/periodical/earth-system-science-data",
         "name": "Earth System Science Data"
       },
       "datePublished": "2022",
@@ -216,26 +238,32 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/hydrology",
       "name": "Hydrology"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/hydrography",
       "name": "Hydrography"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/drainage-basins",
       "name": "Drainage basins"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/river-networks",
       "name": "River networks"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/flow-routing",
       "name": "Flow routing"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/global-environmental-mapping",
       "name": "Global environmental mapping"
     }
   ],
@@ -270,6 +298,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

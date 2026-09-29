@@ -8,21 +8,25 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
+    "@id": "https://gleaner.io/xid/website/emergency.copernicus.eu/",
     "name": "Copernicus Emergency Management Service",
     "url": "https://emergency.copernicus.eu/"
   },
   "about": {
     "@type": "Dataset",
+    "@id": "https://human-settlement.emergency.copernicus.eu/download.php#dataset",
     "name": "GHSL",
     "url": "https://human-settlement.emergency.copernicus.eu/download.php#dataset"
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/xid/organization/data.jrc.ec.europa.eu/collection/ghsl",
     "name": "European Commission, Joint Research Centre (JRC)",
     "url": "https://data.jrc.ec.europa.eu/collection/ghsl"
   },
   "mainEntity": {
     "@type": "Dataset",
+    "@id": "https://human-settlement.emergency.copernicus.eu/download.php#dataset",
     "name": "GHSL (Global Human Settlement Layer)",
     "url": "https://human-settlement.emergency.copernicus.eu/download.php#dataset"
   },
@@ -42,6 +46,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

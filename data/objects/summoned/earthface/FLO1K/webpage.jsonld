@@ -8,6 +8,7 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
+    "@id": "https://gleaner.io/xid/website/figshare.com/",
     "name": "Figshare",
     "url": "https://figshare.com/"
   },
@@ -17,6 +18,7 @@
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/xid/organization/figshare.com/",
     "name": "Figshare",
     "url": "https://figshare.com/"
   },
@@ -38,6 +40,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

@@ -9,73 +9,90 @@
   "creator": [
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/matthew-c-hansen",
       "name": "Matthew C. Hansen"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/peter-v-potapov",
       "name": "Peter V. Potapov"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/rebecca-moore",
       "name": "Rebecca Moore"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/matt-hancher",
       "name": "Matt Hancher"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/svetlana-a-turubanova",
       "name": "Svetlana A. Turubanova"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/alexandra-tyukavina",
       "name": "Alexandra Tyukavina"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/david-thau",
       "name": "David Thau"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/stephen-v-stehman",
       "name": "Stephen V. Stehman"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/scott-j-goetz",
       "name": "Scott J. Goetz"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/thomas-r-loveland",
       "name": "Thomas R. Loveland"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/arun-kommareddy",
       "name": "Arun Kommareddy"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/andrey-egorov",
       "name": "Andrey Egorov"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/lydia-chini",
       "name": "Lydia Chini"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/christopher-o-justice",
       "name": "Christopher O. Justice"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/john-r-g-townshend",
       "name": "John R. G. Townshend"
     }
   ],
   "publisher": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/glad.earthengine.app/view/global-forest-change",
       "name": "Hansen/UMD/Google/USGS/NASA",
       "url": "https://glad.earthengine.app/view/global-forest-change"
     },
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/glad.umd.edu/",
       "name": "Global Land Analysis and Discovery (GLAD) Laboratory, University of Maryland",
       "url": "https://glad.umd.edu/"
     }
@@ -83,6 +100,7 @@
   "temporalCoverage": "2000-01-01/2023-12-31",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/xid/place/global-granules-provided-for-180w-180e-80n-60s",
     "name": "Global (granules provided for 180W–180E, 80N–60S)",
     "geo": {
       "@type": "GeoShape",
@@ -299,9 +317,11 @@
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1126/science.1244693",
       "name": "High-Resolution Global Maps of 21st-Century Forest Cover Change",
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/xid/periodical/science",
         "name": "Science"
       },
       "datePublished": "2013-11-15",
@@ -318,22 +338,27 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/forest-monitoring",
       "name": "Forest monitoring"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/deforestation",
       "name": "Deforestation"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/land-cover-change",
       "name": "Land cover change"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/remote-sensing",
       "name": "Remote sensing"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/landsat",
       "name": "Landsat"
     }
   ],
@@ -359,6 +384,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

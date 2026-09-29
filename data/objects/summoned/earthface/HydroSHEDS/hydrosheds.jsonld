@@ -10,6 +10,7 @@
   "creator": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.worldwildlife.org/",
       "name": "World Wildlife Fund (WWF)",
       "url": "https://www.worldwildlife.org/"
     }
@@ -17,6 +18,7 @@
   "provider": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.hydrosheds.org/",
       "name": "HydroSHEDS Project",
       "url": "https://www.hydrosheds.org/"
     }
@@ -24,6 +26,7 @@
   "publisher": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.worldwildlife.org/",
       "name": "World Wildlife Fund (WWF)",
       "url": "https://www.worldwildlife.org/"
     }
@@ -32,6 +35,7 @@
   "temporalCoverage": "Static",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/xid/place/global-and-regional-hydrographic-products-product-specific-coverage-varies",
     "name": "Global and regional hydrographic products; product-specific coverage varies"
   },
   "temporalResolution": "Static",
@@ -136,23 +140,28 @@
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1029/2008EO100001",
       "name": "New global hydrography derived from spaceborne elevation data",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/b-lehner",
           "name": "B. Lehner"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/k-verdin",
           "name": "K. Verdin"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/a-jarvis",
           "name": "A. Jarvis"
         }
       ],
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/xid/periodical/eos-transactions-american-geophysical-union",
         "name": "Eos, Transactions, American Geophysical Union"
       },
       "datePublished": "2008",
@@ -169,30 +178,37 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/hydrology",
       "name": "Hydrology"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/hydrography",
       "name": "Hydrography"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/watersheds",
       "name": "Watersheds"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/river-networks",
       "name": "River networks"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/catchments",
       "name": "Catchments"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/digital-elevation-models",
       "name": "Digital elevation models"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/freshwater-conservation",
       "name": "Freshwater conservation"
     }
   ],
@@ -227,6 +243,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

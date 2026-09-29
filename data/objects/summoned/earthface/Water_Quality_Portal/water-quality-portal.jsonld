@@ -10,11 +10,13 @@
   "creator": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.epa.gov/awma/national-water-quality-monitoring-council",
       "name": "National Water Quality Monitoring Council",
       "url": "https://www.epa.gov/awma/national-water-quality-monitoring-council"
     },
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.epa.gov/",
       "name": "U.S. Environmental Protection Agency (EPA)",
       "url": "https://www.epa.gov/"
     }
@@ -22,11 +24,13 @@
   "provider": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.epa.gov/awma/national-water-quality-monitoring-council",
       "name": "National Water Quality Monitoring Council",
       "url": "https://www.epa.gov/awma/national-water-quality-monitoring-council"
     },
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.epa.gov/",
       "name": "U.S. Environmental Protection Agency (EPA)",
       "url": "https://www.epa.gov/"
     }
@@ -34,11 +38,13 @@
   "publisher": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.epa.gov/awma/national-water-quality-monitoring-council",
       "name": "National Water Quality Monitoring Council",
       "url": "https://www.epa.gov/awma/national-water-quality-monitoring-council"
     },
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.epa.gov/",
       "name": "U.S. Environmental Protection Agency (EPA)",
       "url": "https://www.epa.gov/"
     }
@@ -47,6 +53,7 @@
   "temporalCoverage": "1900-01-01/..",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/xid/place/united-states-and-beyond-coverage-depends-on-contributing-organizations-and-query-parameters",
     "name": "United States and beyond; coverage depends on contributing organizations and query parameters"
   },
   "variableMeasured": [
@@ -160,15 +167,18 @@
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1002/2016WR019993",
       "name": "Water quality data for national-scale aquatic research: The Water Quality Portal",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/e-k-read",
           "name": "E. K. Read"
         }
       ],
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/xid/periodical/water-resources-research",
         "name": "Water Resources Research"
       },
       "datePublished": "2017",
@@ -185,22 +195,27 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/water-quality",
       "name": "Water quality"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/hydrogeochemistry",
       "name": "Hydrogeochemistry"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/environmental-monitoring",
       "name": "Environmental monitoring"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/surface-water",
       "name": "Surface water"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/groundwater",
       "name": "Groundwater"
     }
   ],
@@ -229,11 +244,13 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   },
   "contributor": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/xid/organization/www.usgs.gov/",
     "name": "U.S. Geological Survey (USGS)",
     "url": "https://www.usgs.gov/"
   }

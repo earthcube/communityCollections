@@ -10,6 +10,7 @@
   "creator": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.isric.org/",
       "name": "ISRIC – International Soil Reference and Information Centre",
       "url": "https://www.isric.org/"
     }
@@ -17,6 +18,7 @@
   "provider": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.isric.org/",
       "name": "ISRIC – International Soil Reference and Information Centre",
       "url": "https://www.isric.org/"
     }
@@ -24,6 +26,7 @@
   "publisher": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.isric.org/",
       "name": "ISRIC – International Soil Reference and Information Centre",
       "url": "https://www.isric.org/"
     }
@@ -31,6 +34,7 @@
   "temporalCoverage": "Static",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/xid/place/global-soil-property-maps",
     "name": "Global soil property maps",
     "geo": {
       "@type": "GeoShape",
@@ -198,18 +202,22 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/soil",
       "name": "Soil"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/soil-properties",
       "name": "Soil properties"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/digital-soil-mapping",
       "name": "Digital soil mapping"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/geospatial-raster-data",
       "name": "Geospatial raster data"
     }
   ],
@@ -220,40 +228,49 @@
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5194/soil-7-217-2021",
       "name": "SoilGrids 2.0: producing soil information for the globe with quantified spatial uncertainty",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/l-poggio",
           "name": "L. Poggio"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/l-m-de-sousa",
           "name": "L. M. de Sousa"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/n-h-batjes",
           "name": "N. H. Batjes"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/g-b-m-heuvelink",
           "name": "G. B. M. Heuvelink"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/b-kempen",
           "name": "B. Kempen"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/e-ribeiro",
           "name": "E. Ribeiro"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/d-rossiter",
           "name": "D. Rossiter"
         }
       ],
       "datePublished": "2021",
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/xid/periodical/soil",
         "name": "SOIL"
       },
       "volumeNumber": "7",
@@ -292,6 +309,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

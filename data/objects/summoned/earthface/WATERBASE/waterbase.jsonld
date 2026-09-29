@@ -10,6 +10,7 @@
   "creator": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.eea.europa.eu/",
       "name": "European Environment Agency (EEA)",
       "url": "https://www.eea.europa.eu/"
     }
@@ -17,6 +18,7 @@
   "provider": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.eea.europa.eu/",
       "name": "European Environment Agency (EEA)",
       "url": "https://www.eea.europa.eu/"
     }
@@ -24,6 +26,7 @@
   "publisher": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.eea.europa.eu/",
       "name": "European Environment Agency (EEA)",
       "url": "https://www.eea.europa.eu/"
     }
@@ -34,6 +37,7 @@
   "temporalCoverage": "1900-01-01/2024-12-31",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/xid/place/europe-eea-member-countries-and-cooperating-reporting-countries-see-dataset-documentation-for-exact-country-coverage",
     "name": "Europe, EEA member countries, and cooperating reporting countries; see dataset documentation for exact country coverage"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -108,32 +112,39 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/hydrogeochemistry",
       "name": "Hydrogeochemistry"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/water-quality",
       "name": "Water quality"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/environmental-monitoring",
       "name": "Environmental monitoring"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/surface-water",
       "name": "Surface water"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/groundwater",
       "name": "Groundwater"
     }
   ],
   "citation": [
     {
       "@type": "CreativeWork",
+      "@id": "https://www.eea.europa.eu/en/datahub/datahubitem-view/fbf3717c-cd7b-4785-933a-d0cf510542e1",
       "name": "Waterbase - Water Quality ICM",
       "datePublished": "2025",
       "publisher": {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/european-environment-agency",
         "name": "European Environment Agency"
       },
       "sameAs": "https://www.eea.europa.eu/en/datahub/datahubitem-view/fbf3717c-cd7b-4785-933a-d0cf510542e1"
@@ -165,6 +176,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

@@ -8,19 +8,23 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
+    "@id": "https://gleaner.io/xid/website/global-hydrodynamics.github.io/",
     "name": "Global Hydrodynamics Lab Yamazaki Lab",
     "url": "https://global-hydrodynamics.github.io/"
   },
   "about": {
     "@type": "Dataset",
+    "@id": "https://global-hydrodynamics.github.io/MERIT_DEM/#dataset",
     "name": "MERIT DEM (Multi-Error-Removed Improved-Terrain Digital Elevation Model)",
     "url": "https://global-hydrodynamics.github.io/MERIT_DEM/"
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/xid/organization/www.u-tokyo.ac.jp/en/",
     "name": "The University of Tokyo",
     "subOrganization": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/institute-of-industrial-science",
       "name": "Institute of Industrial Science"
     },
     "url": "https://www.u-tokyo.ac.jp/en/"
@@ -30,6 +34,7 @@
   "lastReviewed": "2018-10-15",
   "mainEntity": {
     "@type": "Dataset",
+    "@id": "https://global-hydrodynamics.github.io/MERIT_DEM/#dataset",
     "name": "MERIT DEM (Multi-Error-Removed Improved-Terrain Digital Elevation Model)",
     "url": "https://global-hydrodynamics.github.io/MERIT_DEM/"
   },
@@ -75,6 +80,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

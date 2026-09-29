@@ -21,6 +21,7 @@
   "temporalCoverage": "1979-01-01/2016-12-31",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/xid/place/global-land-surface-areas",
     "name": "Global land surface areas"
   },
   "variableMeasured": [
@@ -77,50 +78,61 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/bias-adjusted-climate-forcing",
       "name": "Bias-adjusted climate forcing"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/impact-modeling",
       "name": "Impact modeling"
     }
   ],
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5194/essd-15-2445-2023",
       "name": "CHELSA-W5E5: daily 1 km meteorological forcing data for climate impact studies",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/d-n-karger",
           "name": "D. N. Karger"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/s-lange",
           "name": "S. Lange"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/c-hari",
           "name": "C. Hari"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/c-p-o-reyer",
           "name": "C. P. O. Reyer"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/o-conrad",
           "name": "O. Conrad"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/n-e-zimmermann",
           "name": "N. E. Zimmermann"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/k-frieler",
           "name": "K. Frieler"
         }
       ],
       "datePublished": "2023",
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/xid/periodical/earth-system-science-data",
         "name": "Earth System Science Data"
       },
       "volumeNumber": "15",
@@ -150,6 +162,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

@@ -8,21 +8,25 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
+    "@id": "https://gleaner.io/xid/website/www.worldwildlife.org/",
     "name": "World Wildlife Fund (WWF)",
     "url": "https://www.worldwildlife.org/"
   },
   "about": {
     "@type": "Dataset",
+    "@id": "https://www.hydrosheds.org/#dataset",
     "name": "HydroSHEDS",
     "url": "https://www.hydrosheds.org/"
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/xid/organization/www.worldwildlife.org/",
     "name": "World Wildlife Fund (WWF)",
     "url": "https://www.worldwildlife.org/"
   },
   "mainEntity": {
     "@type": "Dataset",
+    "@id": "https://www.hydrosheds.org/#dataset",
     "name": "HydroSHEDS (Hydrological data and maps based on Shuttle Elevation Derivatives at multiple Scales)",
     "url": "https://www.hydrosheds.org/#dataset"
   },
@@ -41,6 +45,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

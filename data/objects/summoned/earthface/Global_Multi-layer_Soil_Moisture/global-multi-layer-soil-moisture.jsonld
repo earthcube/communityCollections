@@ -10,18 +10,22 @@
   "creator": [
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/yaoping-wang",
       "name": "Yaoping Wang",
       "affiliation": {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/www.ornl.gov/",
         "name": "Oak Ridge National Laboratory",
         "url": "https://www.ornl.gov/"
       }
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/jiafu-mao",
       "name": "Jiafu Mao",
       "affiliation": {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/www.ornl.gov/",
         "name": "Oak Ridge National Laboratory",
         "url": "https://www.ornl.gov/"
       }
@@ -30,6 +34,7 @@
   "provider": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/figshare.com/",
       "name": "Figshare",
       "url": "https://figshare.com/"
     }
@@ -37,6 +42,7 @@
   "publisher": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/figshare.com/",
       "name": "Figshare",
       "url": "https://figshare.com/"
     }
@@ -45,6 +51,7 @@
   "temporalCoverage": "1970-01-01/2016-12-31",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/xid/place/global-land-areas",
     "name": "Global land areas",
     "geo": {
       "@type": "GeoShape",
@@ -104,19 +111,23 @@
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5194/essd-13-4385-2021",
       "name": "Development of observation-based global multilayer soil moisture products for 1970 to 2016",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/yaoping-wang",
           "name": "Yaoping Wang"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/jiafu-mao",
           "name": "Jiafu Mao"
         }
       ],
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/xid/periodical/earth-system-science-data",
         "name": "Earth System Science Data"
       },
       "datePublished": "2021",
@@ -133,22 +144,27 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/soil",
       "name": "Soil"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/soil-moisture",
       "name": "Soil moisture"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/hydrology",
       "name": "Hydrology"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/climate",
       "name": "Climate"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/land-surface-processes",
       "name": "Land surface processes"
     }
   ],
@@ -177,6 +193,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

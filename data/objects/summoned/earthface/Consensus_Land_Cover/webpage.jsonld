@@ -8,6 +8,7 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
+    "@id": "https://gleaner.io/xid/website/www.earthenv.org/",
     "name": "EarthEnv",
     "url": "https://www.earthenv.org/"
   },
@@ -19,14 +20,17 @@
     "member": [
       {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/yale-university",
         "name": "Yale University"
       },
       {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/university-of-florida",
         "name": "University of Florida"
       },
       {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/university-at-buffalo",
         "name": "University at Buffalo"
       }
     ]
@@ -84,6 +88,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

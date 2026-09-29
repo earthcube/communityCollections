@@ -143,6 +143,124 @@ AI_SD_PUBLISHER = {
     },
 }
 
+# Types that get a gleaner xid from url (preferred) or name (#21).
+GLEANER_ID_TYPES = {
+    "Organization",
+    "Person",
+    "Place",
+    "WebSite",
+    "Periodical",
+    "Thing",
+}
+# Citation-like types: use a DOI/url already on the node before falling back to gleaner.
+DIRECT_ID_TYPES = {"Dataset", "ScholarlyArticle", "CreativeWork"}
+
+
+def _http_url(value: Any) -> Optional[str]:
+    if isinstance(value, str) and value.startswith(("http://", "https://")):
+        return value
+    return None
+
+
+def _is_ai_sd_publisher(node: Dict) -> bool:
+    """Leave the ChatGPT disclosure node for its dedicated @id (#20)."""
+    return (
+        node.get("name") == "ChatGPT"
+        and node.get("alternateType") == "SoftwareApplication"
+    )
+
+
+def _gleaner_xid(type_name: str, node: Dict) -> Optional[str]:
+    """https://gleaner.io/xid/{type}/{url host+path || name slug}."""
+    url = _http_url(node.get("url"))
+    if url:
+        parsed = urlparse(url)
+        host_path = f"{parsed.netloc}{parsed.path}"
+        if host_path:
+            return f"https://gleaner.io/xid/{type_name.lower()}/{host_path}"
+    name = node.get("name")
+    if not isinstance(name, str) or not name.strip():
+        return None
+    slug = re.sub(r"[^a-z0-9]+", "-", name.strip().lower()).strip("-")
+    if not slug:
+        return None
+    return f"https://gleaner.io/xid/{type_name.lower()}/{slug}"
+
+
+def _direct_id(type_name: str, node: Dict) -> Optional[str]:
+    if type_name not in DIRECT_ID_TYPES:
+        return None
+    same_as = node.get("sameAs")
+    if isinstance(same_as, list):
+        for item in same_as:
+            url = _http_url(item)
+            if url:
+                return url
+    else:
+        url = _http_url(same_as)
+        if url:
+            return url
+    if type_name in {"Dataset", "CreativeWork"}:
+        return _http_url(node.get("url"))
+    return None
+
+
+def _insert_id_after_type(node: Dict, new_id: str) -> None:
+    rebuilt: Dict = {}
+    inserted = False
+    for key, value in node.items():
+        rebuilt[key] = value
+        if key == "@type":
+            rebuilt["@id"] = new_id
+            inserted = True
+    if not inserted:
+        rebuilt["@id"] = new_id
+    node.clear()
+    node.update(rebuilt)
+
+
+def assign_missing_ids(data: Any, dataset_ids: Optional[set] = None) -> Any:
+    """Add @id to typed nodes that would otherwise be blank.
+
+    Organization and similar types use a gleaner xid (url host/path, else name).
+    Dataset/ScholarlyArticle/CreativeWork prefer an existing DOI or url.
+    about/mainEntity Dataset nodes in a one-dataset folder use that record's @id.
+    Existing @id values are left unchanged.
+    """
+    known_ids = set(dataset_ids or [])
+
+    def visit(node: Any, key_name: Optional[str] = None) -> None:
+        if isinstance(node, list):
+            for item in node:
+                visit(item)
+            return
+        if not isinstance(node, dict):
+            return
+        type_name = node.get("@type")
+        if (
+            isinstance(type_name, str)
+            and "@id" not in node
+            and not _is_ai_sd_publisher(node)
+        ):
+            new_id = None
+            if (
+                type_name == "Dataset"
+                and key_name in {"about", "mainEntity"}
+                and len(known_ids) == 1
+            ):
+                new_id = next(iter(known_ids))
+            else:
+                new_id = _direct_id(type_name, node)
+                if new_id is None and type_name in GLEANER_ID_TYPES | DIRECT_ID_TYPES:
+                    new_id = _gleaner_xid(type_name, node)
+            if new_id:
+                _insert_id_after_type(node, new_id)
+        for key, value in list(node.items()):
+            visit(value, key)
+
+    visit(data)
+    return data
+
 
 class AIClient:
     """Abstract base class for AI clients."""
@@ -199,6 +317,7 @@ class AIClient:
                 json_data = self._fix_encoding_format(json_data)
                 json_data = self._enrich_distribution_content_size(json_data)
                 json_data = self._add_ai_disclosure(json_data)
+                json_data = assign_missing_ids(json_data)
                 return json.dumps(json_data, indent=2)
             elif '[' in response:
                 # Handle JSON arrays

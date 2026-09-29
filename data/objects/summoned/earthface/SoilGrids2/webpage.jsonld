@@ -8,21 +8,25 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
+    "@id": "https://gleaner.io/xid/website/www.isric.org/",
     "name": "ISRIC – International Soil Reference and Information Centre",
     "url": "https://www.isric.org/"
   },
   "about": {
     "@type": "Dataset",
+    "@id": "https://soilgrids.org/#dataset",
     "name": "SoilGrids2",
     "url": "https://soilgrids.org/"
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/xid/organization/www.isric.org/",
     "name": "ISRIC – International Soil Reference and Information Centre",
     "url": "https://www.isric.org/"
   },
   "mainEntity": {
     "@type": "Dataset",
+    "@id": "https://soilgrids.org/#dataset",
     "name": "SoilGrids2 (SoilGrids 2.0 global soil property maps)",
     "url": "https://soilgrids.org/#dataset"
   },
@@ -41,6 +45,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

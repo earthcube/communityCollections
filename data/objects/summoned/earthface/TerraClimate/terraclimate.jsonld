@@ -9,39 +9,47 @@
   "creator": [
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/john-t-abatzoglou",
       "name": "John T. Abatzoglou",
       "affiliation": {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/www.uidaho.edu/",
         "name": "University of Idaho",
         "url": "https://www.uidaho.edu/"
       }
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/s-z-dobrowski",
       "name": "S. Z. Dobrowski"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/s-a-parks",
       "name": "S. A. Parks"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/k-c-hegewisch",
       "name": "K. C. Hegewisch"
     }
   ],
   "publisher": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.climatologylab.org/",
       "name": "Climatology Lab",
       "url": "https://www.climatologylab.org/",
       "parentOrganization": {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/www.uidaho.edu/",
         "name": "University of Idaho",
         "url": "https://www.uidaho.edu/"
       }
     },
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.northwestknowledge.net/",
       "name": "Northwest Knowledge Network (NKN)",
       "url": "https://www.northwestknowledge.net/",
       "description": "Primary THREDDS hosting and web services for TerraClimate NetCDF distributions."
@@ -53,6 +61,7 @@
   ],
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/xid/place/global-terrestrial-land-surfaces",
     "name": "Global terrestrial land surfaces",
     "geo": {
       "@type": "GeoShape",
@@ -61,6 +70,7 @@
   },
   "license": {
     "@type": "CreativeWork",
+    "@id": "https://creativecommons.org/publicdomain/zero/1.0/",
     "name": "CC0 1.0 Universal (Public Domain Dedication)",
     "url": "https://creativecommons.org/publicdomain/zero/1.0/"
   },
@@ -188,27 +198,33 @@
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1038/sdata.2017.191",
       "name": "TerraClimate, a high-resolution global dataset of monthly climate and climatic water balance from 1958–2015",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/j-t-abatzoglou",
           "name": "J. T. Abatzoglou"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/s-z-dobrowski",
           "name": "S. Z. Dobrowski"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/s-a-parks",
           "name": "S. A. Parks"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/k-c-hegewisch",
           "name": "K. C. Hegewisch"
         }
       ],
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/xid/periodical/scientific-data",
         "name": "Scientific Data"
       },
       "datePublished": "2018",
@@ -225,30 +241,37 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/climate",
       "name": "Climate"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/climatology",
       "name": "Climatology"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/hydrology",
       "name": "Hydrology"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/drought",
       "name": "Drought"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/evapotranspiration",
       "name": "Evapotranspiration"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/water-balance",
       "name": "Water balance"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/ecological-and-hydrological-studies",
       "name": "Ecological and hydrological studies"
     }
   ],
@@ -285,6 +308,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

@@ -15,10 +15,12 @@
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/xid/organization/elischolar.library.yale.edu/yale_fes_data/",
     "name": "Yale School of the Environment",
     "url": "https://elischolar.library.yale.edu/yale_fes_data/",
     "parentOrganization": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/www.yale.edu/",
       "name": "Yale University",
       "url": "https://www.yale.edu/"
     }
@@ -54,6 +56,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

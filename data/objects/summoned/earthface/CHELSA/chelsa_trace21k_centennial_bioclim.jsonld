@@ -21,6 +21,7 @@
   "temporalCoverage": "21000BP/0BP",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/xid/place/global-land-surface-areas",
     "name": "Global land surface areas"
   },
   "variableMeasured": [
@@ -224,32 +225,39 @@
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5194/cp-19-439-2023",
       "name": "CHELSA-TraCE21k: high-resolution (1 km) downscaled transient temperature and precipitation data since the Last Glacial Maximum",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/d-n-karger",
           "name": "D. N. Karger"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/m-p-nobis",
           "name": "M. P. Nobis"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/s-normand",
           "name": "S. Normand"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/c-h-graham",
           "name": "C. H. Graham"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/n-e-zimmermann",
           "name": "N. E. Zimmermann"
         }
       ],
       "datePublished": "2023",
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/xid/periodical/climate-of-the-past",
         "name": "Climate of the Past"
       },
       "volumeNumber": "19",
@@ -263,15 +271,18 @@
     },
     {
       "@type": "Dataset",
+      "@id": "https://doi.org/10.16904/envidat.691",
       "name": "CHELSA-TraCE21k-centennial-bioclim and topographic data since the Last Glacial Maximum",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/d-n-karger",
           "name": "D. N. Karger"
         }
       ],
       "publisher": {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/envidat",
         "name": "EnviDat"
       },
       "datePublished": "2025",
@@ -286,10 +297,12 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/paleoclimate-bioclimatic-predictors",
       "name": "Paleoclimate bioclimatic predictors"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/species-distribution-modeling-paleo",
       "name": "Species distribution modeling (paleo)"
     }
   ],
@@ -309,6 +322,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

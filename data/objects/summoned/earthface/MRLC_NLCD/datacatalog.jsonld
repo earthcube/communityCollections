@@ -13,24 +13,29 @@
   },
   "creator": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/xid/organization/www.mrlc.gov/partners",
     "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
     "url": "https://www.mrlc.gov/partners"
   },
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/land-cover",
       "name": "Land cover"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/land-use",
       "name": "Land use"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/land-change",
       "name": "Land change"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/remote-sensing",
       "name": "Remote sensing"
     }
   ],
@@ -94,6 +99,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

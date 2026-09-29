@@ -10,18 +10,22 @@
   "creator": [
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/vincent-humphrey",
       "name": "Vincent Humphrey",
       "affiliation": {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/ethz.ch/en.html",
         "name": "Institute for Atmospheric and Climate Science, ETH Zurich",
         "url": "https://ethz.ch/en.html"
       }
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/xid/person/lukas-gudmundsson",
       "name": "Lukas Gudmundsson",
       "affiliation": {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/ethz.ch/en.html",
         "name": "Institute for Atmospheric and Climate Science, ETH Zurich",
         "url": "https://ethz.ch/en.html"
       }
@@ -30,6 +34,7 @@
   "provider": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/figshare.com/",
       "name": "Figshare",
       "url": "https://figshare.com/"
     }
@@ -37,6 +42,7 @@
   "publisher": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/figshare.com/",
       "name": "Figshare",
       "url": "https://figshare.com/"
     }
@@ -45,6 +51,7 @@
   "temporalCoverage": "1901-01-01/2019-12-31",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/xid/place/global-terrestrial-water-storage-reconstruction",
     "name": "Global terrestrial water storage reconstruction",
     "geo": {
       "@type": "GeoShape",
@@ -97,19 +104,23 @@
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5194/essd-11-1153-2019",
       "name": "GRACE-REC: a reconstruction of climate-driven water storage changes over the last century",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/vincent-humphrey",
           "name": "Vincent Humphrey"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/lukas-gudmundsson",
           "name": "Lukas Gudmundsson"
         }
       ],
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/xid/periodical/earth-system-science-data",
         "name": "Earth System Science Data"
       },
       "datePublished": "2019",
@@ -126,26 +137,32 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/hydrology",
       "name": "Hydrology"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/terrestrial-water-storage",
       "name": "Terrestrial water storage"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/climate-variability",
       "name": "Climate variability"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/drought",
       "name": "Drought"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/floods",
       "name": "Floods"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/grace-satellite-gravimetry",
       "name": "GRACE satellite gravimetry"
     }
   ],
@@ -178,6 +195,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

@@ -8,21 +8,25 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
+    "@id": "https://gleaner.io/xid/website/figshare.com/",
     "name": "Figshare",
     "url": "https://figshare.com/"
   },
   "about": {
     "@type": "Dataset",
+    "@id": "https://figshare.com/articles/dataset/GRUN_Global_Runoff_Reconstruction/9228176#dataset",
     "name": "G-RUN",
     "url": "https://doi.org/10.6084/m9.figshare.9228176"
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/xid/organization/figshare.com/",
     "name": "Figshare",
     "url": "https://figshare.com/"
   },
   "mainEntity": {
     "@type": "Dataset",
+    "@id": "https://figshare.com/articles/dataset/GRUN_Global_Runoff_Reconstruction/9228176#dataset",
     "name": "G-RUN (GRUN): Global Runoff Reconstruction",
     "url": "https://figshare.com/articles/dataset/GRUN_Global_Runoff_Reconstruction/9228176#dataset"
   },
@@ -42,6 +46,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }

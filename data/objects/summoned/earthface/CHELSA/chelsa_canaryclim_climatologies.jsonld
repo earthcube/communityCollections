@@ -21,6 +21,7 @@
   "temporalCoverage": "1979-01-01/2013-12-31",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/xid/place/canary-islands",
     "name": "Canary Islands"
   },
   "variableMeasured": [
@@ -80,40 +81,49 @@
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1111/ddi.13757",
       "name": "Spatial resolution impacts projected plant responses to climate change on topographically complex islands",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/j-pati-o",
           "name": "J. Patiño"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/f-collart",
           "name": "F. Collart"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/a-vanderpoorten",
           "name": "A. Vanderpoorten"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/j-l-martin-esquivel",
           "name": "J. L. Martin-Esquivel"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/a-naranjo-cigala",
           "name": "A. Naranjo-Cigala"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/s-mirolo",
           "name": "S. Mirolo"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/d-n-karger",
           "name": "D. N. Karger"
         }
       ],
       "datePublished": "2023",
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/xid/periodical/diversity-and-distributions",
         "name": "Diversity and Distributions"
       },
       "volumeNumber": "29",
@@ -128,39 +138,48 @@
     },
     {
       "@type": "Dataset",
+      "@id": "https://doi.org/10.16904/envidat.692",
       "name": "CHELSACanaryClim-climatologies",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/d-n-karger",
           "name": "D. N. Karger"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/f-collart",
           "name": "F. Collart"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/a-vanderpoorten",
           "name": "A. Vanderpoorten"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/j-l-martin-esquivel",
           "name": "J. L. Martin-Esquivel"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/a-naranjo-cigala",
           "name": "A. Naranjo-Cigala"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/s-mirolo",
           "name": "S. Mirolo"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/xid/person/j-pati-o",
           "name": "J. Patiño"
         }
       ],
       "publisher": {
         "@type": "Organization",
+        "@id": "https://gleaner.io/xid/organization/envidat",
         "name": "EnviDat"
       },
       "datePublished": "2025",
@@ -175,10 +194,12 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/island-climatology",
       "name": "Island climatology"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/xid/thing/downscaled-regional-climate",
       "name": "Downscaled regional climate"
     }
   ],
@@ -198,6 +219,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/xid/organization/openai",
       "name": "OpenAI"
     }
   }
