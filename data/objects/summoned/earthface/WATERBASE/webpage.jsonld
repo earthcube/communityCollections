@@ -8,7 +8,7 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
-    "@id": "https://gleaner.io/xid/website/www.eea.europa.eu/en/datahub",
+    "@id": "https://gleaner.io/.well-known/genid/website/www.eea.europa.eu/en/datahub",
     "name": "EEA Data Hub",
     "url": "https://www.eea.europa.eu/en/datahub"
   },
@@ -20,7 +20,7 @@
   },
   "publisher": {
     "@type": "Organization",
-    "@id": "https://gleaner.io/xid/organization/www.eea.europa.eu/",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.eea.europa.eu/",
     "name": "European Environment Agency (EEA)",
     "url": "https://www.eea.europa.eu/"
   },
@@ -45,7 +45,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

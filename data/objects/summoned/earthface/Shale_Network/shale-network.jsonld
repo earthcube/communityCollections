@@ -10,18 +10,18 @@
   "creator": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/shalenetwork.org/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/shalenetwork.org/",
       "name": "Shale Network",
       "url": "https://shalenetwork.org/"
     },
     {
       "@type": "Person",
-      "@id": "https://gleaner.io/xid/person/susan-l-brantley",
+      "@id": "https://gleaner.io/.well-known/genid/person/susan-l-brantley",
       "name": "Susan L. Brantley",
       "email": "sxb7@psu.edu",
       "affiliation": {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/www.psu.edu/",
+        "@id": "https://gleaner.io/.well-known/genid/organization/www.psu.edu/",
         "name": "The Pennsylvania State University",
         "url": "https://www.psu.edu/"
       }
@@ -30,7 +30,7 @@
   "provider": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/www.cuahsi.org/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.cuahsi.org/",
       "name": "Consortium of Universities for the Advancement of Hydrologic Sciences, Inc. (CUAHSI)",
       "url": "https://www.cuahsi.org/"
     }
@@ -38,7 +38,7 @@
   "publisher": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/www.cuahsi.org/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.cuahsi.org/",
       "name": "Consortium of Universities for the Advancement of Hydrologic Sciences, Inc. (CUAHSI)",
       "url": "https://www.cuahsi.org/"
     }
@@ -47,7 +47,7 @@
   "temporalCoverage": "2011-01-01/..",
   "spatialCoverage": {
     "@type": "Place",
-    "@id": "https://gleaner.io/xid/place/energy-production-regions-primarily-the-northeastern-united-states-see-dataset-portals-for-exact-site-coverage",
+    "@id": "https://gleaner.io/.well-known/genid/place/energy-production-regions-primarily-the-northeastern-united-states-see-dataset-portals-for-exact-site-coverage",
     "name": "Energy production regions, primarily the northeastern United States; see dataset portals for exact site coverage"
   },
   "variableMeasured": [
@@ -133,7 +133,7 @@
       "author": [
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/susan-l-brantley",
+          "@id": "https://gleaner.io/.well-known/genid/person/susan-l-brantley",
           "name": "Susan L. Brantley"
         }
       ],
@@ -151,32 +151,32 @@
   "about": [
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/hydrogeochemistry",
+      "@id": "https://gleaner.io/.well-known/genid/thing/hydrogeochemistry",
       "name": "Hydrogeochemistry"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/water-quality",
+      "@id": "https://gleaner.io/.well-known/genid/thing/water-quality",
       "name": "Water quality"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/oil-and-gas-development",
+      "@id": "https://gleaner.io/.well-known/genid/thing/oil-and-gas-development",
       "name": "Oil and gas development"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/shale-gas",
+      "@id": "https://gleaner.io/.well-known/genid/thing/shale-gas",
       "name": "Shale gas"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/groundwater",
+      "@id": "https://gleaner.io/.well-known/genid/thing/groundwater",
       "name": "Groundwater"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/surface-water",
+      "@id": "https://gleaner.io/.well-known/genid/thing/surface-water",
       "name": "Surface water"
     }
   ],
@@ -204,7 +204,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

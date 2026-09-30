@@ -10,7 +10,7 @@
   "creator": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/data.jrc.ec.europa.eu/collection/ghsl",
+      "@id": "https://gleaner.io/.well-known/genid/organization/data.jrc.ec.europa.eu/collection/ghsl",
       "name": "European Commission, Joint Research Centre (JRC)",
       "url": "https://data.jrc.ec.europa.eu/collection/ghsl"
     }
@@ -18,7 +18,7 @@
   "provider": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/emergency.copernicus.eu/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/emergency.copernicus.eu/",
       "name": "Copernicus Emergency Management Service",
       "url": "https://emergency.copernicus.eu/"
     }
@@ -26,7 +26,7 @@
   "publisher": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/data.jrc.ec.europa.eu/collection/ghsl",
+      "@id": "https://gleaner.io/.well-known/genid/organization/data.jrc.ec.europa.eu/collection/ghsl",
       "name": "European Commission, Joint Research Centre (JRC)",
       "url": "https://data.jrc.ec.europa.eu/collection/ghsl"
     }
@@ -35,7 +35,7 @@
   "temporalCoverage": "1975-01-01/2030-12-31",
   "spatialCoverage": {
     "@type": "Place",
-    "@id": "https://gleaner.io/xid/place/global-human-settlement-layer-product-coverage",
+    "@id": "https://gleaner.io/.well-known/genid/place/global-human-settlement-layer-product-coverage",
     "name": "Global Human Settlement Layer product coverage",
     "geo": {
       "@type": "GeoShape",
@@ -125,43 +125,43 @@
       "author": [
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/m-pesaresi",
+          "@id": "https://gleaner.io/.well-known/genid/person/m-pesaresi",
           "name": "M. Pesaresi"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/m-schiavina",
+          "@id": "https://gleaner.io/.well-known/genid/person/m-schiavina",
           "name": "M. Schiavina"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/p-politis",
+          "@id": "https://gleaner.io/.well-known/genid/person/p-politis",
           "name": "P. Politis"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/s-freire",
+          "@id": "https://gleaner.io/.well-known/genid/person/s-freire",
           "name": "S. Freire"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/k-krasnod-bska",
+          "@id": "https://gleaner.io/.well-known/genid/person/k-krasnod-bska",
           "name": "K. Krasnodębska"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/j-h-uhl",
+          "@id": "https://gleaner.io/.well-known/genid/person/j-h-uhl",
           "name": "J. H. Uhl"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/t-kemper",
+          "@id": "https://gleaner.io/.well-known/genid/person/t-kemper",
           "name": "T. Kemper"
         }
       ],
       "isPartOf": {
         "@type": "Periodical",
-        "@id": "https://gleaner.io/xid/periodical/international-journal-of-digital-earth",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/international-journal-of-digital-earth",
         "name": "International Journal of Digital Earth"
       },
       "datePublished": "2024",
@@ -171,27 +171,27 @@
   "about": [
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/human-settlements",
+      "@id": "https://gleaner.io/.well-known/genid/thing/human-settlements",
       "name": "Human settlements"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/built-environment",
+      "@id": "https://gleaner.io/.well-known/genid/thing/built-environment",
       "name": "Built environment"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/population-distribution",
+      "@id": "https://gleaner.io/.well-known/genid/thing/population-distribution",
       "name": "Population distribution"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/urbanization",
+      "@id": "https://gleaner.io/.well-known/genid/thing/urbanization",
       "name": "Urbanization"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/remote-sensing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/remote-sensing",
       "name": "Remote sensing"
     }
   ],
@@ -223,7 +223,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

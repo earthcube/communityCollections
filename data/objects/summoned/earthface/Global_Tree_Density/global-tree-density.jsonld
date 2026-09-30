@@ -8,73 +8,73 @@
   "creator": [
     {
       "@type": "Person",
-      "@id": "https://gleaner.io/xid/person/t-w-crowther",
+      "@id": "https://gleaner.io/.well-known/genid/person/t-w-crowther",
       "name": "T. W. Crowther",
       "affiliation": {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/yale-university",
+        "@id": "https://gleaner.io/.well-known/genid/organization/yale-university",
         "name": "Yale University"
       }
     },
     {
       "@type": "Person",
-      "@id": "https://gleaner.io/xid/person/h-b-glick",
+      "@id": "https://gleaner.io/.well-known/genid/person/h-b-glick",
       "name": "H. B. Glick",
       "affiliation": {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/yale-university",
+        "@id": "https://gleaner.io/.well-known/genid/organization/yale-university",
         "name": "Yale University"
       }
     },
     {
       "@type": "Person",
-      "@id": "https://gleaner.io/xid/person/k-r-covey",
+      "@id": "https://gleaner.io/.well-known/genid/person/k-r-covey",
       "name": "K. R. Covey",
       "affiliation": {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/yale-university",
+        "@id": "https://gleaner.io/.well-known/genid/organization/yale-university",
         "name": "Yale University"
       }
     },
     {
       "@type": "Person",
-      "@id": "https://gleaner.io/xid/person/g-amatulli",
+      "@id": "https://gleaner.io/.well-known/genid/person/g-amatulli",
       "name": "G. Amatulli",
       "affiliation": {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/yale-university",
+        "@id": "https://gleaner.io/.well-known/genid/organization/yale-university",
         "name": "Yale University"
       }
     },
     {
       "@type": "Person",
-      "@id": "https://gleaner.io/xid/person/m-n-tuanmu",
+      "@id": "https://gleaner.io/.well-known/genid/person/m-n-tuanmu",
       "name": "M.-N. Tuanmu",
       "affiliation": {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/yale-university",
+        "@id": "https://gleaner.io/.well-known/genid/organization/yale-university",
         "name": "Yale University"
       }
     },
     {
       "@type": "Person",
-      "@id": "https://gleaner.io/xid/person/w-jetz",
+      "@id": "https://gleaner.io/.well-known/genid/person/w-jetz",
       "name": "W. Jetz",
       "affiliation": {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/yale-university",
+        "@id": "https://gleaner.io/.well-known/genid/organization/yale-university",
         "name": "Yale University"
       }
     }
   ],
   "publisher": {
     "@type": "Organization",
-    "@id": "https://gleaner.io/xid/organization/elischolar.library.yale.edu/yale_fes_data/",
+    "@id": "https://gleaner.io/.well-known/genid/organization/elischolar.library.yale.edu/yale_fes_data/",
     "name": "EliScholar (Yale School of the Environment)",
     "url": "https://elischolar.library.yale.edu/yale_fes_data/",
     "parentOrganization": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/www.yale.edu/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.yale.edu/",
       "name": "Yale University",
       "url": "https://www.yale.edu/"
     }
@@ -83,7 +83,7 @@
   "temporalCoverage": "2015-09-02",
   "spatialCoverage": {
     "@type": "Place",
-    "@id": "https://gleaner.io/xid/place/global",
+    "@id": "https://gleaner.io/.well-known/genid/place/global",
     "name": "Global",
     "geo": {
       "@type": "GeoShape",
@@ -111,12 +111,12 @@
   "funding": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/yale-climate-and-energy-institute",
+      "@id": "https://gleaner.io/.well-known/genid/organization/yale-climate-and-energy-institute",
       "name": "Yale Climate and Energy Institute"
     },
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/british-ecological-society",
+      "@id": "https://gleaner.io/.well-known/genid/organization/british-ecological-society",
       "name": "British Ecological Society"
     }
   ],
@@ -165,28 +165,28 @@
       "author": [
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/t-w-crowther",
+          "@id": "https://gleaner.io/.well-known/genid/person/t-w-crowther",
           "name": "T. W. Crowther"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/h-b-glick",
+          "@id": "https://gleaner.io/.well-known/genid/person/h-b-glick",
           "name": "H. B. Glick"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/k-r-covey",
+          "@id": "https://gleaner.io/.well-known/genid/person/k-r-covey",
           "name": "K. R. Covey"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/et-al",
+          "@id": "https://gleaner.io/.well-known/genid/person/et-al",
           "name": "et al."
         }
       ],
       "isPartOf": {
         "@type": "Periodical",
-        "@id": "https://gleaner.io/xid/periodical/nature",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/nature",
         "name": "Nature"
       },
       "datePublished": "2015-09-10",
@@ -203,27 +203,27 @@
   "about": [
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/tree-density",
+      "@id": "https://gleaner.io/.well-known/genid/thing/tree-density",
       "name": "Tree density"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/forests",
+      "@id": "https://gleaner.io/.well-known/genid/thing/forests",
       "name": "Forests"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/land-cover",
+      "@id": "https://gleaner.io/.well-known/genid/thing/land-cover",
       "name": "Land cover"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/biodiversity",
+      "@id": "https://gleaner.io/.well-known/genid/thing/biodiversity",
       "name": "Biodiversity"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/global-environmental-mapping",
+      "@id": "https://gleaner.io/.well-known/genid/thing/global-environmental-mapping",
       "name": "Global environmental mapping"
     }
   ],
@@ -248,7 +248,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

@@ -7,20 +7,20 @@
   "url": "https://www.mrlc.gov/data/type/legacy-nlcd",
   "creator": {
     "@type": "Organization",
-    "@id": "https://gleaner.io/xid/organization/www.mrlc.gov/partners",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.mrlc.gov/partners",
     "name": "MRLC Consortium / U.S. Geological Survey (USGS)",
     "url": "https://www.mrlc.gov/partners"
   },
   "publisher": {
     "@type": "Organization",
-    "@id": "https://gleaner.io/xid/organization/www.mrlc.gov/",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.mrlc.gov/",
     "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
     "url": "https://www.mrlc.gov/"
   },
   "temporalCoverage": "Static",
   "spatialCoverage": {
     "@type": "Place",
-    "@id": "https://gleaner.io/xid/place/united-states-nationwide-coverage-includes-alaska-hawaii-and-other-u-s-territories-depending-on-product",
+    "@id": "https://gleaner.io/.well-known/genid/place/united-states-nationwide-coverage-includes-alaska-hawaii-and-other-u-s-territories-depending-on-product",
     "name": "United States (nationwide coverage; includes Alaska, Hawaii, and other U.S. territories depending on product)",
     "geo": {
       "@type": "GeoShape",
@@ -95,17 +95,17 @@
   "about": [
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/land-cover",
+      "@id": "https://gleaner.io/.well-known/genid/thing/land-cover",
       "name": "Land cover"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/land-change",
+      "@id": "https://gleaner.io/.well-known/genid/thing/land-change",
       "name": "Land change"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/remote-sensing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/remote-sensing",
       "name": "Remote sensing"
     }
   ],
@@ -127,7 +127,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

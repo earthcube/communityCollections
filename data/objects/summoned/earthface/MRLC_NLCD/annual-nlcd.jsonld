@@ -7,13 +7,13 @@
   "url": "https://www.mrlc.gov/data/project/annual-nlcd",
   "creator": {
     "@type": "Organization",
-    "@id": "https://gleaner.io/xid/organization/www.mrlc.gov/partners",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.mrlc.gov/partners",
     "name": "U.S. Geological Survey (USGS) / MRLC Consortium",
     "url": "https://www.mrlc.gov/partners"
   },
   "publisher": {
     "@type": "Organization",
-    "@id": "https://gleaner.io/xid/organization/www.mrlc.gov/",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.mrlc.gov/",
     "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
     "url": "https://www.mrlc.gov/"
   },
@@ -21,7 +21,7 @@
   "temporalCoverage": "1985-01-01/2024-12-31",
   "spatialCoverage": {
     "@type": "Place",
-    "@id": "https://gleaner.io/xid/place/conterminous-united-states-conus",
+    "@id": "https://gleaner.io/.well-known/genid/place/conterminous-united-states-conus",
     "name": "Conterminous United States (CONUS)",
     "geo": {
       "@type": "GeoShape",
@@ -110,17 +110,17 @@
   "about": [
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/land-cover",
+      "@id": "https://gleaner.io/.well-known/genid/thing/land-cover",
       "name": "Land cover"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/land-use",
+      "@id": "https://gleaner.io/.well-known/genid/thing/land-use",
       "name": "Land use"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/land-change",
+      "@id": "https://gleaner.io/.well-known/genid/thing/land-change",
       "name": "Land change"
     }
   ],
@@ -142,7 +142,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

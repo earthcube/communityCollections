@@ -8,12 +8,12 @@
   "creator": [
     {
       "@type": "Person",
-      "@id": "https://gleaner.io/xid/person/mao-ning-tuanmu",
+      "@id": "https://gleaner.io/.well-known/genid/person/mao-ning-tuanmu",
       "name": "Mao-Ning Tuanmu"
     },
     {
       "@type": "Person",
-      "@id": "https://gleaner.io/xid/person/walter-jetz",
+      "@id": "https://gleaner.io/.well-known/genid/person/walter-jetz",
       "name": "Walter Jetz"
     }
   ],
@@ -25,17 +25,17 @@
     "member": [
       {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/yale-university",
+        "@id": "https://gleaner.io/.well-known/genid/organization/yale-university",
         "name": "Yale University"
       },
       {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/university-of-florida",
+        "@id": "https://gleaner.io/.well-known/genid/organization/university-of-florida",
         "name": "University of Florida"
       },
       {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/university-at-buffalo",
+        "@id": "https://gleaner.io/.well-known/genid/organization/university-at-buffalo",
         "name": "University at Buffalo"
       }
     ]
@@ -43,7 +43,7 @@
   "temporalCoverage": "1992-01-01/2006-12-31",
   "spatialCoverage": {
     "@type": "Place",
-    "@id": "https://gleaner.io/xid/place/global",
+    "@id": "https://gleaner.io/.well-known/genid/place/global",
     "name": "Global",
     "geo": {
       "@type": "GeoShape",
@@ -169,19 +169,19 @@
       "author": [
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/mao-ning-tuanmu",
+          "@id": "https://gleaner.io/.well-known/genid/person/mao-ning-tuanmu",
           "name": "Mao-Ning Tuanmu"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/walter-jetz",
+          "@id": "https://gleaner.io/.well-known/genid/person/walter-jetz",
           "name": "Walter Jetz"
         }
       ],
       "datePublished": "2014",
       "isPartOf": {
         "@type": "Periodical",
-        "@id": "https://gleaner.io/xid/periodical/global-ecology-and-biogeography",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/global-ecology-and-biogeography",
         "name": "Global Ecology and Biogeography"
       },
       "identifier": [
@@ -197,22 +197,22 @@
   "about": [
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/land-cover",
+      "@id": "https://gleaner.io/.well-known/genid/thing/land-cover",
       "name": "Land cover"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/remote-sensing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/remote-sensing",
       "name": "Remote sensing"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/biodiversity-modelling",
+      "@id": "https://gleaner.io/.well-known/genid/thing/biodiversity-modelling",
       "name": "Biodiversity modelling"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/ecosystem-modelling",
+      "@id": "https://gleaner.io/.well-known/genid/thing/ecosystem-modelling",
       "name": "Ecosystem modelling"
     }
   ],
@@ -239,7 +239,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

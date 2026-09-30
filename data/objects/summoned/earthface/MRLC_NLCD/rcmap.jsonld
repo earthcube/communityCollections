@@ -7,20 +7,20 @@
   "url": "https://www.mrlc.gov/data/project/rcmap",
   "creator": {
     "@type": "Organization",
-    "@id": "https://gleaner.io/xid/organization/www.mrlc.gov/data/project/rcmap",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.mrlc.gov/data/project/rcmap",
     "name": "U.S. Geological Survey (USGS) and Bureau of Land Management (BLM)",
     "url": "https://www.mrlc.gov/data/project/rcmap"
   },
   "publisher": {
     "@type": "Organization",
-    "@id": "https://gleaner.io/xid/organization/www.mrlc.gov/",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.mrlc.gov/",
     "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
     "url": "https://www.mrlc.gov/"
   },
   "temporalCoverage": "1985-01-01/2024-12-31",
   "spatialCoverage": {
     "@type": "Place",
-    "@id": "https://gleaner.io/xid/place/western-north-america-rangelands",
+    "@id": "https://gleaner.io/.well-known/genid/place/western-north-america-rangelands",
     "name": "Western North America (rangelands)",
     "geo": {
       "@type": "GeoShape",
@@ -119,17 +119,17 @@
   "about": [
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/rangeland-monitoring",
+      "@id": "https://gleaner.io/.well-known/genid/thing/rangeland-monitoring",
       "name": "Rangeland monitoring"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/vegetation-cover",
+      "@id": "https://gleaner.io/.well-known/genid/thing/vegetation-cover",
       "name": "Vegetation cover"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/remote-sensing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/remote-sensing",
       "name": "Remote sensing"
     }
   ],
@@ -141,7 +141,7 @@
       "datePublished": "2022",
       "publisher": {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/u-s-geological-survey",
+        "@id": "https://gleaner.io/.well-known/genid/organization/u-s-geological-survey",
         "name": "U.S. Geological Survey"
       },
       "identifier": {
@@ -170,7 +170,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

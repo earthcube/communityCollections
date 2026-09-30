@@ -8,7 +8,7 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
-    "@id": "https://gleaner.io/xid/website/www.worldwildlife.org/",
+    "@id": "https://gleaner.io/.well-known/genid/website/www.worldwildlife.org/",
     "name": "World Wildlife Fund (WWF)",
     "url": "https://www.worldwildlife.org/"
   },
@@ -20,7 +20,7 @@
   },
   "publisher": {
     "@type": "Organization",
-    "@id": "https://gleaner.io/xid/organization/www.worldwildlife.org/",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.worldwildlife.org/",
     "name": "World Wildlife Fund (WWF)",
     "url": "https://www.worldwildlife.org/"
   },
@@ -45,7 +45,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

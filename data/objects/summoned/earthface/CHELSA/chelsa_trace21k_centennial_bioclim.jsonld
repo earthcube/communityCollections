@@ -21,7 +21,7 @@
   "temporalCoverage": "21000BP/0BP",
   "spatialCoverage": {
     "@type": "Place",
-    "@id": "https://gleaner.io/xid/place/global-land-surface-areas",
+    "@id": "https://gleaner.io/.well-known/genid/place/global-land-surface-areas",
     "name": "Global land surface areas"
   },
   "variableMeasured": [
@@ -230,34 +230,34 @@
       "author": [
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/d-n-karger",
+          "@id": "https://gleaner.io/.well-known/genid/person/d-n-karger",
           "name": "D. N. Karger"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/m-p-nobis",
+          "@id": "https://gleaner.io/.well-known/genid/person/m-p-nobis",
           "name": "M. P. Nobis"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/s-normand",
+          "@id": "https://gleaner.io/.well-known/genid/person/s-normand",
           "name": "S. Normand"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/c-h-graham",
+          "@id": "https://gleaner.io/.well-known/genid/person/c-h-graham",
           "name": "C. H. Graham"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/n-e-zimmermann",
+          "@id": "https://gleaner.io/.well-known/genid/person/n-e-zimmermann",
           "name": "N. E. Zimmermann"
         }
       ],
       "datePublished": "2023",
       "isPartOf": {
         "@type": "Periodical",
-        "@id": "https://gleaner.io/xid/periodical/climate-of-the-past",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/climate-of-the-past",
         "name": "Climate of the Past"
       },
       "volumeNumber": "19",
@@ -276,13 +276,13 @@
       "author": [
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/d-n-karger",
+          "@id": "https://gleaner.io/.well-known/genid/person/d-n-karger",
           "name": "D. N. Karger"
         }
       ],
       "publisher": {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/envidat",
+        "@id": "https://gleaner.io/.well-known/genid/organization/envidat",
         "name": "EnviDat"
       },
       "datePublished": "2025",
@@ -297,12 +297,12 @@
   "about": [
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/paleoclimate-bioclimatic-predictors",
+      "@id": "https://gleaner.io/.well-known/genid/thing/paleoclimate-bioclimatic-predictors",
       "name": "Paleoclimate bioclimatic predictors"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/species-distribution-modeling-paleo",
+      "@id": "https://gleaner.io/.well-known/genid/thing/species-distribution-modeling-paleo",
       "name": "Species distribution modeling (paleo)"
     }
   ],
@@ -322,7 +322,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

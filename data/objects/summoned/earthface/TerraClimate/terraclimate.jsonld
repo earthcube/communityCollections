@@ -9,47 +9,47 @@
   "creator": [
     {
       "@type": "Person",
-      "@id": "https://gleaner.io/xid/person/john-t-abatzoglou",
+      "@id": "https://gleaner.io/.well-known/genid/person/john-t-abatzoglou",
       "name": "John T. Abatzoglou",
       "affiliation": {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/www.uidaho.edu/",
+        "@id": "https://gleaner.io/.well-known/genid/organization/www.uidaho.edu/",
         "name": "University of Idaho",
         "url": "https://www.uidaho.edu/"
       }
     },
     {
       "@type": "Person",
-      "@id": "https://gleaner.io/xid/person/s-z-dobrowski",
+      "@id": "https://gleaner.io/.well-known/genid/person/s-z-dobrowski",
       "name": "S. Z. Dobrowski"
     },
     {
       "@type": "Person",
-      "@id": "https://gleaner.io/xid/person/s-a-parks",
+      "@id": "https://gleaner.io/.well-known/genid/person/s-a-parks",
       "name": "S. A. Parks"
     },
     {
       "@type": "Person",
-      "@id": "https://gleaner.io/xid/person/k-c-hegewisch",
+      "@id": "https://gleaner.io/.well-known/genid/person/k-c-hegewisch",
       "name": "K. C. Hegewisch"
     }
   ],
   "publisher": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/www.climatologylab.org/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.climatologylab.org/",
       "name": "Climatology Lab",
       "url": "https://www.climatologylab.org/",
       "parentOrganization": {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/www.uidaho.edu/",
+        "@id": "https://gleaner.io/.well-known/genid/organization/www.uidaho.edu/",
         "name": "University of Idaho",
         "url": "https://www.uidaho.edu/"
       }
     },
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/www.northwestknowledge.net/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.northwestknowledge.net/",
       "name": "Northwest Knowledge Network (NKN)",
       "url": "https://www.northwestknowledge.net/",
       "description": "Primary THREDDS hosting and web services for TerraClimate NetCDF distributions."
@@ -61,7 +61,7 @@
   ],
   "spatialCoverage": {
     "@type": "Place",
-    "@id": "https://gleaner.io/xid/place/global-terrestrial-land-surfaces",
+    "@id": "https://gleaner.io/.well-known/genid/place/global-terrestrial-land-surfaces",
     "name": "Global terrestrial land surfaces",
     "geo": {
       "@type": "GeoShape",
@@ -203,28 +203,28 @@
       "author": [
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/j-t-abatzoglou",
+          "@id": "https://gleaner.io/.well-known/genid/person/j-t-abatzoglou",
           "name": "J. T. Abatzoglou"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/s-z-dobrowski",
+          "@id": "https://gleaner.io/.well-known/genid/person/s-z-dobrowski",
           "name": "S. Z. Dobrowski"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/s-a-parks",
+          "@id": "https://gleaner.io/.well-known/genid/person/s-a-parks",
           "name": "S. A. Parks"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/k-c-hegewisch",
+          "@id": "https://gleaner.io/.well-known/genid/person/k-c-hegewisch",
           "name": "K. C. Hegewisch"
         }
       ],
       "isPartOf": {
         "@type": "Periodical",
-        "@id": "https://gleaner.io/xid/periodical/scientific-data",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/scientific-data",
         "name": "Scientific Data"
       },
       "datePublished": "2018",
@@ -241,37 +241,37 @@
   "about": [
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/climate",
+      "@id": "https://gleaner.io/.well-known/genid/thing/climate",
       "name": "Climate"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/climatology",
+      "@id": "https://gleaner.io/.well-known/genid/thing/climatology",
       "name": "Climatology"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/hydrology",
+      "@id": "https://gleaner.io/.well-known/genid/thing/hydrology",
       "name": "Hydrology"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/drought",
+      "@id": "https://gleaner.io/.well-known/genid/thing/drought",
       "name": "Drought"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/evapotranspiration",
+      "@id": "https://gleaner.io/.well-known/genid/thing/evapotranspiration",
       "name": "Evapotranspiration"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/water-balance",
+      "@id": "https://gleaner.io/.well-known/genid/thing/water-balance",
       "name": "Water balance"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/ecological-and-hydrological-studies",
+      "@id": "https://gleaner.io/.well-known/genid/thing/ecological-and-hydrological-studies",
       "name": "Ecological and hydrological studies"
     }
   ],
@@ -308,7 +308,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

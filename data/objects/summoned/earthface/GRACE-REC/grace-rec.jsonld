@@ -10,22 +10,22 @@
   "creator": [
     {
       "@type": "Person",
-      "@id": "https://gleaner.io/xid/person/vincent-humphrey",
+      "@id": "https://gleaner.io/.well-known/genid/person/vincent-humphrey",
       "name": "Vincent Humphrey",
       "affiliation": {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/ethz.ch/en.html",
+        "@id": "https://gleaner.io/.well-known/genid/organization/ethz.ch/en.html",
         "name": "Institute for Atmospheric and Climate Science, ETH Zurich",
         "url": "https://ethz.ch/en.html"
       }
     },
     {
       "@type": "Person",
-      "@id": "https://gleaner.io/xid/person/lukas-gudmundsson",
+      "@id": "https://gleaner.io/.well-known/genid/person/lukas-gudmundsson",
       "name": "Lukas Gudmundsson",
       "affiliation": {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/ethz.ch/en.html",
+        "@id": "https://gleaner.io/.well-known/genid/organization/ethz.ch/en.html",
         "name": "Institute for Atmospheric and Climate Science, ETH Zurich",
         "url": "https://ethz.ch/en.html"
       }
@@ -34,7 +34,7 @@
   "provider": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/figshare.com/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/figshare.com/",
       "name": "Figshare",
       "url": "https://figshare.com/"
     }
@@ -42,7 +42,7 @@
   "publisher": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/figshare.com/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/figshare.com/",
       "name": "Figshare",
       "url": "https://figshare.com/"
     }
@@ -51,7 +51,7 @@
   "temporalCoverage": "1901-01-01/2019-12-31",
   "spatialCoverage": {
     "@type": "Place",
-    "@id": "https://gleaner.io/xid/place/global-terrestrial-water-storage-reconstruction",
+    "@id": "https://gleaner.io/.well-known/genid/place/global-terrestrial-water-storage-reconstruction",
     "name": "Global terrestrial water storage reconstruction",
     "geo": {
       "@type": "GeoShape",
@@ -109,18 +109,18 @@
       "author": [
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/vincent-humphrey",
+          "@id": "https://gleaner.io/.well-known/genid/person/vincent-humphrey",
           "name": "Vincent Humphrey"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/lukas-gudmundsson",
+          "@id": "https://gleaner.io/.well-known/genid/person/lukas-gudmundsson",
           "name": "Lukas Gudmundsson"
         }
       ],
       "isPartOf": {
         "@type": "Periodical",
-        "@id": "https://gleaner.io/xid/periodical/earth-system-science-data",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/earth-system-science-data",
         "name": "Earth System Science Data"
       },
       "datePublished": "2019",
@@ -137,32 +137,32 @@
   "about": [
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/hydrology",
+      "@id": "https://gleaner.io/.well-known/genid/thing/hydrology",
       "name": "Hydrology"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/terrestrial-water-storage",
+      "@id": "https://gleaner.io/.well-known/genid/thing/terrestrial-water-storage",
       "name": "Terrestrial water storage"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/climate-variability",
+      "@id": "https://gleaner.io/.well-known/genid/thing/climate-variability",
       "name": "Climate variability"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/drought",
+      "@id": "https://gleaner.io/.well-known/genid/thing/drought",
       "name": "Drought"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/floods",
+      "@id": "https://gleaner.io/.well-known/genid/thing/floods",
       "name": "Floods"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/grace-satellite-gravimetry",
+      "@id": "https://gleaner.io/.well-known/genid/thing/grace-satellite-gravimetry",
       "name": "GRACE satellite gravimetry"
     }
   ],
@@ -195,7 +195,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

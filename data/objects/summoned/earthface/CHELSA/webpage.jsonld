@@ -10,7 +10,7 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
-    "@id": "https://gleaner.io/xid/website/www.chelsa-climate.org/",
+    "@id": "https://gleaner.io/.well-known/genid/website/www.chelsa-climate.org/",
     "name": "CHELSA Climate",
     "url": "https://www.chelsa-climate.org/"
   },
@@ -20,7 +20,7 @@
   },
   "publisher": {
     "@type": "Organization",
-    "@id": "https://gleaner.io/xid/organization/www.wsl.ch/en/index.html",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.wsl.ch/en/index.html",
     "name": "WSL",
     "alternateName": "Swiss Federal Institute for Forest, Snow and Landscape Research",
     "url": "https://www.wsl.ch/en/index.html"
@@ -70,7 +70,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

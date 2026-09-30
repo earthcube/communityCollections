@@ -8,40 +8,40 @@
   "creator": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/u-s-geological-survey-usgs",
+      "@id": "https://gleaner.io/.well-known/genid/organization/u-s-geological-survey-usgs",
       "name": "U.S. Geological Survey (USGS)"
     },
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/natural-resources-canada",
+      "@id": "https://gleaner.io/.well-known/genid/organization/natural-resources-canada",
       "name": "Natural Resources Canada"
     },
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/instituto-nacional-de-estad-stica-y-geograf-a-inegi",
+      "@id": "https://gleaner.io/.well-known/genid/organization/instituto-nacional-de-estad-stica-y-geograf-a-inegi",
       "name": "Instituto Nacional de Estadística y Geografía (INEGI)"
     },
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/comisi-n-nacional-para-el-conocimiento-y-uso-de-la-biodiversidad-conabio",
+      "@id": "https://gleaner.io/.well-known/genid/organization/comisi-n-nacional-para-el-conocimiento-y-uso-de-la-biodiversidad-conabio",
       "name": "Comisión Nacional Para el Conocimiento y Uso de la Biodiversidad (CONABIO)"
     },
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/comisi-n-nacional-forestal-conafor",
+      "@id": "https://gleaner.io/.well-known/genid/organization/comisi-n-nacional-forestal-conafor",
       "name": "Comisión Nacional Forestal (CONAFOR)"
     }
   ],
   "publisher": {
     "@type": "Organization",
-    "@id": "https://gleaner.io/xid/organization/www.usgs.gov/",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.usgs.gov/",
     "name": "U.S. Geological Survey (USGS)",
     "url": "https://www.usgs.gov/"
   },
   "temporalCoverage": "2019-01-01/2021-12-31",
   "spatialCoverage": {
     "@type": "Place",
-    "@id": "https://gleaner.io/xid/place/north-america-canada-united-states-mexico",
+    "@id": "https://gleaner.io/.well-known/genid/place/north-america-canada-united-states-mexico",
     "name": "North America (Canada, United States, Mexico)",
     "geo": {
       "@type": "GeoShape",
@@ -84,12 +84,12 @@
   "about": [
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/land-cover",
+      "@id": "https://gleaner.io/.well-known/genid/thing/land-cover",
       "name": "Land cover"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/continental-land-monitoring",
+      "@id": "https://gleaner.io/.well-known/genid/thing/continental-land-monitoring",
       "name": "Continental land monitoring"
     }
   ],
@@ -101,7 +101,7 @@
       "datePublished": "2024",
       "publisher": {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/commission-for-environmental-cooperation",
+        "@id": "https://gleaner.io/.well-known/genid/organization/commission-for-environmental-cooperation",
         "name": "Commission for Environmental Cooperation"
       },
       "sameAs": "https://www.cec.org/publications/nalcms/"
@@ -123,7 +123,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

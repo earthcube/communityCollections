@@ -15,13 +15,13 @@
   "publisher": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/glad.umd.edu/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/glad.umd.edu/",
       "name": "Global Land Analysis and Discovery (GLAD) Laboratory, University of Maryland",
       "url": "https://glad.umd.edu/"
     },
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/earthengine.google.com/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/earthengine.google.com/",
       "name": "Google Earth Engine",
       "url": "https://earthengine.google.com/"
     }
@@ -57,7 +57,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

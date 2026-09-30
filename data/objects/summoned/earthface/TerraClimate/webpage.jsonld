@@ -8,7 +8,7 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
-    "@id": "https://gleaner.io/xid/website/www.climatologylab.org/",
+    "@id": "https://gleaner.io/.well-known/genid/website/www.climatologylab.org/",
     "name": "Climatology Lab",
     "url": "https://www.climatologylab.org/"
   },
@@ -21,7 +21,7 @@
   },
   "publisher": {
     "@type": "Organization",
-    "@id": "https://gleaner.io/xid/organization/www.climatologylab.org/",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.climatologylab.org/",
     "name": "Climatology Lab",
     "url": "https://www.climatologylab.org/"
   },
@@ -70,7 +70,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

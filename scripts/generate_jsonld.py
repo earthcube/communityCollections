@@ -171,20 +171,23 @@ def _is_ai_sd_publisher(node: Dict) -> bool:
 
 
 def _gleaner_xid(type_name: str, node: Dict) -> Optional[str]:
-    """https://gleaner.io/xid/{type}/{url host+path || name slug}."""
+    """Skolem IRI: https://gleaner.io/.well-known/genid/{type}/{url host+path || name slug}.
+
+    See https://www.w3.org/TR/rdf12-concepts/#section-skolemization
+    """
     url = _http_url(node.get("url"))
     if url:
         parsed = urlparse(url)
         host_path = f"{parsed.netloc}{parsed.path}"
         if host_path:
-            return f"https://gleaner.io/xid/{type_name.lower()}/{host_path}"
+            return f"https://gleaner.io/.well-known/genid/{type_name.lower()}/{host_path}"
     name = node.get("name")
     if not isinstance(name, str) or not name.strip():
         return None
     slug = re.sub(r"[^a-z0-9]+", "-", name.strip().lower()).strip("-")
     if not slug:
         return None
-    return f"https://gleaner.io/xid/{type_name.lower()}/{slug}"
+    return f"https://gleaner.io/.well-known/genid/{type_name.lower()}/{slug}"
 
 
 def _direct_id(type_name: str, node: Dict) -> Optional[str]:
@@ -222,7 +225,8 @@ def _insert_id_after_type(node: Dict, new_id: str) -> None:
 def assign_missing_ids(data: Any, dataset_ids: Optional[set] = None) -> Any:
     """Add @id to typed nodes that would otherwise be blank.
 
-    Organization and similar types use a gleaner xid (url host/path, else name).
+    Organization and similar types use a Skolem IRI under
+    https://gleaner.io/.well-known/genid/ (url host/path, else name).
     Dataset/ScholarlyArticle/CreativeWork prefer an existing DOI or url.
     about/mainEntity Dataset nodes in a one-dataset folder use that record's @id.
     Existing @id values are left unchanged.

@@ -21,7 +21,7 @@
   "temporalCoverage": "1979-01-15/2021-12-15",
   "spatialCoverage": {
     "@type": "Place",
-    "@id": "https://gleaner.io/xid/place/global-land-surface-areas",
+    "@id": "https://gleaner.io/.well-known/genid/place/global-land-surface-areas",
     "name": "Global land surface areas",
     "geo": {
       "@type": "GeoShape",
@@ -171,54 +171,54 @@
       "author": [
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/d-n-karger",
+          "@id": "https://gleaner.io/.well-known/genid/person/d-n-karger",
           "name": "D. N. Karger"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/o-conrad",
+          "@id": "https://gleaner.io/.well-known/genid/person/o-conrad",
           "name": "O. Conrad"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/j-b-hner",
+          "@id": "https://gleaner.io/.well-known/genid/person/j-b-hner",
           "name": "J. Böhner"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/t-kawohl",
+          "@id": "https://gleaner.io/.well-known/genid/person/t-kawohl",
           "name": "T. Kawohl"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/h-kreft",
+          "@id": "https://gleaner.io/.well-known/genid/person/h-kreft",
           "name": "H. Kreft"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/r-w-soria-auza",
+          "@id": "https://gleaner.io/.well-known/genid/person/r-w-soria-auza",
           "name": "R. W. Soria-Auza"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/n-e-zimmermann",
+          "@id": "https://gleaner.io/.well-known/genid/person/n-e-zimmermann",
           "name": "N. E. Zimmermann"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/h-p-linder",
+          "@id": "https://gleaner.io/.well-known/genid/person/h-p-linder",
           "name": "H. P. Linder"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/m-kessler",
+          "@id": "https://gleaner.io/.well-known/genid/person/m-kessler",
           "name": "M. Kessler"
         }
       ],
       "datePublished": "2017",
       "isPartOf": {
         "@type": "Periodical",
-        "@id": "https://gleaner.io/xid/periodical/scientific-data",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/scientific-data",
         "name": "Scientific Data"
       },
       "volumeNumber": "4",
@@ -237,23 +237,23 @@
       "author": [
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/d-n-karger",
+          "@id": "https://gleaner.io/.well-known/genid/person/d-n-karger",
           "name": "D. N. Karger"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/p-brun",
+          "@id": "https://gleaner.io/.well-known/genid/person/p-brun",
           "name": "P. Brun"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/f-zilker",
+          "@id": "https://gleaner.io/.well-known/genid/person/f-zilker",
           "name": "F. Zilker"
         }
       ],
       "publisher": {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/envidat",
+        "@id": "https://gleaner.io/.well-known/genid/organization/envidat",
         "name": "EnviDat"
       },
       "datePublished": "2025",
@@ -268,12 +268,12 @@
   "about": [
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/climate",
+      "@id": "https://gleaner.io/.well-known/genid/thing/climate",
       "name": "Climate"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/monthly-aggregates",
+      "@id": "https://gleaner.io/.well-known/genid/thing/monthly-aggregates",
       "name": "Monthly aggregates"
     }
   ],
@@ -293,7 +293,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

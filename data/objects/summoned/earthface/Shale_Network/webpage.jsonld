@@ -8,7 +8,7 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
-    "@id": "https://gleaner.io/xid/website/www.hydroshare.org/",
+    "@id": "https://gleaner.io/.well-known/genid/website/www.hydroshare.org/",
     "name": "CUAHSI HydroShare",
     "url": "https://www.hydroshare.org/"
   },
@@ -20,7 +20,7 @@
   },
   "publisher": {
     "@type": "Organization",
-    "@id": "https://gleaner.io/xid/organization/www.cuahsi.org/",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.cuahsi.org/",
     "name": "Consortium of Universities for the Advancement of Hydrologic Sciences, Inc. (CUAHSI)",
     "url": "https://www.cuahsi.org/"
   },
@@ -45,7 +45,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

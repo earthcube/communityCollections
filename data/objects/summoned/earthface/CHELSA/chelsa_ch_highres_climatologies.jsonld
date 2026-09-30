@@ -21,7 +21,7 @@
   "temporalCoverage": "1981-01-01/2010-12-31",
   "spatialCoverage": {
     "@type": "Place",
-    "@id": "https://gleaner.io/xid/place/switzerland",
+    "@id": "https://gleaner.io/.well-known/genid/place/switzerland",
     "name": "Switzerland"
   },
   "variableMeasured": [
@@ -82,54 +82,54 @@
       "author": [
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/d-n-karger",
+          "@id": "https://gleaner.io/.well-known/genid/person/d-n-karger",
           "name": "D. N. Karger"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/o-conrad",
+          "@id": "https://gleaner.io/.well-known/genid/person/o-conrad",
           "name": "O. Conrad"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/j-b-hner",
+          "@id": "https://gleaner.io/.well-known/genid/person/j-b-hner",
           "name": "J. Böhner"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/t-kawohl",
+          "@id": "https://gleaner.io/.well-known/genid/person/t-kawohl",
           "name": "T. Kawohl"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/h-kreft",
+          "@id": "https://gleaner.io/.well-known/genid/person/h-kreft",
           "name": "H. Kreft"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/r-w-soria-auza",
+          "@id": "https://gleaner.io/.well-known/genid/person/r-w-soria-auza",
           "name": "R. W. Soria-Auza"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/n-e-zimmermann",
+          "@id": "https://gleaner.io/.well-known/genid/person/n-e-zimmermann",
           "name": "N. E. Zimmermann"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/h-p-linder",
+          "@id": "https://gleaner.io/.well-known/genid/person/h-p-linder",
           "name": "H. P. Linder"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/m-kessler",
+          "@id": "https://gleaner.io/.well-known/genid/person/m-kessler",
           "name": "M. Kessler"
         }
       ],
       "datePublished": "2017",
       "isPartOf": {
         "@type": "Periodical",
-        "@id": "https://gleaner.io/xid/periodical/scientific-data",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/scientific-data",
         "name": "Scientific Data"
       },
       "volumeNumber": "4",
@@ -148,18 +148,18 @@
       "author": [
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/f-zilker",
+          "@id": "https://gleaner.io/.well-known/genid/person/f-zilker",
           "name": "F. Zilker"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/d-n-karger",
+          "@id": "https://gleaner.io/.well-known/genid/person/d-n-karger",
           "name": "D. N. Karger"
         }
       ],
       "publisher": {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/envidat",
+        "@id": "https://gleaner.io/.well-known/genid/organization/envidat",
         "name": "EnviDat"
       },
       "datePublished": "2025",
@@ -174,12 +174,12 @@
   "about": [
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/regional-climatology",
+      "@id": "https://gleaner.io/.well-known/genid/thing/regional-climatology",
       "name": "Regional climatology"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/switzerland-climate-normals",
+      "@id": "https://gleaner.io/.well-known/genid/thing/switzerland-climate-normals",
       "name": "Switzerland climate normals"
     }
   ],
@@ -199,7 +199,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

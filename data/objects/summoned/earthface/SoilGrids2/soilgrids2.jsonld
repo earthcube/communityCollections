@@ -10,7 +10,7 @@
   "creator": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/www.isric.org/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.isric.org/",
       "name": "ISRIC – International Soil Reference and Information Centre",
       "url": "https://www.isric.org/"
     }
@@ -18,7 +18,7 @@
   "provider": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/www.isric.org/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.isric.org/",
       "name": "ISRIC – International Soil Reference and Information Centre",
       "url": "https://www.isric.org/"
     }
@@ -26,7 +26,7 @@
   "publisher": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/www.isric.org/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.isric.org/",
       "name": "ISRIC – International Soil Reference and Information Centre",
       "url": "https://www.isric.org/"
     }
@@ -34,7 +34,7 @@
   "temporalCoverage": "Static",
   "spatialCoverage": {
     "@type": "Place",
-    "@id": "https://gleaner.io/xid/place/global-soil-property-maps",
+    "@id": "https://gleaner.io/.well-known/genid/place/global-soil-property-maps",
     "name": "Global soil property maps",
     "geo": {
       "@type": "GeoShape",
@@ -202,22 +202,22 @@
   "about": [
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/soil",
+      "@id": "https://gleaner.io/.well-known/genid/thing/soil",
       "name": "Soil"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/soil-properties",
+      "@id": "https://gleaner.io/.well-known/genid/thing/soil-properties",
       "name": "Soil properties"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/digital-soil-mapping",
+      "@id": "https://gleaner.io/.well-known/genid/thing/digital-soil-mapping",
       "name": "Digital soil mapping"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/geospatial-raster-data",
+      "@id": "https://gleaner.io/.well-known/genid/thing/geospatial-raster-data",
       "name": "Geospatial raster data"
     }
   ],
@@ -233,44 +233,44 @@
       "author": [
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/l-poggio",
+          "@id": "https://gleaner.io/.well-known/genid/person/l-poggio",
           "name": "L. Poggio"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/l-m-de-sousa",
+          "@id": "https://gleaner.io/.well-known/genid/person/l-m-de-sousa",
           "name": "L. M. de Sousa"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/n-h-batjes",
+          "@id": "https://gleaner.io/.well-known/genid/person/n-h-batjes",
           "name": "N. H. Batjes"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/g-b-m-heuvelink",
+          "@id": "https://gleaner.io/.well-known/genid/person/g-b-m-heuvelink",
           "name": "G. B. M. Heuvelink"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/b-kempen",
+          "@id": "https://gleaner.io/.well-known/genid/person/b-kempen",
           "name": "B. Kempen"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/e-ribeiro",
+          "@id": "https://gleaner.io/.well-known/genid/person/e-ribeiro",
           "name": "E. Ribeiro"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/d-rossiter",
+          "@id": "https://gleaner.io/.well-known/genid/person/d-rossiter",
           "name": "D. Rossiter"
         }
       ],
       "datePublished": "2021",
       "isPartOf": {
         "@type": "Periodical",
-        "@id": "https://gleaner.io/xid/periodical/soil",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/soil",
         "name": "SOIL"
       },
       "volumeNumber": "7",
@@ -309,7 +309,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

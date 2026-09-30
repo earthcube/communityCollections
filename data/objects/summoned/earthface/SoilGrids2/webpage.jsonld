@@ -8,7 +8,7 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
-    "@id": "https://gleaner.io/xid/website/www.isric.org/",
+    "@id": "https://gleaner.io/.well-known/genid/website/www.isric.org/",
     "name": "ISRIC – International Soil Reference and Information Centre",
     "url": "https://www.isric.org/"
   },
@@ -20,7 +20,7 @@
   },
   "publisher": {
     "@type": "Organization",
-    "@id": "https://gleaner.io/xid/organization/www.isric.org/",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.isric.org/",
     "name": "ISRIC – International Soil Reference and Information Centre",
     "url": "https://www.isric.org/"
   },
@@ -45,7 +45,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

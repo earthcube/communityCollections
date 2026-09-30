@@ -10,13 +10,13 @@
   "creator": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/www.epa.gov/awma/national-water-quality-monitoring-council",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.epa.gov/awma/national-water-quality-monitoring-council",
       "name": "National Water Quality Monitoring Council",
       "url": "https://www.epa.gov/awma/national-water-quality-monitoring-council"
     },
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/www.epa.gov/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.epa.gov/",
       "name": "U.S. Environmental Protection Agency (EPA)",
       "url": "https://www.epa.gov/"
     }
@@ -24,13 +24,13 @@
   "provider": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/www.epa.gov/awma/national-water-quality-monitoring-council",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.epa.gov/awma/national-water-quality-monitoring-council",
       "name": "National Water Quality Monitoring Council",
       "url": "https://www.epa.gov/awma/national-water-quality-monitoring-council"
     },
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/www.epa.gov/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.epa.gov/",
       "name": "U.S. Environmental Protection Agency (EPA)",
       "url": "https://www.epa.gov/"
     }
@@ -38,13 +38,13 @@
   "publisher": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/www.epa.gov/awma/national-water-quality-monitoring-council",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.epa.gov/awma/national-water-quality-monitoring-council",
       "name": "National Water Quality Monitoring Council",
       "url": "https://www.epa.gov/awma/national-water-quality-monitoring-council"
     },
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/www.epa.gov/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.epa.gov/",
       "name": "U.S. Environmental Protection Agency (EPA)",
       "url": "https://www.epa.gov/"
     }
@@ -53,7 +53,7 @@
   "temporalCoverage": "1900-01-01/..",
   "spatialCoverage": {
     "@type": "Place",
-    "@id": "https://gleaner.io/xid/place/united-states-and-beyond-coverage-depends-on-contributing-organizations-and-query-parameters",
+    "@id": "https://gleaner.io/.well-known/genid/place/united-states-and-beyond-coverage-depends-on-contributing-organizations-and-query-parameters",
     "name": "United States and beyond; coverage depends on contributing organizations and query parameters"
   },
   "variableMeasured": [
@@ -172,13 +172,13 @@
       "author": [
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/e-k-read",
+          "@id": "https://gleaner.io/.well-known/genid/person/e-k-read",
           "name": "E. K. Read"
         }
       ],
       "isPartOf": {
         "@type": "Periodical",
-        "@id": "https://gleaner.io/xid/periodical/water-resources-research",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/water-resources-research",
         "name": "Water Resources Research"
       },
       "datePublished": "2017",
@@ -195,27 +195,27 @@
   "about": [
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/water-quality",
+      "@id": "https://gleaner.io/.well-known/genid/thing/water-quality",
       "name": "Water quality"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/hydrogeochemistry",
+      "@id": "https://gleaner.io/.well-known/genid/thing/hydrogeochemistry",
       "name": "Hydrogeochemistry"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/environmental-monitoring",
+      "@id": "https://gleaner.io/.well-known/genid/thing/environmental-monitoring",
       "name": "Environmental monitoring"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/surface-water",
+      "@id": "https://gleaner.io/.well-known/genid/thing/surface-water",
       "name": "Surface water"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/groundwater",
+      "@id": "https://gleaner.io/.well-known/genid/thing/groundwater",
       "name": "Groundwater"
     }
   ],
@@ -244,13 +244,13 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   },
   "contributor": {
     "@type": "Organization",
-    "@id": "https://gleaner.io/xid/organization/www.usgs.gov/",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.usgs.gov/",
     "name": "U.S. Geological Survey (USGS)",
     "url": "https://www.usgs.gov/"
   }

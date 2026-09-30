@@ -10,7 +10,7 @@
   "creator": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/www.worldwildlife.org/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.worldwildlife.org/",
       "name": "World Wildlife Fund (WWF)",
       "url": "https://www.worldwildlife.org/"
     }
@@ -18,7 +18,7 @@
   "provider": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/www.hydrosheds.org/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.hydrosheds.org/",
       "name": "HydroSHEDS Project",
       "url": "https://www.hydrosheds.org/"
     }
@@ -26,7 +26,7 @@
   "publisher": [
     {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/www.worldwildlife.org/",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.worldwildlife.org/",
       "name": "World Wildlife Fund (WWF)",
       "url": "https://www.worldwildlife.org/"
     }
@@ -35,7 +35,7 @@
   "temporalCoverage": "Static",
   "spatialCoverage": {
     "@type": "Place",
-    "@id": "https://gleaner.io/xid/place/global-and-regional-hydrographic-products-product-specific-coverage-varies",
+    "@id": "https://gleaner.io/.well-known/genid/place/global-and-regional-hydrographic-products-product-specific-coverage-varies",
     "name": "Global and regional hydrographic products; product-specific coverage varies"
   },
   "temporalResolution": "Static",
@@ -145,23 +145,23 @@
       "author": [
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/b-lehner",
+          "@id": "https://gleaner.io/.well-known/genid/person/b-lehner",
           "name": "B. Lehner"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/k-verdin",
+          "@id": "https://gleaner.io/.well-known/genid/person/k-verdin",
           "name": "K. Verdin"
         },
         {
           "@type": "Person",
-          "@id": "https://gleaner.io/xid/person/a-jarvis",
+          "@id": "https://gleaner.io/.well-known/genid/person/a-jarvis",
           "name": "A. Jarvis"
         }
       ],
       "isPartOf": {
         "@type": "Periodical",
-        "@id": "https://gleaner.io/xid/periodical/eos-transactions-american-geophysical-union",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/eos-transactions-american-geophysical-union",
         "name": "Eos, Transactions, American Geophysical Union"
       },
       "datePublished": "2008",
@@ -178,37 +178,37 @@
   "about": [
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/hydrology",
+      "@id": "https://gleaner.io/.well-known/genid/thing/hydrology",
       "name": "Hydrology"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/hydrography",
+      "@id": "https://gleaner.io/.well-known/genid/thing/hydrography",
       "name": "Hydrography"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/watersheds",
+      "@id": "https://gleaner.io/.well-known/genid/thing/watersheds",
       "name": "Watersheds"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/river-networks",
+      "@id": "https://gleaner.io/.well-known/genid/thing/river-networks",
       "name": "River networks"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/catchments",
+      "@id": "https://gleaner.io/.well-known/genid/thing/catchments",
       "name": "Catchments"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/digital-elevation-models",
+      "@id": "https://gleaner.io/.well-known/genid/thing/digital-elevation-models",
       "name": "Digital elevation models"
     },
     {
       "@type": "Thing",
-      "@id": "https://gleaner.io/xid/thing/freshwater-conservation",
+      "@id": "https://gleaner.io/.well-known/genid/thing/freshwater-conservation",
       "name": "Freshwater conservation"
     }
   ],
@@ -243,7 +243,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

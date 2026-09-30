@@ -8,7 +8,7 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
-    "@id": "https://gleaner.io/xid/website/www.earthenv.org/",
+    "@id": "https://gleaner.io/.well-known/genid/website/www.earthenv.org/",
     "name": "EarthEnv",
     "url": "https://www.earthenv.org/"
   },
@@ -20,17 +20,17 @@
     "member": [
       {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/yale-university",
+        "@id": "https://gleaner.io/.well-known/genid/organization/yale-university",
         "name": "Yale University"
       },
       {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/university-of-florida",
+        "@id": "https://gleaner.io/.well-known/genid/organization/university-of-florida",
         "name": "University of Florida"
       },
       {
         "@type": "Organization",
-        "@id": "https://gleaner.io/xid/organization/university-at-buffalo",
+        "@id": "https://gleaner.io/.well-known/genid/organization/university-at-buffalo",
         "name": "University at Buffalo"
       }
     ]
@@ -88,7 +88,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

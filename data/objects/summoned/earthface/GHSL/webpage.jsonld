@@ -8,7 +8,7 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
-    "@id": "https://gleaner.io/xid/website/emergency.copernicus.eu/",
+    "@id": "https://gleaner.io/.well-known/genid/website/emergency.copernicus.eu/",
     "name": "Copernicus Emergency Management Service",
     "url": "https://emergency.copernicus.eu/"
   },
@@ -20,7 +20,7 @@
   },
   "publisher": {
     "@type": "Organization",
-    "@id": "https://gleaner.io/xid/organization/data.jrc.ec.europa.eu/collection/ghsl",
+    "@id": "https://gleaner.io/.well-known/genid/organization/data.jrc.ec.europa.eu/collection/ghsl",
     "name": "European Commission, Joint Research Centre (JRC)",
     "url": "https://data.jrc.ec.europa.eu/collection/ghsl"
   },
@@ -46,7 +46,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

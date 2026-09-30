@@ -8,7 +8,7 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
-    "@id": "https://gleaner.io/xid/website/global-hydrodynamics.github.io/",
+    "@id": "https://gleaner.io/.well-known/genid/website/global-hydrodynamics.github.io/",
     "name": "Global Hydrodynamics Lab Yamazaki Lab",
     "url": "https://global-hydrodynamics.github.io/"
   },
@@ -20,11 +20,11 @@
   },
   "publisher": {
     "@type": "Organization",
-    "@id": "https://gleaner.io/xid/organization/www.u-tokyo.ac.jp/en/",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.u-tokyo.ac.jp/en/",
     "name": "The University of Tokyo",
     "subOrganization": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/institute-of-industrial-science",
+      "@id": "https://gleaner.io/.well-known/genid/organization/institute-of-industrial-science",
       "name": "Institute of Industrial Science"
     },
     "url": "https://www.u-tokyo.ac.jp/en/"
@@ -80,7 +80,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
-      "@id": "https://gleaner.io/xid/organization/openai",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }
