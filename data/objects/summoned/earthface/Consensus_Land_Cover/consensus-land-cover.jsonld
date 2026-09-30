@@ -1,6 +1,7 @@
 {
   "@context": {
-    "@vocab": "https://schema.org/"
+    "@vocab": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#"
   },
   "@type": "Dataset",
   "@id": "https://www.earthenv.org/landcover#dataset",
@@ -51,7 +52,7 @@
     "image/tiff",
     "application=geotiff"
   ],
-  "spatialResolution": "30 arc-second (~1 km at the equator)",
+  "dcat:spatialResolutionInMeters": "1000",
   "variableMeasured": [
     {
       "@type": "PropertyValue",

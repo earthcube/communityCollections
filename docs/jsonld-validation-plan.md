@@ -13,7 +13,7 @@ Validate generated JSON-LD against the authoritative dataset webpage, linked dow
 - Put `temporalCoverage` and `spatialCoverage` on the Dataset (Schema.org CreativeWork properties), not on each `variableMeasured` PropertyValue.
 - Prefer a Dataset `spatialCoverage` Place with `geo.GeoShape.box` when bounds are known; include a place name when confident.
 - Prefer a Dataset `temporalCoverage` range from the source page when available.
-- Put known `temporalResolution` / `spatialResolution` on the Dataset; omit them when unknown (do not use `"not detected"` placeholders on PropertyValue).
+- Put known resolution on the Dataset as DCAT `dcat:temporalResolution` (ISO 8601 duration) and `dcat:spatialResolutionInMeters` (meters), and add `"dcat": "http://www.w3.org/ns/dcat#"` to `@context`. Omit resolution when unknown or not expressible that way. Do not use `"not detected"` placeholders on PropertyValue.
 - After generation, `generate_jsonld.py` may set `distribution[].contentSize` from an HTTP HEAD `Content-Length` on direct file URLs (GeoTIFF, NetCDF, zip, etc.). Do not invent sizes by hand.
 
 ## Generation Safeguards

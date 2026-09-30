@@ -52,7 +52,6 @@
       "url": "https://opendatacommons.org/licenses/odbl/1-0/"
     }
   ],
-  "temporalResolution": "Static",
   "variableMeasured": [
     {
       "@type": "PropertyValue",

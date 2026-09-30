@@ -34,7 +34,6 @@
     "@type": "Place",
     "name": "Global and regional hydrographic products; product-specific coverage varies"
   },
-  "temporalResolution": "Static",
   "variableMeasured": [
     {
       "@type": "PropertyValue",
