@@ -1,6 +1,7 @@
 {
   "@context": {
-    "@vocab": "https://schema.org/"
+    "@vocab": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#"
   },
   "@type": "Dataset",
   "@id": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/download.html#dataset",
@@ -97,12 +98,7 @@
     "application=geotiff",
     "text/plain"
   ],
-  "spatialResolution": {
-    "@type": "QuantitativeValue",
-    "value": 30,
-    "unitCode": "MTR",
-    "description": "Approx. 30 m (1 arc-second per pixel; Earth Engine catalog lists ~30.92 m pixel size)."
-  },
+  "dcat:spatialResolutionInMeters": "30",
   "variableMeasured": [
     {
       "@type": "PropertyValue",

@@ -77,7 +77,6 @@
       "box": "-180,-90 180,90"
     }
   },
-  "spatialResolution": "Best suited for country-scale (or larger) summaries; pixel-level precision is less reliable per creators' guidance.",
   "variableMeasured": [
     {
       "@type": "PropertyValue",

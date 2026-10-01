@@ -197,6 +197,7 @@ class AIClient:
                 json_data = self._fix_spatial_coverage(json_data)
                 # Schema.org: spatial/temporalCoverage belong on Dataset, not PropertyValue
                 json_data = self._promote_coverage_to_dataset(json_data)
+                json_data = self._apply_dcat_resolution(json_data)
                 # Ensure keywords is a JSON array (not semicolon/comma-separated string)
                 json_data = self._fix_keywords(json_data)
                 json_data = self._fix_encoding_format(json_data)
@@ -347,6 +348,139 @@ class AIClient:
         elif isinstance(variables, dict):
             _clean_variable(variables)
 
+        return data
+
+    @staticmethod
+    def _apply_dcat_resolution(data: Dict) -> Dict:
+        """Rename Dataset resolution fields to DCAT and declare the prefix.
+
+        Schema.org has no temporalResolution/spatialResolution on Dataset.
+        DCAT-3 uses dcat:temporalResolution (xsd:duration) and
+        dcat:spatialResolutionInMeters (xsd:decimal). See
+        https://www.w3.org/TR/vocab-dcat-3/.
+        """
+        if not isinstance(data, dict):
+            return data
+
+        duration_re = re.compile(
+            r"^P(?:\d+Y)?(?:\d+M)?(?:\d+W)?(?:\d+D)?(?:T(?:\d+H)?(?:\d+M)?(?:\d+(?:\.\d+)?S)?)?$"
+        )
+
+        def _format_meters(number: float) -> str:
+            if abs(number - round(number)) < 1e-6:
+                return str(int(round(number)))
+            return f"{number:.2f}".rstrip("0").rstrip(".")
+
+        def _meters_from_text(text: str):
+            # Prefer an explicit meter/km hint, including "(~1 km)".
+            hinted = re.search(
+                r"\((?:~|approx\.?|approximately)?\s*([0-9]+(?:\.[0-9]+)?)\s*(km|m)\b",
+                text,
+                re.IGNORECASE,
+            )
+            if hinted:
+                number = float(hinted.group(1))
+                if hinted.group(2).lower() == "km":
+                    number *= 1000
+                return _format_meters(number)
+            measured = re.search(
+                r"([0-9]+(?:\.[0-9]+)?)\s*(km|kilometers?|metres?|meters?|m)\b",
+                text,
+                re.IGNORECASE,
+            )
+            if measured and not re.search(r"degree|arc", text, re.IGNORECASE):
+                number = float(measured.group(1))
+                if measured.group(2).lower().startswith("k"):
+                    number *= 1000
+                return _format_meters(number)
+            degrees = re.search(
+                r"([0-9]+(?:\.[0-9]+)?(?:\s*/\s*[0-9]+)?)\s*degrees?",
+                text,
+                re.IGNORECASE,
+            )
+            if degrees:
+                raw = degrees.group(1).replace(" ", "")
+                if "/" in raw:
+                    numerator, denominator = raw.split("/", 1)
+                    number = float(numerator) / float(denominator)
+                else:
+                    number = float(raw)
+                # Approximate meters per degree of latitude.
+                return _format_meters(number * 111320)
+            arcsec = re.search(
+                r"([0-9]+(?:\.[0-9]+)?)\s*arc-?seconds?",
+                text,
+                re.IGNORECASE,
+            )
+            if arcsec:
+                return _format_meters(float(arcsec.group(1)) * 30.87)
+            return None
+
+        def _meters_from_quantity(value: Dict):
+            unit = str(value.get("unitText") or value.get("unitCode") or "").lower()
+            raw = value.get("value")
+            if raw is None:
+                return None
+            try:
+                number = float(raw)
+            except (TypeError, ValueError):
+                return None
+            if unit in {"m", "meter", "meters", "metre", "metres", "mtr"}:
+                return _format_meters(number)
+            if unit in {"km", "kilometer", "kilometers", "kilometre", "kilometres"}:
+                return _format_meters(number * 1000)
+            return None
+
+        temporal = data.get("temporalResolution")
+        spatial = data.get("spatialResolution")
+        if "temporalResolution" not in data and "spatialResolution" not in data:
+            return data
+
+        new_temporal = None
+        if isinstance(temporal, str):
+            token = temporal.strip()
+            if token not in {"P", ""} and duration_re.match(token):
+                new_temporal = token
+
+        new_spatial = None
+        if isinstance(spatial, dict):
+            new_spatial = _meters_from_quantity(spatial)
+        elif isinstance(spatial, str):
+            new_spatial = _meters_from_text(spatial)
+        elif isinstance(spatial, (int, float)):
+            new_spatial = _format_meters(float(spatial))
+
+        rebuilt = {}
+        for key, value in data.items():
+            if key == "temporalResolution":
+                if new_temporal is not None:
+                    rebuilt["dcat:temporalResolution"] = new_temporal
+                continue
+            if key == "spatialResolution":
+                if new_spatial is not None:
+                    rebuilt["dcat:spatialResolutionInMeters"] = new_spatial
+                continue
+            rebuilt[key] = value
+        data.clear()
+        data.update(rebuilt)
+
+        if new_temporal is None and new_spatial is None:
+            return data
+
+        context = data.get("@context")
+        if isinstance(context, str) and "schema.org" in context:
+            context = {"@vocab": "https://schema.org/"}
+        if isinstance(context, dict) and context.get("dcat") != "http://www.w3.org/ns/dcat#":
+            prefixed = {}
+            inserted = False
+            for key, value in context.items():
+                prefixed[key] = value
+                if key == "@vocab":
+                    prefixed["dcat"] = "http://www.w3.org/ns/dcat#"
+                    inserted = True
+            if not inserted:
+                prefixed["dcat"] = "http://www.w3.org/ns/dcat#"
+            data["@context"] = prefixed
         return data
     
     def _fix_keywords(self, data: Dict) -> Dict:

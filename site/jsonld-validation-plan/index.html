@@ -113,7 +113,7 @@
 <li>Put <code>temporalCoverage</code> and <code>spatialCoverage</code> on the Dataset (Schema.org CreativeWork properties), not on each <code>variableMeasured</code> PropertyValue.</li>
 <li>Prefer a Dataset <code>spatialCoverage</code> Place with <code>geo.GeoShape.box</code> when bounds are known; include a place name when confident.</li>
 <li>Prefer a Dataset <code>temporalCoverage</code> range from the source page when available.</li>
-<li>Put known <code>temporalResolution</code> / <code>spatialResolution</code> on the Dataset; omit them when unknown (do not use <code>"not detected"</code> placeholders on PropertyValue).</li>
+<li>Put known resolution on the Dataset as DCAT <code>dcat:temporalResolution</code> (ISO 8601 duration) and <code>dcat:spatialResolutionInMeters</code> (meters), and add <code>"dcat": "http://www.w3.org/ns/dcat#"</code> to <code>@context</code>. Omit resolution when unknown or not expressible that way. Do not use <code>"not detected"</code> placeholders on PropertyValue.</li>
 <li>After generation, <code>generate_jsonld.py</code> may set <code>distribution[].contentSize</code> from an HTTP HEAD <code>Content-Length</code> on direct file URLs (GeoTIFF, NetCDF, zip, etc.). Do not invent sizes by hand.</li>
 </ul>
 <h2 id="generation-safeguards">Generation Safeguards</h2>

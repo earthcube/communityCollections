@@ -1,6 +1,7 @@
 {
   "@context": {
-    "@vocab": "https://schema.org/"
+    "@vocab": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#"
   },
   "@type": "Dataset",
   "@id": "https://www.mrlc.gov/data/type/legacy-nlcd#dataset",
@@ -26,12 +27,7 @@
       "box": "-180,15 -50,72"
     }
   },
-  "temporalResolution": "Static",
-  "spatialResolution": {
-    "@type": "QuantitativeValue",
-    "value": 30,
-    "unitText": "m"
-  },
+  "dcat:spatialResolutionInMeters": "30",
   "variableMeasured": [
     {
       "@type": "PropertyValue",

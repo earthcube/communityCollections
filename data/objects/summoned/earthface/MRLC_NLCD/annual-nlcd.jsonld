@@ -1,6 +1,7 @@
 {
   "@context": {
-    "@vocab": "https://schema.org/"
+    "@vocab": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#"
   },
   "@type": "Dataset",
   "@id": "https://www.mrlc.gov/data/project/annual-nlcd#dataset",
@@ -27,11 +28,7 @@
       "box": "-125,24 -66,50"
     }
   },
-  "spatialResolution": {
-    "@type": "QuantitativeValue",
-    "value": 30,
-    "unitText": "m"
-  },
+  "dcat:spatialResolutionInMeters": "30",
   "variableMeasured": [
     {
       "@type": "PropertyValue",

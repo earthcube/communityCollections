@@ -1,6 +1,7 @@
 {
   "@context": {
-    "@vocab": "https://schema.org/"
+    "@vocab": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#"
   },
   "@type": "Dataset",
   "@id": "https://figshare.com/articles/dataset/GRUN_Global_Runoff_Reconstruction/9228176#dataset",
@@ -69,8 +70,8 @@
       "box": "-180,-90 180,90"
     }
   },
-  "temporalResolution": "P1M",
-  "spatialResolution": "0.5 degree",
+  "dcat:temporalResolution": "P1M",
+  "dcat:spatialResolutionInMeters": "55660",
   "variableMeasured": [
     {
       "@type": "PropertyValue",

@@ -1,6 +1,7 @@
 {
   "@context": {
-    "@vocab": "https://schema.org/"
+    "@vocab": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#"
   },
   "@type": "Dataset",
   "@id": "https://data.usgs.gov/datacatalog/data/USGS:74edd739-1584-41c3-bf08-0274681a779b#dataset",
@@ -43,11 +44,7 @@
       "box": "-180,15 -50,85"
     }
   },
-  "spatialResolution": {
-    "@type": "QuantitativeValue",
-    "value": 30,
-    "unitText": "m"
-  },
+  "dcat:spatialResolutionInMeters": "30",
   "variableMeasured": [
     {
       "@type": "PropertyValue",

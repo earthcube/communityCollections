@@ -71,7 +71,6 @@
       "box": "-180,-60 180,90"
     }
   },
-  "temporalResolution": "Static",
   "variableMeasured": [
     {
       "@type": "PropertyValue",
