@@ -1,6 +1,7 @@
 {
   "@context": {
-    "@vocab": "https://schema.org/"
+    "@vocab": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#"
   },
   "@type": "Dataset",
   "@id": "https://soilgrids.org/#dataset",
@@ -37,8 +38,7 @@
       "box": "-180,-90 180,90"
     }
   },
-  "temporalResolution": "Static",
-  "spatialResolution": "Approximately 250 m",
+  "dcat:spatialResolutionInMeters": "250",
   "variableMeasured": [
     {
       "@type": "PropertyValue",

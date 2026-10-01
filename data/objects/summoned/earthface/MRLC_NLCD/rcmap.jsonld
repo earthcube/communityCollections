@@ -1,6 +1,7 @@
 {
   "@context": {
-    "@vocab": "https://schema.org/"
+    "@vocab": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#"
   },
   "@type": "Dataset",
   "@id": "https://www.mrlc.gov/data/project/rcmap#dataset",
@@ -26,11 +27,7 @@
       "box": "-130,25 -95,60"
     }
   },
-  "spatialResolution": {
-    "@type": "QuantitativeValue",
-    "value": 30,
-    "unitText": "m"
-  },
+  "dcat:spatialResolutionInMeters": "30",
   "variableMeasured": [
     {
       "@type": "PropertyValue",

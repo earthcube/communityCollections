@@ -1,6 +1,7 @@
 {
   "@context": {
-    "@vocab": "https://schema.org/"
+    "@vocab": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#"
   },
   "@type": "Dataset",
   "@id": "https://doi.org/10.6084/m9.figshare.7670849#dataset",
@@ -51,7 +52,7 @@
       "box": "-180,-90 180,90"
     }
   },
-  "spatialResolution": "0.5 degree",
+  "dcat:spatialResolutionInMeters": "55660",
   "variableMeasured": [
     {
       "@type": "PropertyValue",

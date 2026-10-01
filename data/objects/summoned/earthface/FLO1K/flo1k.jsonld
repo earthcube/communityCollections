@@ -1,6 +1,7 @@
 {
   "@context": {
-    "@vocab": "https://schema.org/"
+    "@vocab": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#"
   },
   "@type": "Dataset",
   "@id": "https://doi.org/10.6084/m9.figshare.c.3890224.v1#dataset",
@@ -57,8 +58,8 @@
       "box": "-180,-90 180,90"
     }
   },
-  "temporalResolution": "P1Y",
-  "spatialResolution": "30 arc-second (~1 km)",
+  "dcat:temporalResolution": "P1Y",
+  "dcat:spatialResolutionInMeters": "1000",
   "variableMeasured": [
     {
       "@type": "PropertyValue",

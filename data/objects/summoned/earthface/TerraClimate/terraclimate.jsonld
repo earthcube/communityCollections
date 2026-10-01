@@ -1,6 +1,7 @@
 {
   "@context": {
-    "@vocab": "https://schema.org/"
+    "@vocab": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#"
   },
   "@type": "Dataset",
   "@id": "https://www.climatologylab.org/terraclimate.html#dataset",
@@ -70,8 +71,8 @@
     "application/x-netcdf",
     "text/html"
   ],
-  "temporalResolution": "P1M",
-  "spatialResolution": "1/24 degree (~4 km)",
+  "dcat:temporalResolution": "P1M",
+  "dcat:spatialResolutionInMeters": "4000",
   "variableMeasured": [
     {
       "@type": "PropertyValue",
