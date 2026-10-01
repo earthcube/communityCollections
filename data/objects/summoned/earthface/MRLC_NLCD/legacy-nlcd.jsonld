@@ -10,17 +10,20 @@
   "url": "https://www.mrlc.gov/data/type/legacy-nlcd",
   "creator": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.mrlc.gov/partners",
     "name": "MRLC Consortium / U.S. Geological Survey (USGS)",
     "url": "https://www.mrlc.gov/partners"
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.mrlc.gov/",
     "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
     "url": "https://www.mrlc.gov/"
   },
   "temporalCoverage": "Static",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/.well-known/genid/place/united-states-nationwide-coverage-includes-alaska-hawaii-and-other-u-s-territories-depending-on-product",
     "name": "United States (nationwide coverage; includes Alaska, Hawaii, and other U.S. territories depending on product)",
     "geo": {
       "@type": "GeoShape",
@@ -54,6 +57,7 @@
   "citation": [
     {
       "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5066/P9KZCM54",
       "name": "Dewitz, J., and U.S. Geological Survey, 2021, National Land Cover Database (NLCD) 2019 Products (ver. 2.0, June 2021): U.S. Geological Survey data release, https://doi.org/10.5066/P9KZCM54",
       "identifier": {
         "@type": "PropertyValue",
@@ -89,14 +93,17 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/land-cover",
       "name": "Land cover"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/land-change",
       "name": "Land change"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/remote-sensing",
       "name": "Remote sensing"
     }
   ],
@@ -119,6 +126,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

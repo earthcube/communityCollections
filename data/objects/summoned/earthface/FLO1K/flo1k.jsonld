@@ -11,32 +11,39 @@
   "creator": [
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/.well-known/genid/person/valerio-barbarossa",
       "name": "Valerio Barbarossa"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/.well-known/genid/person/mark-a-j-huijbregts",
       "name": "Mark A. J. Huijbregts"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/.well-known/genid/person/arthur-h-w-beusen",
       "name": "Arthur H. W. Beusen"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/.well-known/genid/person/hylke-e-beck",
       "name": "Hylke E. Beck"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/.well-known/genid/person/henry-king",
       "name": "Henry King"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/.well-known/genid/person/aafke-m-schipper",
       "name": "Aafke M. Schipper"
     }
   ],
   "provider": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/figshare.com/",
       "name": "Figshare",
       "url": "https://figshare.com/"
     }
@@ -44,6 +51,7 @@
   "publisher": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/figshare.com/",
       "name": "Figshare",
       "url": "https://figshare.com/"
     }
@@ -52,6 +60,7 @@
   "temporalCoverage": "1960-01-01/2015-12-31",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/.well-known/genid/place/global-land-areas-excluding-antarctica",
     "name": "Global land areas excluding Antarctica",
     "geo": {
       "@type": "GeoShape",
@@ -106,35 +115,43 @@
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1038/sdata.2018.52",
       "name": "FLO1K, global maps of mean, maximum and minimum annual streamflow at 1 km resolution from 1960 through 2015",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/valerio-barbarossa",
           "name": "Valerio Barbarossa"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/mark-a-j-huijbregts",
           "name": "Mark A. J. Huijbregts"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/arthur-h-w-beusen",
           "name": "Arthur H. W. Beusen"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/hylke-e-beck",
           "name": "Hylke E. Beck"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/henry-king",
           "name": "Henry King"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/aafke-m-schipper",
           "name": "Aafke M. Schipper"
         }
       ],
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/scientific-data",
         "name": "Scientific Data"
       },
       "datePublished": "2018",
@@ -151,22 +168,27 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/hydrology",
       "name": "Hydrology"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/streamflow",
       "name": "Streamflow"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/runoff",
       "name": "Runoff"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/river-discharge",
       "name": "River discharge"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/freshwater-resources",
       "name": "Freshwater resources"
     }
   ],
@@ -198,6 +220,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

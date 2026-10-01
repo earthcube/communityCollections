@@ -10,28 +10,33 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
+    "@id": "https://gleaner.io/.well-known/genid/website/www.waterqualitydata.us/",
     "name": "Water Quality Portal",
     "url": "https://www.waterqualitydata.us/"
   },
   "about": {
     "@type": "Dataset",
+    "@id": "https://www.waterqualitydata.us/#dataset",
     "name": "Water Quality Portal (WQP)",
     "url": "https://www.waterqualitydata.us/#dataset"
   },
   "publisher": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.epa.gov/awma/national-water-quality-monitoring-council",
       "name": "National Water Quality Monitoring Council",
       "url": "https://www.epa.gov/awma/national-water-quality-monitoring-council"
     },
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.epa.gov/",
       "name": "U.S. Environmental Protection Agency (EPA)",
       "url": "https://www.epa.gov/"
     }
   ],
   "mainEntity": {
     "@type": "Dataset",
+    "@id": "https://www.waterqualitydata.us/#dataset",
     "name": "Water Quality Portal (WQP)",
     "url": "https://www.waterqualitydata.us/#dataset"
   },
@@ -51,6 +56,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

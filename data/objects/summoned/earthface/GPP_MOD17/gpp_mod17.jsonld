@@ -11,23 +11,27 @@
   "creator": [
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.umt.edu/numerical-terradynamic-simulation-group/",
       "name": "Numerical Terradynamic Simulation Group (NTSG)",
       "url": "https://www.umt.edu/numerical-terradynamic-simulation-group/"
     }
   ],
   "provider": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.umt.edu/numerical-terradynamic-simulation-group/",
     "name": "Numerical Terradynamic Simulation Group (NTSG), University of Montana",
     "url": "https://www.umt.edu/numerical-terradynamic-simulation-group/"
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.umt.edu/",
     "name": "University of Montana",
     "url": "https://www.umt.edu/"
   },
   "temporalCoverage": "2000-01-01/2013-12-31",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/.well-known/genid/place/earth-s-vegetated-land-surface",
     "name": "Earth's vegetated land surface",
     "geo": {
       "@type": "GeoShape",
@@ -82,45 +86,55 @@
   "citation": [
     {
       "@type": "CreativeWork",
+      "@id": "https://scholarworks.umt.edu/ntsg_pubs/227/",
       "name": "MOD17 User’s Guide",
       "publisher": {
         "@type": "Organization",
+        "@id": "https://gleaner.io/.well-known/genid/organization/numerical-terradynamic-simulation-group-university-of-montana",
         "name": "Numerical Terradynamic Simulation Group, University of Montana"
       },
       "sameAs": "https://scholarworks.umt.edu/ntsg_pubs/227/"
     },
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://gleaner.io/.well-known/genid/scholarlyarticle/a-continuous-satellite-derived-measure-of-global-terrestrial-primary-production",
       "name": "A continuous satellite-derived measure of global terrestrial primary production",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/s-w-running",
           "name": "S. W. Running"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/r-r-nemani",
           "name": "R. R. Nemani"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/f-a-heinsch",
           "name": "F. A. Heinsch"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/m-zhao",
           "name": "M. Zhao"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/m-reeves",
           "name": "M. Reeves"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/h-hashimoto",
           "name": "H. Hashimoto"
         }
       ],
       "datePublished": "2004",
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/bioscience",
         "name": "BioScience"
       },
       "volumeNumber": "54",
@@ -150,6 +164,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

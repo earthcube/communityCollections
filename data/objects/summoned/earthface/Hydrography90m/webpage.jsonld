@@ -10,21 +10,25 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
+    "@id": "https://gleaner.io/.well-known/genid/website/hydrography.org/",
     "name": "Hydrography.org",
     "url": "https://hydrography.org/"
   },
   "about": {
     "@type": "Dataset",
+    "@id": "https://hydrography.org/#dataset",
     "name": "Hydrography90m",
     "url": "https://hydrography.org/"
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.igb-berlin.de/en",
     "name": "Leibniz-Institute of Freshwater Ecology and Inland Fisheries (IGB)",
     "url": "https://www.igb-berlin.de/en"
   },
   "mainEntity": {
     "@type": "Dataset",
+    "@id": "https://hydrography.org/#dataset",
     "name": "Hydrography90m",
     "url": "https://hydrography.org/#dataset"
   },
@@ -44,6 +48,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }
