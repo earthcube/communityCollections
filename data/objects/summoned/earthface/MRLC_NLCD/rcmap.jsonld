@@ -10,17 +10,20 @@
   "url": "https://www.mrlc.gov/data/project/rcmap",
   "creator": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.mrlc.gov/data/project/rcmap",
     "name": "U.S. Geological Survey (USGS) and Bureau of Land Management (BLM)",
     "url": "https://www.mrlc.gov/data/project/rcmap"
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.mrlc.gov/",
     "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
     "url": "https://www.mrlc.gov/"
   },
   "temporalCoverage": "1985-01-01/2024-12-31",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/.well-known/genid/place/western-north-america-rangelands",
     "name": "Western North America (rangelands)",
     "geo": {
       "@type": "GeoShape",
@@ -115,24 +118,29 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/rangeland-monitoring",
       "name": "Rangeland monitoring"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/vegetation-cover",
       "name": "Vegetation cover"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/remote-sensing",
       "name": "Remote sensing"
     }
   ],
   "citation": [
     {
       "@type": "CreativeWork",
+      "@id": "https://doi.org/10.3133/fs20223036",
       "name": "Rangeland Condition Monitoring Assessment and Projection (RCMAP)",
       "datePublished": "2022",
       "publisher": {
         "@type": "Organization",
+        "@id": "https://gleaner.io/.well-known/genid/organization/u-s-geological-survey",
         "name": "U.S. Geological Survey"
       },
       "identifier": {
@@ -162,6 +170,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

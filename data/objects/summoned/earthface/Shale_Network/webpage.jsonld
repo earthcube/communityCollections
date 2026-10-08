@@ -10,21 +10,25 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
+    "@id": "https://gleaner.io/.well-known/genid/website/www.hydroshare.org/",
     "name": "CUAHSI HydroShare",
     "url": "https://www.hydroshare.org/"
   },
   "about": {
     "@type": "Dataset",
+    "@id": "https://doi.org/10.4211/his-data-shalenetwork#dataset",
     "name": "Shale Network",
     "url": "https://doi.org/10.4211/his-data-shalenetwork#dataset"
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.cuahsi.org/",
     "name": "Consortium of Universities for the Advancement of Hydrologic Sciences, Inc. (CUAHSI)",
     "url": "https://www.cuahsi.org/"
   },
   "mainEntity": {
     "@type": "Dataset",
+    "@id": "https://doi.org/10.4211/his-data-shalenetwork#dataset",
     "name": "Shale Network (ShaleNetwork Database)",
     "url": "https://doi.org/10.4211/his-data-shalenetwork#dataset"
   },
@@ -44,6 +48,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

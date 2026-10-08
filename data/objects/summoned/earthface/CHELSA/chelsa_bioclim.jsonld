@@ -23,6 +23,7 @@
   "temporalCoverage": "1981-2010/1971-2100",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/.well-known/genid/place/global-land-surface-areas",
     "name": "Global land surface areas",
     "geo": {
       "@type": "GeoShape",
@@ -390,31 +391,38 @@
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5194/essd-14-5573-2022",
       "name": "Global climate-related predictors at kilometer resolution for the past and future",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/p-brun",
           "name": "P. Brun"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/n-e-zimmermann",
           "name": "N. E. Zimmermann"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/c-hari",
           "name": "C. Hari"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/l-pellissier",
           "name": "L. Pellissier"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/d-n-karger",
           "name": "D. N. Karger"
         }
       ],
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/earth-system-science-data",
         "name": "Earth System Science Data"
       },
       "datePublished": "2022",
@@ -435,27 +443,33 @@
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/p-brun",
           "name": "P. Brun"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/n-e-zimmermann",
           "name": "N. E. Zimmermann"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/c-hari",
           "name": "C. Hari"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/l-pellissier",
           "name": "L. Pellissier"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/d-n-karger",
           "name": "D. N. Karger"
         }
       ],
       "publisher": {
         "@type": "Organization",
+        "@id": "https://gleaner.io/.well-known/genid/organization/envidat",
         "name": "EnviDat"
       },
       "datePublished": "2022",
@@ -470,10 +484,12 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/bioclimatic-predictors",
       "name": "Bioclimatic predictors"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/biodiversity-and-ecology",
       "name": "Biodiversity and ecology"
     }
   ],
@@ -494,6 +510,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

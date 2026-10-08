@@ -11,10 +11,12 @@
   "creator": [
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/.well-known/genid/person/mao-ning-tuanmu",
       "name": "Mao-Ning Tuanmu"
     },
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/.well-known/genid/person/walter-jetz",
       "name": "Walter Jetz"
     }
   ],
@@ -26,14 +28,17 @@
     "member": [
       {
         "@type": "Organization",
+        "@id": "https://gleaner.io/.well-known/genid/organization/yale-university",
         "name": "Yale University"
       },
       {
         "@type": "Organization",
+        "@id": "https://gleaner.io/.well-known/genid/organization/university-of-florida",
         "name": "University of Florida"
       },
       {
         "@type": "Organization",
+        "@id": "https://gleaner.io/.well-known/genid/organization/university-at-buffalo",
         "name": "University at Buffalo"
       }
     ]
@@ -41,6 +46,7 @@
   "temporalCoverage": "1992-01-01/2006-12-31",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/.well-known/genid/place/global",
     "name": "Global",
     "geo": {
       "@type": "GeoShape",
@@ -161,20 +167,24 @@
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1111/geb.12182",
       "name": "A global 1-km consensus land-cover product for biodiversity and ecosystem modeling",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/mao-ning-tuanmu",
           "name": "Mao-Ning Tuanmu"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/walter-jetz",
           "name": "Walter Jetz"
         }
       ],
       "datePublished": "2014",
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/global-ecology-and-biogeography",
         "name": "Global Ecology and Biogeography"
       },
       "identifier": [
@@ -190,18 +200,22 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/land-cover",
       "name": "Land cover"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/remote-sensing",
       "name": "Remote sensing"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/biodiversity-modelling",
       "name": "Biodiversity modelling"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/ecosystem-modelling",
       "name": "Ecosystem modelling"
     }
   ],
@@ -229,6 +243,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

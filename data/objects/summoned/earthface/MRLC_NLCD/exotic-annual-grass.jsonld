@@ -10,17 +10,20 @@
   "url": "https://www.mrlc.gov/data/type/exotic-annual-grass",
   "creator": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.mrlc.gov/partners",
     "name": "U.S. Geological Survey (USGS) / MRLC Consortium",
     "url": "https://www.mrlc.gov/partners"
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.mrlc.gov/",
     "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
     "url": "https://www.mrlc.gov/"
   },
   "temporalCoverage": "2016-01-01/2025-12-31",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/.well-known/genid/place/western-united-states-arid-and-semi-arid-rangelands",
     "name": "Western United States (arid and semi-arid rangelands)",
     "geo": {
       "@type": "GeoShape",
@@ -62,6 +65,7 @@
   "citation": [
     {
       "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5066/P14VQEGO",
       "name": "Dahal, D., Boyte, S., Megard, L., Postma, K., and Pastick, N., 2025, Early Estimates of Exotic Annual Grass (EAG) in the Sagebrush Biome, USA, 2025: U.S. Geological Survey data release, https://doi.org/10.5066/P14VQEGO",
       "identifier": {
         "@type": "PropertyValue",
@@ -97,14 +101,17 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/invasive-species-monitoring",
       "name": "Invasive species monitoring"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/rangeland-ecology",
       "name": "Rangeland ecology"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/remote-sensing",
       "name": "Remote sensing"
     }
   ],
@@ -127,6 +134,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

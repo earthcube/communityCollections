@@ -23,6 +23,7 @@
   "temporalCoverage": "1979-01-01/2025-08-29",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/.well-known/genid/place/global-land-surface-areas",
     "name": "Global land surface areas",
     "geo": {
       "@type": "GeoShape",
@@ -151,48 +152,59 @@
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1038/sdata.2017.122",
       "name": "Climatologies at high resolution for the earth's land surface areas",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/d-n-karger",
           "name": "D. N. Karger"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/o-conrad",
           "name": "O. Conrad"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/j-b-hner",
           "name": "J. Böhner"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/t-kawohl",
           "name": "T. Kawohl"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/h-kreft",
           "name": "H. Kreft"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/r-w-soria-auza",
           "name": "R. W. Soria-Auza"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/n-e-zimmermann",
           "name": "N. E. Zimmermann"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/h-p-linder",
           "name": "H. P. Linder"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/m-kessler",
           "name": "M. Kessler"
         }
       ],
       "datePublished": "2017",
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/scientific-data",
         "name": "Scientific Data"
       },
       "volumeNumber": "4",
@@ -206,15 +218,18 @@
     },
     {
       "@type": "Dataset",
+      "@id": "https://doi.org/10.16904/envidat.687",
       "name": "CHELSA-daily climate data at high resolution",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/d-n-karger",
           "name": "D. N. Karger"
         }
       ],
       "publisher": {
         "@type": "Organization",
+        "@id": "https://gleaner.io/.well-known/genid/organization/envidat",
         "name": "EnviDat"
       },
       "datePublished": "2025",
@@ -229,14 +244,17 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/climate",
       "name": "Climate"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/downscaled-meteorology",
       "name": "Downscaled meteorology"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/high-resolution-gridded-data",
       "name": "High-resolution gridded data"
     }
   ],
@@ -259,6 +277,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

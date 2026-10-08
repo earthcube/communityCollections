@@ -23,6 +23,7 @@
   "temporalCoverage": "1980-06-15/2018-07-15",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/.well-known/genid/place/global-land-surface-areas",
     "name": "Global land surface areas",
     "geo": {
       "@type": "GeoShape",
@@ -94,48 +95,59 @@
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1126/science.ado4245",
       "name": "Global increase in the occurrence and impact of megadroughts",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/l-chen",
           "name": "L. Chen"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/p-brun",
           "name": "P. Brun"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/p-buri",
           "name": "P. Buri"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/s-fatichi",
           "name": "S. Fatichi"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/a-gessler",
           "name": "A. Gessler"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/m-j-mccarthy",
           "name": "M. J. McCarthy"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/f-pelicciotti",
           "name": "F. Pelicciotti"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/b-stocker",
           "name": "B. Stocker"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/d-n-karger",
           "name": "D. N. Karger"
         }
       ],
       "datePublished": "2025",
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/science",
         "name": "Science"
       },
       "identifier": {
@@ -147,47 +159,58 @@
     },
     {
       "@type": "Dataset",
+      "@id": "https://doi.org/10.16904/envidat.530",
       "name": "High resolution global standardized drought indices",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/l-chen",
           "name": "L. Chen"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/p-brun",
           "name": "P. Brun"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/p-buri",
           "name": "P. Buri"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/s-fatichi",
           "name": "S. Fatichi"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/a-gessler",
           "name": "A. Gessler"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/m-j-mccarthy",
           "name": "M. J. McCarthy"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/f-pelicciotti",
           "name": "F. Pelicciotti"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/b-stocker",
           "name": "B. Stocker"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/d-n-karger",
           "name": "D. N. Karger"
         }
       ],
       "publisher": {
         "@type": "Organization",
+        "@id": "https://gleaner.io/.well-known/genid/organization/envidat",
         "name": "EnviDat"
       },
       "datePublished": "2024",
@@ -202,10 +225,12 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/drought",
       "name": "Drought"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/climate-risk",
       "name": "Climate risk"
     }
   ],
@@ -226,6 +251,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }
