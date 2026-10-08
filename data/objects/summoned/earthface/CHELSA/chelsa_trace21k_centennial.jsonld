@@ -23,6 +23,7 @@
   "temporalCoverage": "21000BP/0BP",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/.well-known/genid/place/global-land-surface-areas",
     "name": "Global land surface areas"
   },
   "variableMeasured": [
@@ -82,32 +83,39 @@
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5194/cp-19-439-2023",
       "name": "CHELSA-TraCE21k: high-resolution (1 km) downscaled transient temperature and precipitation data since the Last Glacial Maximum",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/d-n-karger",
           "name": "D. N. Karger"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/m-p-nobis",
           "name": "M. P. Nobis"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/s-normand",
           "name": "S. Normand"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/c-h-graham",
           "name": "C. H. Graham"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/n-e-zimmermann",
           "name": "N. E. Zimmermann"
         }
       ],
       "datePublished": "2023",
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/climate-of-the-past",
         "name": "Climate of the Past"
       },
       "volumeNumber": "19",
@@ -121,31 +129,38 @@
     },
     {
       "@type": "Dataset",
+      "@id": "https://doi.org/10.16904/envidat.211",
       "name": "CHELSA-TraCE21k: Downscaled transient temperature and precipitation data since the last glacial maximum",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/d-n-karger",
           "name": "D. N. Karger"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/m-p-nobis",
           "name": "M. P. Nobis"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/s-normand",
           "name": "S. Normand"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/c-h-graham",
           "name": "C. H. Graham"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/n-e-zimmermann",
           "name": "N. E. Zimmermann"
         }
       ],
       "publisher": {
         "@type": "Organization",
+        "@id": "https://gleaner.io/.well-known/genid/organization/envidat",
         "name": "EnviDat"
       },
       "datePublished": "2020",
@@ -160,10 +175,12 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/paleoclimate",
       "name": "Paleoclimate"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/glacial-interglacial-climate-variability",
       "name": "Glacial-interglacial climate variability"
     }
   ],
@@ -185,6 +202,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

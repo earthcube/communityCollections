@@ -10,22 +10,26 @@
   "creator": [
     {
       "@type": "Person",
+      "@id": "https://gleaner.io/.well-known/genid/person/dai-yamazaki",
       "name": "Dai Yamazaki",
       "email": "mailto:yamadai@iis.u-tokyo.ac.jp",
       "affiliation": {
         "@type": "Organization",
+        "@id": "https://gleaner.io/.well-known/genid/organization/www.iis.u-tokyo.ac.jp/en/",
         "name": "Institute of Industrial Science, The University of Tokyo",
         "url": "https://www.iis.u-tokyo.ac.jp/en/"
       }
     },
     {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/www.iis.u-tokyo.ac.jp/en/",
       "name": "Institute of Industrial Science, The University of Tokyo",
       "url": "https://www.iis.u-tokyo.ac.jp/en/"
     }
   ],
   "publisher": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.u-tokyo.ac.jp/en/",
     "name": "The University of Tokyo",
     "url": "https://www.u-tokyo.ac.jp/en/"
   },
@@ -34,6 +38,7 @@
   "temporalCoverage": "Static",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/.well-known/genid/place/global-land-areas-between-90-n-and-60-s",
     "name": "Global land areas between 90°N and 60°S",
     "geo": {
       "@type": "GeoShape",
@@ -43,11 +48,13 @@
   "license": [
     {
       "@type": "CreativeWork",
+      "@id": "https://creativecommons.org/licenses/by-nc/4.0/",
       "name": "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
       "url": "https://creativecommons.org/licenses/by-nc/4.0/"
     },
     {
       "@type": "CreativeWork",
+      "@id": "https://opendatacommons.org/licenses/odbl/1-0/",
       "name": "Open Data Commons Open Database License 1.0 (ODbL 1.0)",
       "url": "https://opendatacommons.org/licenses/odbl/1-0/"
     }
@@ -96,47 +103,58 @@
   "citation": [
     {
       "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1002/2017GL072874",
       "name": "A high accuracy map of global terrain elevations",
       "author": [
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/d-yamazaki",
           "name": "D. Yamazaki"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/d-ikeshima",
           "name": "D. Ikeshima"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/r-tawatari",
           "name": "R. Tawatari"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/t-yamaguchi",
           "name": "T. Yamaguchi"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/f-o-loughlin",
           "name": "F. O'Loughlin"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/j-c-neal",
           "name": "J. C. Neal"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/c-c-sampson",
           "name": "C. C. Sampson"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/s-kanae",
           "name": "S. Kanae"
         },
         {
           "@type": "Person",
+          "@id": "https://gleaner.io/.well-known/genid/person/p-d-bates",
           "name": "P. D. Bates"
         }
       ],
       "isPartOf": {
         "@type": "Periodical",
+        "@id": "https://gleaner.io/.well-known/genid/periodical/geophysical-research-letters",
         "name": "Geophysical Research Letters"
       },
       "datePublished": "2017",
@@ -155,18 +173,22 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/terrain-elevation",
       "name": "Terrain elevation"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/topography",
       "name": "Topography"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/hydrology",
       "name": "Hydrology"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/geoscience-applications",
       "name": "Geoscience applications"
     }
   ],
@@ -193,6 +215,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

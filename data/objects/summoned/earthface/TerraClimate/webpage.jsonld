@@ -10,22 +10,26 @@
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
+    "@id": "https://gleaner.io/.well-known/genid/website/www.climatologylab.org/",
     "name": "Climatology Lab",
     "url": "https://www.climatologylab.org/"
   },
   "about": {
     "@type": "Dataset",
+    "@id": "https://www.climatologylab.org/terraclimate.html#dataset",
     "name": "TerraClimate",
     "description": "Monthly climate and climatic water balance for global terrestrial surfaces",
     "url": "https://www.climatologylab.org/terraclimate.html"
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.climatologylab.org/",
     "name": "Climatology Lab",
     "url": "https://www.climatologylab.org/"
   },
   "mainEntity": {
     "@type": "Dataset",
+    "@id": "https://www.climatologylab.org/terraclimate.html#dataset",
     "name": "TerraClimate",
     "description": "High-resolution global dataset of monthly climate and climatic water balance",
     "url": "https://www.climatologylab.org/terraclimate.html"
@@ -69,6 +73,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }

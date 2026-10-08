@@ -10,11 +10,13 @@
   "url": "https://www.mrlc.gov/data/project/annual-nlcd",
   "creator": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.mrlc.gov/partners",
     "name": "U.S. Geological Survey (USGS) / MRLC Consortium",
     "url": "https://www.mrlc.gov/partners"
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "https://gleaner.io/.well-known/genid/organization/www.mrlc.gov/",
     "name": "Multi-Resolution Land Characteristics (MRLC) Consortium",
     "url": "https://www.mrlc.gov/"
   },
@@ -22,6 +24,7 @@
   "temporalCoverage": "1985-01-01/2024-12-31",
   "spatialCoverage": {
     "@type": "Place",
+    "@id": "https://gleaner.io/.well-known/genid/place/conterminous-united-states-conus",
     "name": "Conterminous United States (CONUS)",
     "geo": {
       "@type": "GeoShape",
@@ -63,6 +66,7 @@
   "citation": [
     {
       "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5066/P94UXNTS",
       "name": "U.S. Geological Survey (USGS), 2024, Annual NLCD Collection 1 Science Products (ver. 1.1, June 2025): U.S. Geological Survey data release, https://doi.org/10.5066/P94UXNTS",
       "identifier": {
         "@type": "PropertyValue",
@@ -105,14 +109,17 @@
   "about": [
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/land-cover",
       "name": "Land cover"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/land-use",
       "name": "Land use"
     },
     {
       "@type": "Thing",
+      "@id": "https://gleaner.io/.well-known/genid/thing/land-change",
       "name": "Land change"
     }
   ],
@@ -135,6 +142,7 @@
     "applicationCategory": "GenerativeAI",
     "provider": {
       "@type": "Organization",
+      "@id": "https://gleaner.io/.well-known/genid/organization/openai",
       "name": "OpenAI"
     }
   }
